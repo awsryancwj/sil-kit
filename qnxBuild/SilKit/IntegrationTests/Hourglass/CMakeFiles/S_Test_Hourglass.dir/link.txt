@@ -1,0 +1,2 @@
+/home/ubuntu/qnx710/host/linux/x86_64/usr/bin/ntoaarch64-ar qc libS_Test_Hourglass.a CMakeFiles/S_Test_Hourglass.dir/MockCapi.cpp.o
+/home/ubuntu/qnx710/host/linux/x86_64/usr/bin/ntoaarch64-ranlib libS_Test_Hourglass.a

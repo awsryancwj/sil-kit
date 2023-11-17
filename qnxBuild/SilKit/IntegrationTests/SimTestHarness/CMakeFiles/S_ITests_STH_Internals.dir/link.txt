@@ -1,0 +1,2 @@
+/home/ubuntu/qnx710/host/linux/x86_64/usr/bin/ntoaarch64-ar qc libS_ITests_STH_Internals.a CMakeFiles/S_ITests_STH_Internals.dir/SimTestHarness.cpp.o
+/home/ubuntu/qnx710/host/linux/x86_64/usr/bin/ntoaarch64-ranlib libS_ITests_STH_Internals.a

@@ -1,0 +1,8 @@
+Description: Sample configuration for CAN
+
+#RegistryUri: silkit://10.1.10.43:8500
+
+Logging:
+  Sinks:
+    - Level: Info
+      Type: Stdout
