@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_54df8e853cc34c4d84d4f096e1787b82" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services</compoundname>
+    <innerdir refid="dir_a309d3177821fe61bca0f5e421e7171d">/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin</innerdir>
+    <innerdir refid="dir_21750f1c04100145f67ac906aeaf6fff">/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/"/>
+  </compounddef>
+</doxygen>

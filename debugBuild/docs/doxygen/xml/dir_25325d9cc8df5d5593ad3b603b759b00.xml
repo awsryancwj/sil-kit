@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_25325d9cc8df5d5593ad3b603b759b00" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub</compoundname>
+    <innerfile refid="services_2pubsub_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="pubsub_2fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="_i_data_publisher_8hpp">IDataPublisher.hpp</innerfile>
+    <innerfile refid="_i_data_subscriber_8hpp">IDataSubscriber.hpp</innerfile>
+    <innerfile refid="_pub_sub_datatypes_8hpp">PubSubDatatypes.hpp</innerfile>
+    <innerfile refid="_pub_sub_spec_8hpp">PubSubSpec.hpp</innerfile>
+    <innerfile refid="services_2pubsub_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/"/>
+  </compounddef>
+</doxygen>

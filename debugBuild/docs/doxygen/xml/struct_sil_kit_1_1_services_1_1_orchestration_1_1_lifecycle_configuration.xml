@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Orchestration::LifecycleConfiguration</compoundname>
+    <includes refid="_orchestration_datatypes_8hpp" local="no">OrchestrationDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration_1ae97b1f70414a48d0e9c31e69c6cf9185" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8" kindref="member">OperationMode</ref></type>
+        <definition>OperationMode SilKit::Services::Orchestration::LifecycleConfiguration::operationMode</definition>
+        <argsstring></argsstring>
+        <name>operationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="131" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The lifecycle start configuration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="130" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="129" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration_1ae97b1f70414a48d0e9c31e69c6cf9185" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::LifecycleConfiguration</scope><name>operationMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

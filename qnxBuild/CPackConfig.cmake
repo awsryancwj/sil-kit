@@ -10,7 +10,7 @@
 # usually begin with CPACK_<GENNAME>_xxxx.
 
 
-set(CPACK_ARCHIVE_BIN_FILE_NAME "SilKit-4.0.39-Linux-x86_64-QCC")
+set(CPACK_ARCHIVE_BIN_FILE_NAME "SilKit-4.0.39-Linux-x86_64-QCC-Release")
 set(CPACK_ARCHIVE_COMPONENT_INSTALL "OFF")
 set(CPACK_ARCHIVE_DOCS_FILE_NAME "SilKit-4.0.39-Docs")
 set(CPACK_ARCHIVE_SOURCE_FILE_NAME "SilKit-4.0.39-Source")
@@ -42,7 +42,7 @@ set(CPACK_PACKAGE_DEFAULT_LOCATION "/")
 set(CPACK_PACKAGE_DESCRIPTION "binary release of SIL Kit library and tools")
 set(CPACK_PACKAGE_DESCRIPTION_FILE "/opt/cmake-3.28.0-rc4-linux-x86_64/share/cmake-3.28/Templates/CPack.GenericDescription.txt")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "SilKit built using CMake")
-set(CPACK_PACKAGE_FILE_NAME "SilKit-4.0.39-Linux-x86_64-QCC")
+set(CPACK_PACKAGE_FILE_NAME "SilKit-4.0.39-Linux-x86_64-QCC-Release")
 set(CPACK_PACKAGE_INSTALL_DIRECTORY "SilKit 4.0.39")
 set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "SilKit 4.0.39")
 set(CPACK_PACKAGE_NAME "SilKit")

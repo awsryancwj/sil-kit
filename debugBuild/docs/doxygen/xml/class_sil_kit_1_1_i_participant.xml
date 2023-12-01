@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_i_participant" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::IParticipant</compoundname>
+    <includes refid="_i_participant_8hpp" local="no">IParticipant.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a76a60140de1e5f33977c72874e3a3a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::IParticipant::~IParticipant</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IParticipant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1adf457a9cecd62cea2fddf10ed7212fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateCanController</definition>
+        <argsstring>(const std::string &amp;canonicalName, const std::string &amp;networkName) -&gt; Services::Can::ICanController *=0</argsstring>
+        <name>CreateCanController</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>networkName</declname>
+        </param>
+        <briefdescription>
+<para>Create a CAN controller at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a1dc303d419b6f3f918d11172593de193" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateEthernetController</definition>
+        <argsstring>(const std::string &amp;canonicalName, const std::string &amp;networkName) -&gt; Services::Ethernet::IEthernetController *=0</argsstring>
+        <name>CreateEthernetController</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>networkName</declname>
+        </param>
+        <briefdescription>
+<para>Create an Ethernet controller at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1aa5819db443266680222e11de458a4dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateFlexrayController</definition>
+        <argsstring>(const std::string &amp;canonicalName, const std::string &amp;networkName) -&gt; Services::Flexray::IFlexrayController *=0</argsstring>
+        <name>CreateFlexrayController</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>networkName</declname>
+        </param>
+        <briefdescription>
+<para>Create an FlexRay controller at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a1c900a7f774d2a37b735f037ae826eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateLinController</definition>
+        <argsstring>(const std::string &amp;canonicalName, const std::string &amp;networkName) -&gt; Services::Lin::ILinController *=0</argsstring>
+        <name>CreateLinController</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>networkName</declname>
+        </param>
+        <briefdescription>
+<para>Create a LIN controller at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a3e0530130c7ced22e7d9b5c282033b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateDataPublisher</definition>
+        <argsstring>(const std::string &amp;canonicalName, const SilKit::Services::PubSub::PubSubSpec &amp;dataSpec, size_t history=0) -&gt; Services::PubSub::IDataPublisher *=0</argsstring>
+        <name>CreateDataPublisher</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">SilKit::Services::PubSub::PubSubSpec</ref> &amp;</type>
+          <declname>dataSpec</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>history</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Create a data publisher at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a52d68ca37add868e2f05f1c2ef3ac0d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateDataSubscriber</definition>
+        <argsstring>(const std::string &amp;canonicalName, const SilKit::Services::PubSub::PubSubSpec &amp;dataSpec, Services::PubSub::DataMessageHandler dataMessageHandler) -&gt; Services::PubSub::IDataSubscriber *=0</argsstring>
+        <name>CreateDataSubscriber</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">SilKit::Services::PubSub::PubSubSpec</ref> &amp;</type>
+          <declname>dataSpec</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_pub_sub_1ad1c23e12dfc1e0a73dee263260b475db" kindref="member">Services::PubSub::DataMessageHandler</ref></type>
+          <declname>dataMessageHandler</declname>
+        </param>
+        <briefdescription>
+<para>Create a data subscriber at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a84e1c92c4619b210aa1f6369c74b1926" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateRpcClient</definition>
+        <argsstring>(const std::string &amp;canonicalName, const SilKit::Services::Rpc::RpcSpec &amp;dataSpec, Services::Rpc::RpcCallResultHandler handler) -&gt; Services::Rpc::IRpcClient *=0</argsstring>
+        <name>CreateRpcClient</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">SilKit::Services::Rpc::RpcSpec</ref> &amp;</type>
+          <declname>dataSpec</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a1f1dd3242932f41d00a5c001923a087e" kindref="member">Services::Rpc::RpcCallResultHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Create a Rpc client at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a5144bb0917c6cb0fc9b5eedb8b6f4e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateRpcServer</definition>
+        <argsstring>(const std::string &amp;canonicalName, const SilKit::Services::Rpc::RpcSpec &amp;dataSpec, Services::Rpc::RpcCallHandler handler) -&gt; Services::Rpc::IRpcServer *=0</argsstring>
+        <name>CreateRpcServer</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>canonicalName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">SilKit::Services::Rpc::RpcSpec</ref> &amp;</type>
+          <declname>dataSpec</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a78d20cab9fa8ca53c21d2a0e9f0f4e74" kindref="member">Services::Rpc::RpcCallHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Create a Rpc server at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a0e605892dfeda919928f28b95e8c8abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateLifecycleService</definition>
+        <argsstring>(Services::Orchestration::LifecycleConfiguration startConfiguration) -&gt; Services::Orchestration::ILifecycleService *=0</argsstring>
+        <name>CreateLifecycleService</name>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration" kindref="compound">Services::Orchestration::LifecycleConfiguration</ref></type>
+          <declname>startConfiguration</declname>
+        </param>
+        <briefdescription>
+<para>Return the ILifecycleService at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1a5a18e2b72aee6109541626db94625274" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::CreateSystemMonitor</definition>
+        <argsstring>() -&gt; Services::Orchestration::ISystemMonitor *=0</argsstring>
+        <name>CreateSystemMonitor</name>
+        <briefdescription>
+<para>Return the ISystemMonitor at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_i_participant_1af852f5873bfb3ec23b0de1d7612e2995" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::IParticipant::GetLogger</definition>
+        <argsstring>() -&gt; Services::Logging::ILogger *=0</argsstring>
+        <name>GetLogger</name>
+        <briefdescription>
+<para>Return the ILogger at this SIL Kit participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="99" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Communication interface to be used by SIL Kit participants. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" line="43" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp" bodystart="42" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_i_participant_1adf457a9cecd62cea2fddf10ed7212fc7" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateCanController</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a3e0530130c7ced22e7d9b5c282033b2d" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateDataPublisher</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a52d68ca37add868e2f05f1c2ef3ac0d3" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateDataSubscriber</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a1dc303d419b6f3f918d11172593de193" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateEthernetController</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1aa5819db443266680222e11de458a4dec" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateFlexrayController</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a0e605892dfeda919928f28b95e8c8abb" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateLifecycleService</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a1c900a7f774d2a37b735f037ae826eef" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateLinController</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a84e1c92c4619b210aa1f6369c74b1926" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateRpcClient</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a5144bb0917c6cb0fc9b5eedb8b6f4e9f" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateRpcServer</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a5a18e2b72aee6109541626db94625274" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>CreateSystemMonitor</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1af852f5873bfb3ec23b0de1d7612e2995" prot="public" virt="pure-virtual"><scope>SilKit::IParticipant</scope><name>GetLogger</name></member>
+      <member refid="class_sil_kit_1_1_i_participant_1a76a60140de1e5f33977c72874e3a3a76" prot="public" virt="virtual"><scope>SilKit::IParticipant</scope><name>~IParticipant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

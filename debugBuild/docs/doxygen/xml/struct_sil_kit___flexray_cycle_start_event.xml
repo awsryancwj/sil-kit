@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_cycle_start_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayCycleStartEvent</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cycle_start_event_1a3155079e807a30f5cb54363930953403" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayCycleStartEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="428" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cycle_start_event_1a97535d6616743b504ac3d79e6569e7f9" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_FlexrayCycleStartEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Cycle starting time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="429" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cycle_start_event_1a035383f33dd3fd2c236b0b9b316ca5e6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayCycleStartEvent::cycleCounter</definition>
+        <argsstring></argsstring>
+        <name>cycleCounter</name>
+        <briefdescription>
+<para>Counter of FlexRay cycles. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="430" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Indicate the start of a FlexRay cycle. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="270">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="269">
+        <label>SilKit_FlexrayCycleStartEvent</label>
+        <link refid="struct_sil_kit___flexray_cycle_start_event"/>
+        <childnode refid="270" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="427" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="426" bodyend="431"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_cycle_start_event_1a035383f33dd3fd2c236b0b9b316ca5e6" prot="public" virt="non-virtual"><scope>SilKit_FlexrayCycleStartEvent</scope><name>cycleCounter</name></member>
+      <member refid="struct_sil_kit___flexray_cycle_start_event_1a3155079e807a30f5cb54363930953403" prot="public" virt="non-virtual"><scope>SilKit_FlexrayCycleStartEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___flexray_cycle_start_event_1a97535d6616743b504ac3d79e6569e7f9" prot="public" virt="non-virtual"><scope>SilKit_FlexrayCycleStartEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

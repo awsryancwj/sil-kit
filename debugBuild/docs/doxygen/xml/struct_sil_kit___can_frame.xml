@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___can_frame" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_CanFrame</compoundname>
+    <includes refid="_can_8h" local="no">Can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1a7b188917123d20f7ab332a66809efddf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_CanFrame::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="49" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1a218ef9f18cd0aaaeea8b792704c8f9ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SilKit_CanFrame::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>CAN Identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="50" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1a1d6d81dfea2c7a89ab9ebec62e16da75" prot="public" static="no" mutable="no">
+        <type><ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref></type>
+        <definition>SilKit_CanFrameFlag SilKit_CanFrame::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>CAN Arbitration and Control Field Flags; see SilKit_CanFrameFlag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="51" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1a2c4c6483ee4cd777217b60e24c6c5861" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_CanFrame::dlc</definition>
+        <argsstring></argsstring>
+        <name>dlc</name>
+        <briefdescription>
+<para>Data Length Code - determined by a network simulator if available. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="52" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1aa0da3865a4e06c3f1a698c978cf7e0c2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_CanFrame::sdt</definition>
+        <argsstring></argsstring>
+        <name>sdt</name>
+        <briefdescription>
+<para>SDU type - describes the structure of the frames Data Field content (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="53" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1a98b60b95544defe011a335dbb94ddf8f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_CanFrame::vcid</definition>
+        <argsstring></argsstring>
+        <name>vcid</name>
+        <briefdescription>
+<para>Virtual CAN network ID (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1ab12212b862578020a8647837507bcf05" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SilKit_CanFrame::af</definition>
+        <argsstring></argsstring>
+        <name>af</name>
+        <briefdescription>
+<para>Acceptance field (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_1a2dcb4b6092fedba5851e37277b84c4ae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref></type>
+        <definition>SilKit_ByteVector SilKit_CanFrame::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Data field containing the payload. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="57" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN frame. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="208">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="207">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="206">
+        <label>SilKit_CanFrame</label>
+        <link refid="struct_sil_kit___can_frame"/>
+        <childnode refid="207" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="48" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="47" bodyend="58"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___can_frame_1ab12212b862578020a8647837507bcf05" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>af</name></member>
+      <member refid="struct_sil_kit___can_frame_1a2dcb4b6092fedba5851e37277b84c4ae" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>data</name></member>
+      <member refid="struct_sil_kit___can_frame_1a2c4c6483ee4cd777217b60e24c6c5861" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>dlc</name></member>
+      <member refid="struct_sil_kit___can_frame_1a1d6d81dfea2c7a89ab9ebec62e16da75" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>flags</name></member>
+      <member refid="struct_sil_kit___can_frame_1a218ef9f18cd0aaaeea8b792704c8f9ec" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>id</name></member>
+      <member refid="struct_sil_kit___can_frame_1aa0da3865a4e06c3f1a698c978cf7e0c2" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>sdt</name></member>
+      <member refid="struct_sil_kit___can_frame_1a7b188917123d20f7ab332a66809efddf" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___can_frame_1a98b60b95544defe011a335dbb94ddf8f" prot="public" virt="non-virtual"><scope>SilKit_CanFrame</scope><name>vcid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

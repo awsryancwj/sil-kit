@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="services_2can_2string__utils_8hpp" kind="file" language="C++">
+    <compoundname>string_utils.hpp</compoundname>
+    <includes local="no">ostream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="_can_datatypes_8hpp" local="yes">CanDatatypes.hpp</includes>
+    <includes refid="exception_8hpp" local="yes">silkit/participant/exception.hpp</includes>
+    <includes refid="_printable_hex_string_8hpp" local="yes">silkit/util/PrintableHexString.hpp</includes>
+    <includes refid="services_2string__utils_8hpp" local="yes">silkit/services/string_utils.hpp</includes>
+    <incdepgraph>
+      <node id="802">
+        <label>iomanip</label>
+      </node>
+      <node id="801">
+        <label>limits</label>
+      </node>
+      <node id="779">
+        <label>CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+      </node>
+      <node id="782">
+        <label>cstdint</label>
+      </node>
+      <node id="792">
+        <label>stdint.h</label>
+      </node>
+      <node id="781">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+      </node>
+      <node id="795">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>stdexcept</label>
+      </node>
+      <node id="783">
+        <label>string</label>
+      </node>
+      <node id="800">
+        <label>silkit/util/PrintableHexString.hpp</label>
+        <link refid="_printable_hex_string_8hpp"/>
+        <childnode refid="801" relation="include">
+        </childnode>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+      <node id="796">
+        <label>silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="792" relation="include">
+        </childnode>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+      </node>
+      <node id="793">
+        <label>stddef.h</label>
+      </node>
+      <node id="799">
+        <label>memory.h</label>
+      </node>
+      <node id="777">
+        <label>ostream</label>
+      </node>
+      <node id="798">
+        <label>limits.h</label>
+      </node>
+      <node id="794">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+      </node>
+      <node id="787">
+        <label>vector</label>
+      </node>
+      <node id="784">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+      </node>
+      <node id="803">
+        <label>utility</label>
+      </node>
+      <node id="788">
+        <label>array</label>
+      </node>
+      <node id="778">
+        <label>sstream</label>
+      </node>
+      <node id="785">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+      </node>
+      <node id="780">
+        <label>chrono</label>
+      </node>
+      <node id="776">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</label>
+        <link refid="services_2can_2string__utils_8hpp"/>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="800" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>silkit/services/string_utils.hpp</label>
+        <link refid="services_2string__utils_8hpp"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="798" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+        <childnode refid="799" relation="include">
+        </childnode>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>type_traits</label>
+      </node>
+      <node id="786">
+        <label>algorithm</label>
+      </node>
+      <node id="791">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="792" relation="include">
+        </childnode>
+        <childnode refid="793" relation="include">
+        </childnode>
+        <childnode refid="794" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_can">SilKit::Services::Can</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_can_datatypes_8hpp" kindref="compound">CanDatatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exception_8hpp" kindref="compound">silkit/participant/exception.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_printable_hex_string_8hpp" kindref="compound">silkit/util/PrintableHexString.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="services_2string__utils_8hpp" kindref="compound">silkit/services/string_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Can<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" kindref="member">CanFrameFlag</ref><sp/>flags);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref><sp/>state);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref><sp/>state);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" kindref="member">CanTransmitStatus</ref><sp/>status);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CanFrame&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CanFrameEvent&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CanFrameTransmitEvent&amp;<sp/>ack);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" kindref="member">CanFrameFlag</ref><sp/>flag);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref><sp/>state);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref><sp/>state);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" kindref="member">CanTransmitStatus</ref><sp/>status);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CanFrame&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CanFrameEvent&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CanFrameTransmitEvent&amp;<sp/>status);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Inline<sp/>Implementations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" kindref="member">CanFrameFlag</ref><sp/>flags)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream<sp/>&lt;&lt;<sp/>flags;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="namespace_sil_kit_1_1_services_1_1_can_1a80e6382ea34472c52d16d2eac45af036" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref><sp/>state)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(state)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7aa9176fac65b988c524c84dee7aa2935a" kindref="member">CanControllerState::Uninit</ref>:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Uninit&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" kindref="member">CanControllerState::Stopped</ref>:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Stopped&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7a8428552d86c0d262a542a528af490afa" kindref="member">CanControllerState::Started</ref>:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Started&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7a243924bfd56a682be235638b53961e09" kindref="member">CanControllerState::Sleep</ref>:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Sleep&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_type_conversion_error" kindref="compound">SilKit::TypeConversionError</ref>{};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="namespace_sil_kit_1_1_services_1_1_can_1a2a510cc37f1f4d605ac88f12fe01d4e1" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref><sp/>state)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(state)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a534ceac854da4ba59c4dc41b7ab732dc" kindref="member">CanErrorState::NotAvailable</ref>:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;NotAvailable&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a5e9d039add1e7f63119eb7f36b83fb1f" kindref="member">CanErrorState::ErrorActive</ref>:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;ErrorActive&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9af2dddaa52fc350a733bae4d166aed1fe" kindref="member">CanErrorState::ErrorPassive</ref>:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;ErrorPassive&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a500e9a516ef13e69f9ee4052b0b63b0a" kindref="member">CanErrorState::BusOff</ref>:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;BusOff&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_type_conversion_error" kindref="compound">SilKit::TypeConversionError</ref>{};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="namespace_sil_kit_1_1_services_1_1_can_1a544847138d5f7b6f6f2ab85273a1e07d" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" kindref="member">CanTransmitStatus</ref><sp/>status)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(status)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0aa5b0d6c4be9dd1b8b05c4146fce1b2e1" kindref="member">CanTransmitStatus::Transmitted</ref>:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Transmitted&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0a0e22fe7d45f8e5632a4abf369b24e29c" kindref="member">CanTransmitStatus::Canceled</ref>:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Canceled&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0a1afd52738a7ac3372eb4d1dbf4b9bd36" kindref="member">CanTransmitStatus::TransmitQueueFull</ref>:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;TransmitQueueFull&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_type_conversion_error" kindref="compound">SilKit::TypeConversionError</ref>{};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="namespace_sil_kit_1_1_services_1_1_can_1a66b9f1f7e740130c3a9b4c54e554254d" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream<sp/>&lt;&lt;<sp/>msg;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="namespace_sil_kit_1_1_services_1_1_can_1a2568009c22d7adff7056ed83adf5ab1b" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" kindref="compound">CanFrameEvent</ref>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream<sp/>&lt;&lt;<sp/>msg;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="namespace_sil_kit_1_1_services_1_1_can_1a0cff7d8337d557112d6d5fffda91774b" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" kindref="compound">CanFrameTransmitEvent</ref>&amp;<sp/>ack)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream<sp/>&lt;&lt;<sp/>ack;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" kindref="member">CanFrameFlag</ref><sp/>flag)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(flag)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a378243333caebe1ecb16d2e4b8996a9c" kindref="member">CanFrameFlag::Ide</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ide&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a6b5922e20ef20dc5f12fa998f0fedca1" kindref="member">CanFrameFlag::Rtr</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;rtr&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356afd7932561d405a7a6f2ca2342b56be6d" kindref="member">CanFrameFlag::Fdf</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;fdf&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a3e4da7809e076a0ddacc3dec79af169d" kindref="member">CanFrameFlag::Brs</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;brs&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a4a6610a1a3fd1e3da5d765e587a3066d" kindref="member">CanFrameFlag::Esi</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;esi&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356af67a5d685b81a666263385ad71bb1089" kindref="member">CanFrameFlag::Xlf</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;xlf&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a2d5cc554c126edb041901fa7d79b558b" kindref="member">CanFrameFlag::Sec</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sec&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;unknown(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(flag)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="namespace_sil_kit_1_1_services_1_1_can_1a41ba23ef02b079ac8c0ad55185bfa91e" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref><sp/>state)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(state);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="namespace_sil_kit_1_1_services_1_1_can_1a21d699e9cc02dd933245322c4fe614aa" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref><sp/>state)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(state);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="namespace_sil_kit_1_1_services_1_1_can_1a469632bfcf416495fa264fbb21a6485b" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" kindref="member">CanTransmitStatus</ref><sp/>status)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ae1c3e54169ac0396f5703b952a370d27" kindref="member">to_string</ref>(status);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="namespace_sil_kit_1_1_services_1_1_can_1aec80f59cf5adddbfb479a105a2577d91" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Can::CanFrame{&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>canId=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a9896f347c2fef3c38c5ce51792eb60a2" kindref="member">canId</ref></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>flags=&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>printFlag<sp/>=<sp/>[firstFlag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>&amp;out,<sp/>&amp;msg](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" kindref="member">CanFrameFlag</ref><sp/>flag)<sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a86352699a3dd2848ec0641b30492d6b8" kindref="member">flags</ref><sp/>&amp;<sp/>static_cast&lt;CanFrameFlagMask&gt;(flag)))</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(firstFlag)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>firstFlag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>flag;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>print<sp/>all<sp/>flags<sp/>(including<sp/>potentially<sp/>unknown<sp/>ones)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>bit<sp/>=<sp/>0;<sp/>bit<sp/>!=<sp/>32u;<sp/>++bit)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printFlag(static_cast&lt;CanFrameFlag&gt;(<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(bit)));</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;]&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>dlc=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a0f2a8705df60786c7c14f9fc8da539a8" kindref="member">dlc</ref>)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>sdt=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>static_cast&lt;uint32_t&gt;(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a889f11e48b3aa70f4af8605d75b2541f" kindref="member">sdt</ref>)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>vcid=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1aa18e00ae57614377e24caecbb9736660" kindref="member">vcid</ref>)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>af=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>static_cast&lt;uint32_t&gt;(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ae8cd5d4990dd57bb6f22bb5a164584a4" kindref="member">af</ref>)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>data=[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a0fd44922c037ccc53a6b507432434a4e" kindref="member">Util::AsHexString</ref>(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ac1013103022bcfd4d109854ab445c918" kindref="member">dataField</ref>).WithSeparator(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">).WithMaxLength(8)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;],<sp/>data.size=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ac1013103022bcfd4d109854ab445c918" kindref="member">dataField</ref>.<ref refid="class_sil_kit_1_1_util_1_1_span_1ad198f88522a763203da4d2b09d2f37f9" kindref="member">size</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="namespace_sil_kit_1_1_services_1_1_can_1a7f3dadc970f3d61a07871a5acd11ad41" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" kindref="compound">CanFrameEvent</ref>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>timestamp<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::duration&lt;double,<sp/>std::milli&gt;&gt;(msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a69435c0234c9b9e73d5034389a85c166" kindref="member">timestamp</ref>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Can::CanFrameEvent{userContext=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a12b2a43e0b625e0bb3243f01d47b2ef2" kindref="member">userContext</ref></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>direction=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a6e9f2631591650ac23a4513a08a050e2" kindref="member">direction</ref></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>frame=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>msg.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1aaf9b43b902f2620e61fdb88be7145ede" kindref="member">frame</ref></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>@&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>timestamp.count()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ms}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="namespace_sil_kit_1_1_services_1_1_can_1a9ee7a9d22473b63316fca67c15add172" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ac38c8e2369c8b035a9ed72e743ef4cc8" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" kindref="compound">CanFrameTransmitEvent</ref>&amp;<sp/>status)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>timestamp<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::duration&lt;double,<sp/>std::milli&gt;&gt;(status.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1a5d22845996df14bc25507e9d4d14c390" kindref="member">timestamp</ref>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Can::CanTtransmitAcknowledge{status=&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>status.<ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1afd47f8e15e4adb8ecc7e68a599aa5d5a" kindref="member">status</ref></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>@&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>timestamp.count()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ms}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp"/>
+  </compounddef>
+</doxygen>

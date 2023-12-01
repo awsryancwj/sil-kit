@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services_1_1_lin" kind="namespace" language="C++">
+    <compoundname>SilKit::Services::Lin</compoundname>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller" prot="public">SilKit::Services::Lin::ILinController</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" prot="public">SilKit::Services::Lin::LinControllerConfig</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" prot="public">SilKit::Services::Lin::LinFrame</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" prot="public">SilKit::Services::Lin::LinFrameResponse</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event" prot="public">SilKit::Services::Lin::LinFrameStatusEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event" prot="public">SilKit::Services::Lin::LinGoToSleepEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event" prot="public">SilKit::Services::Lin::LinWakeupEvent</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751" prot="public" static="no">
+        <name>LinChecksumModel</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= SilKit_LinChecksumModel_Unknown</initializer>
+          <briefdescription>
+<para>Unknown checksum model. If configured with this value, the checksum model of the first reception will be used. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751a53123044b4b65d0ad1b7ed0cfa4c3480" prot="public">
+          <name>Enhanced</name>
+          <initializer>= SilKit_LinChecksumModel_Enhanced</initializer>
+          <briefdescription>
+<para>Enhanced checksum model. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751ad35b51b639528d580362ca7042de6a0e" prot="public">
+          <name>Classic</name>
+          <initializer>= SilKit_LinChecksumModel_Classic</initializer>
+          <briefdescription>
+<para>Classic checksum model. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The checksum model of a LIN <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">SilKit::Services::Lin::LinFrame</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This type is used to specify the Checksum model to be used for the LIN <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref>.</para><para><emphasis>AUTOSAR Name:</emphasis> Lin_FrameCsModelType </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="52" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" prot="public" static="no">
+        <name>LinFrameResponseType</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aad7d7c5b0ca15a04b90c2b50bd52faa86" prot="public">
+          <name>MasterResponse</name>
+          <initializer>= SilKit_LinFrameResponseType_MasterResponse</initializer>
+          <briefdescription>
+<para>Response is generated from this master node. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aad252642285f2a0b4a335c139074aeb8f" prot="public">
+          <name>SlaveResponse</name>
+          <initializer>= SilKit_LinFrameResponseType_SlaveResponse</initializer>
+          <briefdescription>
+<para>Response is generated from a remote slave node. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aa1faa6b1ca17c22e3a880464c5a4b46ae" prot="public">
+          <name>SlaveToSlave</name>
+          <initializer>= SilKit_LinFrameResponseType_SlaveToSlave</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Response is generated from one slave to and received by another slave, for the master the response will be anonymous, it does not have to receive the response. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Controls the behavior of <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a22cf269b1445836f3d1dde378e654d0d" kindref="member">ILinController::SendFrame()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para>Determines whether the master also provides a frame response or if the frame response is expected to be provided from a slave.</para><para><emphasis>AUTOSAR Name:</emphasis> Lin_FrameResponseType </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="100" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="99" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" prot="public" static="no">
+        <name>LinFrameResponseMode</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca92e592d90b9548016776a6fb68dccded" prot="public">
+          <name>Unused</name>
+          <initializer>= SilKit_LinFrameResponseMode_Unused</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> corresponding to the ID is neither received nor transmitted by the LIN slave. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ecac8600a0cc45fe853cb446a96bb8eae35" prot="public">
+          <name>Rx</name>
+          <initializer>= SilKit_LinFrameResponseMode_Rx</initializer>
+          <briefdescription>
+<para>The <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> corresponding to the ID is received by the LIN slave. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca27aa3ae03156b0781515a5dde6c77a05" prot="public">
+          <name>TxUnconditional</name>
+          <initializer>= SilKit_LinFrameResponseMode_TxUnconditional</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> corresponding to the ID is transmitted unconditionally by the LIN slave. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Controls the behavior of a LIN Slave task for a particular LIN ID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="116" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="115" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" prot="public" static="no">
+        <name>LinFrameStatus</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a10c838b8da25cf719fc5a0183dc90779" prot="public">
+          <name>NOT_OK</name>
+          <initializer>= SilKit_LinFrameStatus_NOT_OK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(currently not in use)</para><para><emphasis>AUROSAR Doc:</emphasis> Development or production error occurred </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a6fe67640de40936ae12d8b13047f9d49" prot="public">
+          <name>LIN_TX_OK</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_TX_OK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The controller successfully transmitted a frame response.</para><para><emphasis>AUTOSAR Doc:</emphasis> Successful transmission. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864aabd4d0bdecf761938399ce87a41dc683" prot="public">
+          <name>LIN_TX_BUSY</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_TX_BUSY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(currently not in use)</para><para><emphasis>AUTOSAR Doc:</emphasis> Ongoing transmission (Header or Response). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a158258aa7c843f1b75a654b188d38505" prot="public">
+          <name>LIN_TX_HEADER_ERROR</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_TX_HEADER_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(currently not in use)</para><para><emphasis>AUTOSAR Doc:</emphasis> Erroneous header transmission such as: Mismatch between sent and read back data, Identifier parity error, or Physical bus error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a51ec306a2f8a2c4a65b2e43f0b3406ff" prot="public">
+          <name>LIN_TX_ERROR</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_TX_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(currently not in use)</para><para><emphasis>AUTOSAR Doc:</emphasis> Erroneous response transmission such as: Mismatch between sent and read back data, Physical bus error </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864ad0955b199181203493e4000e2fdf20a8" prot="public">
+          <name>LIN_RX_OK</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_RX_OK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The controller received a correct frame response.</para><para><emphasis>AUTOSAR Doc:</emphasis> Reception of correct response. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a7f37291eea45f93039edc1302ba44689" prot="public">
+          <name>LIN_RX_BUSY</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_RX_BUSY</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>(currently not in use)</para><para><emphasis>AUTOSAR Doc:</emphasis> Ongoing reception: at least one response byte has been received, but the checksum byte has not been received. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864aa99e83ea08ff7832d341090e1ce6328c" prot="public">
+          <name>LIN_RX_ERROR</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_RX_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The reception of a response failed.</para><para>Indicates a mismatch in expected and received data length or a checksum error. Checksum errors occur when multiple slaves are configured to transmit the same frame or when the sender and receiver use different checksum models.</para><para><emphasis>AUTOSAR Doc:</emphasis> Erroneous response reception such as: Framing error, Overrun error, Checksum error, or Short response </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864aca20d3d21509e66c596f28f99ec05c6f" prot="public">
+          <name>LIN_RX_NO_RESPONSE</name>
+          <initializer>= SilKit_LinFrameStatus_LIN_RX_NO_RESPONSE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No LIN controller did provide a response to the frame header.</para><para><emphasis>AUTOSAR Doc:</emphasis> No response byte has been received so far. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The state of a LIN transmission. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used to indicate the success or failure of a LIN transmission to a registered <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a10f5709d6d519999b7c0e647a2187913" kindref="member">ILinController::FrameStatusHandler</ref>.</para><para><emphasis>Note:</emphasis> the enumeration values directly correspond to the AUTOSAR type Lin_StatusType. Not all values are used in the SIL Kit.</para><para><emphasis>AUTOSAR Doc:</emphasis> LIN operation states for a LIN channel or frame, as returned by the API service Lin_GetStatus(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="154" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="153" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" prot="public" static="no">
+        <name>LinControllerMode</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5a3cab03c00dbd11bc3569afa0748013f0" prot="public">
+          <name>Inactive</name>
+          <initializer>= SilKit_LinControllerMode_Inactive</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The LIN controller has not been configured yet and is inactive. This does not indicate sleep mode. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5af03bde11d261f185cbacfa32c1c6538c" prot="public">
+          <name>Master</name>
+          <initializer>= SilKit_LinControllerMode_Master</initializer>
+          <briefdescription>
+<para>A LIN controller with active master task and slave task. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5afe25c0ad752c03ce2361025c235b63e1" prot="public">
+          <name>Slave</name>
+          <initializer>= SilKit_LinControllerMode_Slave</initializer>
+          <briefdescription>
+<para>A LIN controller with only a slave task. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to configure a LIN controller as a master or slave.</para><para>Cf. <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref>, <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1afa08859707a1386f08ca6d5f9d933d02" kindref="member">ILinController::Init()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="233" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="232" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380" prot="public" static="no">
+        <name>LinControllerStatus</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= SilKit_LinControllerStatus_Unknown</initializer>
+          <briefdescription>
+<para>The controller state is not yet known. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a431accab7897f05b0424e002ca30391d" prot="public">
+          <name>Operational</name>
+          <initializer>= SilKit_LinControllerStatus_Operational</initializer>
+          <briefdescription>
+<para>Normal operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a243924bfd56a682be235638b53961e09" prot="public">
+          <name>Sleep</name>
+          <initializer>= SilKit_LinControllerStatus_Sleep</initializer>
+          <briefdescription>
+<para>Sleep state operation; in this state wake-up detection from slave nodes. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380af51a4523a4dfe1d3463d16a693765cc2" prot="public">
+          <name>SleepPending</name>
+          <initializer>= SilKit_LinControllerStatus_SleepPending</initializer>
+          <briefdescription>
+<para>Sleep pending state is reached when a GoToSleep is issued. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The operational state of the controller, i.e., operational or sleeping. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="274" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="273" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" prot="public" static="no">
+        <type><ref refid="_lin_8h_1a6af0cc9696323532582d1c980cc4fa58" kindref="member">SilKit_LinId</ref></type>
+        <definition>using SilKit::Services::Lin::LinId = typedef SilKit_LinId</definition>
+        <argsstring></argsstring>
+        <name>LinId</name>
+        <briefdescription>
+<para>The identifier of a LIN <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This type represents all valid identifier used by <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a22cf269b1445836f3d1dde378e654d0d" kindref="member">ILinController::SendFrame()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a227e7bb4579dbb850b51f2c7d1f4129a" kindref="member">ILinController::SendFrameHeader()</ref>.</para><para><emphasis>Range:</emphasis> 0...0x3F </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="43" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_lin_1a5a25e66c9079932b8b077745660fa759" prot="public" static="no">
+        <type><ref refid="_lin_8h_1a731260f9964b5882339addc6f44ce8a6" kindref="member">SilKit_LinDataLength</ref></type>
+        <definition>using SilKit::Services::Lin::LinDataLength = typedef SilKit_LinDataLength</definition>
+        <argsstring></argsstring>
+        <name>LinDataLength</name>
+        <briefdescription>
+<para>The data length of a LIN <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> in bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This type is used to specify the number of data bytes to copy.</para><para><emphasis>AUTOSAR Name:</emphasis> Lin_FrameDlType</para><para><emphasis>Range:</emphasis> 0...8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="69" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_lin_1a73f97bd0b1218774c6ba19c81c21fac9" prot="public" static="no">
+        <type><ref refid="_lin_8h_1a87f84094445e3127075578c73f0083e9" kindref="member">SilKit_LinBaudRate</ref></type>
+        <definition>using SilKit::Services::Lin::LinBaudRate = typedef SilKit_LinBaudRate</definition>
+        <argsstring></argsstring>
+        <name>LinBaudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The operational baud rate of the controller.</para><para><emphasis>Range:</emphasis> 200...20&apos;000 Bd </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="248" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_sil_kit_1_1_services_1_1_lin_1acbdd0e93d3360b9521e0153e788aeb0b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a5a25e66c9079932b8b077745660fa759" kindref="member">LinDataLength</ref></type>
+        <definition>const LinDataLength SilKit::Services::Lin::LinDataLengthUnknown</definition>
+        <argsstring></argsstring>
+        <name>LinDataLengthUnknown</name>
+        <initializer>= <ref refid="_lin_8h_1a886644663de4c344d2d19cf7c770d74b" kindref="member">SilKit_LinDataLengthUnknown</ref></initializer>
+        <briefdescription>
+<para>If configured with this value, the data length of the first reception will be used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1ab44986cd090be7dcadd599997dbf5ea1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::Lin::GoToSleepFrame</definition>
+        <argsstring>() -&gt; LinFrame</argsstring>
+        <name>GoToSleepFrame</name>
+        <briefdescription>
+<para>Create a <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> that corresponds to a Go-To-Sleep command. </para>        </briefdescription>
+        <detaileddescription>
+<para>Factory method for a <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> representing a Go-To-Sleep signal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="89" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="318" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1ad827b1e3c62d64135e48f016c9b0a561" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Lin::operator==</definition>
+        <argsstring>(const LinFrame &amp;lhs, const LinFrame &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="328" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="328" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1af6d0666c868d1437199a7c8041cc3736" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Lin::operator==</definition>
+        <argsstring>(const LinFrameResponse &amp;lhs, const LinFrameResponse &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="336" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="336" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1ac96075a0cb639a884f517ff03b2c04cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Lin::operator==</definition>
+        <argsstring>(const LinControllerConfig &amp;lhs, const LinControllerConfig &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Comparison operator for <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="342" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="342" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a18bf2defdf4c34c5f71f22f2ffd7638a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(LinChecksumModel model)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751" kindref="member">LinChecksumModel</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="60" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1add63161834cf654ff54f99395468a8ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(LinFrameResponseType responseType)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" kindref="member">LinFrameResponseType</ref></type>
+          <declname>responseType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="74" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a828274d78758815a4372fad80db70941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(LinFrameResponseMode responseMode)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" kindref="member">LinFrameResponseMode</ref></type>
+          <declname>responseMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="88" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1ac1b823976bb59d595dd0b608f64f8243" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(LinFrameStatus frameStatus)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">LinFrameStatus</ref></type>
+          <declname>frameStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="102" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a6558cff6ca827d0f49703cf72e67eac6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(LinControllerMode mode)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" kindref="member">LinControllerMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="128" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1aa3b2627148a83f9a918f5982c5fd6ae6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(LinControllerStatus status)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380" kindref="member">LinControllerStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="143" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a55e95faf97e91a1c95249cd38e782a84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(const LinFrame &amp;frame)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="43" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="160" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a0b2c0604cf2de020c0c2eb96b634469c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Lin::to_string</definition>
+        <argsstring>(const LinControllerConfig &amp;controllerConfig)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref> &amp;</type>
+          <declname>controllerConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="167" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1adb40ae1d3e08dd0600cf9243127397c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LinChecksumModel model)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751" kindref="member">LinChecksumModel</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="46" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="174" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1ad41666ecd12f8314e0b2e5025c393216" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LinFrameResponseType responseType)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" kindref="member">LinFrameResponseType</ref></type>
+          <declname>responseType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="47" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="186" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1aeb05a64b223c9d728ed1368f23a513e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LinFrameResponseMode responseMode)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" kindref="member">LinFrameResponseMode</ref></type>
+          <declname>responseMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="48" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="198" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1afea19884ee8dd7536067d4a8149e6d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LinFrameStatus frameStatus)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">LinFrameStatus</ref></type>
+          <declname>frameStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="49" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="210" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a4b2c16c65c70ec160ed6728d89da9259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LinControllerMode mode)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" kindref="member">LinControllerMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="50" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="222" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a06b3163f5984ad6b3e0a2b8a15cf43fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LinControllerStatus status)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380" kindref="member">LinControllerStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="51" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="234" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a09b6e538313b541f97c05d122d9226fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const LinFrame &amp;frame)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="53" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="246" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_lin_1a86b0fd17637973c4c9ca2636e59210e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Lin::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const LinControllerConfig &amp;controllerConfig)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref> &amp;</type>
+          <declname>controllerConfig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp" bodystart="259" bodyend="274"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/fwd_decl.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

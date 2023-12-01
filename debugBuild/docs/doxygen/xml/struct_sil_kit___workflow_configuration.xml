@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___workflow_configuration" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_WorkflowConfiguration</compoundname>
+    <includes refid="_orchestration_8h" local="no">Orchestration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___workflow_configuration_1a3edda1171d3ef6bdf1c180471213bb88" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_WorkflowConfiguration::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="129" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___workflow_configuration_1a754a557a02edf29c02ec724c76cfffdf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___string_list" kindref="compound">SilKit_StringList</ref> *</type>
+        <definition>SilKit_StringList* SilKit_WorkflowConfiguration::requiredParticipantNames</definition>
+        <argsstring></argsstring>
+        <name>requiredParticipantNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Participants that are waited for when coordinating the simulation start/stop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="131" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Configuration of the simulation workflow </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="364">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="363">
+        <label>SilKit_WorkflowConfiguration</label>
+        <link refid="struct_sil_kit___workflow_configuration"/>
+        <childnode refid="364" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="365" relation="usage">
+          <edgelabel>requiredParticipantNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="365">
+        <label>SilKit_StringList</label>
+        <link refid="struct_sil_kit___string_list"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="128" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="127" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___workflow_configuration_1a754a557a02edf29c02ec724c76cfffdf" prot="public" virt="non-virtual"><scope>SilKit_WorkflowConfiguration</scope><name>requiredParticipantNames</name></member>
+      <member refid="struct_sil_kit___workflow_configuration_1a3edda1171d3ef6bdf1c180471213bb88" prot="public" virt="non-virtual"><scope>SilKit_WorkflowConfiguration</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

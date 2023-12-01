@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="services_2string__utils_8hpp" kind="file" language="C++">
+    <compoundname>string_utils.hpp</compoundname>
+    <includes local="no">iomanip</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="exception_8hpp" local="yes">silkit/participant/exception.hpp</includes>
+    <includes refid="datatypes_8hpp" local="yes">datatypes.hpp</includes>
+    <includedby refid="services_2can_2string__utils_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</includedby>
+    <includedby refid="services_2ethernet_2string__utils_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp</includedby>
+    <incdepgraph>
+      <node id="978">
+        <label>iomanip</label>
+      </node>
+      <node id="984">
+        <label>cstdint</label>
+      </node>
+      <node id="983">
+        <label>datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="982" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+      </node>
+      <node id="980">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="982" relation="include">
+        </childnode>
+      </node>
+      <node id="981">
+        <label>stdexcept</label>
+      </node>
+      <node id="982">
+        <label>string</label>
+      </node>
+      <node id="985">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="984" relation="include">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>sstream</label>
+      </node>
+      <node id="977">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp</label>
+        <link refid="services_2string__utils_8hpp"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+        <childnode refid="983" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="988">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp</label>
+        <link refid="services_2ethernet_2string__utils_8hpp"/>
+      </node>
+      <node id="987">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</label>
+        <link refid="services_2can_2string__utils_8hpp"/>
+      </node>
+      <node id="986">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp</label>
+        <link refid="services_2string__utils_8hpp"/>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="988" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exception_8hpp" kindref="compound">silkit/participant/exception.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="datatypes_8hpp" kindref="compound">datatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1af3e1f736a15c495d6493542191364fd4" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref><sp/>direction);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1a121d84da7d7c10522219058046e116c9" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref><sp/>direction);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Inline<sp/>Implementations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespace_sil_kit_1_1_services_1af3e1f736a15c495d6493542191364fd4" refkind="member"><highlight class="normal">std::string<sp/><ref refid="namespace_sil_kit_1_1_services_1af3e1f736a15c495d6493542191364fd4" kindref="member">to_string</ref>(<ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref><sp/>direction)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(direction)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531aec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">TransmitDirection::Undefined</ref>:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Undefined&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531a869036c9d97cf6593c6f1c2ccfd99a49" kindref="member">TransmitDirection::TX</ref>:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;TX&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531af9c24782c24c237d16e79f18e2fa9046" kindref="member">TransmitDirection::RX</ref>:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;RX&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531a4d7563140f90f851fb6e3258b3782701" kindref="member">TransmitDirection::TXRX</ref>:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;TXRX&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_type_conversion_error" kindref="compound">SilKit::TypeConversionError</ref>{};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespace_sil_kit_1_1_services_1a121d84da7d7c10522219058046e116c9" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespace_sil_kit_1_1_services_1a121d84da7d7c10522219058046e116c9" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>out,<sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref><sp/>direction)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/><ref refid="namespace_sil_kit_1_1_services_1af3e1f736a15c495d6493542191364fd4" kindref="member">to_string</ref>(direction);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_type_conversion_error" kindref="compound">SilKit::TypeConversionError</ref>&amp;)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;TransmitDirection{&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(direction)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp"/>
+  </compounddef>
+</doxygen>

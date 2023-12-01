@@ -1,0 +1,1676 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_can_8h" kind="file" language="C++">
+    <compoundname>Can.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_interface_identifiers_8h" local="yes">silkit/capi/InterfaceIdentifiers.h</includes>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <includedby refid="_can_datatypes_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>stdint.h</label>
+      </node>
+      <node id="0">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>memory.h</label>
+      </node>
+      <node id="7">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="9">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</label>
+        <link refid="_i_can_controller_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="12">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</label>
+        <link refid="services_2can_2all_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</label>
+        <link refid="services_2can_2string__utils_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit___can_frame" prot="public">SilKit_CanFrame</innerclass>
+    <innerclass refid="struct_sil_kit___can_frame_event" prot="public">SilKit_CanFrameEvent</innerclass>
+    <innerclass refid="struct_sil_kit___can_frame_transmit_event" prot="public">SilKit_CanFrameTransmitEvent</innerclass>
+    <innerclass refid="struct_sil_kit___can_state_change_event" prot="public">SilKit_CanStateChangeEvent</innerclass>
+    <innerclass refid="struct_sil_kit___can_error_state_change_event" prot="public">SilKit_CanErrorStateChangeEvent</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_can_8h_1a7ccfd7c89abc096a4c4cf464f00b8492" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_ide</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(9))</initializer>
+        <briefdescription>
+<para>Identifier Extension. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="37" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1ad2edd7ae1592d1c44c1e2af233d2ddaf" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_rtr</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(4))</initializer>
+        <briefdescription>
+<para>Remote Transmission Request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="38" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1ae0755ca18aafb8f6909d1b2b16a7f2b1" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_fdf</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(12))</initializer>
+        <briefdescription>
+<para>FD Format Indicator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="39" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1ab60d62126d938a4d065b5b975892e019" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_brs</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(13))</initializer>
+        <briefdescription>
+<para>Bit Rate Switch (for FD Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="40" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a94f9b48a6488ed713c1793c3281dfc82" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_esi</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(14))</initializer>
+        <briefdescription>
+<para>Error State indicator (for FD Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="41" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1ab7647e1e8d769a98e48ade205b0ddf91" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_xlf</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(15))</initializer>
+        <briefdescription>
+<para>XL Format Indicator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="42" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1af0ef1f3e841a4d0efffcbf045825ecc4" prot="public" static="no">
+        <name>SilKit_CanFrameFlag_sec</name>
+        <initializer>((<ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>)<ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(16))</initializer>
+        <briefdescription>
+<para>Simple Extended Content (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="43" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a91f47db668d3a1acc7eb5565ecc42e7a" prot="public" static="no">
+        <name>SilKit_CanTransmitStatus_Transmitted</name>
+        <initializer>((<ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(0))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The message was successfully transmitted on the CAN bus. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="76" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1af9e6de835f1aacb47364e160072d392e" prot="public" static="no">
+        <name>SilKit_CanTransmitStatus_Canceled</name>
+        <initializer>((<ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(currently not in use)</para><para>The transmit queue was reset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="82" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a9f3e314e1c4c21bd6cd2db9858392df1" prot="public" static="no">
+        <name>SilKit_CanTransmitStatus_TransmitQueueFull</name>
+        <initializer>((<ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The transmit request was rejected, because the transmit queue is full. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="86" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a45259909419629431269e7aeaf5679d2" prot="public" static="no">
+        <name>SilKit_CanTransmitStatus_DefaultMask</name>
+        <initializer>(<ref refid="_can_8h_1a91f47db668d3a1acc7eb5565ecc42e7a" kindref="member">SilKit_CanTransmitStatus_Transmitted</ref> | <ref refid="_can_8h_1af9e6de835f1aacb47364e160072d392e" kindref="member">SilKit_CanTransmitStatus_Canceled</ref> \
+     | <ref refid="_can_8h_1a9f3e314e1c4c21bd6cd2db9858392df1" kindref="member">SilKit_CanTransmitStatus_TransmitQueueFull</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Combines all available transmit statuses. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="92" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a76d4b0afb5049b8f659969bb66a91055" prot="public" static="no">
+        <name>SilKit_CanControllerState_Uninit</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN controller is not initialized (initial state after reset). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="120" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a5b54aa9f3161ef13608040459e20a91b" prot="public" static="no">
+        <name>SilKit_CanControllerState_Stopped</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN controller is initialized but does not participate on the CAN bus. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="123" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a76e32b5b65a74ed55901c98a5879469c" prot="public" static="no">
+        <name>SilKit_CanControllerState_Started</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN controller is in normal operation mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="126" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a6006341828aa76ded2a6f7865f5365a0" prot="public" static="no">
+        <name>SilKit_CanControllerState_Sleep</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN controller is in sleep mode which is similar to the Stopped state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="129" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1a7a11e754e5746959bc7caaf275aa1b12" prot="public" static="no">
+        <name>SilKit_CanErrorState_NotAvailable</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error State is Not Available, because CAN controller is in state Uninit.</para><para><emphasis>AUTOSAR Doc:</emphasis> Successful transmission. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="148" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1ad3af61b29c98bc4174619472446b12a4" prot="public" static="no">
+        <name>SilKit_CanErrorState_ErrorActive</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error Active Mode, the CAN controller is allowed to send messages and active error flags. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="151" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1af9e7ca2b03f938557869ca8b867834d0" prot="public" static="no">
+        <name>SilKit_CanErrorState_ErrorPassive</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error Passive Mode, the CAN controller is still allowed to send messages, but must not send active error flags. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="154" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_can_8h_1aac6cb26153c23a72a2aae52297f380eb" prot="public" static="no">
+        <name>SilKit_CanErrorState_BusOff</name>
+        <initializer>((<ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>) 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>(currently not in use)</para><para><emphasis>AUTOSAR Doc:</emphasis> Bus Off Mode, the CAN controller does not take part in communication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="159" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_CanFrameFlag</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanFrameFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The available flags within the flags member of a CAN frame. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a7a0b4c921e4c5e436882c0e42259f9c8" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref></type>
+        <definition>typedef struct SilKit_CanFrame SilKit_CanFrame</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1ad12a0867e1ab2002667436505adb7ce0" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___can_frame_event" kindref="compound">SilKit_CanFrameEvent</ref></type>
+        <definition>typedef struct SilKit_CanFrameEvent SilKit_CanFrameEvent</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanFrameEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t SilKit_CanTransmitStatus</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanTransmitStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a148e2659b5b568f489ac740126b3e7fa" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___can_frame_transmit_event" kindref="compound">SilKit_CanFrameTransmitEvent</ref></type>
+        <definition>typedef struct SilKit_CanFrameTransmitEvent SilKit_CanFrameTransmitEvent</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanFrameTransmitEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t SilKit_CanControllerState</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanControllerState</name>
+        <briefdescription>
+<para>CAN Controller state according to AUTOSAR specification AUTOSAR_SWS_CANDriver 4.3.1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="117" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1aa649b83c4ae1e11e79a4873724359a17" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___can_state_change_event" kindref="compound">SilKit_CanStateChangeEvent</ref></type>
+        <definition>typedef struct SilKit_CanStateChangeEvent SilKit_CanStateChangeEvent</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanStateChangeEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="117" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a839e3b6c8bdc44f43d8206b911e4135b" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t SilKit_CanErrorState</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanErrorState</name>
+        <briefdescription>
+<para>Error state of a CAN node according to CAN specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="143" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a244e9a52642e06e26ffddbac25430525" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___can_error_state_change_event" kindref="compound">SilKit_CanErrorStateChangeEvent</ref></type>
+        <definition>typedef struct SilKit_CanErrorStateChangeEvent SilKit_CanErrorStateChangeEvent</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanErrorStateChangeEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="143" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1af6a9ebe822141f11b6926009d44bb812" prot="public" static="no">
+        <type>struct <ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref></type>
+        <definition>typedef struct SilKit_CanController SilKit_CanController</definition>
+        <argsstring></argsstring>
+        <name>SilKit_CanController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="143" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a48bf37955a74f86a082772ae6c162725" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_CanFrameTransmitHandler_t) (void *context, SilKit_CanController *controller, SilKit_CanFrameTransmitEvent *frameTransmitEvent)</definition>
+        <argsstring>)(void *context, SilKit_CanController *controller, SilKit_CanFrameTransmitEvent *frameTransmitEvent)</argsstring>
+        <name>SilKit_CanFrameTransmitHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a CanTransmitAcknowledge has been received. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The by the user provided context on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller that received the acknowledge. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameTransmitEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The incoming CAN frame transmit event. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="178" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_CanFrameHandler_t) (void *context, SilKit_CanController *controller, SilKit_CanFrameEvent *frameEvent)</definition>
+        <argsstring>)(void *context, SilKit_CanController *controller, SilKit_CanFrameEvent *frameEvent)</argsstring>
+        <name>SilKit_CanFrameHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a CanMessage has been received. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The by the user provided context on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller that received the message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The incoming CAN frame event containing timestamp, transmit ID and referencing the CAN frame itself. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="186" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_CanStateChangeHandler_t) (void *context, SilKit_CanController *controller, SilKit_CanStateChangeEvent *stateChangeEvent)</definition>
+        <argsstring>)(void *context, SilKit_CanController *controller, SilKit_CanStateChangeEvent *stateChangeEvent)</argsstring>
+        <name>SilKit_CanStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the State of the CAN Controller has changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The by the user provided context on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller that changed its state. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change event containing timestamp and new state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="194" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_CanErrorStateChangeHandler_t) (void *context, SilKit_CanController *controller, SilKit_CanErrorStateChangeEvent *errorStateChangeEvent)</definition>
+        <argsstring>)(void *context, SilKit_CanController *controller, SilKit_CanErrorStateChangeEvent *errorStateChangeEvent)</argsstring>
+        <name>SilKit_CanErrorStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the controller CAN error state has changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The by the user provided context on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller that received the message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errorStateChangeEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error state change event containing timestamp and new error state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="202" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a79684299b9c26706b27309459e2f6841" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_Create_t) (SilKit_CanController **outCanController, SilKit_Participant *participant, const char *name, const char *network)</definition>
+        <argsstring>)(SilKit_CanController **outCanController, SilKit_Participant *participant, const char *name, const char *network)</argsstring>
+        <name>SilKit_CanController_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="220" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a45fb7b06df4f30e2fa6ce615dc8d3e4a" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_Start_t) (SilKit_CanController *controller)</definition>
+        <argsstring>)(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Start_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="230" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1abaaca2bf3090240c79efb1e839b9dd9c" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_Stop_t) (SilKit_CanController *controller)</definition>
+        <argsstring>)(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Stop_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="238" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a19790adb30a04c54988130628bb5263b" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_Reset_t) (SilKit_CanController *controller)</definition>
+        <argsstring>)(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Reset_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="251" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1ae6214ca6055d76ee4e4333787117306e" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_Sleep_t) (SilKit_CanController *controller)</definition>
+        <argsstring>)(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Sleep_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="259" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a1f96bc144dd1f5796f58133ba65094c1" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_SendFrame_t) (SilKit_CanController *controller, SilKit_CanFrame *frame, void *userContext)</definition>
+        <argsstring>)(SilKit_CanController *controller, SilKit_CanFrame *frame, void *userContext)</argsstring>
+        <name>SilKit_CanController_SendFrame_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="276" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1abc8ed05248213ecdfe288d4daf4a9dca" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_SetBaudRate_t) (SilKit_CanController *controller, uint32_t rate, uint32_t fdRate, uint32_t xlRate)</definition>
+        <argsstring>)(SilKit_CanController *controller, uint32_t rate, uint32_t fdRate, uint32_t xlRate)</argsstring>
+        <name>SilKit_CanController_SetBaudRate_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="299" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a298a728541d6553b91f783c69e82e269" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_AddFrameTransmitHandler_t) (SilKit_CanController *controller, void *context, SilKit_CanFrameTransmitHandler_t handler, SilKit_CanTransmitStatus statusMask, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, void *context, SilKit_CanFrameTransmitHandler_t handler, SilKit_CanTransmitStatus statusMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddFrameTransmitHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="321" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1afd21caa639ca3af05a42990c942dadc7" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_RemoveFrameTransmitHandler_t) (SilKit_CanController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveFrameTransmitHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="334" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a46a68da47ec2584059342823593084f3" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_AddFrameHandler_t) (SilKit_CanController *controller, void *context, SilKit_CanFrameHandler_t handler, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, void *context, SilKit_CanFrameHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddFrameHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="353" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a6b5c5e29c7775f987e1b5c916c3e4640" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_RemoveFrameHandler_t) (SilKit_CanController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveFrameHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="364" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a4f03cd3ff272707f175709b57cda558b" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_AddStateChangeHandler_t) (SilKit_CanController *controller, void *context, SilKit_CanStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, void *context, SilKit_CanStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="382" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1acd929bbeced7e43d8f865efa8e5d61fd" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_RemoveStateChangeHandler_t) (SilKit_CanController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="394" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a33ec265197f71bbd530465ec1384dc46" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_AddErrorStateChangeHandler_t) (SilKit_CanController *controller, void *context, SilKit_CanErrorStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, void *context, SilKit_CanErrorStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddErrorStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="414" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_can_8h_1a438aac5aac6f2b860cf2533a9b8365c8" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_CanController_RemoveErrorStateChangeHandler_t) (SilKit_CanController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveErrorStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="426" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_can_8h_1ae97d28758a115f35d6a9c28a48af1d6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_Create</definition>
+        <argsstring>(SilKit_CanController **outCanController, SilKit_Participant *participant, const char *name, const char *network)</argsstring>
+        <name>SilKit_CanController_Create</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> **</type>
+          <declname>outCanController</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>network</declname>
+        </param>
+        <briefdescription>
+<para>Create a CAN controller at this SIL Kit simulation participant. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outCanController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that refers to the resulting CAN controller (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant at which the CAN controller should be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the new CAN controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>network</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The network of the CAN controller to operate in.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The lifetime of the resulting CAN controller is directly bound to the lifetime of the simulation participant. There is no further cleanup necessary except for destroying the simulation participant at the end of the simulation. The object returned must not be deallocated using free()! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a660a0b5ab7db84e344bac401f43b989a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_Start</definition>
+        <argsstring>(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Start</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Start the CAN controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_can_8h_1a321176b1588321e770e70ada3dc38a59" kindref="member">SilKit_CanController_Reset()</ref>, <ref refid="_can_8h_1abadff64220709bd491f59c4554eedc71" kindref="member">SilKit_CanController_Stop()</ref>, <ref refid="_can_8h_1af1e5fd7c8778e6c06460f7f79f58949d" kindref="member">SilKit_CanController_Sleep()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1abadff64220709bd491f59c4554eedc71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_Stop</definition>
+        <argsstring>(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Stop</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Stop the CAN controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_can_8h_1a321176b1588321e770e70ada3dc38a59" kindref="member">SilKit_CanController_Reset()</ref>, <ref refid="_can_8h_1a660a0b5ab7db84e344bac401f43b989a" kindref="member">SilKit_CanController_Start()</ref>, <ref refid="_can_8h_1af1e5fd7c8778e6c06460f7f79f58949d" kindref="member">SilKit_CanController_Sleep()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a321176b1588321e770e70ada3dc38a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_Reset</definition>
+        <argsstring>(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Reset</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Reset the CAN controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>Resets the controller&apos;s Transmit Error Count (TEC) and the Receive Error Count (REC). Furthermore, sets the CAN controller state to CanControllerState::Uninit and the controller&apos;s error state to CanErrorState::NotAvailable.</para><para><ref refid="_can_8h_1a660a0b5ab7db84e344bac401f43b989a" kindref="member">SilKit_CanController_Start()</ref>, <ref refid="_can_8h_1abadff64220709bd491f59c4554eedc71" kindref="member">SilKit_CanController_Stop()</ref>, <ref refid="_can_8h_1af1e5fd7c8778e6c06460f7f79f58949d" kindref="member">SilKit_CanController_Sleep()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1af1e5fd7c8778e6c06460f7f79f58949d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_Sleep</definition>
+        <argsstring>(SilKit_CanController *controller)</argsstring>
+        <name>SilKit_CanController_Sleep</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Put the CAN controller in sleep mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="_can_8h_1a321176b1588321e770e70ada3dc38a59" kindref="member">SilKit_CanController_Reset()</ref>, <ref refid="_can_8h_1a660a0b5ab7db84e344bac401f43b989a" kindref="member">SilKit_CanController_Start()</ref>, <ref refid="_can_8h_1abadff64220709bd491f59c4554eedc71" kindref="member">SilKit_CanController_Stop()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a3b2bc256a13399a5b54bc9f8ee0e7df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_SendFrame</definition>
+        <argsstring>(SilKit_CanController *controller, SilKit_CanFrame *frame, void *userContext)</argsstring>
+        <name>SilKit_CanController_SendFrame</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+        </param>
+        <briefdescription>
+<para>Request the transmission of a CanFrame. </para>        </briefdescription>
+        <detaileddescription>
+<para>The CanFrame must provide a valid CAN ID and valid flags. The controller must be in the Started state to transmit and receive messages.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller that should send the CAN frame. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN frame to transmit. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context pointer, that is reobtained in the SilKit_CanController_AddFrameTransmitHandler handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a3e0eee7c26f424a87e1af9e87a456d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_SetBaudRate</definition>
+        <argsstring>(SilKit_CanController *controller, uint32_t rate, uint32_t fdRate, uint32_t xlRate)</argsstring>
+        <name>SilKit_CanController_SetBaudRate</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>fdRate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>xlRate</declname>
+        </param>
+        <briefdescription>
+<para>Configure the baud rate of the controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the baud rate should be changed.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for regular (non FD) CAN messages given in bps; valid range: 0 to 2&apos;000&apos;000</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fdRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for CAN FD messages given in bps; valid range: 0 to 16&apos;000&apos;000</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xlRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for CAN XL messages given in bps; valid range: 0 to 16&apos;000&apos;000</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+In a detailed simulation, the baud rate is used to calculate transmission delays of CAN messages and to determine proper configuration and interoperation of the connected controllers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a285125af7e49e7e4620219a6843b45bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_AddFrameTransmitHandler</definition>
+        <argsstring>(SilKit_CanController *controller, void *context, SilKit_CanFrameTransmitHandler_t handler, SilKit_CanTransmitStatus statusMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddFrameTransmitHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_can_8h_1a48bf37955a74f86a082772ae6c162725" kindref="member">SilKit_CanFrameTransmitHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref></type>
+          <declname>statusMask</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for the TX status of sent CAN messages. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when a CAN message was successfully transmitted on the bus or when an error occurred.</para><para>NB: Full support in a detailed simulation. In simple simulation, all messages are automatically positively acknowledged.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on transmit acknowledge. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>statusMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A mask to select for which transmit statuses the handler should be called. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="316" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a298e3421156f693ba423af513392a4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_RemoveFrameTransmitHandler</definition>
+        <argsstring>(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveFrameTransmitHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_can_8h_1a48bf37955a74f86a082772ae6c162725" kindref="member">SilKit_CanFrameTransmitHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a262fddd202749c2ab69d057c97ec772e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_AddFrameHandler</definition>
+        <argsstring>(SilKit_CanController *controller, void *context, SilKit_CanFrameHandler_t handler, SilKit_Direction directionMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddFrameHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" kindref="member">SilKit_CanFrameHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref></type>
+          <declname>directionMask</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for CAN message reception. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when the controller receives a new CAN frame.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the message callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on reception. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>directionMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bit mask defining the transmit direction of the messages (rx/tx) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="348" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a09aba8e9f4e50db1761eed63e69bba7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_RemoveFrameHandler</definition>
+        <argsstring>(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveFrameHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" kindref="member">SilKit_CanFrameHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a93ac8c2c9409874e4c61b583dbc28c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_AddStateChangeHandler</definition>
+        <argsstring>(SilKit_CanController *controller, void *context, SilKit_CanStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddStateChangeHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" kindref="member">SilKit_CanStateChangeHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for controller state changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when the CanControllerState of the controller changes. E.g., after starting the controller, the state changes from SilKit_CanControllerState_Uninit to SilKit_CanControllerState_Started.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the state change callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on state change. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1aa75235631f49458466ccf5bccc89cc56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_RemoveStateChangeHandler</definition>
+        <argsstring>(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveStateChangeHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" kindref="member">SilKit_CanStateChangeHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a7d2c80d3d812bfe736d376d8d09f31ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_AddErrorStateChangeHandler</definition>
+        <argsstring>(SilKit_CanController *controller, void *context, SilKit_CanErrorStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_CanController_AddErrorStateChangeHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" kindref="member">SilKit_CanErrorStateChangeHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for changes of the controller&apos;s error state. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when the CanErrorState of the controller changes. During normal operation, the controller should be in state SilKit_CanErrorState_ErrorActive. The states correspond to the error state handling protocol of the CAN specification.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the error state callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on error state change. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="409" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_can_8h_1a7ec14102ed1c759df1f3f54e6e853a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_CanController_RemoveErrorStateChangeHandler</definition>
+        <argsstring>(SilKit_CanController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_CanController_RemoveErrorStateChangeHandler</name>
+        <param>
+          <type><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" kindref="member">SilKit_CanErrorStateChangeHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The CAN controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="423" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interface_identifiers_8h" kindref="compound">silkit/capi/InterfaceIdentifiers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>;</highlight></codeline>
+<codeline lineno="37" refid="_can_8h_1a7ccfd7c89abc096a4c4cf464f00b8492" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_ide<sp/>((SilKit_CanFrameFlag)BIT(9))<sp/></highlight></codeline>
+<codeline lineno="38" refid="_can_8h_1ad2edd7ae1592d1c44c1e2af233d2ddaf" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_rtr<sp/>((SilKit_CanFrameFlag)BIT(4))<sp/></highlight></codeline>
+<codeline lineno="39" refid="_can_8h_1ae0755ca18aafb8f6909d1b2b16a7f2b1" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_fdf<sp/>((SilKit_CanFrameFlag)BIT(12))<sp/></highlight></codeline>
+<codeline lineno="40" refid="_can_8h_1ab60d62126d938a4d065b5b975892e019" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_brs<sp/>((SilKit_CanFrameFlag)BIT(13))<sp/></highlight></codeline>
+<codeline lineno="41" refid="_can_8h_1a94f9b48a6488ed713c1793c3281dfc82" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_esi<sp/>((SilKit_CanFrameFlag)BIT(14))<sp/></highlight></codeline>
+<codeline lineno="42" refid="_can_8h_1ab7647e1e8d769a98e48ade205b0ddf91" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_xlf<sp/>((SilKit_CanFrameFlag)BIT(15))<sp/></highlight></codeline>
+<codeline lineno="43" refid="_can_8h_1af0ef1f3e841a4d0efffcbf045825ecc4" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanFrameFlag_sec<sp/>((SilKit_CanFrameFlag)BIT(16))<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_sil_kit___can_frame" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="struct_sil_kit___can_frame_1a7b188917123d20f7ab332a66809efddf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___can_frame_1a7b188917123d20f7ab332a66809efddf" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="50" refid="struct_sil_kit___can_frame_1a218ef9f18cd0aaaeea8b792704c8f9ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_sil_kit___can_frame_1a218ef9f18cd0aaaeea8b792704c8f9ec" kindref="member">id</ref>;<sp/></highlight></codeline>
+<codeline lineno="51" refid="struct_sil_kit___can_frame_1a1d6d81dfea2c7a89ab9ebec62e16da75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref><sp/><ref refid="struct_sil_kit___can_frame_1a1d6d81dfea2c7a89ab9ebec62e16da75" kindref="member">flags</ref>;<sp/></highlight></codeline>
+<codeline lineno="52" refid="struct_sil_kit___can_frame_1a2c4c6483ee4cd777217b60e24c6c5861" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_sil_kit___can_frame_1a2c4c6483ee4cd777217b60e24c6c5861" kindref="member">dlc</ref>;<sp/></highlight></codeline>
+<codeline lineno="53" refid="struct_sil_kit___can_frame_1aa0da3865a4e06c3f1a698c978cf7e0c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sil_kit___can_frame_1aa0da3865a4e06c3f1a698c978cf7e0c2" kindref="member">sdt</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="struct_sil_kit___can_frame_1a98b60b95544defe011a335dbb94ddf8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sil_kit___can_frame_1a98b60b95544defe011a335dbb94ddf8f" kindref="member">vcid</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="struct_sil_kit___can_frame_1ab12212b862578020a8647837507bcf05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_sil_kit___can_frame_1ab12212b862578020a8647837507bcf05" kindref="member">af</ref>;<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_sil_kit___can_frame_1a2dcb4b6092fedba5851e37277b84c4ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref><sp/><ref refid="struct_sil_kit___can_frame_1a2dcb4b6092fedba5851e37277b84c4ae" kindref="member">data</ref>;<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59" refid="_can_8h_1a7a0b4c921e4c5e436882c0e42259f9c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref><sp/><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="struct_sil_kit___can_frame_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_frame_event" kindref="compound">SilKit_CanFrameEvent</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="struct_sil_kit___can_frame_event_1a3b2c5f5ee72b3a756b94c56896e6af94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___can_frame_event_1a3b2c5f5ee72b3a756b94c56896e6af94" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="64" refid="struct_sil_kit___can_frame_event_1aa74a6d6533497f38cb27f552aed674ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___can_frame_event_1aa74a6d6533497f38cb27f552aed674ea" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="struct_sil_kit___can_frame_event_1a3750e53da64003d70e6cfa9f438e4aca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref>*<sp/><ref refid="struct_sil_kit___can_frame_event_1a3750e53da64003d70e6cfa9f438e4aca" kindref="member">frame</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="struct_sil_kit___can_frame_event_1a2312cc6330f5dea2c875a3b6e81fb9eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref><sp/><ref refid="struct_sil_kit___can_frame_event_1a2312cc6330f5dea2c875a3b6e81fb9eb" kindref="member">direction</ref>;<sp/></highlight></codeline>
+<codeline lineno="67" refid="struct_sil_kit___can_frame_event_1a61603e971749d822e9a41b6ba1b9ddfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___can_frame_event_1a61603e971749d822e9a41b6ba1b9ddfc" kindref="member">userContext</ref>;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69" refid="_can_8h_1ad12a0867e1ab2002667436505adb7ce0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_frame_event" kindref="compound">SilKit_CanFrameEvent</ref><sp/><ref refid="struct_sil_kit___can_frame_event" kindref="compound">SilKit_CanFrameEvent</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_can_8h_1a91f47db668d3a1acc7eb5565ecc42e7a" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanTransmitStatus_Transmitted<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_CanTransmitStatus)<sp/>BIT(0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_can_8h_1af9e6de835f1aacb47364e160072d392e" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanTransmitStatus_Canceled<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_CanTransmitStatus)<sp/>BIT(1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_can_8h_1a9f3e314e1c4c21bd6cd2db9858392df1" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanTransmitStatus_TransmitQueueFull<sp/><sp/><sp/><sp/>((SilKit_CanTransmitStatus)<sp/>BIT(2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(SilKit_CanTransmitStatus)<sp/>BIT(3)<sp/>is<sp/>RESERVED<sp/>(used<sp/>to<sp/>be<sp/>SilKit_CanTransmitStatus_DuplicatedTransmitId)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_can_8h_1a45259909419629431269e7aeaf5679d2" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanTransmitStatus_DefaultMask<sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(SilKit_CanTransmitStatus_Transmitted<sp/>|<sp/>SilKit_CanTransmitStatus_Canceled<sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>|<sp/>SilKit_CanTransmitStatus_TransmitQueueFull)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="struct_sil_kit___can_frame_transmit_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_frame_transmit_event" kindref="compound">SilKit_CanFrameTransmitEvent</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100" refid="struct_sil_kit___can_frame_transmit_event_1a627b8ce6ca9cb3350aea063e1362dabc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___can_frame_transmit_event_1a627b8ce6ca9cb3350aea063e1362dabc" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="101" refid="struct_sil_kit___can_frame_transmit_event_1ac2986f6f68a464914c94fa1ce41a3d11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___can_frame_transmit_event_1ac2986f6f68a464914c94fa1ce41a3d11" kindref="member">userContext</ref>;<sp/></highlight></codeline>
+<codeline lineno="102" refid="struct_sil_kit___can_frame_transmit_event_1a0734b5efa3f6109fa06251eef6350825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___can_frame_transmit_event_1a0734b5efa3f6109fa06251eef6350825" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="103" refid="struct_sil_kit___can_frame_transmit_event_1afca2fda3344d30f1e65057c090a3000f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref><sp/><ref refid="struct_sil_kit___can_frame_transmit_event_1afca2fda3344d30f1e65057c090a3000f" kindref="member">status</ref>;<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="struct_sil_kit___can_frame_transmit_event_1a0dae669e2fafd1fba4c30f6a3c6ad953" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_sil_kit___can_frame_transmit_event_1a0dae669e2fafd1fba4c30f6a3c6ad953" kindref="member">canId</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="113" refid="_can_8h_1a148e2659b5b568f489ac740126b3e7fa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_frame_transmit_event" kindref="compound">SilKit_CanFrameTransmitEvent</ref><sp/><ref refid="struct_sil_kit___can_frame_transmit_event" kindref="compound">SilKit_CanFrameTransmitEvent</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref>;</highlight></codeline>
+<codeline lineno="120" refid="_can_8h_1a76d4b0afb5049b8f659969bb66a91055" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanControllerState_Uninit<sp/><sp/>((SilKit_CanControllerState)<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="_can_8h_1a5b54aa9f3161ef13608040459e20a91b" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanControllerState_Stopped<sp/>((SilKit_CanControllerState)<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="_can_8h_1a76e32b5b65a74ed55901c98a5879469c" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanControllerState_Started<sp/>((SilKit_CanControllerState)<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="_can_8h_1a6006341828aa76ded2a6f7865f5365a0" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanControllerState_Sleep<sp/><sp/><sp/>((SilKit_CanControllerState)<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="struct_sil_kit___can_state_change_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_state_change_event" kindref="compound">SilKit_CanStateChangeEvent</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135" refid="struct_sil_kit___can_state_change_event_1aa6ac905660e13d9f5e5ec0cab8b89d7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___can_state_change_event_1aa6ac905660e13d9f5e5ec0cab8b89d7a" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="136" refid="struct_sil_kit___can_state_change_event_1ad30f068ed6330e5f3c36a393587f8b11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___can_state_change_event_1ad30f068ed6330e5f3c36a393587f8b11" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="137" refid="struct_sil_kit___can_state_change_event_1a4d1a8592a3e278a99857abf6b5dd29a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref><sp/><ref refid="struct_sil_kit___can_state_change_event_1a4d1a8592a3e278a99857abf6b5dd29a4" kindref="member">state</ref>;<sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="139" refid="_can_8h_1aa649b83c4ae1e11e79a4873724359a17" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_state_change_event" kindref="compound">SilKit_CanStateChangeEvent</ref><sp/><ref refid="struct_sil_kit___can_state_change_event" kindref="compound">SilKit_CanStateChangeEvent</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="_can_8h_1a839e3b6c8bdc44f43d8206b911e4135b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="_can_8h_1a839e3b6c8bdc44f43d8206b911e4135b" kindref="member">SilKit_CanErrorState</ref>;</highlight></codeline>
+<codeline lineno="148" refid="_can_8h_1a7a11e754e5746959bc7caaf275aa1b12" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanErrorState_NotAvailable<sp/>((SilKit_CanControllerState)<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="_can_8h_1ad3af61b29c98bc4174619472446b12a4" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanErrorState_ErrorActive<sp/><sp/>((SilKit_CanControllerState)<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="_can_8h_1af9e7ca2b03f938557869ca8b867834d0" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanErrorState_ErrorPassive<sp/>((SilKit_CanControllerState)<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="_can_8h_1aac6cb26153c23a72a2aae52297f380eb" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_CanErrorState_BusOff<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_CanControllerState)<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="struct_sil_kit___can_error_state_change_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_error_state_change_event" kindref="compound">SilKit_CanErrorStateChangeEvent</ref></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165" refid="struct_sil_kit___can_error_state_change_event_1a78f4fb42dfabd60bec9ee03c545d0451" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___can_error_state_change_event_1a78f4fb42dfabd60bec9ee03c545d0451" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="166" refid="struct_sil_kit___can_error_state_change_event_1a660b805d2658571a423316130731c9cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___can_error_state_change_event_1a660b805d2658571a423316130731c9cd" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="167" refid="struct_sil_kit___can_error_state_change_event_1a033237d2fb8b9727d06405657a792f3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a839e3b6c8bdc44f43d8206b911e4135b" kindref="member">SilKit_CanErrorState</ref><sp/><ref refid="struct_sil_kit___can_error_state_change_event_1a033237d2fb8b9727d06405657a792f3a" kindref="member">errorState</ref>;<sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="169" refid="_can_8h_1a244e9a52642e06e26ffddbac25430525" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___can_error_state_change_event" kindref="compound">SilKit_CanErrorStateChangeEvent</ref><sp/><ref refid="struct_sil_kit___can_error_state_change_event" kindref="compound">SilKit_CanErrorStateChangeEvent</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref><sp/><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="_can_8h_1a48bf37955a74f86a082772ae6c162725" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a48bf37955a74f86a082772ae6c162725" kindref="member">SilKit_CanFrameTransmitHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___can_frame_transmit_event" kindref="compound">SilKit_CanFrameTransmitEvent</ref>*<sp/>frameTransmitEvent);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" kindref="member">SilKit_CanFrameHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___can_frame_event" kindref="compound">SilKit_CanFrameEvent</ref>*<sp/>frameEvent);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" kindref="member">SilKit_CanStateChangeHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___can_state_change_event" kindref="compound">SilKit_CanStateChangeEvent</ref>*<sp/>stateChangeEvent);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" kindref="member">SilKit_CanErrorStateChangeHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___can_error_state_change_event" kindref="compound">SilKit_CanErrorStateChangeEvent</ref>*<sp/>errorStateChangeEvent);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1ae97d28758a115f35d6a9c28a48af1d6b" kindref="member">SilKit_CanController_Create</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>**<sp/>outCanController,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>network);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="_can_8h_1a79684299b9c26706b27309459e2f6841" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a79684299b9c26706b27309459e2f6841" kindref="member">SilKit_CanController_Create_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>**<sp/>outCanController,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>network);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a660a0b5ab7db84e344bac401f43b989a" kindref="member">SilKit_CanController_Start</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="_can_8h_1a45fb7b06df4f30e2fa6ce615dc8d3e4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a45fb7b06df4f30e2fa6ce615dc8d3e4a" kindref="member">SilKit_CanController_Start_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1abadff64220709bd491f59c4554eedc71" kindref="member">SilKit_CanController_Stop</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="_can_8h_1abaaca2bf3090240c79efb1e839b9dd9c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1abaaca2bf3090240c79efb1e839b9dd9c" kindref="member">SilKit_CanController_Stop_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a321176b1588321e770e70ada3dc38a59" kindref="member">SilKit_CanController_Reset</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="_can_8h_1a19790adb30a04c54988130628bb5263b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a19790adb30a04c54988130628bb5263b" kindref="member">SilKit_CanController_Reset_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1af1e5fd7c8778e6c06460f7f79f58949d" kindref="member">SilKit_CanController_Sleep</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="_can_8h_1ae6214ca6055d76ee4e4333787117306e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1ae6214ca6055d76ee4e4333787117306e" kindref="member">SilKit_CanController_Sleep_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a3b2bc256a13399a5b54bc9f8ee0e7df0" kindref="member">SilKit_CanController_SendFrame</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref>*<sp/>frame,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="_can_8h_1a1f96bc144dd1f5796f58133ba65094c1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a1f96bc144dd1f5796f58133ba65094c1" kindref="member">SilKit_CanController_SendFrame_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref>*<sp/>frame,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a3e0eee7c26f424a87e1af9e87a456d17" kindref="member">SilKit_CanController_SetBaudRate</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/>uint32_t<sp/>rate,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>fdRate,<sp/>uint32_t<sp/>xlRate);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="_can_8h_1abc8ed05248213ecdfe288d4daf4a9dca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1abc8ed05248213ecdfe288d4daf4a9dca" kindref="member">SilKit_CanController_SetBaudRate_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/>uint32_t<sp/>rate,</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>fdRate,<sp/>uint32_t<sp/>xlRate);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a285125af7e49e7e4620219a6843b45bd" kindref="member">SilKit_CanController_AddFrameTransmitHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a48bf37955a74f86a082772ae6c162725" kindref="member">SilKit_CanFrameTransmitHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref><sp/>statusMask,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="_can_8h_1a298a728541d6553b91f783c69e82e269" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a298a728541d6553b91f783c69e82e269" kindref="member">SilKit_CanController_AddFrameTransmitHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a48bf37955a74f86a082772ae6c162725" kindref="member">SilKit_CanFrameTransmitHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref><sp/>statusMask,</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a298e3421156f693ba423af513392a4bb" kindref="member">SilKit_CanController_RemoveFrameTransmitHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="_can_8h_1afd21caa639ca3af05a42990c942dadc7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1afd21caa639ca3af05a42990c942dadc7" kindref="member">SilKit_CanController_RemoveFrameTransmitHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a262fddd202749c2ab69d057c97ec772e" kindref="member">SilKit_CanController_AddFrameHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" kindref="member">SilKit_CanFrameHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref><sp/>directionMask,</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="_can_8h_1a46a68da47ec2584059342823593084f3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a46a68da47ec2584059342823593084f3" kindref="member">SilKit_CanController_AddFrameHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1ab23c01ad2e2df79b2bf951a420c58576" kindref="member">SilKit_CanFrameHandler_t</ref><sp/>handler,<sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a09aba8e9f4e50db1761eed63e69bba7d" kindref="member">SilKit_CanController_RemoveFrameHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364" refid="_can_8h_1a6b5c5e29c7775f987e1b5c916c3e4640" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a6b5c5e29c7775f987e1b5c916c3e4640" kindref="member">SilKit_CanController_RemoveFrameHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a93ac8c2c9409874e4c61b583dbc28c1a" kindref="member">SilKit_CanController_AddStateChangeHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" kindref="member">SilKit_CanStateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382" refid="_can_8h_1a4f03cd3ff272707f175709b57cda558b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a4f03cd3ff272707f175709b57cda558b" kindref="member">SilKit_CanController_AddStateChangeHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a609da7d1747758e1bfa81d586a0c3d20" kindref="member">SilKit_CanStateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1aa75235631f49458466ccf5bccc89cc56" kindref="member">SilKit_CanController_RemoveStateChangeHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394" refid="_can_8h_1acd929bbeced7e43d8f865efa8e5d61fd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1acd929bbeced7e43d8f865efa8e5d61fd" kindref="member">SilKit_CanController_RemoveStateChangeHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a7d2c80d3d812bfe736d376d8d09f31ce" kindref="member">SilKit_CanController_AddErrorStateChangeHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" kindref="member">SilKit_CanErrorStateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414" refid="_can_8h_1a33ec265197f71bbd530465ec1384dc46" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a33ec265197f71bbd530465ec1384dc46" kindref="member">SilKit_CanController_AddErrorStateChangeHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_can_8h_1a38fc48e291fd1eb0b05cdee65d77fc1e" kindref="member">SilKit_CanErrorStateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_can_8h_1a7ec14102ed1c759df1f3f54e6e853a32" kindref="member">SilKit_CanController_RemoveErrorStateChangeHandler</ref>(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="_can_8h_1a438aac5aac6f2b860cf2533a9b8365c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_can_8h_1a438aac5aac6f2b860cf2533a9b8365c8" kindref="member">SilKit_CanController_RemoveErrorStateChangeHandler_t</ref>)(<ref refid="_can_8h_1af6a9ebe822141f11b6926009d44bb812" kindref="member">SilKit_CanController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___participant_status" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_ParticipantStatus</compoundname>
+    <includes refid="_orchestration_8h" local="no">Orchestration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___participant_status_1acd29854123b5d333c00845c1bf26b643" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_ParticipantStatus::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="117" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___participant_status_1a0987330fe1f9568a5729153465d2f22d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_ParticipantStatus::participantName</definition>
+        <argsstring></argsstring>
+        <name>participantName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the participant. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="118" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___participant_status_1a3d8e68770a362e36ac7360067779c7a6" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a395dc77953e2b19b6b353ea3257e25ff" kindref="member">SilKit_ParticipantState</ref></type>
+        <definition>SilKit_ParticipantState SilKit_ParticipantStatus::participantState</definition>
+        <argsstring></argsstring>
+        <name>participantState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The new state of the participant. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="119" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___participant_status_1a63f58d06107654698349f79fea83960a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_ParticipantStatus::enterReason</definition>
+        <argsstring></argsstring>
+        <name>enterReason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The reason for the participant to enter the new state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="120" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___participant_status_1a3a52878d271956ce51d2f4df91a2affb" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a5d25eaae0d9c76a203a09936078740a8" kindref="member">SilKit_NanosecondsWallclockTime</ref></type>
+        <definition>SilKit_NanosecondsWallclockTime SilKit_ParticipantStatus::enterTime</definition>
+        <argsstring></argsstring>
+        <name>enterTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The enter time of the participant. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="121" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___participant_status_1aa112b7c566be6e704cb3c476adb22926" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a5d25eaae0d9c76a203a09936078740a8" kindref="member">SilKit_NanosecondsWallclockTime</ref></type>
+        <definition>SilKit_NanosecondsWallclockTime SilKit_ParticipantStatus::refreshTime</definition>
+        <argsstring></argsstring>
+        <name>refreshTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The refresh time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="122" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Details about a status change of a participant. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="341">
+        <label>SilKit_ParticipantStatus</label>
+        <link refid="struct_sil_kit___participant_status"/>
+        <childnode refid="342" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="342">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="116" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="115" bodyend="123"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___participant_status_1a63f58d06107654698349f79fea83960a" prot="public" virt="non-virtual"><scope>SilKit_ParticipantStatus</scope><name>enterReason</name></member>
+      <member refid="struct_sil_kit___participant_status_1a3a52878d271956ce51d2f4df91a2affb" prot="public" virt="non-virtual"><scope>SilKit_ParticipantStatus</scope><name>enterTime</name></member>
+      <member refid="struct_sil_kit___participant_status_1a0987330fe1f9568a5729153465d2f22d" prot="public" virt="non-virtual"><scope>SilKit_ParticipantStatus</scope><name>participantName</name></member>
+      <member refid="struct_sil_kit___participant_status_1a3d8e68770a362e36ac7360067779c7a6" prot="public" virt="non-virtual"><scope>SilKit_ParticipantStatus</scope><name>participantState</name></member>
+      <member refid="struct_sil_kit___participant_status_1aa112b7c566be6e704cb3c476adb22926" prot="public" virt="non-virtual"><scope>SilKit_ParticipantStatus</scope><name>refreshTime</name></member>
+      <member refid="struct_sil_kit___participant_status_1acd29854123b5d333c00845c1bf26b643" prot="public" virt="non-virtual"><scope>SilKit_ParticipantStatus</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

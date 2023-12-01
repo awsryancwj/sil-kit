@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayTxBufferConfig</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a5e064b08e5f47af7d32ada164facc52a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13c" kindref="member">FlexrayChannel</ref></type>
+        <definition>FlexrayChannel SilKit::Services::Flexray::FlexrayTxBufferConfig::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+<para>(values <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13ca7fc56270e7a70fa81a5935b72eacbe29" kindref="member">FlexrayChannel::A</ref>, <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13ca9d5ed678fe57bcca610140957afab571" kindref="member">FlexrayChannel::B</ref>, <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13cab86fc6b051f63d73de262d4c34e3a0a9" kindref="member">FlexrayChannel::AB</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="271" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1aec0cb97067a9a971b72c5aa5b20716f2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit::Services::Flexray::FlexrayTxBufferConfig::slotId</definition>
+        <argsstring></argsstring>
+        <name>slotId</name>
+        <briefdescription>
+<para>The slot Id of frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="274" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a3a7600ca00fc66861eaf4ca77f5f6c63" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit::Services::Flexray::FlexrayTxBufferConfig::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>Base offset for cycle multiplexing (values 0-63). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="277" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a84df64a033eceeab09b227c000d85536" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit::Services::Flexray::FlexrayTxBufferConfig::repetition</definition>
+        <argsstring></argsstring>
+        <name>repetition</name>
+        <briefdescription>
+<para>Repetition for cycle multiplexing (values 1,2,4,8,16,32,64). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="280" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1ab809b06ef798531913e7b6e79e38d93a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Flexray::FlexrayTxBufferConfig::hasPayloadPreambleIndicator</definition>
+        <argsstring></argsstring>
+        <name>hasPayloadPreambleIndicator</name>
+        <briefdescription>
+<para>Set the PPindicator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="283" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a313425cc88c523624eb583dcfabcabe4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit::Services::Flexray::FlexrayTxBufferConfig::headerCrc</definition>
+        <argsstring></argsstring>
+        <name>headerCrc</name>
+        <briefdescription>
+<para>Header CRC, 11 bits. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="286" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a9ced66714fe2c2128c05f88186751e46" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1aec9ccca44578af9b0290b7b4d9f1ef67" kindref="member">FlexrayTransmissionMode</ref></type>
+        <definition>FlexrayTransmissionMode SilKit::Services::Flexray::FlexrayTxBufferConfig::transmissionMode</definition>
+        <argsstring></argsstring>
+        <name>transmissionMode</name>
+        <briefdescription>
+<para><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1aec9ccca44578af9b0290b7b4d9f1ef67ac65ff9bc152122c76b6f5fbb742ed27e" kindref="member">FlexrayTransmissionMode::SingleShot</ref> or <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1aec9ccca44578af9b0290b7b4d9f1ef67a535863a82f163709557e59e2eb8139a7" kindref="member">FlexrayTransmissionMode::Continuous</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="289" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration of Tx-Buffer, used in struct <ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config" kindref="compound">FlexrayControllerConfig</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="269" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="268" bodyend="290"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a5e064b08e5f47af7d32ada164facc52a" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>channels</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1ab809b06ef798531913e7b6e79e38d93a" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>hasPayloadPreambleIndicator</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a313425cc88c523624eb583dcfabcabe4" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>headerCrc</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a3a7600ca00fc66861eaf4ca77f5f6c63" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>offset</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a84df64a033eceeab09b227c000d85536" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>repetition</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1aec0cb97067a9a971b72c5aa5b20716f2" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>slotId</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config_1a9ced66714fe2c2128c05f88186751e46" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferConfig</scope><name>transmissionMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

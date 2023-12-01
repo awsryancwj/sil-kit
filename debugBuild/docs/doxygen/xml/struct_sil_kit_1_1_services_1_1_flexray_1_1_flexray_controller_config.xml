@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayControllerConfig</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config_1a386dd1a762060b13960d0b33d565a191" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_cluster_parameters" kindref="compound">FlexrayClusterParameters</ref></type>
+        <definition>FlexrayClusterParameters SilKit::Services::Flexray::FlexrayControllerConfig::clusterParams</definition>
+        <argsstring></argsstring>
+        <name>clusterParams</name>
+        <briefdescription>
+<para>FlexRay cluster parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="296" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config_1a69be6b215c3f525eb34731036b4f1432" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_node_parameters" kindref="compound">FlexrayNodeParameters</ref></type>
+        <definition>FlexrayNodeParameters SilKit::Services::Flexray::FlexrayControllerConfig::nodeParams</definition>
+        <argsstring></argsstring>
+        <name>nodeParams</name>
+        <briefdescription>
+<para>FlexRay node parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="298" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config_1a0c7d762563ba42451827f71ab96b8e6a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config" kindref="compound">FlexrayTxBufferConfig</ref> &gt;</type>
+        <definition>std::vector&lt;FlexrayTxBufferConfig&gt; SilKit::Services::Flexray::FlexrayControllerConfig::bufferConfigs</definition>
+        <argsstring></argsstring>
+        <name>bufferConfigs</name>
+        <briefdescription>
+<para>FlexRay buffer configs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="301" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configure the communication parameters of the FlexRay controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="52">
+        <label>SilKit::Services::Flexray::FlexrayControllerConfig</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>clusterParams</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>nodeParams</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>SilKit::Services::Flexray::FlexrayClusterParameters</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_cluster_parameters"/>
+      </node>
+      <node id="54">
+        <label>SilKit::Services::Flexray::FlexrayNodeParameters</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_node_parameters"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="294" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="293" bodyend="302"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config_1a0c7d762563ba42451827f71ab96b8e6a" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayControllerConfig</scope><name>bufferConfigs</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config_1a386dd1a762060b13960d0b33d565a191" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayControllerConfig</scope><name>clusterParams</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config_1a69be6b215c3f525eb34731036b4f1432" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayControllerConfig</scope><name>nodeParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

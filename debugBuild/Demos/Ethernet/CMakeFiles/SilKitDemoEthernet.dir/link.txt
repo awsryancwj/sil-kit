@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/SilKitDemoEthernet.dir/EthernetDemo.cpp.o -o ../../Release/SilKitDemoEthernet  -Wl,-rpath,/home/ubuntu/sil-kit/build/Release ../../Release/libSilKit.so -lpthread 

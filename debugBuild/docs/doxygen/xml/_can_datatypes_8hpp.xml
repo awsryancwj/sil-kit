@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_can_datatypes_8hpp" kind="file" language="C++">
+    <compoundname>CanDatatypes.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes refid="datatypes_8hpp" local="yes">silkit/services/datatypes.hpp</includes>
+    <includes refid="_span_8hpp" local="yes">silkit/util/Span.hpp</includes>
+    <includes refid="_can_8h" local="yes">silkit/capi/Can.h</includes>
+    <includedby refid="services_2can_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</includedby>
+    <includedby refid="_i_can_controller_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</includedby>
+    <includedby refid="services_2can_2string__utils_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</includedby>
+    <incdepgraph>
+      <node id="1093">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+      </node>
+      <node id="1096">
+        <label>cstdint</label>
+      </node>
+      <node id="1106">
+        <label>stdint.h</label>
+      </node>
+      <node id="1095">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>stdexcept</label>
+      </node>
+      <node id="1097">
+        <label>string</label>
+      </node>
+      <node id="1110">
+        <label>silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>stddef.h</label>
+      </node>
+      <node id="1113">
+        <label>memory.h</label>
+      </node>
+      <node id="1112">
+        <label>limits.h</label>
+      </node>
+      <node id="1108">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>vector</label>
+      </node>
+      <node id="1098">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>array</label>
+      </node>
+      <node id="1099">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>chrono</label>
+      </node>
+      <node id="1111">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>type_traits</label>
+      </node>
+      <node id="1100">
+        <label>algorithm</label>
+      </node>
+      <node id="1105">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1114">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</label>
+        <link refid="_i_can_controller_8hpp"/>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1115">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</label>
+        <link refid="services_2can_2all_8hpp"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</label>
+        <link refid="services_2can_2string__utils_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" prot="public">SilKit::Services::Can::CanFrame</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" prot="public">SilKit::Services::Can::CanFrameEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" prot="public">SilKit::Services::Can::CanFrameTransmitEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event" prot="public">SilKit::Services::Can::CanStateChangeEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event" prot="public">SilKit::Services::Can::CanErrorStateChangeEvent</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_can">SilKit::Services::Can</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="datatypes_8hpp" kindref="compound">silkit/services/datatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_span_8hpp" kindref="compound">silkit/util/Span.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_can_8h" kindref="compound">silkit/capi/Can.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>CAN<sp/>specific<sp/>data<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="namespace_sil_kit_1_1_services" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="37" refid="namespace_sil_kit_1_1_services_1_1_can" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Can<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespace_sil_kit_1_1_services_1_1_can_1a3b4f281a5acd29786834878d516d0184" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a3b4f281a5acd29786834878d516d0184" kindref="member">CanFrameFlagMask</ref><sp/>=<sp/><ref refid="_can_8h_1a1b2fa7ad68009b3514d76713d951f07b" kindref="member">SilKit_CanFrameFlag</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356" kindref="member">CanFrameFlag</ref><sp/>:<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a3b4f281a5acd29786834878d516d0184" kindref="member">CanFrameFlagMask</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a378243333caebe1ecb16d2e4b8996a9c" kindref="member">Ide</ref><sp/>=<sp/><ref refid="_can_8h_1a7ccfd7c89abc096a4c4cf464f00b8492" kindref="member">SilKit_CanFrameFlag_ide</ref>,<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a6b5922e20ef20dc5f12fa998f0fedca1" kindref="member">Rtr</ref><sp/>=<sp/><ref refid="_can_8h_1ad2edd7ae1592d1c44c1e2af233d2ddaf" kindref="member">SilKit_CanFrameFlag_rtr</ref>,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356afd7932561d405a7a6f2ca2342b56be6d" kindref="member">Fdf</ref><sp/>=<sp/><ref refid="_can_8h_1ae0755ca18aafb8f6909d1b2b16a7f2b1" kindref="member">SilKit_CanFrameFlag_fdf</ref>,<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a3e4da7809e076a0ddacc3dec79af169d" kindref="member">Brs</ref><sp/>=<sp/><ref refid="_can_8h_1ab60d62126d938a4d065b5b975892e019" kindref="member">SilKit_CanFrameFlag_brs</ref>,<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a4a6610a1a3fd1e3da5d765e587a3066d" kindref="member">Esi</ref><sp/>=<sp/><ref refid="_can_8h_1a94f9b48a6488ed713c1793c3281dfc82" kindref="member">SilKit_CanFrameFlag_esi</ref>,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356af67a5d685b81a666263385ad71bb1089" kindref="member">Xlf</ref><sp/>=<sp/><ref refid="_can_8h_1ab7647e1e8d769a98e48ade205b0ddf91" kindref="member">SilKit_CanFrameFlag_xlf</ref>,<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad171974695333e4327afb48e26f7f356a2d5cc554c126edb041901fa7d79b558b" kindref="member">Sec</ref><sp/>=<sp/><ref refid="_can_8h_1af0ef1f3e841a4d0efffcbf045825ecc4" kindref="member">SilKit_CanFrameFlag_sec</ref>,<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CAN<sp/>frame<sp/>content</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a9896f347c2fef3c38c5ce51792eb60a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a9896f347c2fef3c38c5ce51792eb60a2" kindref="member">canId</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a86352699a3dd2848ec0641b30492d6b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a3b4f281a5acd29786834878d516d0184" kindref="member">CanFrameFlagMask</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a86352699a3dd2848ec0641b30492d6b8" kindref="member">flags</ref>;<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>dlc;</highlight></codeline>
+<codeline lineno="63" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a889f11e48b3aa70f4af8605d75b2541f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a889f11e48b3aa70f4af8605d75b2541f" kindref="member">sdt</ref>;<sp/></highlight></codeline>
+<codeline lineno="64" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1aa18e00ae57614377e24caecbb9736660" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1aa18e00ae57614377e24caecbb9736660" kindref="member">vcid</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ae8cd5d4990dd57bb6f22bb5a164584a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ae8cd5d4990dd57bb6f22bb5a164584a4" kindref="member">af</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ac1013103022bcfd4d109854ab445c918" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span&lt;const uint8_t&gt;</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ac1013103022bcfd4d109854ab445c918" kindref="member">dataField</ref>;<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" kindref="compound">CanFrameEvent</ref></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a69435c0234c9b9e73d5034389a85c166" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a69435c0234c9b9e73d5034389a85c166" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1aaf9b43b902f2620e61fdb88be7145ede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1aaf9b43b902f2620e61fdb88be7145ede" kindref="member">frame</ref>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a6e9f2631591650ac23a4513a08a050e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a6e9f2631591650ac23a4513a08a050e2" kindref="member">direction</ref>;<sp/></highlight></codeline>
+<codeline lineno="76" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a12b2a43e0b625e0bb3243f01d47b2ef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event_1a12b2a43e0b625e0bb3243f01d47b2ef2" kindref="member">userContext</ref>;<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref><sp/>:<sp/><ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7aa9176fac65b988c524c84dee7aa2935a" kindref="member">Uninit</ref><sp/>=<sp/><ref refid="_can_8h_1a76d4b0afb5049b8f659969bb66a91055" kindref="member">SilKit_CanControllerState_Uninit</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" kindref="member">Stopped</ref><sp/>=<sp/><ref refid="_can_8h_1a5b54aa9f3161ef13608040459e20a91b" kindref="member">SilKit_CanControllerState_Stopped</ref>,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7a8428552d86c0d262a542a528af490afa" kindref="member">Started</ref><sp/>=<sp/><ref refid="_can_8h_1a76e32b5b65a74ed55901c98a5879469c" kindref="member">SilKit_CanControllerState_Started</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7a243924bfd56a682be235638b53961e09" kindref="member">Sleep</ref><sp/>=<sp/><ref refid="_can_8h_1a6006341828aa76ded2a6f7865f5365a0" kindref="member">SilKit_CanControllerState_Sleep</ref>,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref><sp/>:<sp/><ref refid="_can_8h_1a839e3b6c8bdc44f43d8206b911e4135b" kindref="member">SilKit_CanErrorState</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a534ceac854da4ba59c4dc41b7ab732dc" kindref="member">NotAvailable</ref><sp/>=<sp/><ref refid="_can_8h_1a7a11e754e5746959bc7caaf275aa1b12" kindref="member">SilKit_CanErrorState_NotAvailable</ref>,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a5e9d039add1e7f63119eb7f36b83fb1f" kindref="member">ErrorActive</ref><sp/>=<sp/><ref refid="_can_8h_1ad3af61b29c98bc4174619472446b12a4" kindref="member">SilKit_CanErrorState_ErrorActive</ref>,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9af2dddaa52fc350a733bae4d166aed1fe" kindref="member">ErrorPassive</ref><sp/>=<sp/><ref refid="_can_8h_1af9e7ca2b03f938557869ca8b867834d0" kindref="member">SilKit_CanErrorState_ErrorPassive</ref>,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a500e9a516ef13e69f9ee4052b0b63b0a" kindref="member">BusOff</ref><sp/>=<sp/><ref refid="_can_8h_1aac6cb26153c23a72a2aae52297f380eb" kindref="member">SilKit_CanErrorState_BusOff</ref>,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="namespace_sil_kit_1_1_services_1_1_can_1a51c6f952dd7d7bd8b7dcfc9a7c6b23ec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a51c6f952dd7d7bd8b7dcfc9a7c6b23ec" kindref="member">CanTransmitStatusMask</ref><sp/>=<sp/><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" kindref="member">CanTransmitStatus</ref><sp/>:<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a51c6f952dd7d7bd8b7dcfc9a7c6b23ec" kindref="member">CanTransmitStatusMask</ref></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0aa5b0d6c4be9dd1b8b05c4146fce1b2e1" kindref="member">Transmitted</ref><sp/>=<sp/><ref refid="_can_8h_1a91f47db668d3a1acc7eb5565ecc42e7a" kindref="member">SilKit_CanTransmitStatus_Transmitted</ref>,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0a0e22fe7d45f8e5632a4abf369b24e29c" kindref="member">Canceled</ref><sp/>=<sp/><ref refid="_can_8h_1af9e6de835f1aacb47364e160072d392e" kindref="member">SilKit_CanTransmitStatus_Canceled</ref>,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0a1afd52738a7ac3372eb4d1dbf4b9bd36" kindref="member">TransmitQueueFull</ref><sp/>=<sp/><ref refid="_can_8h_1a9f3e314e1c4c21bd6cd2db9858392df1" kindref="member">SilKit_CanTransmitStatus_TransmitQueueFull</ref>,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" kindref="compound">CanFrameTransmitEvent</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1aeb4d6b99b3940c8f026f2c64cfd97be8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1aeb4d6b99b3940c8f026f2c64cfd97be8" kindref="member">canId</ref>;<sp/></highlight></codeline>
+<codeline lineno="143" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1a5d22845996df14bc25507e9d4d14c390" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1a5d22845996df14bc25507e9d4d14c390" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="144" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1afd47f8e15e4adb8ecc7e68a599aa5d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a10d52346781096c205cdde8c8bab65f0" kindref="member">CanTransmitStatus</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1afd47f8e15e4adb8ecc7e68a599aa5d5a" kindref="member">status</ref>;<sp/></highlight></codeline>
+<codeline lineno="145" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1acfdbe8c00a6d668ac23dd8aa2a06965b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event_1acfdbe8c00a6d668ac23dd8aa2a06965b" kindref="member">userContext</ref>;<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event" kindref="compound">CanStateChangeEvent</ref></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1afccd3c378c3a640987f78fd64e729607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1afccd3c378c3a640987f78fd64e729607" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="153" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1a410ff7602fc245272052bba0f0d286d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1a410ff7602fc245272052bba0f0d286d2" kindref="member">state</ref>;<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event" kindref="compound">CanErrorStateChangeEvent</ref></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event_1a24ae114676ea2df8fb04837510231b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event_1a24ae114676ea2df8fb04837510231b70" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="161" refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event_1a6a6c939d73cdabcda9bdbe8d21706263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event_1a6a6c939d73cdabcda9bdbe8d21706263" kindref="member">errorState</ref>;<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp"/>
+  </compounddef>
+</doxygen>

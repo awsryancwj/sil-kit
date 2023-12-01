@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___ethernet_state_change_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_EthernetStateChangeEvent</compoundname>
+    <includes refid="_ethernet_8h" local="no">Ethernet.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___ethernet_state_change_event_1a25ca90d5a3691d62327c3ea17c74542c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_EthernetStateChangeEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id that specifies which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="73" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___ethernet_state_change_event_1a4a86f97530ce7d65d88773fe508008ac" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_EthernetStateChangeEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Timestamp of the state change event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___ethernet_state_change_event_1a6ff53422fb3084c769065088d8e5ef8d" prot="public" static="no" mutable="no">
+        <type><ref refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" kindref="member">SilKit_EthernetState</ref></type>
+        <definition>SilKit_EthernetState SilKit_EthernetStateChangeEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>New state of the Ethernet controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="75" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="245">
+        <label>SilKit_EthernetStateChangeEvent</label>
+        <link refid="struct_sil_kit___ethernet_state_change_event"/>
+        <childnode refid="246" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="246">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="71" bodyend="76"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___ethernet_state_change_event_1a6ff53422fb3084c769065088d8e5ef8d" prot="public" virt="non-virtual"><scope>SilKit_EthernetStateChangeEvent</scope><name>state</name></member>
+      <member refid="struct_sil_kit___ethernet_state_change_event_1a25ca90d5a3691d62327c3ea17c74542c" prot="public" virt="non-virtual"><scope>SilKit_EthernetStateChangeEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___ethernet_state_change_event_1a4a86f97530ce7d65d88773fe508008ac" prot="public" virt="non-virtual"><scope>SilKit_EthernetStateChangeEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

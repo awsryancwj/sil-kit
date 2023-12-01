@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_version" kind="namespace" language="C++">
+    <compoundname>SilKit::Version</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1a1e9ea44bf8965a820e7b0e5ff68ad04b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::Major</definition>
+        <argsstring>() -&gt; uint32_t</argsstring>
+        <name>Major</name>
+        <briefdescription>
+<para>This release&apos;s major version number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1ad1517e88e6e92d2bd388bf1155a30249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::Minor</definition>
+        <argsstring>() -&gt; uint32_t</argsstring>
+        <name>Minor</name>
+        <briefdescription>
+<para>This release&apos;s minor version number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1ac56b029a4a76779cdf02f530da1cba20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::Patch</definition>
+        <argsstring>() -&gt; uint32_t</argsstring>
+        <name>Patch</name>
+        <briefdescription>
+<para>This release&apos;s patch version number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1a95b5b085053182dd1cdcd436fcafaadd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::BuildNumber</definition>
+        <argsstring>() -&gt; uint32_t</argsstring>
+        <name>BuildNumber</name>
+        <briefdescription>
+<para>Retrieve this release&apos;s build number on the master branch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1a2c858c3d97cdc43f90bb1fc057a6b750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::String</definition>
+        <argsstring>() -&gt; const char *</argsstring>
+        <name>String</name>
+        <briefdescription>
+<para>Retrieve the API version identifier &quot;&lt;Major&gt;.&lt;Minor&gt;.&lt;Patch&gt;&quot; of this release. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1a259789c21b852a4cf9c26439a6ad5024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::VersionSuffix</definition>
+        <argsstring>() -&gt; const char *</argsstring>
+        <name>VersionSuffix</name>
+        <briefdescription>
+<para>Retrieve additional version information of this release. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_version_1a1108667a3f478d5bfd8f69b1c5594e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Version::GitHash</definition>
+        <argsstring>() -&gt; const char *</argsstring>
+        <name>GitHash</name>
+        <briefdescription>
+<para>Retrieve the full git hash of this release. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitVersion.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayPocStatusEvent</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a60cb4d77ec9a4b13c6ed548c30499b3a" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Flexray::FlexrayPocStatusEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>SIL Kit timestamp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="502" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a637a3dcc00a887366f845c1afed594f6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1abd6966ebd54ac7a849ef1a561a97b4e0" kindref="member">FlexrayPocState</ref></type>
+        <definition>FlexrayPocState SilKit::Services::Flexray::FlexrayPocStatusEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Status of the Protocol Operation Control (POC). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="504" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a50cb3b18234ce183a00b51e5225e8f4f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Flexray::FlexrayPocStatusEvent::chiHaltRequest</definition>
+        <argsstring></argsstring>
+        <name>chiHaltRequest</name>
+        <briefdescription>
+<para>indicates whether a halt request was received from the CHI </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="505" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a7953b51090bccd33c1980dbfac7d9e08" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Flexray::FlexrayPocStatusEvent::coldstartNoise</definition>
+        <argsstring></argsstring>
+        <name>coldstartNoise</name>
+        <briefdescription>
+<para>indicates noisy channel conditions during coldstart </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="506" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1ab81d4106a0c2a88bd59ad82238e557ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Flexray::FlexrayPocStatusEvent::freeze</definition>
+        <argsstring></argsstring>
+        <name>freeze</name>
+        <briefdescription>
+<para>indicates that the POC entered a halt state due to an error condition requiring immediate halt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="507" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1adb63f42639b8d68ef685fc2d21b21781" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Flexray::FlexrayPocStatusEvent::chiReadyRequest</definition>
+        <argsstring></argsstring>
+        <name>chiReadyRequest</name>
+        <briefdescription>
+<para>indicates that the CHI requested to enter ready state at the end of the communication cycle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="508" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1ad4f15312b8b8483cad2a6a83fdbdbefc" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a4002591e02c65546bae34d8073ee44a8" kindref="member">FlexrayErrorModeType</ref></type>
+        <definition>FlexrayErrorModeType SilKit::Services::Flexray::FlexrayPocStatusEvent::errorMode</definition>
+        <argsstring></argsstring>
+        <name>errorMode</name>
+        <briefdescription>
+<para>indicates the error mode of the POC </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="509" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a1f961c387059d58146e830f2dfaafeba" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1adf7c613d338dd8fac8f5e8bab15fe4b1" kindref="member">FlexraySlotModeType</ref></type>
+        <definition>FlexraySlotModeType SilKit::Services::Flexray::FlexrayPocStatusEvent::slotMode</definition>
+        <argsstring></argsstring>
+        <name>slotMode</name>
+        <briefdescription>
+<para>indicates the slot mode of the POC </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="510" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a214e4af7cd19db7f1e95cf8f67937f2e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1ae104dbd9a36cba45431b07ac2c212e08" kindref="member">FlexrayStartupStateType</ref></type>
+        <definition>FlexrayStartupStateType SilKit::Services::Flexray::FlexrayPocStatusEvent::startupState</definition>
+        <argsstring></argsstring>
+        <name>startupState</name>
+        <briefdescription>
+<para>indicates states within the STARTUP mechanism </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="511" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a41fb0be7f0654957655cc91ac09df14f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a0c4249a5d93006ba8b6e21a83def1564" kindref="member">FlexrayWakeupStatusType</ref></type>
+        <definition>FlexrayWakeupStatusType SilKit::Services::Flexray::FlexrayPocStatusEvent::wakeupStatus</definition>
+        <argsstring></argsstring>
+        <name>wakeupStatus</name>
+        <briefdescription>
+<para>outcome of the execution of the WAKEUP mechanism </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="512" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Protocol Operation Control status as available in the AUTOSAR FlexRay driver model. </para>    </briefdescription>
+    <detaileddescription>
+<para>This enhances the deprecated struct ControllerStatus by adding members that are available through the Controller Host Interface. <emphasis>AUTOSAR Name:</emphasis> Fr_POCStatusType </para>    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="501" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="500" bodyend="513"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a50cb3b18234ce183a00b51e5225e8f4f" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>chiHaltRequest</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1adb63f42639b8d68ef685fc2d21b21781" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>chiReadyRequest</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a7953b51090bccd33c1980dbfac7d9e08" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>coldstartNoise</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1ad4f15312b8b8483cad2a6a83fdbdbefc" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>errorMode</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1ab81d4106a0c2a88bd59ad82238e557ba" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>freeze</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a1f961c387059d58146e830f2dfaafeba" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>slotMode</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a214e4af7cd19db7f1e95cf8f67937f2e" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>startupState</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a637a3dcc00a887366f845c1afed594f6" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>state</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a60cb4d77ec9a4b13c6ed548c30499b3a" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_poc_status_event_1a41fb0be7f0654957655cc91ac09df14f" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayPocStatusEvent</scope><name>wakeupStatus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

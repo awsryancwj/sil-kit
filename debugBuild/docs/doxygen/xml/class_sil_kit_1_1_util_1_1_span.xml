@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_util_1_1_span" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::Util::Span</compoundname>
+    <includes refid="_span_8hpp" local="no">Span.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_util_1_1_span_1aea5ce34df9e140c5920e97f5b07e7f38" prot="private" static="no">
+        <type>std::enable_if_t&lt;!std::is_const&lt; U &gt;::value &amp;&amp;std::is_same&lt; U, std::remove_const_t&lt; T &gt; &gt;::value, bool &gt;</type>
+        <definition>using SilKit::Util::Span&lt; T &gt;::enable_if_non_const_T_t =  std::enable_if_t&lt;!std::is_const&lt;U&gt;::value &amp;&amp; std::is_same&lt;U, std::remove_const_t&lt;T&gt; &gt;::value, bool&gt;</definition>
+        <argsstring></argsstring>
+        <name>enable_if_non_const_T_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_util_1_1_span_1a7e7d01da74227527eed4d7c7239d707e" prot="private" static="no">
+        <type>std::enable_if_t&lt; !std::is_const&lt; U &gt;::value &amp;&amp;std::is_const&lt; T &gt;::value &amp;&amp;std::is_same&lt; U, std::remove_const_t&lt; T &gt; &gt;::value, bool &gt;</type>
+        <definition>using SilKit::Util::Span&lt; T &gt;::enable_if_non_const_T_while_T_const_t =  std::enable_if_t&lt; !std::is_const&lt;U&gt;::value &amp;&amp; std::is_const&lt;T&gt;::value &amp;&amp; std::is_same&lt;U, std::remove_const_t&lt;T&gt; &gt;::value, bool&gt;</definition>
+        <argsstring></argsstring>
+        <name>enable_if_non_const_T_while_T_const_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="48" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_util_1_1_span_1abe5e1e24cc4b94125863b6e035433d6a" prot="public" static="no">
+        <type>T *</type>
+        <definition>using SilKit::Util::Span&lt; T &gt;::iterator =  T*</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_util_1_1_span_1a98c9bf57b2b73448b785e831ab98446c" prot="public" static="no">
+        <type>const T *</type>
+        <definition>using SilKit::Util::Span&lt; T &gt;::const_iterator =  const T*</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_span_1afcef56f7427e284a7c7de28973b814ea" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* SilKit::Util::Span&lt; T &gt;::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="157" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_span_1a483d3c3724ee6975c0f1d2070c3f97c3" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SilKit::Util::Span&lt; T &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="158" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a3355afbcbcb0ed2c06af80c4322b7f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>()=default</argsstring>
+        <name>Span</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1af0e1d635e7bf6fb41600d37a59b82911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>(const Span &amp;)=default</argsstring>
+        <name>Span</name>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1aa9047fa4545f8ca2e9fbc1b2224362f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>(Span &amp;&amp;) noexcept=default</argsstring>
+        <name>Span</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a9933191b32685889031488b85533bd45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>(T *data, std::size_t size)</argsstring>
+        <name>Span</name>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="64" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="181" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a9de8acef2727e59aae345557c172ae1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>enable_if_non_const_T_while_T_const_t&lt; U &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>(Span&lt; U &gt; other)</argsstring>
+        <name>Span</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref>&lt; U &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="67" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1aaa3a76680742ecae2f1e225fb609416c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>enable_if_non_const_T_while_T_const_t&lt; U &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>(const std::vector&lt; U &gt; &amp;vector)</argsstring>
+        <name>Span</name>
+        <param>
+          <type>const std::vector&lt; U &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="73" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a539a8278b49c72baac7fed94dc4ef19d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>enable_if_non_const_T_t&lt; U &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>SilKit::Util::Span&lt; T &gt;::Span</definition>
+        <argsstring>(std::vector&lt; U &gt; &amp;vector)</argsstring>
+        <name>Span</name>
+        <param>
+          <type>std::vector&lt; U &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a0fa7923e523c354ce9fa7e70c546150c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator=</definition>
+        <argsstring>(const Span &amp;other) -&gt; Span &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1adace93c9c0976c2c33c74a1b9cb24b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator=</definition>
+        <argsstring>(Span &amp;&amp;other) noexcept -&gt; Span &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a2270cd27e5fd2a8fdaa0ee920680f89f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>enable_if_non_const_T_while_T_const_t&lt; U &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator=</definition>
+        <argsstring>(Span&lt; U &gt; other) -&gt; Span &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref>&lt; U &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a011beb16e6d3536670dd3d77c4d164dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>enable_if_non_const_T_while_T_const_t&lt; U &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator=</definition>
+        <argsstring>(const std::vector&lt; U &gt; &amp;vector) -&gt; Span &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const std::vector&lt; U &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="96" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="96" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a19fa0c503cebdb73a80e02f5b4504ef8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+          <param>
+            <type>enable_if_non_const_T_t&lt; U &gt;</type>
+            <defval>true</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator=</definition>
+        <argsstring>(std::vector&lt; U &gt; &amp;vector) -&gt; Span &amp;</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>std::vector&lt; U &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="104" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1aa3c0616291cbd691b049727a8e46b7ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::at</definition>
+        <argsstring>(size_t pos) -&gt; T &amp;</argsstring>
+        <name>at</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="117" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="190" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a032a4365381e38d9a51183ec3ddebab4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::at</definition>
+        <argsstring>(size_t pos) const -&gt; const T &amp;</argsstring>
+        <name>at</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="118" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a40f9f893921689c31716eb3501ed92d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t pos) -&gt; T &amp;</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="119" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a2eeaae086ca3e90c7beb4c3d32b13434" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t pos) const -&gt; const T &amp;</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="120" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1ad7758b174d686000d76705eaf0d979da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::front</definition>
+        <argsstring>() -&gt; T &amp;</argsstring>
+        <name>front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="122" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a188ae8a2baa60527bfcd2418f78a4925" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::front</definition>
+        <argsstring>() const -&gt; const T &amp;</argsstring>
+        <name>front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="123" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1ac29dd66b7984ac75d3ec25aff4a643a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::back</definition>
+        <argsstring>() -&gt; T &amp;</argsstring>
+        <name>back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="124" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a2581513b7fe0fdda5e2d598de6ffe494" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::back</definition>
+        <argsstring>() const -&gt; const T &amp;</argsstring>
+        <name>back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="125" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1af52376645fd477ef4339a6452acb0587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::data</definition>
+        <argsstring>() -&gt; T *</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="127" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1ab0183f63d4efc619b9b33606354e36fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::data</definition>
+        <argsstring>() const -&gt; const T *</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="128" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1ae021c04640355ad1649aa0454026ab8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::begin</definition>
+        <argsstring>() -&gt; iterator</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="131" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a508b88393e8ba612b23d0609aebce65b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::begin</definition>
+        <argsstring>() const -&gt; const_iterator</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="132" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a458e6ee22a1f860e4a05cc7ac9ca65fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::cbegin</definition>
+        <argsstring>() const -&gt; const_iterator</argsstring>
+        <name>cbegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="133" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a36175a01d6b0bddd88348c24e486387c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::end</definition>
+        <argsstring>() -&gt; iterator</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="134" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a576ce15f2218cbc993357e977a9f65d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::end</definition>
+        <argsstring>() const -&gt; const_iterator</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="135" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a3df9805ff64a7c455d7800546f74326f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::cend</definition>
+        <argsstring>() const -&gt; const_iterator</argsstring>
+        <name>cend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="136" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="288" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1ab5d39e126b1da7b23fb0812dff04db58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::empty</definition>
+        <argsstring>() const -&gt; bool</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="139" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1ad198f88522a763203da4d2b09d2f37f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::Span&lt; T &gt;::size</definition>
+        <argsstring>() const -&gt; size_t</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="140" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a9889368555d0267f897e5253a7e5eb2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::Span&lt; T &gt;::trim_front</definition>
+        <argsstring>(size_t len)</argsstring>
+        <name>trim_front</name>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="143" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="310" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_span_1a9c5ad8ff56929efec0becf47cb1528f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::Span&lt; T &gt;::trim_back</definition>
+        <argsstring>(size_t len)</argsstring>
+        <name>trim_back</name>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="144" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="321" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="38" bodyend="159"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1afcef56f7427e284a7c7de28973b814ea" prot="private" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>_data</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a483d3c3724ee6975c0f1d2070c3f97c3" prot="private" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>_size</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1aa3c0616291cbd691b049727a8e46b7ad" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>at</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a032a4365381e38d9a51183ec3ddebab4" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>at</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1ac29dd66b7984ac75d3ec25aff4a643a6" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>back</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a2581513b7fe0fdda5e2d598de6ffe494" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>back</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1ae021c04640355ad1649aa0454026ab8e" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>begin</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a508b88393e8ba612b23d0609aebce65b" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>begin</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a458e6ee22a1f860e4a05cc7ac9ca65fd" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>cbegin</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a3df9805ff64a7c455d7800546f74326f" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>cend</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a98c9bf57b2b73448b785e831ab98446c" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>const_iterator</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1af52376645fd477ef4339a6452acb0587" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>data</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1ab0183f63d4efc619b9b33606354e36fc" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>data</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1ab5d39e126b1da7b23fb0812dff04db58" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>empty</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1aea5ce34df9e140c5920e97f5b07e7f38" prot="private" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>enable_if_non_const_T_t</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a7e7d01da74227527eed4d7c7239d707e" prot="private" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>enable_if_non_const_T_while_T_const_t</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a36175a01d6b0bddd88348c24e486387c" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>end</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a576ce15f2218cbc993357e977a9f65d3" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>end</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1ad7758b174d686000d76705eaf0d979da" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>front</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a188ae8a2baa60527bfcd2418f78a4925" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>front</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1abe5e1e24cc4b94125863b6e035433d6a" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>iterator</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a0fa7923e523c354ce9fa7e70c546150c" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1adace93c9c0976c2c33c74a1b9cb24b62" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a2270cd27e5fd2a8fdaa0ee920680f89f" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a011beb16e6d3536670dd3d77c4d164dd" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a19fa0c503cebdb73a80e02f5b4504ef8" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a40f9f893921689c31716eb3501ed92d2" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator[]</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a2eeaae086ca3e90c7beb4c3d32b13434" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>operator[]</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1ad198f88522a763203da4d2b09d2f37f9" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>size</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a3355afbcbcb0ed2c06af80c4322b7f8a" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1af0e1d635e7bf6fb41600d37a59b82911" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1aa9047fa4545f8ca2e9fbc1b2224362f8" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a9933191b32685889031488b85533bd45" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a9de8acef2727e59aae345557c172ae1e" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1aaa3a76680742ecae2f1e225fb609416c" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a539a8278b49c72baac7fed94dc4ef19d" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>Span</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a9c5ad8ff56929efec0becf47cb1528f0" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>trim_back</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_span_1a9889368555d0267f897e5253a7e5eb2f" prot="public" virt="non-virtual"><scope>SilKit::Util::Span</scope><name>trim_front</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

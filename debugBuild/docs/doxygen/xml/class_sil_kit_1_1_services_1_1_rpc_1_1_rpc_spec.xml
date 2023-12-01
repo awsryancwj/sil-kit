@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::Services::Rpc::RpcSpec</compoundname>
+    <includes refid="_rpc_spec_8hpp" local="no">RpcSpec.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1ad952eb7f0b15917f4c29367e6e4fd176" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Rpc::RpcSpec::_functionName</definition>
+        <argsstring></argsstring>
+        <name>_functionName</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="20" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1abfa3267c3cffe7ff6142fa205ecb16a2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Rpc::RpcSpec::_mediaType</definition>
+        <argsstring></argsstring>
+        <name>_mediaType</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="21" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1aedb2ed2ca6386a89df3bebe82dbd4e1c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">SilKit::Services::MatchingLabel</ref> &gt;</type>
+        <definition>std::vector&lt;SilKit::Services::MatchingLabel&gt; SilKit::Services::Rpc::RpcSpec::_labels</definition>
+        <argsstring></argsstring>
+        <name>_labels</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="22" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a7172c909a28d4b1b9f3350fa906d0d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Services::Rpc::RpcSpec::RpcSpec</definition>
+        <argsstring>()=default</argsstring>
+        <name>RpcSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a2d57fdd3c0aacc8cca31bc45dc95201e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Services::Rpc::RpcSpec::RpcSpec</definition>
+        <argsstring>(std::string functionName, std::string mediaType)</argsstring>
+        <name>RpcSpec</name>
+        <param>
+          <type>std::string</type>
+          <declname>functionName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mediaType</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">RpcSpec</ref> via topic and mediaType. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="28" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Services::Rpc::RpcSpec::AddLabel</definition>
+        <argsstring>(const SilKit::Services::MatchingLabel &amp;label)</argsstring>
+        <name>AddLabel</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">SilKit::Services::MatchingLabel</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Add a given <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">MatchingLabel</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="48" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1ae182ca9d2f7484d9a17695e440654038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Services::Rpc::RpcSpec::AddLabel</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value, SilKit::Services::MatchingLabel::Kind kind)</argsstring>
+        <name>AddLabel</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" kindref="member">SilKit::Services::MatchingLabel::Kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Add a <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">MatchingLabel</ref> via key, value and matching kind. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a218a2fa099baad1abe9b19a2bd7fadf0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::Rpc::RpcSpec::FunctionName</definition>
+        <argsstring>() const -&gt; const std::string &amp;</argsstring>
+        <name>FunctionName</name>
+        <briefdescription>
+<para>Get the topic of the <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">RpcSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1add296eaa25eb667369a7e0820fcafa9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::Rpc::RpcSpec::MediaType</definition>
+        <argsstring>() const -&gt; const std::string &amp;</argsstring>
+        <name>MediaType</name>
+        <briefdescription>
+<para>Get the media type of the <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">RpcSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="43" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a29cd5f49caf3806fc595fa8403bc8c20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::Rpc::RpcSpec::Labels</definition>
+        <argsstring>() const -&gt; const std::vector&lt; SilKit::Services::MatchingLabel &gt; &amp;</argsstring>
+        <name>Labels</name>
+        <briefdescription>
+<para>Get the labels of the <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">RpcSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The specification of topic, media type and labels for RpcClients and RpcServers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" line="18" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp" bodystart="17" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1ad952eb7f0b15917f4c29367e6e4fd176" prot="private" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>_functionName</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1aedb2ed2ca6386a89df3bebe82dbd4e1c" prot="private" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>_labels</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1abfa3267c3cffe7ff6142fa205ecb16a2" prot="private" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>_mediaType</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>AddLabel</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1ae182ca9d2f7484d9a17695e440654038" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>AddLabel</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a218a2fa099baad1abe9b19a2bd7fadf0" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>FunctionName</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a29cd5f49caf3806fc595fa8403bc8c20" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>Labels</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1add296eaa25eb667369a7e0820fcafa9e" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>MediaType</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a7172c909a28d4b1b9f3350fa906d0d57" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>RpcSpec</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a2d57fdd3c0aacc8cca31bc45dc95201e" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcSpec</scope><name>RpcSpec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

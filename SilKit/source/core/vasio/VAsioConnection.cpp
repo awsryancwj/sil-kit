@@ -448,6 +448,7 @@ void VAsioConnection::JoinSimulation(std::string connectUri)
 
 void VAsioConnection::OpenParticipantAcceptors(const std::string& connectUri)
 {
+    SilKit::Services::Logging::Error(_logger, "OpenParticipantAcceptors: {}", connectUri);
     const auto acceptorEndpointUris = PrepareAcceptorEndpointUris(connectUri);
 
     if (_config.middleware.enableDomainSockets)

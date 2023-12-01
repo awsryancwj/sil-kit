@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Lin::LinControllerConfig</compoundname>
+    <includes refid="_lin_datatypes_8hpp" local="no">LinDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1af56b0ad85a05fd54c662f7d2a3fdd00e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" kindref="member">LinControllerMode</ref></type>
+        <definition>LinControllerMode SilKit::Services::Lin::LinControllerConfig::controllerMode</definition>
+        <argsstring></argsstring>
+        <name>controllerMode</name>
+        <initializer>{<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5a3cab03c00dbd11bc3569afa0748013f0" kindref="member">LinControllerMode::Inactive</ref>}</initializer>
+        <briefdescription>
+<para>Configure as LIN master or LIN slave. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="256" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a4df34a311bd47be448110da841e48030" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a73f97bd0b1218774c6ba19c81c21fac9" kindref="member">LinBaudRate</ref></type>
+        <definition>LinBaudRate SilKit::Services::Lin::LinControllerConfig::baudRate</definition>
+        <argsstring></argsstring>
+        <name>baudRate</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The operational baud rate of the controller. Used in a detailed simulation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="259" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a383abaa67d6e54fcbc0f9c389897a0c8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> &gt;</type>
+        <definition>std::vector&lt;LinFrameResponse&gt; SilKit::Services::Lin::LinControllerConfig::frameResponses</definition>
+        <argsstring></argsstring>
+        <name>frameResponses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Optional <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> configuration.</para><para>FrameResponses can also be configured at a later point using <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a5f99b7c0089b4701a4e85b41e1b6240e" kindref="member">ILinController::UpdateTxBuffer()</ref> and ILinController::SetFrameResponses(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="266" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Configuration data to initialize the LIN Controller Cf.: <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1afa08859707a1386f08ca6d5f9d933d02" kindref="member">ILinController::Init(LinControllerConfig config)</ref>; </para>    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="254" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="253" bodyend="268"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a4df34a311bd47be448110da841e48030" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinControllerConfig</scope><name>baudRate</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1af56b0ad85a05fd54c662f7d2a3fdd00e" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinControllerConfig</scope><name>controllerMode</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a383abaa67d6e54fcbc0f9c389897a0c8" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinControllerConfig</scope><name>frameResponses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

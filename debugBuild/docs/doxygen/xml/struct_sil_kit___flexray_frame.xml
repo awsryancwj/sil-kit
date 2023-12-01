@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_frame" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayFrame</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_1a3b2683c859440e7de02a6f6d0e37d198" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayFrame::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="370" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_1aab782642778dc01faacc0e07da96ce53" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___flexray_header" kindref="compound">SilKit_FlexrayHeader</ref> *</type>
+        <definition>SilKit_FlexrayHeader* SilKit_FlexrayFrame::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+<para>Header flags, slot, crc, and cycle indidcators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="371" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_1a4ca89177352f566b06500091eaa2602b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref></type>
+        <definition>SilKit_ByteVector SilKit_FlexrayFrame::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="372" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="275">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="274">
+        <label>SilKit_FlexrayHeader</label>
+        <link refid="struct_sil_kit___flexray_header"/>
+        <childnode refid="273" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="273">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="272">
+        <label>SilKit_FlexrayFrame</label>
+        <link refid="struct_sil_kit___flexray_frame"/>
+        <childnode refid="273" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="274" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+        <childnode refid="275" relation="usage">
+          <edgelabel>payload</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="369" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="368" bodyend="373"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_frame_1aab782642778dc01faacc0e07da96ce53" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrame</scope><name>header</name></member>
+      <member refid="struct_sil_kit___flexray_frame_1a4ca89177352f566b06500091eaa2602b" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrame</scope><name>payload</name></member>
+      <member refid="struct_sil_kit___flexray_frame_1a3b2683c859440e7de02a6f6d0e37d198" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrame</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

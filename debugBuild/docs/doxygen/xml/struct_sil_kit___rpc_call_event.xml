@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___rpc_call_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_RpcCallEvent</compoundname>
+    <includes refid="_rpc_8h" local="no">Rpc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___rpc_call_event_1a4735581b21c562cd684eb48cf7604225" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_RpcCallEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="68" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___rpc_call_event_1a1bac595a5d9f1e025ce0c8cf51bd9015" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_RpcCallEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Send timestamp of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="70" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___rpc_call_event_1a7abb391ff95a6fcd9c915893f555cd27" prot="public" static="no" mutable="no">
+        <type><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref> *</type>
+        <definition>SilKit_RpcCallHandle* SilKit_RpcCallEvent::callHandle</definition>
+        <argsstring></argsstring>
+        <name>callHandle</name>
+        <briefdescription>
+<para>The handle of this call, used to submit results. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___rpc_call_event_1ad0f9e07e701e9a0b3dd1be00654b00bb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref></type>
+        <definition>SilKit_ByteVector SilKit_RpcCallEvent::argumentData</definition>
+        <argsstring></argsstring>
+        <name>argumentData</name>
+        <briefdescription>
+<para>The incoming argument data of the call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="346">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="344">
+        <label>SilKit_RpcCallEvent</label>
+        <link refid="struct_sil_kit___rpc_call_event"/>
+        <childnode refid="345" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="346" relation="usage">
+          <edgelabel>argumentData</edgelabel>
+        </childnode>
+      </node>
+      <node id="345">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="67" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="67" bodyend="75"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___rpc_call_event_1ad0f9e07e701e9a0b3dd1be00654b00bb" prot="public" virt="non-virtual"><scope>SilKit_RpcCallEvent</scope><name>argumentData</name></member>
+      <member refid="struct_sil_kit___rpc_call_event_1a7abb391ff95a6fcd9c915893f555cd27" prot="public" virt="non-virtual"><scope>SilKit_RpcCallEvent</scope><name>callHandle</name></member>
+      <member refid="struct_sil_kit___rpc_call_event_1a4735581b21c562cd684eb48cf7604225" prot="public" virt="non-virtual"><scope>SilKit_RpcCallEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___rpc_call_event_1a1bac595a5d9f1e025ce0c8cf51bd9015" prot="public" virt="non-virtual"><scope>SilKit_RpcCallEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

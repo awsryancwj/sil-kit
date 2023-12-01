@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/SilKitDemoLin.dir/LinDemo.cpp.o -o ../../Release/SilKitDemoLin  -Wl,-rpath,/home/ubuntu/sil-kit/build/Release ../../Release/libSilKit.so -lpthread 

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_b5d97a9a13706160b222e5cb1a6f7913" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/util</compoundname>
+    <innerdir refid="dir_ff1a7df5395c5b325ae39b0b7475554c">/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes</innerdir>
+    <innerfile refid="_handler_id_8hpp">HandlerId.hpp</innerfile>
+    <innerfile refid="_printable_hex_string_8hpp">PrintableHexString.hpp</innerfile>
+    <innerfile refid="_span_8hpp">Span.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/"/>
+  </compounddef>
+</doxygen>

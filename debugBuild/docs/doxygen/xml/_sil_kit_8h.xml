@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_sil_kit_8h" kind="file" language="C++">
+    <compoundname>SilKit.h</compoundname>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_can_8h" local="yes">silkit/capi/Can.h</includes>
+    <includes refid="_lin_8h" local="yes">silkit/capi/Lin.h</includes>
+    <includes refid="_data_pub_sub_8h" local="yes">silkit/capi/DataPubSub.h</includes>
+    <includes refid="_rpc_8h" local="yes">silkit/capi/Rpc.h</includes>
+    <includes refid="_ethernet_8h" local="yes">silkit/capi/Ethernet.h</includes>
+    <includes refid="_flexray_8h" local="yes">silkit/capi/Flexray.h</includes>
+    <includes refid="_logger_8h" local="yes">silkit/capi/Logger.h</includes>
+    <includes refid="_interface_identifiers_8h" local="yes">silkit/capi/InterfaceIdentifiers.h</includes>
+    <includes refid="_participant_8h" local="yes">silkit/capi/Participant.h</includes>
+    <includes refid="_orchestration_8h" local="yes">silkit/capi/Orchestration.h</includes>
+    <includes refid="_vendor_8h" local="yes">silkit/capi/Vendor.h</includes>
+    <includes refid="_version_8h" local="yes">silkit/capi/Version.h</includes>
+    <incdepgraph>
+      <node id="198">
+        <label>cstdint</label>
+      </node>
+      <node id="196">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>silkit/capi/Rpc.h</label>
+        <link refid="_rpc_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>stdint.h</label>
+      </node>
+      <node id="212">
+        <label>silkit/capi/Participant.h</label>
+        <link refid="_participant_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>silkit/capi/Flexray.h</label>
+        <link refid="_flexray_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>silkit/capi/Ethernet.h</label>
+        <link refid="_ethernet_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>silkit/capi/DataPubSub.h</label>
+        <link refid="_data_pub_sub_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>stddef.h</label>
+      </node>
+      <node id="205">
+        <label>memory.h</label>
+      </node>
+      <node id="204">
+        <label>limits.h</label>
+      </node>
+      <node id="197">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>silkit/capi/Orchestration.h</label>
+        <link refid="_orchestration_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>silkit/capi/Lin.h</label>
+        <link refid="_lin_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>silkit/capi/Version.h</label>
+        <link refid="_version_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>silkit/capi/Vendor.h</label>
+        <link refid="_vendor_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>silkit/capi/Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_sil_kit_8h_1a61dc2bbc39489b73f34cc97572927a20" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_ReturnCodeToString_t) (const char **outString, SilKit_ReturnCode returnCode)</definition>
+        <argsstring>)(const char **outString, SilKit_ReturnCode returnCode)</argsstring>
+        <name>SilKit_ReturnCodeToString_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="51" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_sil_kit_8h_1a30d8830088d95b254de38e58f4b28aff" prot="public" static="no">
+        <type>const char *(*</type>
+        <definition>typedef const char*( * SilKit_GetLastErrorString_t) ()</definition>
+        <argsstring>)()</argsstring>
+        <name>SilKit_GetLastErrorString_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_sil_kit_8h_1af67a88a5ce79dd97faa40a55154f72fa" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_ParticipantConfiguration_FromString_t) (SilKit_ParticipantConfiguration **outParticipantConfiguration, const char *participantConfigurationString)</definition>
+        <argsstring>)(SilKit_ParticipantConfiguration **outParticipantConfiguration, const char *participantConfigurationString)</argsstring>
+        <name>SilKit_ParticipantConfiguration_FromString_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="76" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_sil_kit_8h_1a1f9b5c61bf272f311770d92d16a9cf81" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_ParticipantConfiguration_Destroy_t) (SilKit_ParticipantConfiguration *participantConfiguration)</definition>
+        <argsstring>)(SilKit_ParticipantConfiguration *participantConfiguration)</argsstring>
+        <name>SilKit_ParticipantConfiguration_Destroy_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_sil_kit_8h_1a2620c10b459188e44daf8bf440759a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_ReturnCodeToString</definition>
+        <argsstring>(const char **outString, SilKit_ReturnCode returnCode)</argsstring>
+        <name>SilKit_ReturnCodeToString</name>
+        <param>
+          <type>const char **</type>
+          <declname>outString</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+          <declname>returnCode</declname>
+        </param>
+        <briefdescription>
+<para>Get the corresponding static error string for a given return code. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer through which the resulting human readable error string will be returned. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>returnCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return code for which the string should be obtained.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="_sil_kit_8h_1ad16b354817790f8abe87100c60516e25" kindref="member">SilKit_GetLastErrorString()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_sil_kit_8h_1ad16b354817790f8abe87100c60516e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* SilKit_GetLastErrorString</definition>
+        <argsstring>()</argsstring>
+        <name>SilKit_GetLastErrorString</name>
+        <briefdescription>
+<para>Get a human readable error description of the last error on the current thread. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is intended to get specific error messages in case of a non success return code. In comparison to SilKit_ReturnCodeToString this function returns dynamic and more specific error messages.</para><para><simplesect kind="return"><para>A specific string containing the last error message of the current thread. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_sil_kit_8h_1a49488d9c56a160a41fd32f9cd112b393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_ParticipantConfiguration_FromString</definition>
+        <argsstring>(SilKit_ParticipantConfiguration **outParticipantConfiguration, const char *participantConfigurationString)</argsstring>
+        <name>SilKit_ParticipantConfiguration_FromString</name>
+        <param>
+          <type><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref> **</type>
+          <declname>outParticipantConfiguration</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>participantConfigurationString</declname>
+        </param>
+        <briefdescription>
+<para>Create an opaque participant configuration from the configuration text. </para>        </briefdescription>
+        <detaileddescription>
+<para>To destroy the participant configuration, call <ref refid="_sil_kit_8h_1ad8fcad965a947604c52739f15b9ded64" kindref="member">SilKit_ParticipantConfiguration_Destroy</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outParticipantConfiguration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer through which the participant configuration will be returned (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participantConfigurationString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration as a string (e.g., read from a configuration file or a string constant). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_sil_kit_8h_1ad8fcad965a947604c52739f15b9ded64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_ParticipantConfiguration_Destroy</definition>
+        <argsstring>(SilKit_ParticipantConfiguration *participantConfiguration)</argsstring>
+        <name>SilKit_ParticipantConfiguration_Destroy</name>
+        <param>
+          <type><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref> *</type>
+          <declname>participantConfiguration</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a participant configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>participantConfiguration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The participant configuration to be destroyed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h" line="85" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_can_8h" kindref="compound">silkit/capi/Can.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lin_8h" kindref="compound">silkit/capi/Lin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_data_pub_sub_8h" kindref="compound">silkit/capi/DataPubSub.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rpc_8h" kindref="compound">silkit/capi/Rpc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ethernet_8h" kindref="compound">silkit/capi/Ethernet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_flexray_8h" kindref="compound">silkit/capi/Flexray.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_logger_8h" kindref="compound">silkit/capi/Logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interface_identifiers_8h" kindref="compound">silkit/capi/InterfaceIdentifiers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_participant_8h" kindref="compound">silkit/capi/Participant.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_orchestration_8h" kindref="compound">silkit/capi/Orchestration.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vendor_8h" kindref="compound">silkit/capi/Vendor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_version_8h" kindref="compound">silkit/capi/Version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_sil_kit_8h_1a2620c10b459188e44daf8bf440759a9e" kindref="member">SilKit_ReturnCodeToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>outString,<sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>returnCode);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_sil_kit_8h_1a61dc2bbc39489b73f34cc97572927a20" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_sil_kit_8h_1a61dc2bbc39489b73f34cc97572927a20" kindref="member">SilKit_ReturnCodeToString_t</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>outString,<sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>returnCode);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_sil_kit_8h_1ad16b354817790f8abe87100c60516e25" kindref="member">SilKit_GetLastErrorString</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_sil_kit_8h_1a30d8830088d95b254de38e58f4b28aff" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_sil_kit_8h_1a30d8830088d95b254de38e58f4b28aff" kindref="member">SilKit_GetLastErrorString_t</ref>)();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_sil_kit_8h_1a49488d9c56a160a41fd32f9cd112b393" kindref="member">SilKit_ParticipantConfiguration_FromString</ref>(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>**<sp/>outParticipantConfiguration,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>participantConfigurationString);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_sil_kit_8h_1af67a88a5ce79dd97faa40a55154f72fa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_sil_kit_8h_1af67a88a5ce79dd97faa40a55154f72fa" kindref="member">SilKit_ParticipantConfiguration_FromString_t</ref>)(</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>**<sp/>outParticipantConfiguration,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>participantConfigurationString);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_sil_kit_8h_1ad8fcad965a947604c52739f15b9ded64" kindref="member">SilKit_ParticipantConfiguration_Destroy</ref>(</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>*<sp/>participantConfiguration);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_sil_kit_8h_1a1f9b5c61bf272f311770d92d16a9cf81" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_sil_kit_8h_1a1f9b5c61bf272f311770d92d16a9cf81" kindref="member">SilKit_ParticipantConfiguration_Destroy_t</ref>)(</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>*<sp/>participantConfiguration);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h"/>
+  </compounddef>
+</doxygen>

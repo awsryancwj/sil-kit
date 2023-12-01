@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services_1_1_rpc" kind="namespace" language="C++">
+    <compoundname>SilKit::Services::Rpc</compoundname>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client" prot="public">SilKit::Services::Rpc::IRpcClient</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server" prot="public">SilKit::Services::Rpc::IRpcServer</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event" prot="public">SilKit::Services::Rpc::RpcCallEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" prot="public">SilKit::Services::Rpc::RpcCallResultEvent</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" prot="public">SilKit::Services::Rpc::RpcSpec</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45d" prot="public" static="no">
+        <name>RpcCallStatus</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45da505a83f220c02df2f85c3810cd9ceb38" prot="public">
+          <name>Success</name>
+          <initializer>= SilKit_RpcCallStatus_Success</initializer>
+          <briefdescription>
+<para>Call was successful. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45dac14c3d09016f5187fcd7607bb993030f" prot="public">
+          <name>ServerNotReachable</name>
+          <initializer>= SilKit_RpcCallStatus_ServerNotReachable</initializer>
+          <briefdescription>
+<para>No server matching the <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">RpcSpec</ref> was found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45da98570a3d51c80b5961c408f204e48cd1" prot="public">
+          <name>UndefinedError</name>
+          <initializer>= SilKit_RpcCallStatus_UndefinedError</initializer>
+          <briefdescription>
+<para>An unidentified error occured. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45daecbf01325f1c744e9d7bb586ac2eb5ed" prot="public">
+          <name>InternalServerError</name>
+          <initializer>= SilKit_RpcCallStatus_InternalServerError</initializer>
+          <briefdescription>
+<para>The Call lead to an internal RpcServer error. This might happen if no CallHandler was specified for the RpcServer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45dac85a251cc457840f1e032f1b733e9398" prot="public">
+          <name>Timeout</name>
+          <initializer>= SilKit_RpcCallStatus_Timeout</initializer>
+          <briefdescription>
+<para>The Call did run into a timeout and was canceled. This might happen if a corresponding server crashed, ran into an error or took too long to answer the call. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The status of a <ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" kindref="compound">RpcCallResultEvent</ref>. Informs whether a call was successful. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="40" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_rpc_1a78d20cab9fa8ca53c21d2a0e9f0f4e74" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server" kindref="compound">IRpcServer</ref> *server, const <ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event" kindref="compound">RpcCallEvent</ref> &amp;event)&gt;</type>
+        <definition>using SilKit::Services::Rpc::RpcCallHandler = typedef std::function&lt;void(IRpcServer* server, const RpcCallEvent&amp; event)&gt;</definition>
+        <argsstring></argsstring>
+        <name>RpcCallHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="66" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_rpc_1a1f1dd3242932f41d00a5c001923a087e" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client" kindref="compound">IRpcClient</ref> *client, const <ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" kindref="compound">RpcCallResultEvent</ref> &amp;event)&gt;</type>
+        <definition>using SilKit::Services::Rpc::RpcCallResultHandler = typedef std::function&lt;void(IRpcClient* client, const RpcCallResultEvent&amp; event)&gt;</definition>
+        <argsstring></argsstring>
+        <name>RpcCallResultHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="81" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/fwd_decl.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

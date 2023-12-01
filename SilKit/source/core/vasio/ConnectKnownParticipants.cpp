@@ -57,7 +57,7 @@ ConnectKnownParticipants::ConnectKnownParticipants(IIoContext& ioContext, IConne
     , _listener{&listener}
     , _settings{settings}
 {
-    SILKIT_TRACE_METHOD_(_logger, "({})", static_cast<const void*>(&vAsioConnection));
+    SILKIT_TRACE_METHOD_(_logger, "({})", static_cast<const void*>(&ioContext));
 }
 
 
@@ -473,7 +473,7 @@ void ConnectKnownParticipants::Peer::OnTimerExpired(VSilKit::ITimer&)
 
 void ConnectKnownParticipants::Peer::HasFailed(const std::string& reason)
 {
-    SILKIT_TRACE_METHOD_(_logger, "({})", reason);
+    SILKIT_TRACE_METHOD_(_manager->_logger, "({})", reason);
 
     Log::Error(_manager->_logger, "Failed to connect to '{}' {}", _info.participantName, reason);
 

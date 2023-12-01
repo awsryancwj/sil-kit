@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_slave_configuration" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Experimental::Services::Lin::LinSlaveConfiguration</compoundname>
+    <includes refid="_lin_datatypes_extensions_8hpp" local="no">LinDatatypesExtensions.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_slave_configuration_1a645443761eb9de1f929e7bad485af270" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" kindref="member">LinId</ref> &gt;</type>
+        <definition>std::vector&lt;LinId&gt; SilKit::Experimental::Services::Lin::LinSlaveConfiguration::respondingLinIds</definition>
+        <argsstring></argsstring>
+        <name>respondingLinIds</name>
+        <briefdescription>
+<para>A vector of LinIds on which any LIN Slave has configured LinFrameResponseMode::TxUnconditional. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="56" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The aggregated configuration of all LIN slaves in the network. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="53" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_slave_configuration_1a645443761eb9de1f929e7bad485af270" prot="public" virt="non-virtual"><scope>SilKit::Experimental::Services::Lin::LinSlaveConfiguration</scope><name>respondingLinIds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

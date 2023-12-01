@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_orchestration_datatypes_8hpp" kind="file" language="C++">
+    <compoundname>OrchestrationDatatypes.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="datatypes_8hpp" local="yes">silkit/services/datatypes.hpp</includes>
+    <includes refid="_orchestration_8h" local="yes">silkit/capi/Orchestration.h</includes>
+    <includedby refid="_i_system_controller_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp</includedby>
+    <includedby refid="_i_lifecycle_service_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</includedby>
+    <includedby refid="_i_system_monitor_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp</includedby>
+    <includedby refid="_i_time_sync_service_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ITimeSyncService.hpp</includedby>
+    <includedby refid="services_2orchestration_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/all.hpp</includedby>
+    <includedby refid="services_2orchestration_2string__utils_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp</includedby>
+    <incdepgraph>
+      <node id="1512">
+        <label>cstdint</label>
+      </node>
+      <node id="1515">
+        <label>stdint.h</label>
+      </node>
+      <node id="1511">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+      <node id="1507">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp</label>
+        <link refid="_orchestration_datatypes_8hpp"/>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1514" relation="include">
+        </childnode>
+      </node>
+      <node id="1509">
+        <label>string</label>
+      </node>
+      <node id="1519">
+        <label>stddef.h</label>
+      </node>
+      <node id="1521">
+        <label>memory.h</label>
+      </node>
+      <node id="1516">
+        <label>limits.h</label>
+      </node>
+      <node id="1517">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1512" relation="include">
+        </childnode>
+      </node>
+      <node id="1510">
+        <label>vector</label>
+      </node>
+      <node id="1514">
+        <label>silkit/capi/Orchestration.h</label>
+        <link refid="_orchestration_8h"/>
+        <childnode refid="1515" relation="include">
+        </childnode>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+      </node>
+      <node id="1513">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1512" relation="include">
+        </childnode>
+      </node>
+      <node id="1508">
+        <label>chrono</label>
+      </node>
+      <node id="1520">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1518" relation="include">
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1515" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1530">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp</label>
+        <link refid="services_2orchestration_2string__utils_8hpp"/>
+      </node>
+      <node id="1522">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp</label>
+        <link refid="_orchestration_datatypes_8hpp"/>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/all.hpp</label>
+        <link refid="services_2orchestration_2all_8hpp"/>
+        <childnode refid="1527" relation="include">
+        </childnode>
+      </node>
+      <node id="1527">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1523">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp</label>
+        <link refid="_i_system_controller_8hpp"/>
+        <childnode refid="1524" relation="include">
+        </childnode>
+      </node>
+      <node id="1529">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ITimeSyncService.hpp</label>
+        <link refid="_i_time_sync_service_8hpp"/>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp</label>
+        <link refid="_i_system_monitor_8hpp"/>
+        <childnode refid="1526" relation="include">
+        </childnode>
+      </node>
+      <node id="1525">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</label>
+        <link refid="_i_lifecycle_service_8hpp"/>
+        <childnode refid="1526" relation="include">
+        </childnode>
+      </node>
+      <node id="1524">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" prot="public">SilKit::Services::Orchestration::ParticipantStatus</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" prot="public">SilKit::Services::Orchestration::WorkflowConfiguration</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration" prot="public">SilKit::Services::Orchestration::LifecycleConfiguration</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" prot="public">SilKit::Services::Orchestration::ParticipantConnectionInformation</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_orchestration">SilKit::Services::Orchestration</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="datatypes_8hpp" kindref="compound">silkit/services/datatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_orchestration_8h" kindref="compound">silkit/capi/Orchestration.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Orchestration<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>note:<sp/>never<sp/>reuse<sp/>old<sp/>numbers!</highlight></codeline>
+<codeline lineno="38" refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" kindref="member">ParticipantState</ref><sp/>:<sp/><ref refid="_orchestration_8h_1a395dc77953e2b19b6b353ea3257e25ff" kindref="member">SilKit_ParticipantState</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">Invalid</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a0b497fab4f9ed9f7e8b7f5eaa878876b" kindref="member">SilKit_ParticipantState_Invalid</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae8341c26e22e6a849ac831df3bcec259" kindref="member">ServicesCreated</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1ad5d7e0158a90da20a5f3b628bcf464e4" kindref="member">SilKit_ParticipantState_ServicesCreated</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ad0d2c4bd304c41d1e53f17769f371faa" kindref="member">CommunicationInitializing</ref><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1aa1b442cef1d0da9eb631d7c86ee9e242" kindref="member">SilKit_ParticipantState_CommunicationInitializing</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" kindref="member">CommunicationInitialized</ref><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a9377a7ce38e1dbda994fd9eb1a3ffea2" kindref="member">SilKit_ParticipantState_CommunicationInitialized</ref>,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a506db5c85cf0fd10f93e5478013650b6" kindref="member">ReadyToRun</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a25d5acc9f0708b5c17112b9ef1e823f9" kindref="member">SilKit_ParticipantState_ReadyToRun</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">Running</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a480ef9db035a23f3a0764929510e93fc" kindref="member">SilKit_ParticipantState_Running</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae99180abf47a8b3a856e0bcb2656990a" kindref="member">Paused</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1ab2f4b5632b0121fc2edd0c69ff7e5545" kindref="member">SilKit_ParticipantState_Paused</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a7b7ecb39b9e110c2a31409a1672bad23" kindref="member">Stopping</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a22685e1b453ad4a0feed62f0e706edb6" kindref="member">SilKit_ParticipantState_Stopping</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" kindref="member">Stopped</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a4a2215d1cadfe464dcce87e09fbb4759" kindref="member">SilKit_ParticipantState_Stopped</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a902b0d55fddef6f8d651fe1035b7d4bd" kindref="member">Error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a2ff679f11c8da94f041f7ad8e827a427" kindref="member">SilKit_ParticipantState_Error</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a075d9c9ae8c8f1c79c1a1965cd8c5a42" kindref="member">ShuttingDown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a7be191365d4e888b72a2d520c81b09ca" kindref="member">SilKit_ParticipantState_ShuttingDown</ref>,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a1a4ebb180ba59b067782515ffee6e975" kindref="member">Shutdown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1ae2459ff99f83867fb5b845ce18c6cfea" kindref="member">SilKit_ParticipantState_Shutdown</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a10f3b203b67107d670a31d9b39cc1983" kindref="member">Aborting</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1acfa82a61b8c9668b2ba56743070eebae" kindref="member">SilKit_ParticipantState_Aborting</ref>,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">ParticipantStatus</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ae5193e8d76104d2ba72de9fd94852501" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ae5193e8d76104d2ba72de9fd94852501" kindref="member">participantName</ref>;<sp/></highlight></codeline>
+<codeline lineno="72" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1aed0e2f99f63f43d795218bfe8fac2712" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" kindref="member">ParticipantState</ref><sp/>state{<ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">ParticipantState::Invalid</ref>};<sp/></highlight></codeline>
+<codeline lineno="73" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a913627b7eb380d7611fd3fcd9424c3ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a913627b7eb380d7611fd3fcd9424c3ca" kindref="member">enterReason</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a7934974f88999320278a96232c6b6766" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::system_clock::time_point<sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a7934974f88999320278a96232c6b6766" kindref="member">enterTime</ref>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ab623b070d90ae9bf44ff5350c5ee2cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::system_clock::time_point<sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ab623b070d90ae9bf44ff5350c5ee2cdb" kindref="member">refreshTime</ref>;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>note:<sp/>never<sp/>reuse<sp/>old<sp/>numbers!</highlight></codeline>
+<codeline lineno="80" refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SystemState</ref><sp/>:<sp/><ref refid="_orchestration_8h_1a4d6a8fe52fcfa9fbc3fd8c99ad6d9d4a" kindref="member">SilKit_SystemState</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">Invalid</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a27df30a56c385bbc5096aaaccae9351b" kindref="member">SilKit_SystemState_Invalid</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae8341c26e22e6a849ac831df3bcec259" kindref="member">ServicesCreated</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1ac55ae2745415fefd2d94de8bf4268b86" kindref="member">SilKit_SystemState_ServicesCreated</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ad0d2c4bd304c41d1e53f17769f371faa" kindref="member">CommunicationInitializing</ref><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a709fb83a234eefaaf4d4150282f3c24b" kindref="member">SilKit_SystemState_CommunicationInitializing</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" kindref="member">CommunicationInitialized</ref><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a13e068e64118ecb67d3c1262536a2ff3" kindref="member">SilKit_SystemState_CommunicationInitialized</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a506db5c85cf0fd10f93e5478013650b6" kindref="member">ReadyToRun</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a689e1cb2eafcf72c5934ad23299a876b" kindref="member">SilKit_SystemState_ReadyToRun</ref>,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">Running</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a998ebb26556986a5125ad0d836de197a" kindref="member">SilKit_SystemState_Running</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae99180abf47a8b3a856e0bcb2656990a" kindref="member">Paused</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a046cf7c4dccdab94b00b89a812c28199" kindref="member">SilKit_SystemState_Paused</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a7b7ecb39b9e110c2a31409a1672bad23" kindref="member">Stopping</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a5347a9b48f6c508fc0530adaf6392560" kindref="member">SilKit_SystemState_Stopping</ref>,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" kindref="member">Stopped</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a808cd07a066ab1d5114d1404fc30903e" kindref="member">SilKit_SystemState_Stopped</ref>,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a902b0d55fddef6f8d651fe1035b7d4bd" kindref="member">Error</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a30a43ca5db2cbaeb67eb08c8739f187f" kindref="member">SilKit_SystemState_Error</ref>,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a075d9c9ae8c8f1c79c1a1965cd8c5a42" kindref="member">ShuttingDown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a459be0021e351deccee4508faeae8b27" kindref="member">SilKit_SystemState_ShuttingDown</ref>,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a1a4ebb180ba59b067782515ffee6e975" kindref="member">Shutdown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a9fb46cddfb217b21542cece979bc29cb" kindref="member">SilKit_SystemState_Shutdown</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a10f3b203b67107d670a31d9b39cc1983" kindref="member">Aborting</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a8c9539d6fa76e9248a3f65012d56da1e" kindref="member">SilKit_SystemState_Aborting</ref>,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" kindref="compound">WorkflowConfiguration</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration_1aaa45d282379da60c3d5a4a4e9c7c6b29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration_1aaa45d282379da60c3d5a4a4e9c7c6b29" kindref="member">requiredParticipantNames</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8" kindref="member">OperationMode</ref><sp/>:<sp/><ref refid="_orchestration_8h_1a37f260fc7a0744bb6b45dfa154ed50e6" kindref="member">SilKit_OperationMode</ref></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">Invalid</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a3361714508cf78ad5d2715fffcd942dd" kindref="member">SilKit_OperationMode_Invalid</ref>,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8a7eed0f70a3cfbdc8742d565c89312c34" kindref="member">Coordinated</ref><sp/>=<sp/><ref refid="_orchestration_8h_1ab758d637ae73a20a7676feabbe6935c0" kindref="member">SilKit_OperationMode_Coordinated</ref>,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8a6aec1991f208e2948db5e4eee6e1ccff" kindref="member">Autonomous</ref><sp/><sp/>=<sp/><ref refid="_orchestration_8h_1a6df0010c0e9a87f1b336510366c4899a" kindref="member">SilKit_OperationMode_Autonomous</ref>,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration" kindref="compound">LifecycleConfiguration</ref></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration_1ae97b1f70414a48d0e9c31e69c6cf9185" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8" kindref="member">OperationMode</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration_1ae97b1f70414a48d0e9c31e69c6cf9185" kindref="member">operationMode</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" kindref="compound">ParticipantConnectionInformation</ref></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136" refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information_1a5496b39258d32ec3e1942a55a03ba652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information_1a5496b39258d32ec3e1942a55a03ba652" kindref="member">participantName</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Orchestration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp"/>
+  </compounddef>
+</doxygen>

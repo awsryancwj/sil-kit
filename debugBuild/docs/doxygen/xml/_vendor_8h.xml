@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_vendor_8h" kind="file" language="C++">
+    <compoundname>Vendor.h</compoundname>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_interface_identifiers_8h" local="yes">silkit/capi/InterfaceIdentifiers.h</includes>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <incdepgraph>
+      <node id="340">
+        <label>cstdint</label>
+      </node>
+      <node id="342">
+        <label>stdint.h</label>
+      </node>
+      <node id="343">
+        <label>stddef.h</label>
+      </node>
+      <node id="346">
+        <label>memory.h</label>
+      </node>
+      <node id="345">
+        <label>limits.h</label>
+      </node>
+      <node id="339">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h</label>
+        <link refid="_vendor_8h"/>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="348">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="347">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h</label>
+        <link refid="_vendor_8h"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_vendor_8h_1a4f6e72bde8a789434050e7f09fa35a4d" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Vendor_Vector_SilKitRegistry_Create_t) (SilKit_Vendor_Vector_SilKitRegistry **outRegistry, SilKit_ParticipantConfiguration *participantConfiguration)</definition>
+        <argsstring>)(SilKit_Vendor_Vector_SilKitRegistry **outRegistry, SilKit_ParticipantConfiguration *participantConfiguration)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_vendor_8h_1a07e76a2fe991049c5f9a6c5034914b17" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Vendor_Vector_SilKitRegistry_Destroy_t) (SilKit_Vendor_Vector_SilKitRegistry *registry)</definition>
+        <argsstring>)(SilKit_Vendor_Vector_SilKitRegistry *registry)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_Destroy_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="51" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_vendor_8h_1a6b85c2dd719a70737529827981e4a72c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t) (void *context, SilKit_Vendor_Vector_SilKitRegistry *registry)</definition>
+        <argsstring>)(void *context, SilKit_Vendor_Vector_SilKitRegistry *registry)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t</name>
+        <briefdescription>
+<para>The handler to be called when all participants have disconnected. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context passed in <ref refid="_vendor_8h_1a8055b2097b7239cc75f2347217dc8d88" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registry on which all participants have disconnected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="59" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_vendor_8h_1afe852e75db1fc67b78f10cb50df5f5be" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler_t) (SilKit_Vendor_Vector_SilKitRegistry *registry, void *context, SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t handler)</definition>
+        <argsstring>)(SilKit_Vendor_Vector_SilKitRegistry *registry, void *context, SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t handler)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_vendor_8h_1a0113a8e7fc8ce1703c0208f3b648ebc1" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Vendor_Vector_SilKitRegistry_GetLogger_t) (SilKit_Logger **outLogger, SilKit_Vendor_Vector_SilKitRegistry *registry)</definition>
+        <argsstring>)(SilKit_Logger **outLogger, SilKit_Vendor_Vector_SilKitRegistry *registry)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_GetLogger_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="87" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_vendor_8h_1ab53e157593ebd357cde5737168a44848" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Vendor_Vector_SilKitRegistry_StartListening_t) (SilKit_Vendor_Vector_SilKitRegistry *registry, const char *listenUri, const char **outRegistryUri)</definition>
+        <argsstring>)(SilKit_Vendor_Vector_SilKitRegistry *registry, const char *listenUri, const char **outRegistryUri)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_StartListening_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="105" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vendor_8h_1a2b3ad068bab28868f25d953250a8812e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Vendor_Vector_SilKitRegistry_Create</definition>
+        <argsstring>(SilKit_Vendor_Vector_SilKitRegistry **outRegistry, SilKit_ParticipantConfiguration *participantConfiguration)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_Create</name>
+        <param>
+          <type><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref> **</type>
+          <declname>outRegistry</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref> *</type>
+          <declname>participantConfiguration</declname>
+        </param>
+        <briefdescription>
+<para>Create a lifecycle service at this SIL Kit simulation participant. </para>        </briefdescription>
+        <detaileddescription>
+<para>The object returned must not be deallocated using free()!</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outRegistry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that refers to the resulting registry (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participantConfiguration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration of the participant (see <ref refid="_sil_kit_8h_1a49488d9c56a160a41fd32f9cd112b393" kindref="member">SilKit_ParticipantConfiguration_FromString</ref>). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_8h_1ac87a5d956965d22aa152b0127f5f9d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Vendor_Vector_SilKitRegistry_Destroy</definition>
+        <argsstring>(SilKit_Vendor_Vector_SilKitRegistry *registry)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_Destroy</name>
+        <param>
+          <type><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref> *</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a registry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>registry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registry to be destroyed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_8h_1a8055b2097b7239cc75f2347217dc8d88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler</definition>
+        <argsstring>(SilKit_Vendor_Vector_SilKitRegistry *registry, void *context, SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t handler)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler</name>
+        <param>
+          <type><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref> *</type>
+          <declname>registry</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_vendor_8h_1a6b85c2dd719a70737529827981e4a72c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register the handler that is called when all participants are disconnected. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>registry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registry for which the handler should be set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context accessible in the handler. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called when all participants have disconnected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_8h_1a4411553ec39ee6e6f4c3bda18a1001f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Vendor_Vector_SilKitRegistry_GetLogger</definition>
+        <argsstring>(SilKit_Logger **outLogger, SilKit_Vendor_Vector_SilKitRegistry *registry)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_GetLogger</name>
+        <param>
+          <type><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref> **</type>
+          <declname>outLogger</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref> *</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+<para>Returns the logger that is used by the SIL Kit registry. </para>        </briefdescription>
+        <detaileddescription>
+<para>The lifetime of the returned logger is directly bound to the lifetime of the registry. There is no further cleanup necessary, except for destroying the registry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outLogger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the resulting logger instance (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registry whose logger should be returned. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_vendor_8h_1aa229a4f314e2a06a134fba6d8dfce070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Vendor_Vector_SilKitRegistry_StartListening</definition>
+        <argsstring>(SilKit_Vendor_Vector_SilKitRegistry *registry, const char *listenUri, const char **outRegistryUri)</argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry_StartListening</name>
+        <param>
+          <type><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref> *</type>
+          <declname>registry</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>listenUri</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>outRegistryUri</declname>
+        </param>
+        <briefdescription>
+<para>Start to listen on the URI with scheme silkit://, e.g. silkit://localhost:8500, and return the URI with the port number used for listening for TCP connections. </para>        </briefdescription>
+        <detaileddescription>
+<para>The port number will only be replaced, if the port number specified in the listen URI was 0, which indicates that the port should be chosen by the operating system automatically.</para><para>The host-part (IP address) of the listen URI is not modified.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>registry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registry which is instructed to start listening for incoming connections. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>listenUri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The listen URI on which the registry should listen. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outRegistryUri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The modified listen URI which contains the actual port used for listening. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h" line="102" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interface_identifiers_8h" kindref="compound">silkit/capi/InterfaceIdentifiers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_vendor_8h_1a2b3ad068bab28868f25d953250a8812e" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_Create</ref>(</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>**<sp/>outRegistry,<sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>*<sp/>participantConfiguration);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_vendor_8h_1a4f6e72bde8a789434050e7f09fa35a4d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_vendor_8h_1a4f6e72bde8a789434050e7f09fa35a4d" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_Create_t</ref>)(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>**<sp/>outRegistry,<sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>*<sp/>participantConfiguration);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_vendor_8h_1ac87a5d956965d22aa152b0127f5f9d1a" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_Destroy</ref>(</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_vendor_8h_1a07e76a2fe991049c5f9a6c5034914b17" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_vendor_8h_1a07e76a2fe991049c5f9a6c5034914b17" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_Destroy_t</ref>)(</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_vendor_8h_1a6b85c2dd719a70737529827981e4a72c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_vendor_8h_1a6b85c2dd719a70737529827981e4a72c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t</ref>)(</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_vendor_8h_1a8055b2097b7239cc75f2347217dc8d88" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler</ref>(</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_vendor_8h_1a6b85c2dd719a70737529827981e4a72c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_vendor_8h_1afe852e75db1fc67b78f10cb50df5f5be" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_vendor_8h_1afe852e75db1fc67b78f10cb50df5f5be" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_SetAllDisconnectedHandler_t</ref>)(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_vendor_8h_1a6b85c2dd719a70737529827981e4a72c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_AllDisconnectedHandler_t</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_vendor_8h_1a4411553ec39ee6e6f4c3bda18a1001f1" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_GetLogger</ref>(</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>**<sp/>outLogger,<sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="_vendor_8h_1a0113a8e7fc8ce1703c0208f3b648ebc1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_vendor_8h_1a0113a8e7fc8ce1703c0208f3b648ebc1" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_GetLogger_t</ref>)(</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>**<sp/>outLogger,<sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_vendor_8h_1aa229a4f314e2a06a134fba6d8dfce070" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_StartListening</ref>(</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>listenUri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>outRegistryUri);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="_vendor_8h_1ab53e157593ebd357cde5737168a44848" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_vendor_8h_1ab53e157593ebd357cde5737168a44848" kindref="member">SilKit_Vendor_Vector_SilKitRegistry_StartListening_t</ref>)(</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>*<sp/>registry,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>listenUri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>outRegistryUri);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h"/>
+  </compounddef>
+</doxygen>

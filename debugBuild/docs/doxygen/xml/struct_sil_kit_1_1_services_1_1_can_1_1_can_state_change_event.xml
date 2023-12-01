@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Can::CanStateChangeEvent</compoundname>
+    <includes refid="_can_datatypes_8hpp" local="no">CanDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1afccd3c378c3a640987f78fd64e729607" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Can::CanStateChangeEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Timestamp of the state change. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="152" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1a410ff7602fc245272052bba0f0d286d2" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref></type>
+        <definition>CanControllerState SilKit::Services::Can::CanStateChangeEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>The new state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="153" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming state change event. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="151" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="150" bodyend="154"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1a410ff7602fc245272052bba0f0d286d2" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanStateChangeEvent</scope><name>state</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event_1afccd3c378c3a640987f78fd64e729607" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanStateChangeEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

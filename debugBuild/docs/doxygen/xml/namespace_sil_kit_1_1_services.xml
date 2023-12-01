@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services" kind="namespace" language="C++">
+    <compoundname>SilKit::Services</compoundname>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_matching_label" prot="public">SilKit::Services::MatchingLabel</innerclass>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_can">SilKit::Services::Can</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_ethernet">SilKit::Services::Ethernet</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_flexray">SilKit::Services::Flexray</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_lin">SilKit::Services::Lin</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_logging">SilKit::Services::Logging</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_orchestration">SilKit::Services::Orchestration</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_pub_sub">SilKit::Services::PubSub</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_rpc">SilKit::Services::Rpc</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" prot="public" static="no">
+        <name>TransmitDirection</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531aec0fc0100c4fc1ce4eea230c3dc10360" prot="public">
+          <name>Undefined</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531a869036c9d97cf6593c6f1c2ccfd99a49" prot="public">
+          <name>TX</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531af9c24782c24c237d16e79f18e2fa9046" prot="public">
+          <name>RX</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531a4d7563140f90f851fb6e3258b3782701" prot="public">
+          <name>TXRX</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flag indicating the direction of a message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="34" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>using SilKit::Services::DirectionMask = typedef uint8_t</definition>
+        <argsstring></argsstring>
+        <name>DirectionMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1af3e1f736a15c495d6493542191364fd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::to_string</definition>
+        <argsstring>(TransmitDirection direction)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp" bodystart="40" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1a121d84da7d7c10522219058046e116c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, TransmitDirection direction)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="36" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_configuration_error" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::ConfigurationError</compoundname>
+    <basecompoundref refid="class_sil_kit_1_1_sil_kit_error" prot="public" virt="non-virtual">SilKit::SilKitError</basecompoundref>
+    <includes refid="exception_8hpp" local="no">exception.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_configuration_error_1acb1c5c1f0e7af8670d2118790e6e2f94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::ConfigurationError::ConfigurationError</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigurationError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/exception.hpp" line="65" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/exception.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>SilKit::ConfigurationError</label>
+        <link refid="class_sil_kit_1_1_configuration_error"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>SilKit::SilKitError</label>
+        <link refid="class_sil_kit_1_1_sil_kit_error"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>SilKit::ConfigurationError</label>
+        <link refid="class_sil_kit_1_1_configuration_error"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>SilKit::SilKitError</label>
+        <link refid="class_sil_kit_1_1_sil_kit_error"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/exception.hpp" line="61" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/exception.hpp" bodystart="60" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1a0077208e83054bce618c67ac98278a67" prot="protected" virt="non-virtual"><scope>SilKit::ConfigurationError</scope><name>_what</name></member>
+      <member refid="class_sil_kit_1_1_configuration_error_1acb1c5c1f0e7af8670d2118790e6e2f94" prot="public" virt="non-virtual"><scope>SilKit::ConfigurationError</scope><name>ConfigurationError</name></member>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1adefb4bdec3000f1145f4c1f85281bdc7" prot="public" virt="non-virtual"><scope>SilKit::ConfigurationError</scope><name>SilKitError</name></member>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1aa6cf5efd32d6d31bb2e7930ae7c82e83" prot="public" virt="non-virtual"><scope>SilKit::ConfigurationError</scope><name>SilKitError</name></member>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1a15c8e944c8aafa377819ddbcdd34a2a3" prot="public" virt="non-virtual"><scope>SilKit::ConfigurationError</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

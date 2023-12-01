@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_util_1_1_ser_des_1_1v1" kind="namespace" language="C++">
+    <compoundname>SilKit::Util::SerDes::v1</compoundname>
+    <innerclass refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer" prot="public">SilKit::Util::SerDes::v1::Deserializer</innerclass>
+    <innerclass refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_serializer" prot="public">SilKit::Util::SerDes::v1::Serializer</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1_1_ser_des_1_1v1_1afb1d8da8e2560c17da30c185dec6fbb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto SilKit::Util::SerDes::v1::MediaTypeData</definition>
+        <argsstring>() -&gt; const char *</argsstring>
+        <name>MediaTypeData</name>
+        <briefdescription>
+<para>The data media / mime type the serializer / deserializer can be used for. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The data media / mime type the serializer / deserializer can be used for. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Serialization.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Serialization.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1_1_ser_des_1_1v1_1afe6f95bf168219076df73d1a786fc3db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto SilKit::Util::SerDes::v1::MediaTypeRpc</definition>
+        <argsstring>() -&gt; const char *</argsstring>
+        <name>MediaTypeRpc</name>
+        <briefdescription>
+<para>The RPC media / mime type the serializer / deserializer can be used for. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The RPC media / mime type the serializer / deserializer can be used for. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Serialization.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Serialization.hpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="36" column="1"/>
+  </compounddef>
+</doxygen>

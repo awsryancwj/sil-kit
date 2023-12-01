@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___version" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_Version</compoundname>
+    <includes refid="_types_8h" local="no">Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___version_1aee2e2c339186fb2e3cecf4657f865bbd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_Version::MajorVersion</definition>
+        <argsstring></argsstring>
+        <name>MajorVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="60" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___version_1a92f0a19163ef48c13a6236884853cbfa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_Version::MinorVersion</definition>
+        <argsstring></argsstring>
+        <name>MinorVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="61" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="59" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="58" bodyend="62"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___version_1aee2e2c339186fb2e3cecf4657f865bbd" prot="public" virt="non-virtual"><scope>SilKit_Version</scope><name>MajorVersion</name></member>
+      <member refid="struct_sil_kit___version_1a92f0a19163ef48c13a6236884853cbfa" prot="public" virt="non-virtual"><scope>SilKit_Version</scope><name>MinorVersion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

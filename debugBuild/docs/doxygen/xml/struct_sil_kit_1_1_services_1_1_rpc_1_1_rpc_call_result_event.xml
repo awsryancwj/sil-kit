@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Rpc::RpcCallResultEvent</compoundname>
+    <includes refid="_rpc_datatypes_8hpp" local="no">RpcDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a6073e2dc1a9891072624de9994d756d7" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Rpc::RpcCallResultEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Send timestamp of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a1bc439b3401a6fb009967d2ca90e13a1" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SilKit::Services::Rpc::RpcCallResultEvent::userContext</definition>
+        <argsstring></argsstring>
+        <name>userContext</name>
+        <briefdescription>
+<para>The user context pointer as it was provided when the call was triggered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a63e57b711c00be98450ad0f17d5c633f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45d" kindref="member">RpcCallStatus</ref></type>
+        <definition>RpcCallStatus SilKit::Services::Rpc::RpcCallResultEvent::callStatus</definition>
+        <argsstring></argsstring>
+        <name>callStatus</name>
+        <briefdescription>
+<para>The status of the call, resultData is only valid if callStats == <ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45da505a83f220c02df2f85c3810cd9ceb38" kindref="member">RpcCallStatus::Success</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="76" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a380dde0099f3445018cad37f12f84a83" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::Rpc::RpcCallResultEvent::resultData</definition>
+        <argsstring></argsstring>
+        <name>resultData</name>
+        <briefdescription>
+<para>Data of the rpc call result as provided by the server. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="78" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming rpc call result of a RpcServer containing result data and timestamp. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="194">
+        <label>SilKit::Services::Rpc::RpcCallResultEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event"/>
+        <childnode refid="195" relation="usage">
+          <edgelabel>resultData</edgelabel>
+        </childnode>
+      </node>
+      <node id="195">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="70" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="69" bodyend="79"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a63e57b711c00be98450ad0f17d5c633f" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallResultEvent</scope><name>callStatus</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a380dde0099f3445018cad37f12f84a83" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallResultEvent</scope><name>resultData</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a6073e2dc1a9891072624de9994d756d7" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallResultEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a1bc439b3401a6fb009967d2ca90e13a1" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallResultEvent</scope><name>userContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

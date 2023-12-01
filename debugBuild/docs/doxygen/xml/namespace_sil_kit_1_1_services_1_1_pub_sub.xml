@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services_1_1_pub_sub" kind="namespace" language="C++">
+    <compoundname>SilKit::Services::PubSub</compoundname>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event" prot="public">SilKit::Services::PubSub::DataMessageEvent</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher" prot="public">SilKit::Services::PubSub::IDataPublisher</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_subscriber" prot="public">SilKit::Services::PubSub::IDataSubscriber</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" prot="public">SilKit::Services::PubSub::PubSubSpec</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_pub_sub_1ad1c23e12dfc1e0a73dee263260b475db" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_subscriber" kindref="compound">SilKit::Services::PubSub::IDataSubscriber</ref> *subscriber, const <ref refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event" kindref="compound">DataMessageEvent</ref> &amp;dataMessageEvent)&gt;</type>
+        <definition>using SilKit::Services::PubSub::DataMessageHandler = typedef std::function&lt;void(SilKit::Services::PubSub::IDataSubscriber* subscriber, const DataMessageEvent&amp; dataMessageEvent)&gt;</definition>
+        <argsstring></argsstring>
+        <name>DataMessageHandler</name>
+        <briefdescription>
+<para>Callback type for new data reception callbacks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" line="46" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_pub_sub_1aa74346b616d80bd3068e6822c30481e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::PubSub::to_string</definition>
+        <argsstring>(const DataMessageEvent &amp;msg)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event" kindref="compound">DataMessageEvent</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/string_utils.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/string_utils.hpp" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_pub_sub_1a408a8fbf937941f11b20ab2021a0f761" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::PubSub::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const DataMessageEvent &amp;msg)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event" kindref="compound">DataMessageEvent</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/string_utils.hpp" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/string_utils.hpp" bodystart="49" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/fwd_decl.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

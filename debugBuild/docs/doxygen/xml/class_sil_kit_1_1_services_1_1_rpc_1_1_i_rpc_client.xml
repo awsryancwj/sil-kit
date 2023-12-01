@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Rpc::IRpcClient</compoundname>
+    <includes refid="_i_rpc_client_8hpp" local="no">IRpcClient.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1aba37c3ffe33c22063b3e37a537553bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Rpc::IRpcClient::~IRpcClient</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IRpcClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1a000c8ed57b202304a4959b181f14ca51" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Rpc::IRpcClient::Call</definition>
+        <argsstring>(Util::Span&lt; const uint8_t &gt; data, void *userContext=nullptr)=0</argsstring>
+        <name>Call</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Initiate a remote procedure call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A non-owning reference to an opaque block of raw data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional user provided pointer that is reobtained when receiving the call result. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1aa2319a20175bec425d87df2fba6e46fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Rpc::IRpcClient::SetCallResultHandler</definition>
+        <argsstring>(RpcCallResultHandler handler)=0</argsstring>
+        <name>SetCallResultHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a1f1dd3242932f41d00a5c001923a087e" kindref="member">RpcCallResultHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite the call return handler of this client. </para>        </briefdescription>
+        <detaileddescription>
+<para>The signature of the handler is void(IRpcClient* client, RpcCallResultEvent event).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A std::function with the above signature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1aa66348875b516eb14b9b53a14d7534d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Rpc::IRpcClient::CallWithTimeout</definition>
+        <argsstring>(Util::Span&lt; const uint8_t &gt; data, std::chrono::nanoseconds timeout, void *userContext=nullptr)=0</argsstring>
+        <name>CallWithTimeout</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::chrono::nanoseconds</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Initiate a remote procedure call with a specified timeout. </para>        </briefdescription>
+        <detaileddescription>
+<para>In a synchronized execution, simulation time is used for the timeout, in an unsynchronized execution, system time is used for the timeout. If a timeout occurs the CallResultHandler is called with status timeout. After the timeout occurred, no further call result events will be triggered for this call.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A non-owning reference to an opaque block of raw data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A duration in nanoseconds after which the call runs into a timeout and is canceled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional user provided pointer that is reobtained when receiving the call result. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp" line="65" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp" bodystart="32" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1a000c8ed57b202304a4959b181f14ca51" prot="public" virt="pure-virtual"><scope>SilKit::Services::Rpc::IRpcClient</scope><name>Call</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1aa66348875b516eb14b9b53a14d7534d1" prot="public" virt="pure-virtual"><scope>SilKit::Services::Rpc::IRpcClient</scope><name>CallWithTimeout</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1aa2319a20175bec425d87df2fba6e46fd" prot="public" virt="pure-virtual"><scope>SilKit::Services::Rpc::IRpcClient</scope><name>SetCallResultHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_client_1aba37c3ffe33c22063b3e37a537553bbd" prot="public" virt="virtual"><scope>SilKit::Services::Rpc::IRpcClient</scope><name>~IRpcClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

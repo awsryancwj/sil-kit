@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Rpc::IRpcServer</compoundname>
+    <includes refid="_i_rpc_server_8hpp" local="no">IRpcServer.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server_1a5f4063be0cdad7b80de93c10f717908a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Rpc::IRpcServer::~IRpcServer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IRpcServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server_1a4ebc58672580b68b54867e112a456118" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Rpc::IRpcServer::SubmitResult</definition>
+        <argsstring>(IRpcCallHandle *callHandle, Util::Span&lt; const uint8_t &gt; resultData)=0</argsstring>
+        <name>SubmitResult</name>
+        <param>
+          <type>IRpcCallHandle *</type>
+          <declname>callHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+          <declname>resultData</declname>
+        </param>
+        <briefdescription>
+<para>Answers an already received call from remote with arbitrary data. </para>        </briefdescription>
+        <detaileddescription>
+<para>Using the call handle obtained in the call handler, the result is send back to the calling client. This can happen directly in the call handler or at a later point in time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A unique identifier of this call </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resultData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte vector to be returned to the client </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server_1a7123815c6618d166a56c6acdac523617" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Rpc::IRpcServer::SetCallHandler</definition>
+        <argsstring>(RpcCallHandler handler)=0</argsstring>
+        <name>SetCallHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a78d20cab9fa8ca53c21d2a0e9f0f4e74" kindref="member">RpcCallHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite the call handler of this server. </para>        </briefdescription>
+        <detaileddescription>
+<para>The signature of the call handler is void(IRpcServer* server, RpcCallEvent event).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A std::function with the above signature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp" bodystart="32" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server_1a7123815c6618d166a56c6acdac523617" prot="public" virt="pure-virtual"><scope>SilKit::Services::Rpc::IRpcServer</scope><name>SetCallHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server_1a4ebc58672580b68b54867e112a456118" prot="public" virt="pure-virtual"><scope>SilKit::Services::Rpc::IRpcServer</scope><name>SubmitResult</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_rpc_1_1_i_rpc_server_1a5f4063be0cdad7b80de93c10f717908a" prot="public" virt="virtual"><scope>SilKit::Services::Rpc::IRpcServer</scope><name>~IRpcServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

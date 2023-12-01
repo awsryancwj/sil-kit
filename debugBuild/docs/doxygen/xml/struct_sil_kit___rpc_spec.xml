@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___rpc_spec" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_RpcSpec</compoundname>
+    <includes refid="_rpc_8h" local="no">Rpc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___rpc_spec_1a84a7ba4d0914d4f1147b11c109fb05b4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_RpcSpec::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___rpc_spec_1aeee2c27604a36108b4e39c63552e14f8" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_RpcSpec::functionName</definition>
+        <argsstring></argsstring>
+        <name>functionName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___rpc_spec_1a54421f8e093dc48ad49cbca2ecd492e9" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_RpcSpec::mediaType</definition>
+        <argsstring></argsstring>
+        <name>mediaType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___rpc_spec_1a5965f70779c97d4968adb0181f585e8e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___label_list" kindref="compound">SilKit_LabelList</ref></type>
+        <definition>SilKit_LabelList SilKit_RpcSpec::labelList</definition>
+        <argsstring></argsstring>
+        <name>labelList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A pubsub/rpc node spec containing all matching relevant information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="353">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="355">
+        <label>SilKit_Label</label>
+        <link refid="struct_sil_kit___label"/>
+      </node>
+      <node id="352">
+        <label>SilKit_RpcSpec</label>
+        <link refid="struct_sil_kit___rpc_spec"/>
+        <childnode refid="353" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="354" relation="usage">
+          <edgelabel>labelList</edgelabel>
+        </childnode>
+      </node>
+      <node id="354">
+        <label>SilKit_LabelList</label>
+        <link refid="struct_sil_kit___label_list"/>
+        <childnode refid="355" relation="usage">
+          <edgelabel>labels</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="35" bodyend="41"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___rpc_spec_1aeee2c27604a36108b4e39c63552e14f8" prot="public" virt="non-virtual"><scope>SilKit_RpcSpec</scope><name>functionName</name></member>
+      <member refid="struct_sil_kit___rpc_spec_1a5965f70779c97d4968adb0181f585e8e" prot="public" virt="non-virtual"><scope>SilKit_RpcSpec</scope><name>labelList</name></member>
+      <member refid="struct_sil_kit___rpc_spec_1a54421f8e093dc48ad49cbca2ecd492e9" prot="public" virt="non-virtual"><scope>SilKit_RpcSpec</scope><name>mediaType</name></member>
+      <member refid="struct_sil_kit___rpc_spec_1a84a7ba4d0914d4f1147b11c109fb05b4" prot="public" virt="non-virtual"><scope>SilKit_RpcSpec</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

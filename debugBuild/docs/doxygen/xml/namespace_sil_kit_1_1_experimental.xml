@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_experimental" kind="namespace" language="C++">
+    <compoundname>SilKit::Experimental</compoundname>
+    <innernamespace refid="namespace_sil_kit_1_1_experimental_1_1_participant">SilKit::Experimental::Participant</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_experimental_1_1_services">SilKit::Experimental::Services</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp" line="33" column="1"/>
+  </compounddef>
+</doxygen>

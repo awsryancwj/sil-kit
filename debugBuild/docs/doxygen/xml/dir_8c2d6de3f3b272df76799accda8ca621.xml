@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_8c2d6de3f3b272df76799accda8ca621" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc</compoundname>
+    <innerfile refid="services_2rpc_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="rpc_2fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="_i_rpc_call_handle_8hpp">IRpcCallHandle.hpp</innerfile>
+    <innerfile refid="_i_rpc_client_8hpp">IRpcClient.hpp</innerfile>
+    <innerfile refid="_i_rpc_server_8hpp">IRpcServer.hpp</innerfile>
+    <innerfile refid="_rpc_datatypes_8hpp">RpcDatatypes.hpp</innerfile>
+    <innerfile refid="_rpc_spec_8hpp">RpcSpec.hpp</innerfile>
+    <innerfile refid="services_2rpc_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/"/>
+  </compounddef>
+</doxygen>

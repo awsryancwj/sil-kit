@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___can_frame_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_CanFrameEvent</compoundname>
+    <includes refid="_can_8h" local="no">Can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_event_1a3b2c5f5ee72b3a756b94c56896e6af94" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_CanFrameEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_event_1aa74a6d6533497f38cb27f552aed674ea" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_CanFrameEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Reception time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="64" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_event_1a3750e53da64003d70e6cfa9f438e4aca" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___can_frame" kindref="compound">SilKit_CanFrame</ref> *</type>
+        <definition>SilKit_CanFrame* SilKit_CanFrameEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+<para>The CAN Frame that corresponds to the meta data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="65" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_event_1a2312cc6330f5dea2c875a3b6e81fb9eb" prot="public" static="no" mutable="no">
+        <type><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref></type>
+        <definition>SilKit_Direction SilKit_CanFrameEvent::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+<para>The transmit direction of the CAN frame (TX/RX) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="66" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_event_1a61603e971749d822e9a41b6ba1b9ddfc" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SilKit_CanFrameEvent::userContext</definition>
+        <argsstring></argsstring>
+        <name>userContext</name>
+        <briefdescription>
+<para>Optional pointer provided by user when sending the frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="67" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="213">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="210">
+        <label>SilKit_CanFrameEvent</label>
+        <link refid="struct_sil_kit___can_frame_event"/>
+        <childnode refid="211" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+      <node id="211">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="212">
+        <label>SilKit_CanFrame</label>
+        <link refid="struct_sil_kit___can_frame"/>
+        <childnode refid="211" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="213" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="61" bodyend="68"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___can_frame_event_1a2312cc6330f5dea2c875a3b6e81fb9eb" prot="public" virt="non-virtual"><scope>SilKit_CanFrameEvent</scope><name>direction</name></member>
+      <member refid="struct_sil_kit___can_frame_event_1a3750e53da64003d70e6cfa9f438e4aca" prot="public" virt="non-virtual"><scope>SilKit_CanFrameEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit___can_frame_event_1a3b2c5f5ee72b3a756b94c56896e6af94" prot="public" virt="non-virtual"><scope>SilKit_CanFrameEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___can_frame_event_1aa74a6d6533497f38cb27f552aed674ea" prot="public" virt="non-virtual"><scope>SilKit_CanFrameEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit___can_frame_event_1a61603e971749d822e9a41b6ba1b9ddfc" prot="public" virt="non-virtual"><scope>SilKit_CanFrameEvent</scope><name>userContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

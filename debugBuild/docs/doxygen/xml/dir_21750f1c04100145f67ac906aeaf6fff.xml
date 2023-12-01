@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_21750f1c04100145f67ac906aeaf6fff" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration</compoundname>
+    <innerfile refid="_i_system_controller_8hpp">ISystemController.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/"/>
+  </compounddef>
+</doxygen>

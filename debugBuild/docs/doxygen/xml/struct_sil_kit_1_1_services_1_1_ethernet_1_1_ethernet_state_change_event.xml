@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Ethernet::EthernetStateChangeEvent</compoundname>
+    <includes refid="_ethernet_datatypes_8hpp" local="no">EthernetDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event_1aea2e5c20dac93ca0c20c5f40f14be3bc" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Ethernet::EthernetStateChangeEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Timestamp of the state change. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="102" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event_1afc89bf9d584a2052bd550bb13958af7e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147" kindref="member">EthernetState</ref></type>
+        <definition>EthernetState SilKit::Services::Ethernet::EthernetStateChangeEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>State of the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="103" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A state change event of the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="101" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="100" bodyend="104"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event_1afc89bf9d584a2052bd550bb13958af7e" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetStateChangeEvent</scope><name>state</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event_1aea2e5c20dac93ca0c20c5f40f14be3bc" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetStateChangeEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

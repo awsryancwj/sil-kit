@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___can_error_state_change_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_CanErrorStateChangeEvent</compoundname>
+    <includes refid="_can_8h" local="no">Can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___can_error_state_change_event_1a78f4fb42dfabd60bec9ee03c545d0451" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_CanErrorStateChangeEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="165" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_error_state_change_event_1a660b805d2658571a423316130731c9cd" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_CanErrorStateChangeEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Reception time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="166" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_error_state_change_event_1a033237d2fb8b9727d06405657a792f3a" prot="public" static="no" mutable="no">
+        <type><ref refid="_can_8h_1a839e3b6c8bdc44f43d8206b911e4135b" kindref="member">SilKit_CanErrorState</ref></type>
+        <definition>SilKit_CanErrorState SilKit_CanErrorStateChangeEvent::errorState</definition>
+        <argsstring></argsstring>
+        <name>errorState</name>
+        <briefdescription>
+<para>CAN controller error state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="167" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming state change of a CAN controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="203">
+        <label>SilKit_CanErrorStateChangeEvent</label>
+        <link refid="struct_sil_kit___can_error_state_change_event"/>
+        <childnode refid="204" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="204">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="164" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="163" bodyend="168"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___can_error_state_change_event_1a033237d2fb8b9727d06405657a792f3a" prot="public" virt="non-virtual"><scope>SilKit_CanErrorStateChangeEvent</scope><name>errorState</name></member>
+      <member refid="struct_sil_kit___can_error_state_change_event_1a78f4fb42dfabd60bec9ee03c545d0451" prot="public" virt="non-virtual"><scope>SilKit_CanErrorStateChangeEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___can_error_state_change_event_1a660b805d2658571a423316130731c9cd" prot="public" virt="non-virtual"><scope>SilKit_CanErrorStateChangeEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

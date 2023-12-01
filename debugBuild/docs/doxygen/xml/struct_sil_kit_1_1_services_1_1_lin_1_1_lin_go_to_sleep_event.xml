@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Lin::LinGoToSleepEvent</compoundname>
+    <includes refid="_lin_datatypes_8hpp" local="no">LinDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event_1a3d0a87a9346990f52da25205f61de2a0" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Lin::LinGoToSleepEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="310" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN wakeup event delivered in the <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a1e8b7900f08534e75453387e27de6a44" kindref="member">ILinController::GoToSleepHandler</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="309" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="308" bodyend="311"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event_1a3d0a87a9346990f52da25205f61de2a0" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinGoToSleepEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

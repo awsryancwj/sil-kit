@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Lin::ILinController</compoundname>
+    <includes refid="_i_lin_controller_8hpp" local="no">ILinController.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1af468e0b5b22f65d9c5b966b37d7b8fb8" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller" kindref="compound">ILinController</ref> *controller, const MsgT &amp;msg)&gt;</type>
+        <definition>using SilKit::Services::Lin::ILinController::CallbackT =  std::function&lt;void(ILinController* controller, const MsgT&amp; msg)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CallbackT</name>
+        <briefdescription>
+<para>Generic LIN callback method. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="59" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a10f5709d6d519999b7c0e647a2187913" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1af468e0b5b22f65d9c5b966b37d7b8fb8" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event" kindref="compound">LinFrameStatusEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Lin::ILinController::FrameStatusHandler =  CallbackT&lt;LinFrameStatusEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>FrameStatusHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate the end of a LIN <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref> transmission. Cf., <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1ad3d5a2f8ccab1cc0ac1ec08f6a3a03aa" kindref="member">AddFrameStatusHandler(FrameStatusHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="64" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a1e8b7900f08534e75453387e27de6a44" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1af468e0b5b22f65d9c5b966b37d7b8fb8" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event" kindref="compound">LinGoToSleepEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Lin::ILinController::GoToSleepHandler =  CallbackT&lt;LinGoToSleepEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>GoToSleepHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a go-to-sleep frame has been received. Cf., <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a4f1eefada56b9c05ddac65990d9ad17b" kindref="member">AddGoToSleepHandler(GoToSleepHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="69" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a986ef222780cb32af18204cf37bd82d1" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1af468e0b5b22f65d9c5b966b37d7b8fb8" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event" kindref="compound">LinWakeupEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Lin::ILinController::WakeupHandler =  CallbackT&lt;LinWakeupEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>WakeupHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a wakeup pulse has been received. Cf., <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a516c96d379632cccb341c2e9a2d41b39" kindref="member">AddWakeupHandler(WakeupHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a3ccfc613fad12cab12119db5ef529c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Lin::ILinController::~ILinController</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ILinController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1afa08859707a1386f08ca6d5f9d933d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::Init</definition>
+        <argsstring>(LinControllerConfig config)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the LIN controller defining its role and RX/TX configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>All controllers must be initialized exactly once to take part in LIN communication.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The controller configuration contains:<itemizedlist>
+<listitem><para>controllerMode, either sets LIN master or LIN slave mode.</para></listitem><listitem><para>baudRate, determine transmission speeds (only used for detailed simulation).</para></listitem><listitem><para>frameResponses, a vector of <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref>. This must contain the final configuration on which LIN Ids the controller will receive (<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ecac8600a0cc45fe853cb446a96bb8eae35" kindref="member">LinFrameResponseMode::Rx</ref>) or respond to (<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca27aa3ae03156b0781515a5dde6c77a05" kindref="member">LinFrameResponseMode::TxUnconditional</ref>) frames. An exception is the use of <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a22cf269b1445836f3d1dde378e654d0d" kindref="member">SendFrame()</ref> for <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aad7d7c5b0ca15a04b90c2b50bd52faa86" kindref="member">LinFrameResponseType::MasterResponse</ref>, which allows to extend the configuration during operation.</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<emphasis>AUTOSAR Name:</emphasis> Lin_Init</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is configured with <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5a3cab03c00dbd11bc3569afa0748013f0" kindref="member">LinControllerMode::Inactive</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1afa08859707a1386f08ca6d5f9d933d02" kindref="member">Init()</ref> is called a second time on this LIN Controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a6c76e854f83278d4fb74d893fbb141f6" kindref="member">InitDynamic()</ref> has already been called on the LIN Controller. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1ae7d9cdad6ad3e4f13b388ed6803e6cb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Lin::ILinController::Status</definition>
+        <argsstring>() const noexcept -&gt; LinControllerStatus=0</argsstring>
+        <name>Status</name>
+        <briefdescription>
+<para>Get the current status of the LIN Controller, i.e., Operational or Sleep. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a22cf269b1445836f3d1dde378e654d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::SendFrame</definition>
+        <argsstring>(LinFrame frame, LinFrameResponseType responseType)=0</argsstring>
+        <name>SendFrame</name>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref></type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" kindref="member">LinFrameResponseType</ref></type>
+          <declname>responseType</declname>
+        </param>
+        <briefdescription>
+<para>Initiate a LIN data transfer of a given LinFrameResponseType (AUTOSAR LIN master interface) </para>        </briefdescription>
+        <detaileddescription>
+<para>The responseType determines if frame.data is used for the frame response or if a different node has to provide it:<itemizedlist>
+<listitem><para>MasterResponse: <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">SilKit::Services::Lin::LinFrame</ref> is sent from this controller to all connected slaves using frame.data. The LIN Master doesn&apos;t have to be configured with <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca27aa3ae03156b0781515a5dde6c77a05" kindref="member">LinFrameResponseMode::TxUnconditional</ref> on this LIN ID.</para></listitem><listitem><para>SlaveResponse: the frame response must be provided by a connected slave and is received by this controller.</para></listitem><listitem><para>SlaveToSlave: the frame response must be provided by a connected slave and is ignored by this controller.</para></listitem></itemizedlist>
+</para><para><emphasis>AUTOSAR Name:</emphasis> Lin_SendFrame</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides the LIN identifier, checksum model, and optional data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>responseType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines which LIN Node will provide the frame response.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized or not a master node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a6c76e854f83278d4fb74d893fbb141f6" kindref="member">InitDynamic()</ref> has been called on the LIN Controller. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a227e7bb4579dbb850b51f2c7d1f4129a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::SendFrameHeader</definition>
+        <argsstring>(LinId linId)=0</argsstring>
+        <name>SendFrameHeader</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" kindref="member">LinId</ref></type>
+          <declname>linId</declname>
+        </param>
+        <briefdescription>
+<para>Initiate a LIN data transfer by sending a LIN header (AUTOSAR LIN master interface) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides the LIN header identifier. The node that is configured to respond on this ID will complete the transmission and provide the response data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized or not a master node. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a5f99b7c0089b4701a4e85b41e1b6240e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::UpdateTxBuffer</definition>
+        <argsstring>(LinFrame frame)=0</argsstring>
+        <name>UpdateTxBuffer</name>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Update the response data. The LIN controller needs to be configured with TxUnconditional on this ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides the LIN ID and data used for the update.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_configuration_error" kindref="compound">SilKit::ConfigurationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not configured with TxUnconditional on this ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a6c76e854f83278d4fb74d893fbb141f6" kindref="member">InitDynamic()</ref> has been called on the LIN Controller. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a389b447f1e3672a894d01c2dbec72683" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::SetFrameResponse</definition>
+        <argsstring>(LinFrameResponse response)=0</argsstring>
+        <name>SetFrameResponse</name>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref></type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+<para>Set a RX/TX configuration during operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame and response mode to be configured.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a6c76e854f83278d4fb74d893fbb141f6" kindref="member">InitDynamic()</ref> has been called on the LIN Controller. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a04e39bc6c4cb2c502aca29cf883652a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::GoToSleep</definition>
+        <argsstring>()=0</argsstring>
+        <name>GoToSleep</name>
+        <briefdescription>
+<para>Transmit a go-to-sleep-command and set <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a243924bfd56a682be235638b53961e09" kindref="member">ControllerState::Sleep</ref> and enable wake-up. </para>        </briefdescription>
+        <detaileddescription>
+<para><emphasis>AUTOSAR Name:</emphasis> Lin_GoToSleep</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized or not a master node. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a0e4b25e848f1b6919939747be64d1924" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::GoToSleepInternal</definition>
+        <argsstring>()=0</argsstring>
+        <name>GoToSleepInternal</name>
+        <briefdescription>
+<para>Set <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a243924bfd56a682be235638b53961e09" kindref="member">ControllerState::Sleep</ref> without sending a go-to-sleep command. </para>        </briefdescription>
+        <detaileddescription>
+<para><emphasis>AUTOSAR Name:</emphasis> Lin_GoToSleepInternal</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a752fb41ccb24d931b8f8dd70fc9e11e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::Wakeup</definition>
+        <argsstring>()=0</argsstring>
+        <name>Wakeup</name>
+        <briefdescription>
+<para>Generate a wake up pulse and set <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a431accab7897f05b0424e002ca30391d" kindref="member">ControllerState::Operational</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><emphasis>AUTOSAR Name:</emphasis> Lin_Wakeup</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1aaa456ee4ac5d3bef87476d52fd90012e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::WakeupInternal</definition>
+        <argsstring>()=0</argsstring>
+        <name>WakeupInternal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a431accab7897f05b0424e002ca30391d" kindref="member">ControllerState::Operational</ref> without generating a wake up pulse.</para><para><emphasis>AUTOSAR Name:</emphasis> Lin_WakeupInternal</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_state_error" kindref="compound">SilKit::StateError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the LIN Controller is not initialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1ad3d5a2f8ccab1cc0ac1ec08f6a3a03aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Lin::ILinController::AddFrameStatusHandler</definition>
+        <argsstring>(FrameStatusHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddFrameStatusHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a10f5709d6d519999b7c0e647a2187913" kindref="member">FrameStatusHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Reports the <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">SilKit::Services::Lin::LinFrameStatus</ref> of a LIN <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">SilKit::Services::Lin::LinFrame</ref> transmission and provides the transmitted frame. </para>        </briefdescription>
+        <detaileddescription>
+<para>The FrameStatusHandler is used for reception and acknowledgement of LIN frames. The direction (prefixed with LIN_TX_ or LIN_RX_) and error state of the tranmission is encoded in the <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">SilKit::Services::Lin::LinFrameStatus</ref>.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a494e4f76fb9e9f5a3c4ccf688408c108" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::RemoveFrameStatusHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveFrameStatusHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a FrameStatusHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a4f1eefada56b9c05ddac65990d9ad17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Lin::ILinController::AddGoToSleepHandler</definition>
+        <argsstring>(GoToSleepHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddGoToSleepHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a1e8b7900f08534e75453387e27de6a44" kindref="member">GoToSleepHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>The GoToSleepHandler is called whenever a go-to-sleep frame is received. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: The LIN controller does not automatically enter sleep mode on reception of a go-to-sleep frame. I.e., <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a0e4b25e848f1b6919939747be64d1924" kindref="member">GoToSleepInternal()</ref> must be called manually.</para><para>Note: This handler will always be called, independently of the <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" kindref="member">SilKit::Services::Lin::LinFrameResponseMode</ref> configuration for LIN ID 0x3C. However, regarding the FrameStatusHandler, the go-to-sleep frame is treated like every other frame, i.e. the FrameStatusHandler is only called for LIN ID 0x3C if configured as <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ecac8600a0cc45fe853cb446a96bb8eae35" kindref="member">LinFrameResponseMode::Rx</ref>.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a0d4a60bda74d9d652ac65e3476cc4680" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::RemoveGoToSleepHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveGoToSleepHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a GoToSleepHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a516c96d379632cccb341c2e9a2d41b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Lin::ILinController::AddWakeupHandler</definition>
+        <argsstring>(WakeupHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddWakeupHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a986ef222780cb32af18204cf37bd82d1" kindref="member">WakeupHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>The WakeupHandler is called whenever a wake up pulse is received. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: The LIN controller does not automatically enter operational mode on wake up pulse detection. I.e., WakeInternal() must be called manually.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1aad42010c32359ccd662ab973c5c9cdd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Lin::ILinController::RemoveWakeupHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveWakeupHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a WakeupHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="237" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The LIN controller can assume the role of a LIN master or a LIN slave. All LIN nodes must be configured with their respective role using <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1afa08859707a1386f08ca6d5f9d933d02" kindref="member">ILinController::Init(LinControllerConfig)</ref> to perform data transmission and reception.</para><para>AUTOSAR-like LIN interface:</para><para><itemizedlist>
+<listitem><para><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a22cf269b1445836f3d1dde378e654d0d" kindref="member">SendFrame()</ref> initiates a frame transfer for a given <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" kindref="member">LinFrameResponseType</ref>. For <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aad7d7c5b0ca15a04b90c2b50bd52faa86" kindref="member">LinFrameResponseType::MasterResponse</ref>, the controller doesn&apos;t need to be configured for transmission on this LIN ID. Requires <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5af03bde11d261f185cbacfa32c1c6538c" kindref="member">LinControllerMode::Master</ref>.</para></listitem></itemizedlist>
+</para><para>non-AUTOSAR LIN interface:</para><para><itemizedlist>
+<listitem><para><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a227e7bb4579dbb850b51f2c7d1f4129a" kindref="member">SendFrameHeader()</ref> initiates the transmission of a LIN frame for a particular LIN identifier. For a successful transmission, exactly one LIN slave or master must have previously set a corresponding frame response for unconditional transmission. Requires <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5af03bde11d261f185cbacfa32c1c6538c" kindref="member">LinControllerMode::Master</ref>.</para></listitem><listitem><para><ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a5f99b7c0089b4701a4e85b41e1b6240e" kindref="member">UpdateTxBuffer()</ref> updates the response data for a particular LIN identifier. <ref refid="namespace_sil_kit_1_1_services_1_1_can" kindref="compound">Can</ref> be used with <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5af03bde11d261f185cbacfa32c1c6538c" kindref="member">LinControllerMode::Master</ref> and <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5afe25c0ad752c03ce2361025c235b63e1" kindref="member">LinControllerMode::Slave</ref>. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" line="53" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp" bodystart="52" bodyend="238"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1ad3d5a2f8ccab1cc0ac1ec08f6a3a03aa" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>AddFrameStatusHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a4f1eefada56b9c05ddac65990d9ad17b" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>AddGoToSleepHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a516c96d379632cccb341c2e9a2d41b39" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>AddWakeupHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1af468e0b5b22f65d9c5b966b37d7b8fb8" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>CallbackT</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a10f5709d6d519999b7c0e647a2187913" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>FrameStatusHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a04e39bc6c4cb2c502aca29cf883652a1" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>GoToSleep</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a1e8b7900f08534e75453387e27de6a44" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>GoToSleepHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a0e4b25e848f1b6919939747be64d1924" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>GoToSleepInternal</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1afa08859707a1386f08ca6d5f9d933d02" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>Init</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a494e4f76fb9e9f5a3c4ccf688408c108" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>RemoveFrameStatusHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a0d4a60bda74d9d652ac65e3476cc4680" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>RemoveGoToSleepHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1aad42010c32359ccd662ab973c5c9cdd0" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>RemoveWakeupHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a22cf269b1445836f3d1dde378e654d0d" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>SendFrame</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a227e7bb4579dbb850b51f2c7d1f4129a" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>SendFrameHeader</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a389b447f1e3672a894d01c2dbec72683" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>SetFrameResponse</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1ae7d9cdad6ad3e4f13b388ed6803e6cb8" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>Status</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a5f99b7c0089b4701a4e85b41e1b6240e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>UpdateTxBuffer</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a752fb41ccb24d931b8f8dd70fc9e11e3" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>Wakeup</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a986ef222780cb32af18204cf37bd82d1" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>WakeupHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1aaa456ee4ac5d3bef87476d52fd90012e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>WakeupInternal</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a3ccfc613fad12cab12119db5ef529c2e" prot="public" virt="virtual"><scope>SilKit::Services::Lin::ILinController</scope><name>~ILinController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

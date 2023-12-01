@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___label_list" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LabelList</compoundname>
+    <includes refid="_types_8h" local="no">Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___label_list_1a0969b49e4c917391707fcfe3a429efc8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SilKit_LabelList::numLabels</definition>
+        <argsstring></argsstring>
+        <name>numLabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="90" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___label_list_1a65ead57610bcbbcddbe49091714e8643" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___label" kindref="compound">SilKit_Label</ref> *</type>
+        <definition>SilKit_Label* SilKit_LabelList::labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="91" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A list of data labels. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="311">
+        <label>SilKit_Label</label>
+        <link refid="struct_sil_kit___label"/>
+      </node>
+      <node id="310">
+        <label>SilKit_LabelList</label>
+        <link refid="struct_sil_kit___label_list"/>
+        <childnode refid="311" relation="usage">
+          <edgelabel>labels</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="89" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="88" bodyend="92"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___label_list_1a65ead57610bcbbcddbe49091714e8643" prot="public" virt="non-virtual"><scope>SilKit_LabelList</scope><name>labels</name></member>
+      <member refid="struct_sil_kit___label_list_1a0969b49e4c917391707fcfe3a429efc8" prot="public" virt="non-virtual"><scope>SilKit_LabelList</scope><name>numLabels</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

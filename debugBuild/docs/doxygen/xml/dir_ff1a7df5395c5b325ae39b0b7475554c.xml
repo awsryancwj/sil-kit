@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_ff1a7df5395c5b325ae39b0b7475554c" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes</compoundname>
+    <innerfile refid="_deserializer_8hpp">Deserializer.hpp</innerfile>
+    <innerfile refid="_serialization_8hpp">Serialization.hpp</innerfile>
+    <innerfile refid="_serializer_8hpp">Serializer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/"/>
+  </compounddef>
+</doxygen>

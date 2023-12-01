@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Can::CanFrame</compoundname>
+    <includes refid="_can_datatypes_8hpp" local="no">CanDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a9896f347c2fef3c38c5ce51792eb60a2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SilKit::Services::Can::CanFrame::canId</definition>
+        <argsstring></argsstring>
+        <name>canId</name>
+        <briefdescription>
+<para>CAN Identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="57" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a86352699a3dd2848ec0641b30492d6b8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a3b4f281a5acd29786834878d516d0184" kindref="member">CanFrameFlagMask</ref></type>
+        <definition>CanFrameFlagMask SilKit::Services::Can::CanFrame::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CAN Arbitration and Control Field Flags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="58" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a0f2a8705df60786c7c14f9fc8da539a8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit::Services::Can::CanFrame::dlc</definition>
+        <argsstring></argsstring>
+        <name>dlc</name>
+        <briefdescription>
+<para>Data Length Code - describes the length of the dataField The acceptable bit-patterns and their semantics differ between CAN, CAN FD and CAN XL. The user is responsible for setting this field correctly. Please consult the CAN specifications for further information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a889f11e48b3aa70f4af8605d75b2541f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit::Services::Can::CanFrame::sdt</definition>
+        <argsstring></argsstring>
+        <name>sdt</name>
+        <briefdescription>
+<para>SDU type - describes the structure of the frames Data Field content (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1aa18e00ae57614377e24caecbb9736660" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit::Services::Can::CanFrame::vcid</definition>
+        <argsstring></argsstring>
+        <name>vcid</name>
+        <briefdescription>
+<para>Virtual CAN network ID (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="64" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ae8cd5d4990dd57bb6f22bb5a164584a4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SilKit::Services::Can::CanFrame::af</definition>
+        <argsstring></argsstring>
+        <name>af</name>
+        <briefdescription>
+<para>Acceptance field (for XL Format only) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="65" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ac1013103022bcfd4d109854ab445c918" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::Can::CanFrame::dataField</definition>
+        <argsstring></argsstring>
+        <name>dataField</name>
+        <briefdescription>
+<para>The raw CAN data field. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="66" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A CAN Frame. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>SilKit::Services::Can::CanFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>dataField</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp" bodystart="54" bodyend="67"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ae8cd5d4990dd57bb6f22bb5a164584a4" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>af</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a9896f347c2fef3c38c5ce51792eb60a2" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>canId</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1ac1013103022bcfd4d109854ab445c918" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>dataField</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a0f2a8705df60786c7c14f9fc8da539a8" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>dlc</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a86352699a3dd2848ec0641b30492d6b8" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>flags</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1a889f11e48b3aa70f4af8605d75b2541f" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>sdt</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_1aa18e00ae57614377e24caecbb9736660" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::CanFrame</scope><name>vcid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

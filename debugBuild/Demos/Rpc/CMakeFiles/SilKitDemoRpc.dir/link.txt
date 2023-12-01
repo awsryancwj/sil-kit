@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/SilKitDemoRpc.dir/RpcDemo.cpp.o -o ../../Release/SilKitDemoRpc  -Wl,-rpath,/home/ubuntu/sil-kit/build/Release ../../Release/libSilKit.so -lpthread 

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_frame_transmit_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayFrameTransmitEvent</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_transmit_event_1a2be1e7e5054f1822cd6dea57cb9f40a0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayFrameTransmitEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="390" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_transmit_event_1ad3055a3d077707b85ae7a00747147bfd" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_FlexrayFrameTransmitEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time at end of frame transmission. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="391" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_transmit_event_1a13d08866a17fd10e7a5b8493c659c776" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayFrameTransmitEvent::txBufferIndex</definition>
+        <argsstring></argsstring>
+        <name>txBufferIndex</name>
+        <briefdescription>
+<para>Tx buffer, that was used for the transmission. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="392" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_transmit_event_1a0531810c496fcfe16ef7b2b30d04774a" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a7f5c9f146f6a2edd0ba9b06e65f544b7" kindref="member">SilKit_FlexrayChannel</ref></type>
+        <definition>SilKit_FlexrayChannel SilKit_FlexrayFrameTransmitEvent::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>FlexRay channel A or B. (Valid values: FlexrayChannel::A, FlexrayChannel::B). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="393" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_transmit_event_1a67e6f4eb2a4320836d457216cf4fdcae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___flexray_frame" kindref="compound">SilKit_FlexrayFrame</ref> *</type>
+        <definition>SilKit_FlexrayFrame* SilKit_FlexrayFrameTransmitEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+<para>Copy of the FlexRay frame that was successfully transmitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="394" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Acknowledge for the transmit on the FlexRay bus. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="287">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="286">
+        <label>SilKit_FlexrayHeader</label>
+        <link refid="struct_sil_kit___flexray_header"/>
+        <childnode refid="285" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="285">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="284">
+        <label>SilKit_FlexrayFrame</label>
+        <link refid="struct_sil_kit___flexray_frame"/>
+        <childnode refid="285" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="286" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+        <childnode refid="287" relation="usage">
+          <edgelabel>payload</edgelabel>
+        </childnode>
+      </node>
+      <node id="283">
+        <label>SilKit_FlexrayFrameTransmitEvent</label>
+        <link refid="struct_sil_kit___flexray_frame_transmit_event"/>
+        <childnode refid="284" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+        <childnode refid="285" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="389" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="388" bodyend="395"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_frame_transmit_event_1a0531810c496fcfe16ef7b2b30d04774a" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameTransmitEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit___flexray_frame_transmit_event_1a67e6f4eb2a4320836d457216cf4fdcae" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameTransmitEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit___flexray_frame_transmit_event_1a2be1e7e5054f1822cd6dea57cb9f40a0" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameTransmitEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___flexray_frame_transmit_event_1ad3055a3d077707b85ae7a00747147bfd" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameTransmitEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit___flexray_frame_transmit_event_1a13d08866a17fd10e7a5b8493c659c776" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameTransmitEvent</scope><name>txBufferIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

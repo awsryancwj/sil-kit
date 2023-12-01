@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_606dbd254bbe5ae4c6f12cfae927af9b" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/vendor</compoundname>
+    <innerfile refid="vendor_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="_create_sil_kit_registry_8hpp">CreateSilKitRegistry.hpp</innerfile>
+    <innerfile refid="_i_sil_kit_registry_8hpp">ISilKitRegistry.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,979 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_rpc_8h" kind="file" language="C++">
+    <compoundname>Rpc.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_interface_identifiers_8h" local="yes">silkit/capi/InterfaceIdentifiers.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <includedby refid="_rpc_datatypes_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp</includedby>
+    <incdepgraph>
+      <node id="181">
+        <label>cstdint</label>
+      </node>
+      <node id="176">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h</label>
+        <link refid="_rpc_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>stdint.h</label>
+      </node>
+      <node id="179">
+        <label>stddef.h</label>
+      </node>
+      <node id="184">
+        <label>memory.h</label>
+      </node>
+      <node id="183">
+        <label>limits.h</label>
+      </node>
+      <node id="180">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="191">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp</label>
+        <link refid="_i_rpc_client_8hpp"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="185">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h</label>
+        <link refid="_rpc_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</label>
+        <link refid="_sil_kit_8hpp"/>
+      </node>
+      <node id="194">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp</label>
+        <link refid="_i_rpc_server_8hpp"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/string_utils.hpp</label>
+        <link refid="services_2rpc_2string__utils_8hpp"/>
+      </node>
+      <node id="188">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</label>
+        <link refid="_i_participant_8hpp"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp</label>
+        <link refid="_rpc_datatypes_8hpp"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</label>
+        <link refid="services_2rpc_2all_8hpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="189">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit___rpc_spec" prot="public">SilKit_RpcSpec</innerclass>
+    <innerclass refid="struct_sil_kit___rpc_call_event" prot="public">SilKit_RpcCallEvent</innerclass>
+    <innerclass refid="struct_sil_kit___rpc_call_result_event" prot="public">SilKit_RpcCallResultEvent</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_rpc_8h_1af78d18f4b3ce0708a52586c194776016" prot="public" static="no">
+        <name>SilKit_RpcCallStatus_Success</name>
+        <initializer>((<ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref>)0)</initializer>
+        <briefdescription>
+<para>Call was successful. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="55" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_rpc_8h_1ae544ddab274cf227aff8e803c74dc24e" prot="public" static="no">
+        <name>SilKit_RpcCallStatus_ServerNotReachable</name>
+        <initializer>((<ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref>)1)</initializer>
+        <briefdescription>
+<para>No server matching the RpcSpec was found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="56" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_rpc_8h_1a00a92956a53ab8932f67f6ea1af8c085" prot="public" static="no">
+        <name>SilKit_RpcCallStatus_UndefinedError</name>
+        <initializer>((<ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref>)2)</initializer>
+        <briefdescription>
+<para>An unidentified error occured. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="57" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_rpc_8h_1aa29cfc164e688befd8819575778ff828" prot="public" static="no">
+        <name>SilKit_RpcCallStatus_InternalServerError</name>
+        <initializer>((<ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref>)3)</initializer>
+        <briefdescription>
+<para>The Call lead to an internal RpcServer error. This might happen if no CallHandler was specified for the RpcServer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="61" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_rpc_8h_1af696c32f68945370f987b7282256bce1" prot="public" static="no">
+        <name>SilKit_RpcCallStatus_Timeout</name>
+        <initializer>((<ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref>)4)</initializer>
+        <briefdescription>
+<para>The Call did run into a timeout and was canceled. This might happen if a corresponding server crashed, ran into an error or took too long to answer the call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="65" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_rpc_8h_1aa2dd807ce35bedcae0fb36b4e9645cca" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref></type>
+        <definition>typedef struct SilKit_RpcSpec  SilKit_RpcSpec</definition>
+        <argsstring></argsstring>
+        <name>SilKit_RpcSpec</name>
+        <briefdescription>
+<para>A pubsub/rpc node spec containing all matching relevant information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" prot="public" static="no">
+        <type>struct <ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref></type>
+        <definition>typedef struct SilKit_RpcCallHandle SilKit_RpcCallHandle</definition>
+        <argsstring></argsstring>
+        <name>SilKit_RpcCallHandle</name>
+        <briefdescription>
+<para>A unique handle of a remote call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" prot="public" static="no">
+        <type>struct <ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref></type>
+        <definition>typedef struct SilKit_RpcServer SilKit_RpcServer</definition>
+        <argsstring></argsstring>
+        <name>SilKit_RpcServer</name>
+        <briefdescription>
+<para>Represents a handle to a RPC server instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" prot="public" static="no">
+        <type>struct <ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref></type>
+        <definition>typedef struct SilKit_RpcClient SilKit_RpcClient</definition>
+        <argsstring></argsstring>
+        <name>SilKit_RpcClient</name>
+        <briefdescription>
+<para>Represents a handle to a RPC client instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_RpcCallStatus</definition>
+        <argsstring></argsstring>
+        <name>SilKit_RpcCallStatus</name>
+        <briefdescription>
+<para>The status of a RpcCallResultEvent. Informs whether a call was successful. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a2e5e29697b113652d396eed018961466" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_RpcCallHandler_t) (void *context, SilKit_RpcServer *server, const SilKit_RpcCallEvent *event)</definition>
+        <argsstring>)(void *context, SilKit_RpcServer *server, const SilKit_RpcCallEvent *event)</argsstring>
+        <name>SilKit_RpcCallHandler_t</name>
+        <briefdescription>
+<para>A callback function that is called on a RPC server triggered by client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer that was provided when this handler was registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>server</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC server that received the call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event contains information about the call by the client. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="94" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_RpcCallResultHandler_t) (void *context, SilKit_RpcClient *client, const SilKit_RpcCallResultEvent *event)</definition>
+        <argsstring>)(void *context, SilKit_RpcClient *client, const SilKit_RpcCallResultEvent *event)</argsstring>
+        <name>SilKit_RpcCallResultHandler_t</name>
+        <briefdescription>
+<para>A handler that is called on a RPC client when a RPC server submitted a result to an earlier call of this client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user&apos;s context pointer that was provided when this handler was registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC client that received the result/triggered the invocation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event contains information about the results of an earlier call of this client. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="102" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1ab7ac31bfe722886e51375da234995f5b" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_RpcServer_Create_t) (SilKit_RpcServer **out, SilKit_Participant *participant, const char *controllerName, SilKit_RpcSpec *rpcSpec, void *callHandlerContext, SilKit_RpcCallHandler_t callHandler)</definition>
+        <argsstring>)(SilKit_RpcServer **out, SilKit_Participant *participant, const char *controllerName, SilKit_RpcSpec *rpcSpec, void *callHandlerContext, SilKit_RpcCallHandler_t callHandler)</argsstring>
+        <name>SilKit_RpcServer_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="118" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1afac98462d366a99658a62b902cc328f2" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_RpcServer_SubmitResult_t) (SilKit_RpcServer *self, SilKit_RpcCallHandle *callHandle, const SilKit_ByteVector *returnData)</definition>
+        <argsstring>)(SilKit_RpcServer *self, SilKit_RpcCallHandle *callHandle, const SilKit_ByteVector *returnData)</argsstring>
+        <name>SilKit_RpcServer_SubmitResult_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="133" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a02052a9f52cedad3f9b2e7316053e081" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_RpcServer_SetCallHandler_t) (SilKit_RpcServer *self, void *context, SilKit_RpcCallHandler_t handler)</definition>
+        <argsstring>)(SilKit_RpcServer *self, void *context, SilKit_RpcCallHandler_t handler)</argsstring>
+        <name>SilKit_RpcServer_SetCallHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="145" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a0ec307c5481a8a6b94780b1a6f676bae" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_RpcClient_Create_t) (SilKit_RpcClient **out, SilKit_Participant *participant, const char *controllerName, SilKit_RpcSpec *rpcSpec, void *resultHandlerContext, SilKit_RpcCallResultHandler_t resultHandler)</definition>
+        <argsstring>)(SilKit_RpcClient **out, SilKit_Participant *participant, const char *controllerName, SilKit_RpcSpec *rpcSpec, void *resultHandlerContext, SilKit_RpcCallResultHandler_t resultHandler)</argsstring>
+        <name>SilKit_RpcClient_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="162" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a0e463e2832129d47c4dbe3069b4ef2d6" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_RpcClient_Call_t) (SilKit_RpcClient *self, const SilKit_ByteVector *argumentData, void *userContext)</definition>
+        <argsstring>)(SilKit_RpcClient *self, const SilKit_ByteVector *argumentData, void *userContext)</argsstring>
+        <name>SilKit_RpcClient_Call_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="176" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1ac7f7c6593161a016e371da771ed7be95" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_RpcClient_CallWithTimeout_t) (SilKit_RpcClient *self, const SilKit_ByteVector *argumentData, SilKit_NanosecondsTime timeout, void *userContext)</definition>
+        <argsstring>)(SilKit_RpcClient *self, const SilKit_ByteVector *argumentData, SilKit_NanosecondsTime timeout, void *userContext)</argsstring>
+        <name>SilKit_RpcClient_CallWithTimeout_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="195" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_rpc_8h_1a6da8884632fd76435f47b44240d68a1c" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_RpcClient_SetCallResultHandler_t) (SilKit_RpcClient *self, void *context, SilKit_RpcCallResultHandler_t handler)</definition>
+        <argsstring>)(SilKit_RpcClient *self, void *context, SilKit_RpcCallResultHandler_t handler)</argsstring>
+        <name>SilKit_RpcClient_SetCallResultHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="206" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_rpc_8h_1a25289642ef463a6413f7bb5e507450e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcServer_Create</definition>
+        <argsstring>(SilKit_RpcServer **outServer, SilKit_Participant *participant, const char *controllerName, SilKit_RpcSpec *rpcSpec, void *callHandlerContext, SilKit_RpcCallHandler_t callHandler)</argsstring>
+        <name>SilKit_RpcServer_Create</name>
+        <param>
+          <type><ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref> **</type>
+          <declname>outServer</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>controllerName</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref> *</type>
+          <declname>rpcSpec</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callHandlerContext</declname>
+        </param>
+        <param>
+          <type><ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref></type>
+          <declname>callHandler</declname>
+        </param>
+        <briefdescription>
+<para>Create a RPC server on a simulation participant with the provided properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outServer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to which the resulting RPC server reference will be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant for which the RPC server should be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controllerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of this controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rpcSpec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A struct containing all matching related information </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callHandlerContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context pointer that is passed to the callHandler on call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function that is triggered on invocation of the server functionality. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_rpc_8h_1a922883becb3c1edd1a2530d742b4f6d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcServer_SubmitResult</definition>
+        <argsstring>(SilKit_RpcServer *self, SilKit_RpcCallHandle *callHandle, const SilKit_ByteVector *returnData)</argsstring>
+        <name>SilKit_RpcServer_SubmitResult</name>
+        <param>
+          <type><ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref> *</type>
+          <declname>callHandle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref> *</type>
+          <declname>returnData</declname>
+        </param>
+        <briefdescription>
+<para>Submit a result for an earlier obtained call handle to an RPC client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC server that should submit the result of the remote procedure call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call handle that was obtained earlier through an SilKit_RpcCallResultHandler_t. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>returnData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data that should be returned to the calling client. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_rpc_8h_1a3f502814a770c5471c52f5c33b19d457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcServer_SetCallHandler</definition>
+        <argsstring>(SilKit_RpcServer *self, void *context, SilKit_RpcCallHandler_t handler)</argsstring>
+        <name>SilKit_RpcServer_SetCallHandler</name>
+        <param>
+          <type><ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite the call handler of a RPC server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC server of which the callback should be overwritten. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context pointer that is passed to the handler on call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function that is triggered on invocation of the server functionality. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_rpc_8h_1afccf2a0c94af79ad2cff2cc5b661a9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcClient_Create</definition>
+        <argsstring>(SilKit_RpcClient **outClient, SilKit_Participant *participant, const char *controllerName, SilKit_RpcSpec *rpcSpec, void *resultHandlerContext, SilKit_RpcCallResultHandler_t resultHandler)</argsstring>
+        <name>SilKit_RpcClient_Create</name>
+        <param>
+          <type><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref> **</type>
+          <declname>outClient</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>controllerName</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref> *</type>
+          <declname>rpcSpec</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>resultHandlerContext</declname>
+        </param>
+        <param>
+          <type><ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref></type>
+          <declname>resultHandler</declname>
+        </param>
+        <briefdescription>
+<para>Create a RPC client on a simulation participant with the provided properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to which the resulting RPC client reference will be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant for which the RPC client should be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controllerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of this controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rpcSpec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The specification of function name, media type and labels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resultHandlerContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context that is reobtained on call result in the resultHandler. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resultHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that is called when a call result is received. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_rpc_8h_1ac050911e75f2d37edc7499993536aa09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcClient_Call</definition>
+        <argsstring>(SilKit_RpcClient *self, const SilKit_ByteVector *argumentData, void *userContext)</argsstring>
+        <name>SilKit_RpcClient_Call</name>
+        <param>
+          <type><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref> *</type>
+          <declname>argumentData</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+        </param>
+        <briefdescription>
+<para>Dispatch a call to one or multiple corresponding RPC servers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC client that should trigger the remote procedure call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argumentData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data that should be transmitted to the RPC server for this call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context pointer that is passed to the result handler when a result is received. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_rpc_8h_1acad0ee110da8c92a519cf47541198a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcClient_CallWithTimeout</definition>
+        <argsstring>(SilKit_RpcClient *self, const SilKit_ByteVector *argumentData, SilKit_NanosecondsTime timeout, void *userContext)</argsstring>
+        <name>SilKit_RpcClient_CallWithTimeout</name>
+        <param>
+          <type><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref> *</type>
+          <declname>argumentData</declname>
+        </param>
+        <param>
+          <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+        </param>
+        <briefdescription>
+<para>Initiate a remote procedure call with a specified timeout. </para>        </briefdescription>
+        <detaileddescription>
+<para>In a synchronized execution, simulation time is used for the timeout, in a unsynchronized execution, system time is used for the timeout.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC client that should trigger the remote procedure call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argumentData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A non-owning reference to an opaque block of raw data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A duration in nanoseconds after which the call runs into a timeout and the CallResultHandler is called with status timeout. After the timeout occurred, no further call result events will be triggered for this call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional user provided pointer that is reobtained when receiving the call result. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_rpc_8h_1ad50df4ddbf3a26a3f8ad58c5b262854d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_RpcClient_SetCallResultHandler</definition>
+        <argsstring>(SilKit_RpcClient *self, void *context, SilKit_RpcCallResultHandler_t handler)</argsstring>
+        <name>SilKit_RpcClient_SetCallResultHandler</name>
+        <param>
+          <type><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Overwrite the call result handler of this client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RPC client that should trigger the remote procedure call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context pointer that is passed to the handler on call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that is called when a call result is received. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h" line="203" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interface_identifiers_8h" kindref="compound">silkit/capi/InterfaceIdentifiers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_sil_kit___rpc_spec" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37" refid="struct_sil_kit___rpc_spec_1a84a7ba4d0914d4f1147b11c109fb05b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___rpc_spec_1a84a7ba4d0914d4f1147b11c109fb05b4" kindref="member">structHeader</ref>;</highlight></codeline>
+<codeline lineno="38" refid="struct_sil_kit___rpc_spec_1aeee2c27604a36108b4e39c63552e14f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___rpc_spec_1aeee2c27604a36108b4e39c63552e14f8" kindref="member">functionName</ref>;</highlight></codeline>
+<codeline lineno="39" refid="struct_sil_kit___rpc_spec_1a54421f8e093dc48ad49cbca2ecd492e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___rpc_spec_1a54421f8e093dc48ad49cbca2ecd492e9" kindref="member">mediaType</ref>;</highlight></codeline>
+<codeline lineno="40" refid="struct_sil_kit___rpc_spec_1a5965f70779c97d4968adb0181f585e8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___label_list" kindref="compound">SilKit_LabelList</ref><sp/><ref refid="struct_sil_kit___rpc_spec_1a5965f70779c97d4968adb0181f585e8e" kindref="member">labelList</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><ref refid="_rpc_8h_1aa2dd807ce35bedcae0fb36b4e9645cca" kindref="member">SilKit_RpcSpec</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref><sp/><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref><sp/><ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>;</highlight></codeline>
+<codeline lineno="49" refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref><sp/><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref>;</highlight></codeline>
+<codeline lineno="55" refid="_rpc_8h_1af78d18f4b3ce0708a52586c194776016" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_RpcCallStatus_Success<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_RpcCallStatus)0)<sp/></highlight></codeline>
+<codeline lineno="56" refid="_rpc_8h_1ae544ddab274cf227aff8e803c74dc24e" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_RpcCallStatus_ServerNotReachable<sp/><sp/>((SilKit_RpcCallStatus)1)<sp/></highlight></codeline>
+<codeline lineno="57" refid="_rpc_8h_1a00a92956a53ab8932f67f6ea1af8c085" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_RpcCallStatus_UndefinedError<sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_RpcCallStatus)2)<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="61" refid="_rpc_8h_1aa29cfc164e688befd8819575778ff828" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_RpcCallStatus_InternalServerError<sp/>((SilKit_RpcCallStatus)3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_rpc_8h_1af696c32f68945370f987b7282256bce1" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_RpcCallStatus_Timeout<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_RpcCallStatus)4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="struct_sil_kit___rpc_call_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68" refid="struct_sil_kit___rpc_call_event_1a4735581b21c562cd684eb48cf7604225" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___rpc_call_event_1a4735581b21c562cd684eb48cf7604225" kindref="member">structHeader</ref>;</highlight></codeline>
+<codeline lineno="70" refid="struct_sil_kit___rpc_call_event_1a1bac595a5d9f1e025ce0c8cf51bd9015" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___rpc_call_event_1a1bac595a5d9f1e025ce0c8cf51bd9015" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="72" refid="struct_sil_kit___rpc_call_event_1a7abb391ff95a6fcd9c915893f555cd27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref>*<sp/><ref refid="struct_sil_kit___rpc_call_event_1a7abb391ff95a6fcd9c915893f555cd27" kindref="member">callHandle</ref>;</highlight></codeline>
+<codeline lineno="74" refid="struct_sil_kit___rpc_call_event_1ad0f9e07e701e9a0b3dd1be00654b00bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref><sp/><ref refid="struct_sil_kit___rpc_call_event_1ad0f9e07e701e9a0b3dd1be00654b00bb" kindref="member">argumentData</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___rpc_call_event" kindref="compound">SilKit_RpcCallEvent</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="struct_sil_kit___rpc_call_result_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78" refid="struct_sil_kit___rpc_call_result_event_1aa9d01a6d0c5707c25eedfa27d2e10e4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___rpc_call_result_event_1aa9d01a6d0c5707c25eedfa27d2e10e4c" kindref="member">structHeader</ref>;</highlight></codeline>
+<codeline lineno="80" refid="struct_sil_kit___rpc_call_result_event_1ad4336761ead08643a451a61a41af2f70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___rpc_call_result_event_1ad4336761ead08643a451a61a41af2f70" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="82" refid="struct_sil_kit___rpc_call_result_event_1a94a9c37d59e7c2572deb7efb8bfa9f0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___rpc_call_result_event_1a94a9c37d59e7c2572deb7efb8bfa9f0f" kindref="member">userContext</ref>;</highlight></codeline>
+<codeline lineno="84" refid="struct_sil_kit___rpc_call_result_event_1aa397e742ec2446fcb2d3509734e7ba76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref><sp/><ref refid="struct_sil_kit___rpc_call_result_event_1aa397e742ec2446fcb2d3509734e7ba76" kindref="member">callStatus</ref>;</highlight></codeline>
+<codeline lineno="86" refid="struct_sil_kit___rpc_call_result_event_1a0675e2e4e7103d8369871616445a4fa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref><sp/><ref refid="struct_sil_kit___rpc_call_result_event_1a0675e2e4e7103d8369871616445a4fa6" kindref="member">resultData</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___rpc_call_result_event" kindref="compound">SilKit_RpcCallResultEvent</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>*<sp/>server,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___rpc_call_event" kindref="compound">SilKit_RpcCallEvent</ref>*<sp/>event);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/>client,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___rpc_call_result_event" kindref="compound">SilKit_RpcCallResultEvent</ref>*<sp/>event);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1a25289642ef463a6413f7bb5e507450e9" kindref="member">SilKit_RpcServer_Create</ref>(<ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>**<sp/>outServer,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,<sp/><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref>*<sp/>rpcSpec,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>callHandlerContext,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref><sp/>callHandler);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_rpc_8h_1ab7ac31bfe722886e51375da234995f5b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_rpc_8h_1ab7ac31bfe722886e51375da234995f5b" kindref="member">SilKit_RpcServer_Create_t</ref>)(<ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>**<sp/>out,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,<sp/><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref>*<sp/>rpcSpec,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>callHandlerContext,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref><sp/>callHandler);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1a922883becb3c1edd1a2530d742b4f6d0" kindref="member">SilKit_RpcServer_SubmitResult</ref>(<ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref>*<sp/>callHandle,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>returnData);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="_rpc_8h_1afac98462d366a99658a62b902cc328f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_rpc_8h_1afac98462d366a99658a62b902cc328f2" kindref="member">SilKit_RpcServer_SubmitResult_t</ref>)(<ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a64fc370f7e09d31321fe70da2582c333" kindref="member">SilKit_RpcCallHandle</ref>*<sp/>callHandle,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>returnData);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1a3f502814a770c5471c52f5c33b19d457" kindref="member">SilKit_RpcServer_SetCallHandler</ref>(<ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="_rpc_8h_1a02052a9f52cedad3f9b2e7316053e081" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_rpc_8h_1a02052a9f52cedad3f9b2e7316053e081" kindref="member">SilKit_RpcServer_SetCallHandler_t</ref>)(<ref refid="_rpc_8h_1a563fd1c83cda580bdb9f7b06a012e1eb" kindref="member">SilKit_RpcServer</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a2e5e29697b113652d396eed018961466" kindref="member">SilKit_RpcCallHandler_t</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1afccf2a0c94af79ad2cff2cc5b661a9ff" kindref="member">SilKit_RpcClient_Create</ref>(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>**<sp/>outClient,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,<sp/><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref>*<sp/>rpcSpec,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>resultHandlerContext,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref><sp/>resultHandler);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="_rpc_8h_1a0ec307c5481a8a6b94780b1a6f676bae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_rpc_8h_1a0ec307c5481a8a6b94780b1a6f676bae" kindref="member">SilKit_RpcClient_Create_t</ref>)(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>**<sp/>out,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,<sp/><ref refid="struct_sil_kit___rpc_spec" kindref="compound">SilKit_RpcSpec</ref>*<sp/>rpcSpec,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>resultHandlerContext,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref><sp/>resultHandler);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1ac050911e75f2d37edc7499993536aa09" kindref="member">SilKit_RpcClient_Call</ref>(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>argumentData,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="_rpc_8h_1a0e463e2832129d47c4dbe3069b4ef2d6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_rpc_8h_1a0e463e2832129d47c4dbe3069b4ef2d6" kindref="member">SilKit_RpcClient_Call_t</ref>)(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>argumentData,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1acad0ee110da8c92a519cf47541198a4c" kindref="member">SilKit_RpcClient_CallWithTimeout</ref>(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>argumentData,<sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/>timeout,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="_rpc_8h_1ac7f7c6593161a016e371da771ed7be95" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_rpc_8h_1ac7f7c6593161a016e371da771ed7be95" kindref="member">SilKit_RpcClient_CallWithTimeout_t</ref>)(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>argumentData,<sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/>timeout,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_rpc_8h_1ad50df4ddbf3a26a3f8ad58c5b262854d" kindref="member">SilKit_RpcClient_SetCallResultHandler</ref>(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="_rpc_8h_1a6da8884632fd76435f47b44240d68a1c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_rpc_8h_1a6da8884632fd76435f47b44240d68a1c" kindref="member">SilKit_RpcClient_SetCallResultHandler_t</ref>)(<ref refid="_rpc_8h_1ad3e8112bcf9000b41f1e760f23a117b4" kindref="member">SilKit_RpcClient</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rpc_8h_1a57504a2915b3d7f5db59121cb5963bb3" kindref="member">SilKit_RpcCallResultHandler_t</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h"/>
+  </compounddef>
+</doxygen>

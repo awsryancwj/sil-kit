@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Orchestration::ISystemMonitor</compoundname>
+    <includes refid="_i_system_monitor_8hpp" local="no">ISystemMonitor.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a41144217f327138c0f5669a5d2990c7c" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SystemState</ref>)&gt;</type>
+        <definition>using SilKit::Services::Orchestration::ISystemMonitor::SystemStateHandler =  std::function&lt;void(SystemState)&gt;</definition>
+        <argsstring></argsstring>
+        <name>SystemStateHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SilKit::Services::Orchestration::SystemState</ref> has been received. Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ac337e3a1020f8c57f18f3f02310ac094" kindref="member">AddSystemStateHandler(SystemStateHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a9434dd27a277ec6fda5b3a2c8ba936a6" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">ParticipantStatus</ref> &amp;)&gt;</type>
+        <definition>using SilKit::Services::Orchestration::ISystemMonitor::ParticipantStatusHandler =  std::function&lt;void(const ParticipantStatus&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ParticipantStatusHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">ParticipantStatus</ref> has been received. Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1afd858050233ed8b4a498564723940928" kindref="member">AddParticipantStatusHandler(ParticipantStatusHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a9c69464025999fcba637de491847eef6" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" kindref="compound">ParticipantConnectionInformation</ref> &amp;participantInformation)&gt;</type>
+        <definition>using SilKit::Services::Orchestration::ISystemMonitor::ParticipantConnectedHandler =  std::function&lt;void(const ParticipantConnectionInformation&amp; participantInformation)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ParticipantConnectedHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a participant has been connected. Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a94432ddb52a51e3e689e788a47191b5e" kindref="member">SetParticipantConnectedHandler(ParticipantConnectedHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="49" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a0b87fb6e4c9d0929226dbc62b584b724" prot="public" static="no">
+        <type>std::function&lt; void(const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" kindref="compound">ParticipantConnectionInformation</ref> &amp;participantInformation)&gt;</type>
+        <definition>using SilKit::Services::Orchestration::ISystemMonitor::ParticipantDisconnectedHandler =  std::function&lt;void(const ParticipantConnectionInformation&amp; participantInformation)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ParticipantDisconnectedHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a participant has been disconnected. Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a300f5cc546b925e64c3f9f4671316dfe" kindref="member">SetParticipantDisconnectedHandler(ParticipantDisconnectedHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ac337e3a1020f8c57f18f3f02310ac094" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ISystemMonitor::AddSystemStateHandler</definition>
+        <argsstring>(SystemStateHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddSystemStateHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a41144217f327138c0f5669a5d2990c7c" kindref="member">SystemStateHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SilKit::Services::Orchestration::SystemState</ref> changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the current system state is not <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">SilKit::Services::Orchestration::SystemState::Invalid</ref>, the handler will be called immediately.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ae4464adb21c971630e0d68bfd2f69569" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ISystemMonitor::RemoveSystemStateHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveSystemStateHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a SystemStateHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1afd858050233ed8b4a498564723940928" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ISystemMonitor::AddParticipantStatusHandler</definition>
+        <argsstring>(ParticipantStatusHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddParticipantStatusHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a9434dd27a277ec6fda5b3a2c8ba936a6" kindref="member">ParticipantStatusHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">SilKit::Services::Orchestration::ParticipantStatus</ref> changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler will be called immediately for any participant that is not in <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">SilKit::Services::Orchestration::ParticipantState::Invalid</ref>.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a88d7391ca7a88fb8cd45303f6857365e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ISystemMonitor::RemoveParticipantStatusHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveParticipantStatusHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a ParticipantStatusHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a189eeb293bede9e3a0c432307376ec76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ISystemMonitor::SystemState</definition>
+        <argsstring>() const -&gt; Orchestration::SystemState=0</argsstring>
+        <name>SystemState</name>
+        <briefdescription>
+<para>Get the current <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SilKit::Services::Orchestration::SystemState</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ae33ba6aeaa209061d3f464c85472e309" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ISystemMonitor::ParticipantStatus</definition>
+        <argsstring>(const std::string &amp;participantName) const -&gt; const Orchestration::ParticipantStatus &amp;=0</argsstring>
+        <name>ParticipantStatus</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>participantName</declname>
+        </param>
+        <briefdescription>
+<para>Get the current <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">ParticipantStatus</ref> of specific participant. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>participantName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the participant for which the status is queried. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_sil_kit_error" kindref="compound">SilKit::SilKitError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the participant name does not identify a participant that participates in synchronization. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a94432ddb52a51e3e689e788a47191b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ISystemMonitor::SetParticipantConnectedHandler</definition>
+        <argsstring>(ParticipantConnectedHandler handler)=0</argsstring>
+        <name>SetParticipantConnectedHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a9c69464025999fcba637de491847eef6" kindref="member">ParticipantConnectedHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Set a callback for participants being connected. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback which overwrites any previously set callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a300f5cc546b925e64c3f9f4671316dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ISystemMonitor::SetParticipantDisconnectedHandler</definition>
+        <argsstring>(ParticipantDisconnectedHandler handler)=0</argsstring>
+        <name>SetParticipantDisconnectedHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a0b87fb6e4c9d0929226dbc62b584b724" kindref="member">ParticipantDisconnectedHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Set a callback for participants being disconnected. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback which overwrites any previously set callback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ad06241d81bcb45693de1f43b225fda34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ISystemMonitor::IsParticipantConnected</definition>
+        <argsstring>(const std::string &amp;participantName) const -&gt; bool=0</argsstring>
+        <name>IsParticipantConnected</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>participantName</declname>
+        </param>
+        <briefdescription>
+<para>Check if a participant identified by the participantName is present. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>participantName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the participant for which presence is queried. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the participant is present </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" line="34" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp" bodystart="33" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1afd858050233ed8b4a498564723940928" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>AddParticipantStatusHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ac337e3a1020f8c57f18f3f02310ac094" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>AddSystemStateHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ad06241d81bcb45693de1f43b225fda34" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>IsParticipantConnected</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a9c69464025999fcba637de491847eef6" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>ParticipantConnectedHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a0b87fb6e4c9d0929226dbc62b584b724" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>ParticipantDisconnectedHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ae33ba6aeaa209061d3f464c85472e309" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>ParticipantStatus</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a9434dd27a277ec6fda5b3a2c8ba936a6" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>ParticipantStatusHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a88d7391ca7a88fb8cd45303f6857365e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>RemoveParticipantStatusHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1ae4464adb21c971630e0d68bfd2f69569" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>RemoveSystemStateHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a94432ddb52a51e3e689e788a47191b5e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>SetParticipantConnectedHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a300f5cc546b925e64c3f9f4671316dfe" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>SetParticipantDisconnectedHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a189eeb293bede9e3a0c432307376ec76" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>SystemState</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor_1a41144217f327138c0f5669a5d2990c7c" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ISystemMonitor</scope><name>SystemStateHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

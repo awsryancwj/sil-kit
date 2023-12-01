@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Ethernet::IEthernetController</compoundname>
+    <includes refid="_i_ethernet_controller_8hpp" local="no">IEthernetController.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller" kindref="compound">IEthernetController</ref> *controller, const MsgT &amp;msg)&gt;</type>
+        <definition>using SilKit::Services::Ethernet::IEthernetController::CallbackT =  std::function&lt;void(IEthernetController* controller, const MsgT&amp; msg)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CallbackT</name>
+        <briefdescription>
+<para>Generic <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> callback method. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1abdad4115ec106fbd08bc2d5628473481" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event" kindref="compound">EthernetFrameEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Ethernet::IEthernetController::FrameHandler =  CallbackT&lt;EthernetFrameEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>FrameHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that an <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event" kindref="compound">EthernetFrameEvent</ref> has been received. Cf. <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a5d72118b010673d8eb1cf546058c4809" kindref="member">AddFrameHandler(FrameHandler,DirectionMask)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_transmit_event" kindref="compound">EthernetFrameTransmitEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Ethernet::IEthernetController::FrameTransmitHandler =  CallbackT&lt;EthernetFrameTransmitEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>FrameTransmitHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that an <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_transmit_event" kindref="compound">EthernetFrameTransmitEvent</ref> has been received. Cf. <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aceffd587552fa9cebaa3270ba0ca949e" kindref="member">AddFrameTransmitHandler(FrameTransmitHandler,EthernetTransmitStatusMask)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="50" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a87a5498a99795aba8280c2ca9544de86" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event" kindref="compound">EthernetStateChangeEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Ethernet::IEthernetController::StateChangeHandler =  CallbackT&lt;EthernetStateChangeEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>StateChangeHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147" kindref="member">EthernetState</ref> has changed. Cf. <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ac32eeffe3cc7805af10a40ab255aeb62" kindref="member">AddStateChangeHandler(StateChangeHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ae7737603862a26e072b3f1c083d14733" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_bitrate_change_event" kindref="compound">EthernetBitrateChangeEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Ethernet::IEthernetController::BitrateChangeHandler =  CallbackT&lt;EthernetBitrateChangeEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>BitrateChangeHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the link bit rate has changed. Cf. <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aba6fabf286f52bd2ba5d79ccb120b353" kindref="member">AddBitrateChangeHandler(BitrateChangeHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="60" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a4c36768678f173a8a3e22d2fa9d61e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Ethernet::IEthernetController::~IEthernetController</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IEthernetController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aa42c293611f6d790fe9bedf0e749ada9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::Activate</definition>
+        <argsstring>()=0</argsstring>
+        <name>Activate</name>
+        <briefdescription>
+<para>Activates the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>Upon activation of the controller, the controller attempts to establish a link. Messages can only be sent once the link has been successfully established, cf. <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ac32eeffe3cc7805af10a40ab255aeb62" kindref="member">AddStateChangeHandler()</ref> and <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aba6fabf286f52bd2ba5d79ccb120b353" kindref="member">AddBitrateChangeHandler()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a93f7edc2bb3c7320e2641b9250862548" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::Deactivate</definition>
+        <argsstring>()=0</argsstring>
+        <name>Deactivate</name>
+        <briefdescription>
+<para>Deactivate the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>Deactivate the controller and shut down the link. The controller will no longer receive messages, and it cannot send messages anymore. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a5d72118b010673d8eb1cf546058c4809" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Ethernet::IEthernetController::AddFrameHandler</definition>
+        <argsstring>(FrameHandler handler, DirectionMask directionMask=static_cast&lt; DirectionMask &gt;(TransmitDirection::RX)) -&gt; HandlerId=0</argsstring>
+        <name>AddFrameHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1abdad4115ec106fbd08bc2d5628473481" kindref="member">FrameHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref></type>
+          <declname>directionMask</declname>
+          <defval>static_cast&lt; <ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref> &gt;(<ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531af9c24782c24c237d16e79f18e2fa9046" kindref="member">TransmitDirection::RX</ref>)</defval>
+        </param>
+        <briefdescription>
+<para>Register a callback for <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> message reception. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the controller receives a new <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> message.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aeca25f16da4c224e6f19e32dd0f88232" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::RemoveFrameHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveFrameHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a FrameHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aceffd587552fa9cebaa3270ba0ca949e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Ethernet::IEthernetController::AddFrameTransmitHandler</definition>
+        <argsstring>(FrameTransmitHandler handler, EthernetTransmitStatusMask transmitStatusMask=SilKit_EthernetTransmitStatus_DefaultMask) -&gt; HandlerId=0</argsstring>
+        <name>AddFrameTransmitHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" kindref="member">FrameTransmitHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1abfd0dc9eb121d83e39e1f60258e90e31" kindref="member">EthernetTransmitStatusMask</ref></type>
+          <declname>transmitStatusMask</declname>
+          <defval><ref refid="_ethernet_8h_1a1defebf389771c25ec8915711100c248" kindref="member">SilKit_EthernetTransmitStatus_DefaultMask</ref></defval>
+        </param>
+        <briefdescription>
+<para>Register a callback for <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> transmit acknowledgments. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when a previously sent message was successfully transmitted or when the transmission has failed. The original message is identified by the transmitId.</para><para>NB: Full support in a detailed simulation. In a simple simulation, all messages are immediately positively acknowledged.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a25ead92bff4b167598bf14a56890db03" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::RemoveFrameTransmitHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveFrameTransmitHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a FrameTransmitHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ac32eeffe3cc7805af10a40ab255aeb62" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Ethernet::IEthernetController::AddStateChangeHandler</definition>
+        <argsstring>(StateChangeHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddStateChangeHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a87a5498a99795aba8280c2ca9544de86" kindref="member">StateChangeHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for changes of the controller state. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the state of the controller changes. E.g., a call to <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aa42c293611f6d790fe9bedf0e749ada9" kindref="member">Activate()</ref> causes the controller to change from state <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147a3cab03c00dbd11bc3569afa0748013f0" kindref="member">SilKit::Services::Ethernet::EthernetState::Inactive</ref> to <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124aed24adca6bafecf505ccfec607baae60" kindref="member">SilKit::Services::Ethernet::EthernetState::LinkDown</ref>. Later, when the link has been established, the state changes again from <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124aed24adca6bafecf505ccfec607baae60" kindref="member">SilKit::Services::Ethernet::EthernetState::LinkDown</ref> to <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147a8d95de9e9f0ffbdc9901ee31aa38b3a4" kindref="member">SilKit::Services::Ethernet::EthernetState::LinkUp</ref>. Similarly, the status changes back to <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147a3cab03c00dbd11bc3569afa0748013f0" kindref="member">SilKit::Services::Ethernet::EthernetState::Inactive</ref> upon a call to <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a93f7edc2bb3c7320e2641b9250862548" kindref="member">Deactivate()</ref>.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ab7e692eafc6c683c0b8dbe96d083b9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::RemoveStateChangeHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveStateChangeHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a StateChangeHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aba6fabf286f52bd2ba5d79ccb120b353" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Ethernet::IEthernetController::AddBitrateChangeHandler</definition>
+        <argsstring>(BitrateChangeHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddBitrateChangeHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ae7737603862a26e072b3f1c083d14733" kindref="member">BitrateChangeHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for changes of the link bit rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the bit rate of the connected link changes. This is typically the case when a link was successfully established, or the controller was deactivated.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a581c77372432f6445273249b5b6f4180" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::RemoveBitrateChangeHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveBitrateChangeHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a BitrateChangeHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a8447b75162f83c068c6667dd723d4bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Ethernet::IEthernetController::SendFrame</definition>
+        <argsstring>(EthernetFrame msg, void *userContext=nullptr)=0</argsstring>
+        <name>SendFrame</name>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" kindref="compound">EthernetFrame</ref></type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Send an <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame with the time provider&apos;s current time. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the size of the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame is smaller than the minimum size of 60 bytes (excludes the Frame Check Sequence), it will be padded with zeros.</para><para>NB: precise timestamps are always generated by the NetworkSimulator.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame to send. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional user provided pointer that is reobtained in the <ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" kindref="member">FrameTransmitHandler</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="167" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> Controller API to be used by vECUs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp" bodystart="34" bodyend="168"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aa42c293611f6d790fe9bedf0e749ada9" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>Activate</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aba6fabf286f52bd2ba5d79ccb120b353" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>AddBitrateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a5d72118b010673d8eb1cf546058c4809" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>AddFrameHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aceffd587552fa9cebaa3270ba0ca949e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>AddFrameTransmitHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ac32eeffe3cc7805af10a40ab255aeb62" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>AddStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ae7737603862a26e072b3f1c083d14733" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>BitrateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>CallbackT</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a93f7edc2bb3c7320e2641b9250862548" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>Deactivate</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1abdad4115ec106fbd08bc2d5628473481" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>FrameHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>FrameTransmitHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a581c77372432f6445273249b5b6f4180" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>RemoveBitrateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aeca25f16da4c224e6f19e32dd0f88232" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>RemoveFrameHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a25ead92bff4b167598bf14a56890db03" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>RemoveFrameTransmitHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ab7e692eafc6c683c0b8dbe96d083b9c3" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>RemoveStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a8447b75162f83c068c6667dd723d4bf7" prot="public" virt="pure-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>SendFrame</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a87a5498a99795aba8280c2ca9544de86" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>StateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a4c36768678f173a8a3e22d2fa9d61e16" prot="public" virt="virtual"><scope>SilKit::Services::Ethernet::IEthernetController</scope><name>~IEthernetController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

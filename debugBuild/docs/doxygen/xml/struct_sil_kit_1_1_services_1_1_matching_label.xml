@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_matching_label" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::MatchingLabel</compoundname>
+    <includes refid="datatypes_8hpp" local="no">datatypes.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" prot="public" static="no">
+        <name>Kind</name>
+        <enumvalue id="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829aebb061953c0454b2c8ee7b0ac615ebcd" prot="public">
+          <name>Optional</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>If this label is available, its value must match. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829ae89ab59baea830bd940c300886c50efe" prot="public">
+          <name>Mandatory</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>This label must be available and its value must match. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The different kinds of matching rules for labels. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="56" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="55" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_matching_label_1abc4d02e4ab95c4a3c9519a29da57932c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::MatchingLabel::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>The label&apos;s key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="61" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_matching_label_1a7244d006f4f9a416a145463f35e872eb" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::MatchingLabel::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>The label&apos;s key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_matching_label_1a1ec6b3eb1e89a39bbe278b563d23bec0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" kindref="member">Kind</ref></type>
+        <definition>Kind SilKit::Services::MatchingLabel::kind</definition>
+        <argsstring></argsstring>
+        <name>kind</name>
+        <briefdescription>
+<para>The matching kind to apply for this label. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A label to control the matching behavior of DataPublishers, DataSubscribers, RpcServers, and RpcClients. </para>    </briefdescription>
+    <detaileddescription>
+<para>Used in <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">SilKit::Services::PubSub::PubSubSpec</ref> and <ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">SilKit::Services::Rpc::RpcSpec</ref> </para>    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" line="52" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp" bodystart="51" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_matching_label_1abc4d02e4ab95c4a3c9519a29da57932c" prot="public" virt="non-virtual"><scope>SilKit::Services::MatchingLabel</scope><name>key</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_matching_label_1a1ec6b3eb1e89a39bbe278b563d23bec0" prot="public" virt="non-virtual"><scope>SilKit::Services::MatchingLabel</scope><name>kind</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" prot="public" virt="non-virtual"><scope>SilKit::Services::MatchingLabel</scope><name>Kind</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_matching_label_1a7244d006f4f9a416a145463f35e872eb" prot="public" virt="non-virtual"><scope>SilKit::Services::MatchingLabel</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

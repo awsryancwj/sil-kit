@@ -1,1 +1,1 @@
-/home/ubuntu/qnx710/host/linux/x86_64/usr/bin/q++ -Vgcc_ntoaarch64le_gpp -lang-c++  -Wc,-std=c++14 -Wc,-std=c++14 -O3 -DNDEBUG -O3 -DNDEBUG "CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o" -o parse  -lsocket -lsocket ../libyaml-cpp.a -lsocket 
+/home/ubuntu/qnx710/host/linux/x86_64/usr/bin/q++ -Vgcc_ntoaarch64le_gpp -lang-c++  -Wc,-std=c++14 -O3 -DNDEBUG -O3 -DNDEBUG "CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o" -o parse  -lsocket ../libyaml-cpp.a -lsocket 

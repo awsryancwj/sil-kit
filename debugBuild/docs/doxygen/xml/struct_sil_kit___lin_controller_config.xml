@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___lin_controller_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LinControllerConfig</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___lin_controller_config_1a3823272970716cd961cee9ac1d335011" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_LinControllerConfig::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The interface id specifying which version of this struct was obtained </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="239" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_controller_config_1ab57d869303e2a0c61bdf0a95e22ecf02" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a1e3f7d7586e3c76c30383d672e9e5963" kindref="member">SilKit_LinControllerMode</ref></type>
+        <definition>SilKit_LinControllerMode SilKit_LinControllerConfig::controllerMode</definition>
+        <argsstring></argsstring>
+        <name>controllerMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure as LIN master or LIN slave </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="241" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_controller_config_1a7e43436f7c8787afdb775a5c69757f0a" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a87f84094445e3127075578c73f0083e9" kindref="member">SilKit_LinBaudRate</ref></type>
+        <definition>SilKit_LinBaudRate SilKit_LinControllerConfig::baudRate</definition>
+        <argsstring></argsstring>
+        <name>baudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The operational baud rate of the controller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="243" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_controller_config_1a39085f8bd50953cff218b629d9a7b2f1" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SilKit_LinControllerConfig::numFrameResponses</definition>
+        <argsstring></argsstring>
+        <name>numFrameResponses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="245" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_controller_config_1a04beb9b9c26cc5d4b1360792ea5dadd8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___lin_frame_response" kindref="compound">SilKit_LinFrameResponse</ref> *</type>
+        <definition>SilKit_LinFrameResponse* SilKit_LinControllerConfig::frameResponses</definition>
+        <argsstring></argsstring>
+        <name>frameResponses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LinFrameResponse configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="247" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Configuration data to initialize the LIN Controller Cf.: <ref refid="_lin_8h_1a23f4ad8c054ffab15825277f24d2e264" kindref="member">SilKit_LinController_Init()</ref>; </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="317">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="316">
+        <label>SilKit_LinControllerConfig</label>
+        <link refid="struct_sil_kit___lin_controller_config"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="318" relation="usage">
+          <edgelabel>frameResponses</edgelabel>
+        </childnode>
+      </node>
+      <node id="319">
+        <label>SilKit_LinFrame</label>
+        <link refid="struct_sil_kit___lin_frame"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="318">
+        <label>SilKit_LinFrameResponse</label>
+        <link refid="struct_sil_kit___lin_frame_response"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="319" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="237" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="236" bodyend="248"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___lin_controller_config_1a7e43436f7c8787afdb775a5c69757f0a" prot="public" virt="non-virtual"><scope>SilKit_LinControllerConfig</scope><name>baudRate</name></member>
+      <member refid="struct_sil_kit___lin_controller_config_1ab57d869303e2a0c61bdf0a95e22ecf02" prot="public" virt="non-virtual"><scope>SilKit_LinControllerConfig</scope><name>controllerMode</name></member>
+      <member refid="struct_sil_kit___lin_controller_config_1a04beb9b9c26cc5d4b1360792ea5dadd8" prot="public" virt="non-virtual"><scope>SilKit_LinControllerConfig</scope><name>frameResponses</name></member>
+      <member refid="struct_sil_kit___lin_controller_config_1a39085f8bd50953cff218b629d9a7b2f1" prot="public" virt="non-virtual"><scope>SilKit_LinControllerConfig</scope><name>numFrameResponses</name></member>
+      <member refid="struct_sil_kit___lin_controller_config_1a3823272970716cd961cee9ac1d335011" prot="public" virt="non-virtual"><scope>SilKit_LinControllerConfig</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

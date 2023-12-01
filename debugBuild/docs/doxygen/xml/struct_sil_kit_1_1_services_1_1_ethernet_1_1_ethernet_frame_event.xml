@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Ethernet::EthernetFrameEvent</compoundname>
+    <includes refid="_ethernet_datatypes_8hpp" local="no">EthernetDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1a239322709e27501d3c8b944a94ae6e8e" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Ethernet::EthernetFrameEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Reception time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="53" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1a10487ac5a2be1590effae3eff379d5d8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" kindref="compound">EthernetFrame</ref></type>
+        <definition>EthernetFrame SilKit::Services::Ethernet::EthernetFrameEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+<para>The <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1a7800f79a0f621afa58552dfd3ecd778f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref></type>
+        <definition>TransmitDirection SilKit::Services::Ethernet::EthernetFrameEvent::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+<para>Receive/Transmit direction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1ae561a05342fddfe37909c7a3b12e9cd3" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SilKit::Services::Ethernet::EthernetFrameEvent::userContext</definition>
+        <argsstring></argsstring>
+        <name>userContext</name>
+        <briefdescription>
+<para>Optional pointer provided by user when sending the frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="56" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame including the raw frame, Transmit ID and timestamp. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="37">
+        <label>SilKit::Services::Ethernet::EthernetFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>raw</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>SilKit::Services::Ethernet::EthernetFrameEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="52" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="51" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1a7800f79a0f621afa58552dfd3ecd778f" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetFrameEvent</scope><name>direction</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1a10487ac5a2be1590effae3eff379d5d8" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetFrameEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1a239322709e27501d3c8b944a94ae6e8e" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetFrameEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event_1ae561a05342fddfe37909c7a3b12e9cd3" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetFrameEvent</scope><name>userContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

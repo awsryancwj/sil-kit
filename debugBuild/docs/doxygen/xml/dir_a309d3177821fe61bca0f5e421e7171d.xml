@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a309d3177821fe61bca0f5e421e7171d" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin</compoundname>
+    <innerfile refid="_lin_controller_extensions_8hpp">LinControllerExtensions.hpp</innerfile>
+    <innerfile refid="_lin_datatypes_extensions_8hpp">LinDatatypesExtensions.hpp</innerfile>
+    <innerfile refid="experimental_2services_2lin_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3a650c7b782b4f1ff07989307d34d38f" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet</compoundname>
+    <innerfile refid="services_2ethernet_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="_ethernet_datatypes_8hpp">EthernetDatatypes.hpp</innerfile>
+    <innerfile refid="ethernet_2fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="_i_ethernet_controller_8hpp">IEthernetController.hpp</innerfile>
+    <innerfile refid="services_2ethernet_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/"/>
+  </compounddef>
+</doxygen>

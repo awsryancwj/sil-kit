@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___byte_vector" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_ByteVector</compoundname>
+    <includes refid="_types_8h" local="no">Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___byte_vector_1a89d6013b61d690c1345aab80b7afb4b6" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* SilKit_ByteVector::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="66" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___byte_vector_1a14b1719d680df7c623992de7dd7521e4" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SilKit_ByteVector::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="67" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="65" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="64" bodyend="68"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___byte_vector_1a89d6013b61d690c1345aab80b7afb4b6" prot="public" virt="non-virtual"><scope>SilKit_ByteVector</scope><name>data</name></member>
+      <member refid="struct_sil_kit___byte_vector_1a14b1719d680df7c623992de7dd7521e4" prot="public" virt="non-virtual"><scope>SilKit_ByteVector</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

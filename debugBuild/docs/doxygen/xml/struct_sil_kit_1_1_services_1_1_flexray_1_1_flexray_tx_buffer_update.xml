@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayTxBufferUpdate</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update_1aa83b310017e4a49749313a0633c74063" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit::Services::Flexray::FlexrayTxBufferUpdate::txBufferIndex</definition>
+        <argsstring></argsstring>
+        <name>txBufferIndex</name>
+        <briefdescription>
+<para>Index of the TX Buffers according to the configured buffers (cf. <ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config" kindref="compound">FlexrayControllerConfig</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="308" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update_1acb28b1b0be324529cf597deceb4d31c1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SilKit::Services::Flexray::FlexrayTxBufferUpdate::payloadDataValid</definition>
+        <argsstring></argsstring>
+        <name>payloadDataValid</name>
+        <briefdescription>
+<para>Payload data valid flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="311" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update_1a18ed64c342a1289ff5e9302b3ee0a6db" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::Flexray::FlexrayTxBufferUpdate::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+<para>Raw payload containing 0 to 254 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="314" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Update the content of a FlexRay TX-Buffer. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="89">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+      <node id="88">
+        <label>SilKit::Services::Flexray::FlexrayTxBufferUpdate</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update"/>
+        <childnode refid="89" relation="usage">
+          <edgelabel>payload</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="306" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="305" bodyend="315"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update_1a18ed64c342a1289ff5e9302b3ee0a6db" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferUpdate</scope><name>payload</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update_1acb28b1b0be324529cf597deceb4d31c1" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferUpdate</scope><name>payloadDataValid</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update_1aa83b310017e4a49749313a0633c74063" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayTxBufferUpdate</scope><name>txBufferIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

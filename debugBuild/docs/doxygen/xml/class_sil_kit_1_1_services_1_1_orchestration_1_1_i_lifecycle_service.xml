@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Orchestration::ILifecycleService</compoundname>
+    <includes refid="_i_lifecycle_service_8hpp" local="no">ILifecycleService.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1aa7bf5e91c169a717a04ad1857a0965a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Orchestration::ILifecycleService::~ILifecycleService</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ILifecycleService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ab2980e038719f627781c2ba041833cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::SetCommunicationReadyHandler</definition>
+        <argsstring>(CommunicationReadyHandler handler)=0</argsstring>
+        <name>SetCommunicationReadyHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a7e6f7a74d5371d04f4978b1c28e13bc8" kindref="member">CommunicationReadyHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback that is executed once all communication channels between participants with a lifecycle have been set up and are ready for communication. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the participant reaches the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" kindref="member">ParticipantState::CommunicationInitialized</ref>. This handler is invoked in an internal thread, and receiving messages during the handler invocation is not possible. For an asynchronous invocation, see <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a8c461cb137ae6db6332a53920e594c03" kindref="member">SetCommunicationReadyHandlerAsync</ref> and <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9817884c479ded7d52efea31f690fdfd" kindref="member">CompleteCommunicationReadyHandlerAsync</ref>. After the handler has been processed, the participant switches to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a506db5c85cf0fd10f93e5478013650b6" kindref="member">ParticipantState::ReadyToRun</ref> state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a8c461cb137ae6db6332a53920e594c03" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::SetCommunicationReadyHandlerAsync</definition>
+        <argsstring>(CommunicationReadyHandler handler)=0</argsstring>
+        <name>SetCommunicationReadyHandlerAsync</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a7e6f7a74d5371d04f4978b1c28e13bc8" kindref="member">CommunicationReadyHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback that is executed once all communication channels between participants with a lifecycle have been set up and are ready for communication. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the participant reaches the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" kindref="member">ParticipantState::CommunicationInitialized</ref>. Even after the callback returns, the participant will stay in the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" kindref="member">ParticipantState::CommunicationInitialized</ref> until the <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9817884c479ded7d52efea31f690fdfd" kindref="member">CompleteCommunicationReadyHandlerAsync()</ref> method is called. Only then will the participant switch to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a506db5c85cf0fd10f93e5478013650b6" kindref="member">ParticipantState::ReadyToRun</ref>. Note that CompleteCommunicationReadyHandlerAsync may not be called from within any CommunicationReadyHandler. The CommunicationReadyHandler is executed in an internal thread and must not be blocked by the user. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9817884c479ded7d52efea31f690fdfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::CompleteCommunicationReadyHandlerAsync</definition>
+        <argsstring>()=0</argsstring>
+        <name>CompleteCommunicationReadyHandlerAsync</name>
+        <briefdescription>
+<para>Notify that the async CommunicationReadyHandler is completed. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method must not be invoked from within a CommunicationReadyHandler. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a341065345fe943feca19b323481fec90" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::SetStartingHandler</definition>
+        <argsstring>(StartingHandler handler)=0</argsstring>
+        <name>SetStartingHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1aa62b0fec81e62dc30927f48e160ce392" kindref="member">StartingHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>(Participants without TimeSyncService only) Register a callback that is executed once directly before the participant enters <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This handler is triggered just before the participant changes to <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref>. It is only triggered if the participant does NOT use virtual time synchronization. It does not block other participants from changing to <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref> and should only be used for lightweight operations such as starting timers. It is executed in the context of an internal thread that received the command. After the handler has been processed, the participant switches to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref> state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a699df98cc477c4a4d3ec405600259d86" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::SetStopHandler</definition>
+        <argsstring>(StopHandler handler)=0</argsstring>
+        <name>SetStopHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a08408b98fa8bd18e46c79152663875cd" kindref="member">StopHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback that is executed on simulation stop. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the participant enters the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a7b7ecb39b9e110c2a31409a1672bad23" kindref="member">ParticipantState::Stopping</ref> state. It is executed in the context of an internal thread that received the command. After the handler has been processed, the participant switches to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" kindref="member">ParticipantState::Stopped</ref> state.</para><para>Throwing an error inside the handler will cause a call to <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a514586028d5c2186e282b36bb83f9802" kindref="member">ReportError()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ae4552a64ad66993b4e0b9c35b0cceb3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::SetShutdownHandler</definition>
+        <argsstring>(ShutdownHandler handler)=0</argsstring>
+        <name>SetShutdownHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a3825ab397f2ebce077b0c5f5c8313374" kindref="member">ShutdownHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback that is executed on simulation shutdown. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the participant enters the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a075d9c9ae8c8f1c79c1a1965cd8c5a42" kindref="member">ParticipantState::ShuttingDown</ref> state. It is executed in the context of an internal thread that received the command. After the handler has been processed, the participant switches to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a1a4ebb180ba59b067782515ffee6e975" kindref="member">ParticipantState::Shutdown</ref> state and is allowed to terminate.</para><para>Throwing an error inside the handler will cause a call to <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a514586028d5c2186e282b36bb83f9802" kindref="member">ReportError()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9cfdefa98b291e3aed1114a6f557dd40" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::SetAbortHandler</definition>
+        <argsstring>(AbortHandler handler)=0</argsstring>
+        <name>SetAbortHandler</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a4c6d6ea9327638310f04d9d169ef307b" kindref="member">AbortHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback that is executed on simulation abort. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the participant enters the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a10f3b203b67107d670a31d9b39cc1983" kindref="member">ParticipantState::Aborting</ref>. It is executed in the context of an internal thread that received the command. After the handler has been processed, the participant switches to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a1a4ebb180ba59b067782515ffee6e975" kindref="member">ParticipantState::Shutdown</ref> state and is allowed to terminate.</para><para>Throwing an error inside the handler will cause a call to <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a514586028d5c2186e282b36bb83f9802" kindref="member">ReportError()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a03f473fc108ce1accb0d2af3051635f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ILifecycleService::StartLifecycle</definition>
+        <argsstring>() -&gt; std::future&lt; ParticipantState &gt;=0</argsstring>
+        <name>StartLifecycle</name>
+        <briefdescription>
+<para>Start non blocking operation; returns immediately. </para>        </briefdescription>
+        <detaileddescription>
+<para>Starts simulation until the simulation is stopped or aborted.</para><para><simplesect kind="return"><para>Future that will hold the final state of the participant once the LifecycleService finishes operation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a514586028d5c2186e282b36bb83f9802" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::ReportError</definition>
+        <argsstring>(std::string errorMsg)=0</argsstring>
+        <name>ReportError</name>
+        <param>
+          <type>std::string</type>
+          <declname>errorMsg</declname>
+        </param>
+        <briefdescription>
+<para>Abort current simulation run due to an error. </para>        </briefdescription>
+        <detaileddescription>
+<para>Switch to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a902b0d55fddef6f8d651fe1035b7d4bd" kindref="member">ParticipantState::Error</ref> state and report the error message in the SIL Kit system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a2091e58d45dff4aeb1413c6ae3bf03e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::Pause</definition>
+        <argsstring>(std::string reason)=0</argsstring>
+        <name>Pause</name>
+        <param>
+          <type>std::string</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Pause execution of the participant. </para>        </briefdescription>
+        <detaileddescription>
+<para>Switch to <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae99180abf47a8b3a856e0bcb2656990a" kindref="member">ParticipantState::Paused</ref> due to the provided <computeroutput>reason</computeroutput>.</para><para>When a client is in state <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae99180abf47a8b3a856e0bcb2656990a" kindref="member">ParticipantState::Paused</ref>, it must not be considered as unresponsive even if a health monitoring related timeout occurs.</para><para>Precondition: <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a126eb0d6ee3b704eeec86e7abf4c36e7" kindref="member">State()</ref> == <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ae93260ea1a4a58c79e47cc94aa10d856" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::Continue</definition>
+        <argsstring>()=0</argsstring>
+        <name>Continue</name>
+        <briefdescription>
+<para>Switch back to <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref> after having paused. </para>        </briefdescription>
+        <detaileddescription>
+<para>Precondition: <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a126eb0d6ee3b704eeec86e7abf4c36e7" kindref="member">State()</ref> == <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae99180abf47a8b3a856e0bcb2656990a" kindref="member">ParticipantState::Paused</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a6609160348f1f90a0f14edcd270dd912" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Orchestration::ILifecycleService::Stop</definition>
+        <argsstring>(std::string reason)=0</argsstring>
+        <name>Stop</name>
+        <param>
+          <type>std::string</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Stop execution of the participant. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allows the participant to exit the RunAsync loop, e.g., if it is unable to further progress its simulation.</para><para>Calls the StopHandler and then switches to the <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" kindref="member">ParticipantState::Stopped</ref> state.</para><para>NB: In general, Stop should not be called by the participants as the end of simulation is governed by the central execution controller. This method should only be used if the client cannot participate in the system simulation anymore.</para><para>Precondition: <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a126eb0d6ee3b704eeec86e7abf4c36e7" kindref="member">State()</ref> == <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a126eb0d6ee3b704eeec86e7abf4c36e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ILifecycleService::State</definition>
+        <argsstring>() const -&gt; ParticipantState=0</argsstring>
+        <name>State</name>
+        <briefdescription>
+<para>Get the current participant status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a32840fe715a147c581103cd90f0e0daf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ILifecycleService::Status</definition>
+        <argsstring>() const -&gt; const ParticipantStatus &amp;=0</argsstring>
+        <name>Status</name>
+        <briefdescription>
+<para>Get the current participant status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a0c00beea2f9602cd3057d7f04a7b88ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Orchestration::ILifecycleService::CreateTimeSyncService</definition>
+        <argsstring>() -&gt; ITimeSyncService *=0</argsstring>
+        <name>CreateTimeSyncService</name>
+        <briefdescription>
+<para>Return the <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_time_sync_service" kindref="compound">ITimeSyncService</ref> for the current <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service" kindref="compound">ILifecycleService</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="211" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="66" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" bodystart="65" bodyend="212"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9817884c479ded7d52efea31f690fdfd" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>CompleteCommunicationReadyHandlerAsync</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ae93260ea1a4a58c79e47cc94aa10d856" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>Continue</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a0c00beea2f9602cd3057d7f04a7b88ab" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>CreateTimeSyncService</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a2091e58d45dff4aeb1413c6ae3bf03e0" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>Pause</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a514586028d5c2186e282b36bb83f9802" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>ReportError</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9cfdefa98b291e3aed1114a6f557dd40" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>SetAbortHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ab2980e038719f627781c2ba041833cd1" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>SetCommunicationReadyHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a8c461cb137ae6db6332a53920e594c03" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>SetCommunicationReadyHandlerAsync</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ae4552a64ad66993b4e0b9c35b0cceb3e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>SetShutdownHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a341065345fe943feca19b323481fec90" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>SetStartingHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a699df98cc477c4a4d3ec405600259d86" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>SetStopHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a03f473fc108ce1accb0d2af3051635f3" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>StartLifecycle</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a126eb0d6ee3b704eeec86e7abf4c36e7" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>State</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a32840fe715a147c581103cd90f0e0daf" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>Status</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a6609160348f1f90a0f14edcd270dd912" prot="public" virt="pure-virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>Stop</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1aa7bf5e91c169a717a04ad1857a0965a4" prot="public" virt="virtual"><scope>SilKit::Services::Orchestration::ILifecycleService</scope><name>~ILifecycleService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

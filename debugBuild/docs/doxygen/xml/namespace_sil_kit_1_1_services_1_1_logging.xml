@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services_1_1_logging" kind="namespace" language="C++">
+    <compoundname>SilKit::Services::Logging</compoundname>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger" prot="public">SilKit::Services::Logging::ILogger</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721" prot="public" static="no">
+        <name>Level</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721add4ec0ac4e58f7c32a01244ae91150b1" prot="public">
+          <name>Trace</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Detailed debug-level messages. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721aa603905470e2a5b8c13e96b579ef0dba" prot="public">
+          <name>Debug</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Normal debug-level messages. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721a4059b0251f66a18cb56f544728796875" prot="public">
+          <name>Info</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Informational content. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721a56525ae64d370c0b448ac0d60710ef17" prot="public">
+          <name>Warn</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Warnings. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Non-critical errors. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721a278d01e5af56273bae1bb99a98b370cd" prot="public">
+          <name>Critical</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Critical errors. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721ad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0xffffffff</initializer>
+          <briefdescription>
+<para><ref refid="namespace_sil_kit_1_1_services_1_1_logging" kindref="compound">Logging</ref> is disabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Information level of a log message. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/LoggingDatatypes.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/LoggingDatatypes.hpp" bodystart="32" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_logging_1a497a1aa466e09bca5d82ad4a0b3dad28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Logging::to_string</definition>
+        <argsstring>(const Level &amp;level)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721" kindref="member">Level</ref> &amp;</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/string_utils.hpp" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/string_utils.hpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_logging_1a579d5e841ba6bdcd272734546aaead97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721" kindref="member">Level</ref></type>
+        <definition>Level SilKit::Services::Logging::from_string</definition>
+        <argsstring>(const std::string &amp;levelStr)</argsstring>
+        <name>from_string</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>levelStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/string_utils.hpp" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/string_utils.hpp" bodystart="67" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_logging_1a691c4c172e3e3c51c12c00338b047d54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Logging::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Level &amp;level)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721" kindref="member">Level</ref> &amp;</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/string_utils.hpp" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/string_utils.hpp" bodystart="51" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/fwd_decl.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

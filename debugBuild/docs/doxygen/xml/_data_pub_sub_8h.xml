@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_data_pub_sub_8h" kind="file" language="C++">
+    <compoundname>DataPubSub.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_interface_identifiers_8h" local="yes">silkit/capi/InterfaceIdentifiers.h</includes>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>stdint.h</label>
+      </node>
+      <node id="16">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h</label>
+        <link refid="_data_pub_sub_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stddef.h</label>
+      </node>
+      <node id="24">
+        <label>memory.h</label>
+      </node>
+      <node id="23">
+        <label>limits.h</label>
+      </node>
+      <node id="18">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="26">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="25">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h</label>
+        <link refid="_data_pub_sub_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit___data_spec" prot="public">SilKit_DataSpec</innerclass>
+    <innerclass refid="struct_sil_kit___data_message_event" prot="public">SilKit_DataMessageEvent</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1a40febf890697b977132d8e2d6af7e92e" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref></type>
+        <definition>typedef struct SilKit_DataSpec  SilKit_DataSpec</definition>
+        <argsstring></argsstring>
+        <name>SilKit_DataSpec</name>
+        <briefdescription>
+<para>A pubsub/rpc node spec containing all matching relevant information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" prot="public" static="no">
+        <type>struct <ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref></type>
+        <definition>typedef struct SilKit_DataPublisher SilKit_DataPublisher</definition>
+        <argsstring></argsstring>
+        <name>SilKit_DataPublisher</name>
+        <briefdescription>
+<para>Represents a handle to a data publisher instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="167" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" prot="public" static="no">
+        <type>struct <ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref></type>
+        <definition>typedef struct SilKit_DataSubscriber SilKit_DataSubscriber</definition>
+        <argsstring></argsstring>
+        <name>SilKit_DataSubscriber</name>
+        <briefdescription>
+<para>Represents a handle to a data subscriber instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="167" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_DataMessageHandler_t) (void *context, SilKit_DataSubscriber *subscriber, const SilKit_DataMessageEvent *dataMessageEvent)</definition>
+        <argsstring>)(void *context, SilKit_DataSubscriber *subscriber, const SilKit_DataMessageEvent *dataMessageEvent)</argsstring>
+        <name>SilKit_DataMessageHandler_t</name>
+        <briefdescription>
+<para>Handler type for incoming data message events on DataSubscribers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context that the user provided on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subscriber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The affected subscriber. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataMessageEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the raw data and send timestamp. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1ada05927e9e95217bc4b2eb6716f05f7e" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_DataPublisher_Create_t) (SilKit_DataPublisher **outPublisher, SilKit_Participant *participant, const char *controllerName, SilKit_DataSpec *dataSpec, uint8_t history)</definition>
+        <argsstring>)(SilKit_DataPublisher **outPublisher, SilKit_Participant *participant, const char *controllerName, SilKit_DataSpec *dataSpec, uint8_t history)</argsstring>
+        <name>SilKit_DataPublisher_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1a5ca3b53e3f145ad23619cd5d1ba9b8cb" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_DataSubscriber_Create_t) (SilKit_DataSubscriber **outSubscriber, SilKit_Participant *participant, const char *controllerName, SilKit_DataSpec *dataSpec, void *dataHandlerContext, SilKit_DataMessageHandler_t dataHandler)</definition>
+        <argsstring>)(SilKit_DataSubscriber **outSubscriber, SilKit_Participant *participant, const char *controllerName, SilKit_DataSpec *dataSpec, void *dataHandlerContext, SilKit_DataMessageHandler_t dataHandler)</argsstring>
+        <name>SilKit_DataSubscriber_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="98" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1a3af9a69deaec995f2913b99db9ca9b44" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_DataPublisher_Publish_t) (SilKit_DataPublisher *self, const SilKit_ByteVector *data)</definition>
+        <argsstring>)(SilKit_DataPublisher *self, const SilKit_ByteVector *data)</argsstring>
+        <name>SilKit_DataPublisher_Publish_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="108" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_data_pub_sub_8h_1a8c854893f01a0c9abb3b13d23d76a498" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_DataSubscriber_SetDataMessageHandler_t) (SilKit_DataSubscriber *self, void *context, SilKit_DataMessageHandler_t dataHandler)</definition>
+        <argsstring>)(SilKit_DataSubscriber *self, void *context, SilKit_DataMessageHandler_t dataHandler)</argsstring>
+        <name>SilKit_DataSubscriber_SetDataMessageHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="118" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_data_pub_sub_8h_1aea74de16d4f6e6c36979b99a96a92a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_DataPublisher_Create</definition>
+        <argsstring>(SilKit_DataPublisher **outPublisher, SilKit_Participant *participant, const char *controllerName, SilKit_DataSpec *dataSpec, uint8_t history)</argsstring>
+        <name>SilKit_DataPublisher_Create</name>
+        <param>
+          <type><ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref> **</type>
+          <declname>outPublisher</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>controllerName</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref> *</type>
+          <declname>dataSpec</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>history</declname>
+        </param>
+        <briefdescription>
+<para>Create a DataPublisher on the provided simulation participant with the provided properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outPublisher</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to which the resulting DataPublisher reference will be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant for which the DataPublisher should be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controllerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of this controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataSpec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The specification of topic, media type and labels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>history</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A number indicating the number of historic values that should be replayed for a new DataSubscriber. Restricted to {0|1}. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_data_pub_sub_8h_1a5acdea100edec11604994e3ca2bb42ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_DataSubscriber_Create</definition>
+        <argsstring>(SilKit_DataSubscriber **outSubscriber, SilKit_Participant *participant, const char *controllerName, SilKit_DataSpec *dataSpec, void *dataHandlerContext, SilKit_DataMessageHandler_t dataHandler)</argsstring>
+        <name>SilKit_DataSubscriber_Create</name>
+        <param>
+          <type><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref> **</type>
+          <declname>outSubscriber</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>controllerName</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref> *</type>
+          <declname>dataSpec</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dataHandlerContext</declname>
+        </param>
+        <param>
+          <type><ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref></type>
+          <declname>dataHandler</declname>
+        </param>
+        <briefdescription>
+<para>Create a DataSubscriber on the provided simulation participant with the provided properties. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outSubscriber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to which the resulting DataSubscriber reference will be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant for which the DataSubscriber should be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controllerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of this controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataSpec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The specification of topic, media type and labels. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataHandlerContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context that is reobtained on data reception in the dataHandler. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler that is called on data reception. Can be overwritten by <ref refid="_data_pub_sub_8h_1a18f068f41e812fbfe98ecedda5a6e751" kindref="member">SilKit_DataSubscriber_SetDataMessageHandler</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_data_pub_sub_8h_1a8f6ca32f8d17a88adeaffd4fda26be2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_DataPublisher_Publish</definition>
+        <argsstring>(SilKit_DataPublisher *self, const SilKit_ByteVector *data)</argsstring>
+        <name>SilKit_DataPublisher_Publish</name>
+        <param>
+          <type><ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Publish data through the provided DataPublisher. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DataPublisher that should publish the data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data that should be published. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_data_pub_sub_8h_1a18f068f41e812fbfe98ecedda5a6e751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_DataSubscriber_SetDataMessageHandler</definition>
+        <argsstring>(SilKit_DataSubscriber *self, void *context, SilKit_DataMessageHandler_t dataHandler)</argsstring>
+        <name>SilKit_DataSubscriber_SetDataMessageHandler</name>
+        <param>
+          <type><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref></type>
+          <declname>dataHandler</declname>
+        </param>
+        <briefdescription>
+<para>Sets / overwrites the default handler to be called on data reception. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DataSubscriber for which the handler should be set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user provided context, that is reobtained on data reception in the dataHandler. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handler that is called on data reception. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="115" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interface_identifiers_8h" kindref="compound">silkit/capi/InterfaceIdentifiers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_sil_kit___data_spec" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37" refid="struct_sil_kit___data_spec_1a064b68f024b8e5c3e0f180b06adf7188" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___data_spec_1a064b68f024b8e5c3e0f180b06adf7188" kindref="member">structHeader</ref>;</highlight></codeline>
+<codeline lineno="38" refid="struct_sil_kit___data_spec_1a59f90405464fc54b190a4e2de6aaaca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___data_spec_1a59f90405464fc54b190a4e2de6aaaca1" kindref="member">topic</ref>;</highlight></codeline>
+<codeline lineno="39" refid="struct_sil_kit___data_spec_1ae85451f38922b638910828e80b130116" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___data_spec_1ae85451f38922b638910828e80b130116" kindref="member">mediaType</ref>;</highlight></codeline>
+<codeline lineno="40" refid="struct_sil_kit___data_spec_1a8827a48edef92c5e629a2447a6700ed9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___label_list" kindref="compound">SilKit_LabelList</ref><sp/><ref refid="struct_sil_kit___data_spec_1a8827a48edef92c5e629a2447a6700ed9" kindref="member">labelList</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><ref refid="_data_pub_sub_8h_1a40febf890697b977132d8e2d6af7e92e" kindref="member">SilKit_DataSpec</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="struct_sil_kit___data_message_event" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46" refid="struct_sil_kit___data_message_event_1a3a4fb1748a823e2cf38f120e3cb0147f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___data_message_event_1a3a4fb1748a823e2cf38f120e3cb0147f" kindref="member">structHeader</ref>;</highlight></codeline>
+<codeline lineno="48" refid="struct_sil_kit___data_message_event_1a6aebbe6dc4cc8826c8a14fcc39061cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___data_message_event_1a6aebbe6dc4cc8826c8a14fcc39061cdb" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="50" refid="struct_sil_kit___data_message_event_1a8ffcd130f295e2bb08e01db326687653" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref><sp/><ref refid="struct_sil_kit___data_message_event_1a8ffcd130f295e2bb08e01db326687653" kindref="member">data</ref>;<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___data_message_event" kindref="compound">SilKit_DataMessageEvent</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref><sp/><ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref>;</highlight></codeline>
+<codeline lineno="56" refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref><sp/><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref>*<sp/>subscriber,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___data_message_event" kindref="compound">SilKit_DataMessageEvent</ref>*<sp/>dataMessageEvent);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_data_pub_sub_8h_1aea74de16d4f6e6c36979b99a96a92a5c" kindref="member">SilKit_DataPublisher_Create</ref>(<ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref>**<sp/>outPublisher,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref>*<sp/>dataSpec,<sp/>uint8_t<sp/>history);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_data_pub_sub_8h_1ada05927e9e95217bc4b2eb6716f05f7e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_data_pub_sub_8h_1ada05927e9e95217bc4b2eb6716f05f7e" kindref="member">SilKit_DataPublisher_Create_t</ref>)(<ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref>**<sp/>outPublisher,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref>*<sp/>dataSpec,<sp/>uint8_t<sp/>history);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_data_pub_sub_8h_1a5acdea100edec11604994e3ca2bb42ef" kindref="member">SilKit_DataSubscriber_Create</ref>(<ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref>**<sp/>outSubscriber,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref>*<sp/>dataSpec,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dataHandlerContext,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref><sp/>dataHandler);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="_data_pub_sub_8h_1a5ca3b53e3f145ad23619cd5d1ba9b8cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_data_pub_sub_8h_1a5ca3b53e3f145ad23619cd5d1ba9b8cb" kindref="member">SilKit_DataSubscriber_Create_t</ref>)(</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref>**<sp/>outSubscriber,<sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>controllerName,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___data_spec" kindref="compound">SilKit_DataSpec</ref>*<sp/>dataSpec,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>dataHandlerContext,<sp/><ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref><sp/>dataHandler);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_data_pub_sub_8h_1a8f6ca32f8d17a88adeaffd4fda26be2c" kindref="member">SilKit_DataPublisher_Publish</ref>(<ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>data);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="_data_pub_sub_8h_1a3af9a69deaec995f2913b99db9ca9b44" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_data_pub_sub_8h_1a3af9a69deaec995f2913b99db9ca9b44" kindref="member">SilKit_DataPublisher_Publish_t</ref>)(<ref refid="_data_pub_sub_8h_1a00e7562bc2a49eb8fc750162c0c0ea9a" kindref="member">SilKit_DataPublisher</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>*<sp/>data);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_data_pub_sub_8h_1a18f068f41e812fbfe98ecedda5a6e751" kindref="member">SilKit_DataSubscriber_SetDataMessageHandler</ref>(</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref><sp/>dataHandler);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_data_pub_sub_8h_1a8c854893f01a0c9abb3b13d23d76a498" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_data_pub_sub_8h_1a8c854893f01a0c9abb3b13d23d76a498" kindref="member">SilKit_DataSubscriber_SetDataMessageHandler_t</ref>)(<ref refid="_data_pub_sub_8h_1aeff7e58cc83aa6c7676fcade747b7d5e" kindref="member">SilKit_DataSubscriber</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_data_pub_sub_8h_1ac4935c620c563a705e4bd93ebff9a816" kindref="member">SilKit_DataMessageHandler_t</ref><sp/>dataHandler);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h"/>
+  </compounddef>
+</doxygen>

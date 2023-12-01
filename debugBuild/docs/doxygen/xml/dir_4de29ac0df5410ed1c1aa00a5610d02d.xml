@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4de29ac0df5410ed1c1aa00a5610d02d" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant</compoundname>
+    <innerfile refid="_participant_extensions_8hpp">ParticipantExtensions.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/"/>
+  </compounddef>
+</doxygen>

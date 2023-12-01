@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::Services::PubSub::PubSubSpec</compoundname>
+    <includes refid="_pub_sub_spec_8hpp" local="no">PubSubSpec.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a2bf49573d9917ac1268e1ed620e15386" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::PubSub::PubSubSpec::_topic</definition>
+        <argsstring></argsstring>
+        <name>_topic</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a55f9a4598a4627597e2e6a88aef40b27" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::PubSub::PubSubSpec::_mediaType</definition>
+        <argsstring></argsstring>
+        <name>_mediaType</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a3a8e6d3d206b7311cc90ccdbf543b2e3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">SilKit::Services::MatchingLabel</ref> &gt;</type>
+        <definition>std::vector&lt;SilKit::Services::MatchingLabel&gt; SilKit::Services::PubSub::PubSubSpec::_labels</definition>
+        <argsstring></argsstring>
+        <name>_labels</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1af85c0edd978c4e0cd4d18d847272385a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Services::PubSub::PubSubSpec::PubSubSpec</definition>
+        <argsstring>()=default</argsstring>
+        <name>PubSubSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a487cfb2244d6ed96047e1debc9320dbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Services::PubSub::PubSubSpec::PubSubSpec</definition>
+        <argsstring>(std::string topic, std::string mediaType)</argsstring>
+        <name>PubSubSpec</name>
+        <param>
+          <type>std::string</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>mediaType</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">PubSubSpec</ref> via topic and mediaType. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="47" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a27ff5f8adf1bd78672e0504c266a2b55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Services::PubSub::PubSubSpec::AddLabel</definition>
+        <argsstring>(const SilKit::Services::MatchingLabel &amp;label)</argsstring>
+        <name>AddLabel</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">SilKit::Services::MatchingLabel</ref> &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Add a given <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">MatchingLabel</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="54" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="67" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a26d23f9d04ccafa8d5d6a3521ed7af31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Services::PubSub::PubSubSpec::AddLabel</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value, SilKit::Services::MatchingLabel::Kind kind)</argsstring>
+        <name>AddLabel</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" kindref="member">SilKit::Services::MatchingLabel::Kind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para>Add a <ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">MatchingLabel</ref> via key, value and matching kind. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="57" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a8eaf3b30d215875e76110dd7f9ca0186" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::PubSub::PubSubSpec::Topic</definition>
+        <argsstring>() const -&gt; const std::string &amp;</argsstring>
+        <name>Topic</name>
+        <briefdescription>
+<para>Get the topic of the <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">PubSubSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="60" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1aa7253a4d9f0c26e5b2833cdff1b0bb33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::PubSub::PubSubSpec::MediaType</definition>
+        <argsstring>() const -&gt; const std::string &amp;</argsstring>
+        <name>MediaType</name>
+        <briefdescription>
+<para>Get the media type of the <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">PubSubSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a025b6d855499858a646b5e5a2dada499" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Services::PubSub::PubSubSpec::Labels</definition>
+        <argsstring>() const -&gt; const std::vector&lt; SilKit::Services::MatchingLabel &gt; &amp;</argsstring>
+        <name>Labels</name>
+        <briefdescription>
+<para>Get the labels of the <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec" kindref="compound">PubSubSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="64" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The specification of topic, media type and labels for DataPublishers and DataSubscribers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp" bodystart="36" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a3a8e6d3d206b7311cc90ccdbf543b2e3" prot="private" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>_labels</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a55f9a4598a4627597e2e6a88aef40b27" prot="private" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>_mediaType</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a2bf49573d9917ac1268e1ed620e15386" prot="private" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>_topic</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a27ff5f8adf1bd78672e0504c266a2b55" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>AddLabel</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a26d23f9d04ccafa8d5d6a3521ed7af31" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>AddLabel</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a025b6d855499858a646b5e5a2dada499" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>Labels</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1aa7253a4d9f0c26e5b2833cdff1b0bb33" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>MediaType</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1af85c0edd978c4e0cd4d18d847272385a" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>PubSubSpec</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a487cfb2244d6ed96047e1debc9320dbd" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>PubSubSpec</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_pub_sub_spec_1a8eaf3b30d215875e76110dd7f9ca0186" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::PubSubSpec</scope><name>Topic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

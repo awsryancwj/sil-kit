@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayFrame</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_1adadc7b251d0cc524af4393d77e1ac4fd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header" kindref="compound">FlexrayHeader</ref></type>
+        <definition>FlexrayHeader SilKit::Services::Flexray::FlexrayFrame::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+<para>Header flags, slot, crc, and cycle indidcators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="348" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_1a3a028ac2e63970784d0b9ab3d6b200b1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::Flexray::FlexrayFrame::payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+<para>Raw payload containing 0 to 254 bytes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="349" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="58">
+        <label>SilKit::Services::Flexray::FlexrayFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>payload</edgelabel>
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+      <node id="60">
+        <label>SilKit::Services::Flexray::FlexrayHeader</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="347" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="346" bodyend="350"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_1adadc7b251d0cc524af4393d77e1ac4fd" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayFrame</scope><name>header</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_1a3a028ac2e63970784d0b9ab3d6b200b1" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayFrame</scope><name>payload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

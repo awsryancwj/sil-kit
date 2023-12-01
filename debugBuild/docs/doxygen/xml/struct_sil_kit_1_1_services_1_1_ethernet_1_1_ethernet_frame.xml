@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Ethernet::EthernetFrame</compoundname>
+    <includes refid="_ethernet_datatypes_8hpp" local="no">EthernetDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_1a40559fd602814306e5813f6d08a49623" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::Ethernet::EthernetFrame::raw</definition>
+        <argsstring></argsstring>
+        <name>raw</name>
+        <briefdescription>
+<para>The <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> raw frame without the frame check sequence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="47" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame (layer 2) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="33">
+        <label>SilKit::Services::Ethernet::EthernetFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>raw</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="46" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="45" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_1a40559fd602814306e5813f6d08a49623" prot="public" virt="non-virtual"><scope>SilKit::Services::Ethernet::EthernetFrame</scope><name>raw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

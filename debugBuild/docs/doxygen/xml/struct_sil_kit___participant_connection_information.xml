@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___participant_connection_information" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_ParticipantConnectionInformation</compoundname>
+    <includes refid="_orchestration_8h" local="no">Orchestration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___participant_connection_information_1aa8eed2b7358d978e7ed21388e86f70e6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_ParticipantConnectionInformation::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="637" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___participant_connection_information_1a8b1bda9ecb38dd07e6dd40b1f5aabe65" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_ParticipantConnectionInformation::participantName</definition>
+        <argsstring></argsstring>
+        <name>participantName</name>
+        <briefdescription>
+<para>Name of the remote participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="639" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about a participant connection in the <ref refid="_orchestration_8h_1ab6f1805c56164a51b082c720aa35a8ae" kindref="member">SilKit_SystemMonitor_ParticipantConnectedHandler_t</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="338">
+        <label>SilKit_ParticipantConnectionInformation</label>
+        <link refid="struct_sil_kit___participant_connection_information"/>
+        <childnode refid="339" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="339">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="636" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="635" bodyend="640"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___participant_connection_information_1a8b1bda9ecb38dd07e6dd40b1f5aabe65" prot="public" virt="non-virtual"><scope>SilKit_ParticipantConnectionInformation</scope><name>participantName</name></member>
+      <member refid="struct_sil_kit___participant_connection_information_1aa8eed2b7358d978e7ed21388e86f70e6" prot="public" virt="non-virtual"><scope>SilKit_ParticipantConnectionInformation</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

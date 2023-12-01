@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit" kind="namespace" language="C++">
+    <compoundname>SilKit</compoundname>
+    <innerclass refid="class_sil_kit_1_1_assertion_error" prot="public">SilKit::AssertionError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_configuration_error" prot="public">SilKit::ConfigurationError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_extension_error" prot="public">SilKit::ExtensionError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_i_participant" prot="public">SilKit::IParticipant</innerclass>
+    <innerclass refid="class_sil_kit_1_1_length_error" prot="public">SilKit::LengthError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_logic_error" prot="public">SilKit::LogicError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_out_of_range_error" prot="public">SilKit::OutOfRangeError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_protocol_error" prot="public">SilKit::ProtocolError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_sil_kit_error" prot="public">SilKit::SilKitError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_state_error" prot="public">SilKit::StateError</innerclass>
+    <innerclass refid="class_sil_kit_1_1_type_conversion_error" prot="public">SilKit::TypeConversionError</innerclass>
+    <innernamespace refid="namespace_sil_kit_1_1_config">SilKit::Config</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_experimental">SilKit::Experimental</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_util">SilKit::Util</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_vendor">SilKit::Vendor</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_version">SilKit::Version</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1ab603db9af15523ac8fdbddbcc45acbc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::CreateParticipant</definition>
+        <argsstring>(std::shared_ptr&lt; SilKit::Config::IParticipantConfiguration &gt; participantConfig, const std::string &amp;participantName) -&gt; std::unique_ptr&lt; IParticipant &gt;</argsstring>
+        <name>CreateParticipant</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_sil_kit_1_1_config_1_1_i_participant_configuration" kindref="compound">SilKit::Config::IParticipantConfiguration</ref> &gt;</type>
+          <declname>participantConfig</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>participantName</declname>
+        </param>
+        <briefdescription>
+<para>Create a participant and join the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Become a participant based on the the given configuration options.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>participantConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration of the participant </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participantName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the participant </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Instance of the communication adapter</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_configuration_error" kindref="compound">SilKit::ConfigurationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the config has errors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_sil_kit_error" kindref="compound">SilKit::SilKitError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The participant could not be created. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1a550ff65548287b0d5f3f0987b53d7640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::CreateParticipant</definition>
+        <argsstring>(std::shared_ptr&lt; SilKit::Config::IParticipantConfiguration &gt; participantConfig, const std::string &amp;participantName, const std::string &amp;registryUri) -&gt; std::unique_ptr&lt; IParticipant &gt;</argsstring>
+        <name>CreateParticipant</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_sil_kit_1_1_config_1_1_i_participant_configuration" kindref="compound">SilKit::Config::IParticipantConfiguration</ref> &gt;</type>
+          <declname>participantConfig</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>participantName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>registryUri</declname>
+        </param>
+        <briefdescription>
+<para>Create a participant and join the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Become a participant based on the the given configuration options.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>participantConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration of the participant </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participantName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the participant </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registryUri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URI of the registry </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Instance of the communication adapter</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_configuration_error" kindref="compound">SilKit::ConfigurationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the config has errors </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_sil_kit_error" kindref="compound">SilKit::SilKitError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The participant could not be created. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" line="30" column="1"/>
+  </compounddef>
+</doxygen>

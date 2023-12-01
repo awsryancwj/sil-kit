@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_i_can_controller_8hpp" kind="file" language="C++">
+    <compoundname>ICanController.hpp</compoundname>
+    <includes local="no">functional</includes>
+    <includes refid="_can_datatypes_8hpp" local="yes">CanDatatypes.hpp</includes>
+    <includedby refid="services_2can_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</includedby>
+    <incdepgraph>
+      <node id="1197">
+        <label>functional</label>
+      </node>
+      <node id="1198">
+        <label>CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+      </node>
+      <node id="1201">
+        <label>cstdint</label>
+      </node>
+      <node id="1211">
+        <label>stdint.h</label>
+      </node>
+      <node id="1200">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+      </node>
+      <node id="1214">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1208">
+        <label>stdexcept</label>
+      </node>
+      <node id="1202">
+        <label>string</label>
+      </node>
+      <node id="1215">
+        <label>silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+      </node>
+      <node id="1212">
+        <label>stddef.h</label>
+      </node>
+      <node id="1218">
+        <label>memory.h</label>
+      </node>
+      <node id="1217">
+        <label>limits.h</label>
+      </node>
+      <node id="1213">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+      </node>
+      <node id="1196">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</label>
+        <link refid="_i_can_controller_8hpp"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+      <node id="1206">
+        <label>vector</label>
+      </node>
+      <node id="1203">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+      </node>
+      <node id="1207">
+        <label>array</label>
+      </node>
+      <node id="1204">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1214" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>chrono</label>
+      </node>
+      <node id="1216">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+      </node>
+      <node id="1209">
+        <label>type_traits</label>
+      </node>
+      <node id="1205">
+        <label>algorithm</label>
+      </node>
+      <node id="1210">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1219">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</label>
+        <link refid="_i_can_controller_8hpp"/>
+        <childnode refid="1220" relation="include">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1220">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</label>
+        <link refid="services_2can_2all_8hpp"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller" prot="public">SilKit::Services::Can::ICanController</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_can">SilKit::Services::Can</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_can_datatypes_8hpp" kindref="compound">CanDatatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Can<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller" kindref="compound">ICanController</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>MsgT&gt;</highlight></codeline>
+<codeline lineno="40" refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT</ref><sp/>=<sp/>std::function&lt;void(ICanController*<sp/>controller,<sp/>const<sp/>MsgT&amp;<sp/>msg)&gt;;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a7c588e84753fd51eb8b1914418b8ec36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a7c588e84753fd51eb8b1914418b8ec36" kindref="member">FrameHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT&lt;CanFrameEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a38f85c68c3c5b7ac3d3c6013db827572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a38f85c68c3c5b7ac3d3c6013db827572" kindref="member">StateChangeHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT&lt;CanStateChangeEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a899a114d90ee3691d7defbd1d63330f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a899a114d90ee3691d7defbd1d63330f3" kindref="member">ErrorStateChangeHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT&lt;CanErrorStateChangeEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" kindref="member">FrameTransmitHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT&lt;CanFrameTransmitEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a07c790a737b3225d03c081173c3507e4" kindref="member">~ICanController</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aa18f5af4b1c0cb35c3e7762cf045250a" kindref="member">SetBaudRate</ref>(uint32_t<sp/>rate,<sp/>uint32_t<sp/>fdRate,<sp/>uint32_t<sp/>xlRate)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a0d22a13b0b166d9048701c341ed6dfad" kindref="member">Reset</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a54f6d6d50b0865a11240cc7497c60e6b" kindref="member">Start</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1adebcfa618d7d7dee9b3be0934dde46a8" kindref="member">Stop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a70038185075a4074dbcdafc3e6cbd2b0" kindref="member">Sleep</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aeb0d58b5ad76d942c84f35943ad4b24a" kindref="member">SendFrame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref>&amp;<sp/>msg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1acced771a5299df15efb88837086c78de" kindref="member">AddFrameHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a7c588e84753fd51eb8b1914418b8ec36" kindref="member">FrameHandler</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref><sp/>directionMask<sp/>=<sp/>(<ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref>)<ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531af9c24782c24c237d16e79f18e2fa9046" kindref="member">TransmitDirection::RX</ref>)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1ac87bd9c9a3a2d0edb2a49bcd3c28889e" kindref="member">RemoveFrameHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a640016bde4d2d97efd4d12a682edb137" kindref="member">AddStateChangeHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a38f85c68c3c5b7ac3d3c6013db827572" kindref="member">StateChangeHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aa62449608065cfaa05f75b4dec29211a" kindref="member">RemoveStateChangeHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a02af759304027a071b2b6a40bf8b13ce" kindref="member">AddErrorStateChangeHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a899a114d90ee3691d7defbd1d63330f3" kindref="member">ErrorStateChangeHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a108adacfb7f61e2b10ec6853dba8eef5" kindref="member">RemoveErrorStateChangeHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1af0450cdb1778556d40b6b83c72f439ee" kindref="member">AddFrameTransmitHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" kindref="member">FrameTransmitHandler</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a51c6f952dd7d7bd8b7dcfc9a7c6b23ec" kindref="member">CanTransmitStatusMask</ref><sp/>statusMask<sp/>=<sp/><ref refid="_can_8h_1a45259909419629431269e7aeaf5679d2" kindref="member">SilKit_CanTransmitStatus_DefaultMask</ref>)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aae1c39a6e1c37ac8c68dfea465b7edae" kindref="member">RemoveFrameTransmitHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp"/>
+  </compounddef>
+</doxygen>

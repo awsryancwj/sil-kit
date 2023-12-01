@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_8f73ebc5b179abbf01edec063fd1ece6" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray</compoundname>
+    <innerfile refid="services_2flexray_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="_flexray_datatypes_8hpp">FlexrayDatatypes.hpp</innerfile>
+    <innerfile refid="flexray_2fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="_i_flexray_controller_8hpp">IFlexrayController.hpp</innerfile>
+    <innerfile refid="services_2flexray_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/"/>
+  </compounddef>
+</doxygen>

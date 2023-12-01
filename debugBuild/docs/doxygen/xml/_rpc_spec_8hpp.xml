@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_rpc_spec_8hpp" kind="file" language="C++">
+    <compoundname>RpcSpec.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="datatypes_8hpp" local="yes">silkit/services/datatypes.hpp</includes>
+    <includes refid="exception_8hpp" local="yes">silkit/participant/exception.hpp</includes>
+    <includedby refid="_i_participant_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</includedby>
+    <includedby refid="services_2rpc_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</includedby>
+    <incdepgraph>
+      <node id="1693">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp</label>
+        <link refid="_rpc_spec_8hpp"/>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+      </node>
+      <node id="1697">
+        <label>cstdint</label>
+      </node>
+      <node id="1696">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+      </node>
+      <node id="1700">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1701">
+        <label>stdexcept</label>
+      </node>
+      <node id="1698">
+        <label>string</label>
+      </node>
+      <node id="1694">
+        <label>vector</label>
+      </node>
+      <node id="1699">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1697" relation="include">
+        </childnode>
+      </node>
+      <node id="1695">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1702">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp</label>
+        <link refid="_rpc_spec_8hpp"/>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</label>
+        <link refid="_sil_kit_8hpp"/>
+      </node>
+      <node id="1703">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</label>
+        <link refid="_i_participant_8hpp"/>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1706">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</label>
+        <link refid="services_2rpc_2all_8hpp"/>
+        <childnode refid="1707" relation="include">
+        </childnode>
+      </node>
+      <node id="1707">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1704">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" prot="public">SilKit::Services::Rpc::RpcSpec</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_rpc">SilKit::Services::Rpc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>Vector<sp/>Informatik<sp/>GmbH.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="datatypes_8hpp" kindref="compound">silkit/services/datatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exception_8hpp" kindref="compound">silkit/participant/exception.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Rpc<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec" kindref="compound">RpcSpec</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>_functionName{};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>_mediaType{};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SilKit::Services::MatchingLabel&gt;<sp/>_labels{};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a7172c909a28d4b1b9f3350fa906d0d57" kindref="member">RpcSpec</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a2d57fdd3c0aacc8cca31bc45dc95201e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a2d57fdd3c0aacc8cca31bc45dc95201e" kindref="member">RpcSpec</ref>(std::string<sp/>functionName,<sp/>std::string<sp/>mediaType)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>_functionName{std::move(functionName)}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>_mediaType{std::move(mediaType)}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" kindref="member">AddLabel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">SilKit::Services::MatchingLabel</ref>&amp;<sp/>label);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" kindref="member">AddLabel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>value,<sp/><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" kindref="member">SilKit::Services::MatchingLabel::Kind</ref><sp/>kind);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a218a2fa099baad1abe9b19a2bd7fadf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a218a2fa099baad1abe9b19a2bd7fadf0" kindref="member">FunctionName</ref>()<sp/>const<sp/>-&gt;<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_functionName;<sp/>}</highlight></codeline>
+<codeline lineno="43" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1add296eaa25eb667369a7e0820fcafa9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1add296eaa25eb667369a7e0820fcafa9e" kindref="member">MediaType</ref>()<sp/>const<sp/>-&gt;<sp/>const<sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_mediaType;<sp/>}</highlight></codeline>
+<codeline lineno="45" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a29cd5f49caf3806fc595fa8403bc8c20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a29cd5f49caf3806fc595fa8403bc8c20" kindref="member">Labels</ref>()<sp/>const<sp/>-&gt;<sp/>const<sp/>std::vector&lt;<ref refid="namespace_sil_kit" kindref="compound">SilKit</ref>::Services::<ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">MatchingLabel</ref>&gt;&amp;<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_labels;<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" kindref="member">RpcSpec::AddLabel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_matching_label" kindref="compound">SilKit::Services::MatchingLabel</ref>&amp;<sp/>label)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(label.<ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1a1ec6b3eb1e89a39bbe278b563d23bec0" kindref="member">kind</ref><sp/>!=<sp/><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829ae89ab59baea830bd940c300886c50efe" kindref="member">MatchingLabel::Kind::Mandatory</ref><sp/>&amp;&amp;<sp/>label.<ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1a1ec6b3eb1e89a39bbe278b563d23bec0" kindref="member">kind</ref><sp/>!=<sp/><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829aebb061953c0454b2c8ee7b0ac615ebcd" kindref="member">MatchingLabel::Kind::Optional</ref>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_configuration_error" kindref="compound">ConfigurationError</ref>(</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SilKit::Services::MatchingLabel<sp/>must<sp/>specify<sp/>a<sp/>valid<sp/>SilKit::Services::MatchingLabel::Kind.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>it<sp/>:<sp/>_labels)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it.key<sp/>==<sp/>label.<ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1abc4d02e4ab95c4a3c9519a29da57932c" kindref="member">key</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>=<sp/>label;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>_labels.push_back(label);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1ae182ca9d2f7484d9a17695e440654038" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" kindref="member">RpcSpec::AddLabel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>value,<sp/><ref refid="struct_sil_kit_1_1_services_1_1_matching_label_1adc7e18571703da96831e8093f0d96829" kindref="member">SilKit::Services::MatchingLabel::Kind</ref><sp/>kind)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_services_1_1_rpc_1_1_rpc_spec_1a3667fc03d079d93efb64ea5ae8332fa8" kindref="member">AddLabel</ref>({key,<sp/>value,<sp/>kind});</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Rpc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp"/>
+  </compounddef>
+</doxygen>

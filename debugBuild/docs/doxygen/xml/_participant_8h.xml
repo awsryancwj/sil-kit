@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_participant_8h" kind="file" language="C++">
+    <compoundname>Participant.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">limits.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_logger_8h" local="yes">silkit/capi/Logger.h</includes>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <includedby refid="_i_lifecycle_service_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</includedby>
+    <incdepgraph>
+      <node id="167">
+        <label>cstdint</label>
+      </node>
+      <node id="164">
+        <label>stdint.h</label>
+      </node>
+      <node id="163">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h</label>
+        <link refid="_participant_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>stddef.h</label>
+      </node>
+      <node id="165">
+        <label>limits.h</label>
+      </node>
+      <node id="166">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>silkit/capi/Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="172">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="174">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/all.hpp</label>
+        <link refid="services_2orchestration_2all_8hpp"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h</label>
+        <link refid="_participant_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="173">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</label>
+        <link refid="_i_lifecycle_service_8hpp"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_participant_8h_1a4a5c030b6c22d0228bad174647d4b7fd" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t SilKit_NanosecondsTime</definition>
+        <argsstring></argsstring>
+        <name>SilKit_NanosecondsTime</name>
+        <briefdescription>
+<para>Simulation time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="34" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_participant_8h_1a5d25eaae0d9c76a203a09936078740a8" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t SilKit_NanosecondsWallclockTime</definition>
+        <argsstring></argsstring>
+        <name>SilKit_NanosecondsWallclockTime</name>
+        <briefdescription>
+<para>Wall clock time since epoch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_participant_8h_1a7b315814134b9fb380277fef588b108b" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Participant_Create_t) (SilKit_Participant **outParticipant, SilKit_ParticipantConfiguration *participantConfiguration, const char *participantName, const char *registryUri)</definition>
+        <argsstring>)(SilKit_Participant **outParticipant, SilKit_ParticipantConfiguration *participantConfiguration, const char *participantName, const char *registryUri)</argsstring>
+        <name>SilKit_Participant_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="53" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_participant_8h_1abcff85d1ca413f13407865472c4e0ca2" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Participant_Destroy_t) (SilKit_Participant *participant)</definition>
+        <argsstring>)(SilKit_Participant *participant)</argsstring>
+        <name>SilKit_Participant_Destroy_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="66" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_participant_8h_1ad64ccf1ec826424f78b35e18e8cdc667" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_Participant_GetLogger_t) (SilKit_Logger **outLogger, SilKit_Participant *participant)</definition>
+        <argsstring>)(SilKit_Logger **outLogger, SilKit_Participant *participant)</argsstring>
+        <name>SilKit_Participant_GetLogger_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_participant_8h_1a96d8265705e0f76df13eeb17d00624c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Participant_Create</definition>
+        <argsstring>(SilKit_Participant **outParticipant, SilKit_ParticipantConfiguration *participantConfiguration, const char *participantName, const char *registryUri)</argsstring>
+        <name>SilKit_Participant_Create</name>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> **</type>
+          <declname>outParticipant</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref> *</type>
+          <declname>participantConfiguration</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>participantName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>registryUri</declname>
+        </param>
+        <briefdescription>
+<para>Join the SIL Kit simulation hosted by the registry listening at URI as a participant. </para>        </briefdescription>
+        <detaileddescription>
+<para>Join the SIL Kit simulation and become a participant based on the given configuration options.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outParticipant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer through which the simulation participant will be returned (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participantConfiguration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration of the participant (see <ref refid="_sil_kit_8h_1a49488d9c56a160a41fd32f9cd112b393" kindref="member">SilKit_ParticipantConfiguration_FromString</ref>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participantName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the participant </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registryUri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>silkit://</computeroutput> URI of the registry </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_participant_8h_1a7bf46dc1c047b2dc93ba5edd9d4912ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Participant_Destroy</definition>
+        <argsstring>(SilKit_Participant *participant)</argsstring>
+        <name>SilKit_Participant_Destroy</name>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a simulation participant and its associated simulation elements. </para>        </briefdescription>
+        <detaileddescription>
+<para>Destroys the simulation participant and its created simulation elements such as e.g. Can controllers.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant to be destroyed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_participant_8h_1ad49558ac4dc48cd41bd2e073a7571515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Participant_GetLogger</definition>
+        <argsstring>(SilKit_Logger **outLogger, SilKit_Participant *participant)</argsstring>
+        <name>SilKit_Participant_GetLogger</name>
+        <param>
+          <type><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref> **</type>
+          <declname>outLogger</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the logger of a particular simulation participant. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outLogger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the resulting logger instance (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant whose logger should be returned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The lifetime of the returned logger is directly bound to the lifetime of the simulation participant. There is no futher cleanup necessary, except for destroying the simulation participant at the end of the simulation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_logger_8h" kindref="compound">silkit/capi/Logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_participant_8h_1a4a5c030b6c22d0228bad174647d4b7fd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="_participant_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref>;<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_participant_8h_1a5d25eaae0d9c76a203a09936078740a8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="_participant_8h_1a5d25eaae0d9c76a203a09936078740a8" kindref="member">SilKit_NanosecondsWallclockTime</ref>;<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_participant_8h_1a96d8265705e0f76df13eeb17d00624c1" kindref="member">SilKit_Participant_Create</ref>(<ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>**<sp/>outParticipant,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>*<sp/>participantConfiguration,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>participantName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>registryUri);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_participant_8h_1a7b315814134b9fb380277fef588b108b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_participant_8h_1a7b315814134b9fb380277fef588b108b" kindref="member">SilKit_Participant_Create_t</ref>)(<ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>**<sp/>outParticipant,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>*<sp/>participantConfiguration,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>participantName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>registryUri);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_participant_8h_1a7bf46dc1c047b2dc93ba5edd9d4912ed" kindref="member">SilKit_Participant_Destroy</ref>(<ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_participant_8h_1abcff85d1ca413f13407865472c4e0ca2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_participant_8h_1abcff85d1ca413f13407865472c4e0ca2" kindref="member">SilKit_Participant_Destroy_t</ref>)(<ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_participant_8h_1ad49558ac4dc48cd41bd2e073a7571515" kindref="member">SilKit_Participant_GetLogger</ref>(<ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>**<sp/>outLogger,<sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_participant_8h_1ad64ccf1ec826424f78b35e18e8cdc667" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_participant_8h_1ad64ccf1ec826424f78b35e18e8cdc667" kindref="member">SilKit_Participant_GetLogger_t</ref>)(<ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>**<sp/>outLogger,<sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h"/>
+  </compounddef>
+</doxygen>

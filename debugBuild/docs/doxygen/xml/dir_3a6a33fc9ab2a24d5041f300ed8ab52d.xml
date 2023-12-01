@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3a6a33fc9ab2a24d5041f300ed8ab52d" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can</compoundname>
+    <innerfile refid="services_2can_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="_can_datatypes_8hpp">CanDatatypes.hpp</innerfile>
+    <innerfile refid="can_2fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="_i_can_controller_8hpp">ICanController.hpp</innerfile>
+    <innerfile refid="services_2can_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/"/>
+  </compounddef>
+</doxygen>

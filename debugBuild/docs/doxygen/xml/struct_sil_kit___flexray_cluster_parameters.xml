@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_cluster_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayClusterParameters</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1aca24e9cdc8283dc6dfb5ed21b56c0159" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayClusterParameters::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="64" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1af04600e2990b7ced2479efd6eb7468b0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayClusterParameters::gColdstartAttempts</definition>
+        <argsstring></argsstring>
+        <name>gColdstartAttempts</name>
+        <briefdescription>
+<para>Number of attempts for a cold start before giving up (range 2-31). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="67" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1ac987d77107b1b35631238bddaaac94b5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayClusterParameters::gCycleCountMax</definition>
+        <argsstring></argsstring>
+        <name>gCycleCountMax</name>
+        <briefdescription>
+<para>Max cycle count value in a given cluster (range 7-63, must be an odd integer). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="70" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a57e7aebfca0456f86219d6fea7f54644" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdActionPointOffset</definition>
+        <argsstring></argsstring>
+        <name>gdActionPointOffset</name>
+        <briefdescription>
+<para>Time offset for a static slot in MacroTicks (MT) (range 1-63). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="73" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1ab309b8470e432d1e00f2f12561a85b9c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdDynamicSlotIdlePhase</definition>
+        <argsstring></argsstring>
+        <name>gdDynamicSlotIdlePhase</name>
+        <briefdescription>
+<para>Duration of the idle phase within a dynamic slot in gdMiniSlots (range 0-2). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="79" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a3053960e256b9c45c5cbd5de710ca105" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdMiniSlot</definition>
+        <argsstring></argsstring>
+        <name>gdMiniSlot</name>
+        <briefdescription>
+<para>Duration of a mini slot in MacroTicks (MT) (2-63). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="85" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1aeac8336d74589b87530aeed0af00c525" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdMiniSlotActionPointOffset</definition>
+        <argsstring></argsstring>
+        <name>gdMiniSlotActionPointOffset</name>
+        <briefdescription>
+<para>Time offset for a mini slot in MacroTicks (MT) (range 1-31). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a404b04740bdba9784a168a7098ba0ec0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdStaticSlot</definition>
+        <argsstring></argsstring>
+        <name>gdStaticSlot</name>
+        <briefdescription>
+<para>Duration of a static slot in MacroTicks (MT) (3-664). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="91" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a8853b562cbf119c138eaddd9cfb8ae97" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdSymbolWindow</definition>
+        <argsstring></argsstring>
+        <name>gdSymbolWindow</name>
+        <briefdescription>
+<para>Duration of the symbol window in MacroTicks (MT) (range 0-162). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="94" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a3164528026cb92f7f9b0181320fc3983" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdSymbolWindowActionPointOffset</definition>
+        <argsstring></argsstring>
+        <name>gdSymbolWindowActionPointOffset</name>
+        <briefdescription>
+<para>Time offset for a static symbol windows in MacroTicks (MT) (range 1-63). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="97" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a87db5b60d66435ed27177ebf2dece27a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdTSSTransmitter</definition>
+        <argsstring></argsstring>
+        <name>gdTSSTransmitter</name>
+        <briefdescription>
+<para>Duration of TSS (Transmission Start Sequence) in gdBits (range 1-15). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="100" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a835b3630f54bd74eb338910bb55f84c2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdWakeupTxActive</definition>
+        <argsstring></argsstring>
+        <name>gdWakeupTxActive</name>
+        <briefdescription>
+<para>Duration of LOW Phase of a wakeup symbol in gdBit (range 15-60). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="112" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a2b58dcc438d89281fc90d96fef4e1451" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gdWakeupTxIdle</definition>
+        <argsstring></argsstring>
+        <name>gdWakeupTxIdle</name>
+        <briefdescription>
+<para>Duration of the idle of a wakeup symbol in gdBit (45-180). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="115" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a4bb5415a397788bfbbe2fe387f8bb4b2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayClusterParameters::gListenNoise</definition>
+        <argsstring></argsstring>
+        <name>gListenNoise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upper limit for the startup listen timeout and wakeup listen timeout in the presence of noise. Used as a multiplier of pdListenTimeout (range 2-16). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="121" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a3bbe3b02cd91b39dc146a3ca4dcfc514" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gMacroPerCycle</definition>
+        <argsstring></argsstring>
+        <name>gMacroPerCycle</name>
+        <briefdescription>
+<para>Number of MacroTicks (MT) per cycle, (range 8-16000). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="124" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1ab3bd7bfd73272826d51f08c20dda1fb6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayClusterParameters::gMaxWithoutClockCorrectionFatal</definition>
+        <argsstring></argsstring>
+        <name>gMaxWithoutClockCorrectionFatal</name>
+        <briefdescription>
+<para>Threshold used for testing the vClockCorrectionFailed counter (range 1-15). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="127" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a9ef63f19880995177b175b9914cba4bf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayClusterParameters::gMaxWithoutClockCorrectionPassive</definition>
+        <argsstring></argsstring>
+        <name>gMaxWithoutClockCorrectionPassive</name>
+        <briefdescription>
+<para>Threshold used for testing the vClockCorrectionFailed counter (range 1-15). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="130" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a547bc5004d11154ff5105a3894d0f828" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gNumberOfMiniSlots</definition>
+        <argsstring></argsstring>
+        <name>gNumberOfMiniSlots</name>
+        <briefdescription>
+<para>Number of mini slots (range 0-7988). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="133" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a95fd6b16eba9ca9ef7b3f6cf63aa1c34" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gNumberOfStaticSlots</definition>
+        <argsstring></argsstring>
+        <name>gNumberOfStaticSlots</name>
+        <briefdescription>
+<para>Number of static slots in a cycle (range 2-1023). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="136" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1a5de6f07b30d533a81072625294907063" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayClusterParameters::gPayloadLengthStatic</definition>
+        <argsstring></argsstring>
+        <name>gPayloadLengthStatic</name>
+        <briefdescription>
+<para>Length of the payload of a static frame in 16-Bits words (range 0-127). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="139" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_cluster_parameters_1aca0fa59c09394c08c71610a1999ba371" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayClusterParameters::gSyncFrameIDCountMax</definition>
+        <argsstring></argsstring>
+        <name>gSyncFrameIDCountMax</name>
+        <briefdescription>
+<para>Max number of distinct sync frame identifiers present in a given cluster. (range 2-15). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="142" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Protocol relevant global cluster parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>Cf. &apos;FlexRay Protocol Specification Version 3.0.1&apos; Appendix B.3.1.1 Parameters. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="261">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="260">
+        <label>SilKit_FlexrayClusterParameters</label>
+        <link refid="struct_sil_kit___flexray_cluster_parameters"/>
+        <childnode refid="261" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="61" bodyend="143"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1af04600e2990b7ced2479efd6eb7468b0" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gColdstartAttempts</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1ac987d77107b1b35631238bddaaac94b5" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gCycleCountMax</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a57e7aebfca0456f86219d6fea7f54644" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdActionPointOffset</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1ab309b8470e432d1e00f2f12561a85b9c" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdDynamicSlotIdlePhase</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a3053960e256b9c45c5cbd5de710ca105" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdMiniSlot</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1aeac8336d74589b87530aeed0af00c525" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdMiniSlotActionPointOffset</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a404b04740bdba9784a168a7098ba0ec0" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdStaticSlot</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a8853b562cbf119c138eaddd9cfb8ae97" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdSymbolWindow</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a3164528026cb92f7f9b0181320fc3983" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdSymbolWindowActionPointOffset</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a87db5b60d66435ed27177ebf2dece27a" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdTSSTransmitter</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a835b3630f54bd74eb338910bb55f84c2" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdWakeupTxActive</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a2b58dcc438d89281fc90d96fef4e1451" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gdWakeupTxIdle</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a4bb5415a397788bfbbe2fe387f8bb4b2" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gListenNoise</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a3bbe3b02cd91b39dc146a3ca4dcfc514" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gMacroPerCycle</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1ab3bd7bfd73272826d51f08c20dda1fb6" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gMaxWithoutClockCorrectionFatal</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a9ef63f19880995177b175b9914cba4bf" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gMaxWithoutClockCorrectionPassive</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a547bc5004d11154ff5105a3894d0f828" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gNumberOfMiniSlots</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a95fd6b16eba9ca9ef7b3f6cf63aa1c34" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gNumberOfStaticSlots</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1a5de6f07b30d533a81072625294907063" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gPayloadLengthStatic</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1aca0fa59c09394c08c71610a1999ba371" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>gSyncFrameIDCountMax</name></member>
+      <member refid="struct_sil_kit___flexray_cluster_parameters_1aca24e9cdc8283dc6dfb5ed21b56c0159" prot="public" virt="non-virtual"><scope>SilKit_FlexrayClusterParameters</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

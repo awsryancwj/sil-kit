@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Lin::LinFrameResponse</compoundname>
+    <includes refid="_lin_datatypes_8hpp" local="no">LinDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a7a09983eee566edb931e071538b0bb18" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref></type>
+        <definition>LinFrame SilKit::Services::Lin::LinFrameResponse::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>frame must provide the LIN <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" kindref="member">LinId</ref> for which the response is configured.</para><para>If responseMode is <ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca27aa3ae03156b0781515a5dde6c77a05" kindref="member">LinFrameResponseMode::TxUnconditional</ref>, the frame data is used for the transaction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="137" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a58825169518cb5414ec692f0eefc6e35" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" kindref="member">LinFrameResponseMode</ref></type>
+        <definition>LinFrameResponseMode SilKit::Services::Lin::LinFrameResponse::responseMode</definition>
+        <argsstring></argsstring>
+        <name>responseMode</name>
+        <initializer>{<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca92e592d90b9548016776a6fb68dccded" kindref="member">LinFrameResponseMode::Unused</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determines if the <ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref> is used for transmission (TxUnconditional), reception (Rx) or ignored (Unused). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="140" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration data for a LIN Slave task for a particular LIN ID. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="145">
+        <label>SilKit::Services::Lin::LinFrameResponse</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+      <node id="146">
+        <label>SilKit::Services::Lin::LinFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="132" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="131" bodyend="141"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a7a09983eee566edb931e071538b0bb18" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinFrameResponse</scope><name>frame</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a58825169518cb5414ec692f0eefc6e35" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinFrameResponse</scope><name>responseMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

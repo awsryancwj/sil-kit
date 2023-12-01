@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Orchestration::ParticipantConnectionInformation</compoundname>
+    <includes refid="_orchestration_datatypes_8hpp" local="no">OrchestrationDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information_1a5496b39258d32ec3e1942a55a03ba652" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::ParticipantConnectionInformation::participantName</definition>
+        <argsstring></argsstring>
+        <name>participantName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="136" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="135" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="134" bodyend="137"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information_1a5496b39258d32ec3e1942a55a03ba652" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ParticipantConnectionInformation</scope><name>participantName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

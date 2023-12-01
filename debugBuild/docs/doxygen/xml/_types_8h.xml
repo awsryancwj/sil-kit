@@ -1,0 +1,985 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_types_8h" kind="file" language="C++">
+    <compoundname>Types.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">SilKitMacros.h</includes>
+    <includedby refid="_can_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h</includedby>
+    <includedby refid="_data_pub_sub_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h</includedby>
+    <includedby refid="_ethernet_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h</includedby>
+    <includedby refid="_flexray_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h</includedby>
+    <includedby refid="_interface_identifiers_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/InterfaceIdentifiers.h</includedby>
+    <includedby refid="_lin_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h</includedby>
+    <includedby refid="_logger_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h</includedby>
+    <includedby refid="_orchestration_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h</includedby>
+    <includedby refid="_participant_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h</includedby>
+    <includedby refid="_rpc_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h</includedby>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <includedby refid="_vendor_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h</includedby>
+    <includedby refid="_version_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Version.h</includedby>
+    <includedby refid="_span_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp</includedby>
+    <incdepgraph>
+      <node id="282">
+        <label>cstdint</label>
+      </node>
+      <node id="279">
+        <label>stdint.h</label>
+      </node>
+      <node id="280">
+        <label>stddef.h</label>
+      </node>
+      <node id="281">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="294">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/all.hpp</label>
+        <link refid="services_2ethernet_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp</label>
+        <link refid="_i_rpc_client_8hpp"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp</label>
+        <link refid="_ethernet_datatypes_8hpp"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/IDataSubscriber.hpp</label>
+        <link refid="_i_data_subscriber_8hpp"/>
+        <childnode refid="334" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp</label>
+        <link refid="services_2orchestration_2string__utils_8hpp"/>
+      </node>
+      <node id="286">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="295">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp</label>
+        <link refid="_i_ethernet_controller_8hpp"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Rpc.h</label>
+        <link refid="_rpc_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp</label>
+        <link refid="_lin_datatypes_8hpp"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/IDataPublisher.hpp</label>
+        <link refid="_i_data_publisher_8hpp"/>
+        <childnode refid="334" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</label>
+        <link refid="_sil_kit_8hpp"/>
+      </node>
+      <node id="299">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/all.hpp</label>
+        <link refid="services_2flexray_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/string_utils.hpp</label>
+        <link refid="experimental_2services_2lin_2string__utils_8hpp"/>
+      </node>
+      <node id="312">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp</label>
+        <link refid="_orchestration_datatypes_8hpp"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/all.hpp</label>
+        <link refid="services_2orchestration_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h</label>
+        <link refid="_participant_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h</label>
+        <link refid="_flexray_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp</label>
+        <link refid="_i_rpc_server_8hpp"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h</label>
+        <link refid="_ethernet_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h</label>
+        <link refid="_data_pub_sub_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h</label>
+        <link refid="_can_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/string_utils.hpp</label>
+        <link refid="services_2rpc_2string__utils_8hpp"/>
+      </node>
+      <node id="322">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</label>
+        <link refid="_i_participant_8hpp"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</label>
+        <link refid="_i_can_controller_8hpp"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/string_utils.hpp</label>
+        <link refid="services_2flexray_2string__utils_8hpp"/>
+      </node>
+      <node id="305">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp</label>
+        <link refid="_i_lin_controller_8hpp"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp</label>
+        <link refid="_pub_sub_datatypes_8hpp"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp</label>
+        <link refid="_rpc_datatypes_8hpp"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinControllerExtensions.hpp</label>
+        <link refid="_lin_controller_extensions_8hpp"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</label>
+        <link refid="services_2rpc_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/all.hpp</label>
+        <link refid="services_2pubsub_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp</label>
+        <link refid="_flexray_datatypes_8hpp"/>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/all.hpp</label>
+        <link refid="services_2lin_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h</label>
+        <link refid="_orchestration_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="313">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp</label>
+        <link refid="_i_system_controller_8hpp"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp</label>
+        <link refid="services_2lin_2string__utils_8hpp"/>
+      </node>
+      <node id="296">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp</label>
+        <link refid="services_2ethernet_2string__utils_8hpp"/>
+      </node>
+      <node id="318">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ITimeSyncService.hpp</label>
+        <link refid="_i_time_sync_service_8hpp"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h</label>
+        <link refid="_lin_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</label>
+        <link refid="services_2can_2all_8hpp"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/IFlexrayController.hpp</label>
+        <link refid="_i_flexray_controller_8hpp"/>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/string_utils.hpp</label>
+        <link refid="services_2pubsub_2string__utils_8hpp"/>
+      </node>
+      <node id="331">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Version.h</label>
+        <link refid="_version_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Vendor.h</label>
+        <link refid="_vendor_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</label>
+        <link refid="services_2can_2string__utils_8hpp"/>
+      </node>
+      <node id="308">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp</label>
+        <link refid="_lin_datatypes_extensions_8hpp"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp</label>
+        <link refid="_i_system_monitor_8hpp"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</label>
+        <link refid="_i_lifecycle_service_8hpp"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+      <node id="283">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit___version" prot="public">SilKit_Version</innerclass>
+    <innerclass refid="struct_sil_kit___byte_vector" prot="public">SilKit_ByteVector</innerclass>
+    <innerclass refid="struct_sil_kit___label" prot="public">SilKit_Label</innerclass>
+    <innerclass refid="struct_sil_kit___label_list" prot="public">SilKit_LabelList</innerclass>
+    <innerclass refid="struct_sil_kit___string_list" prot="public">SilKit_StringList</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_types_8h_1aa934cc2b0ee03670f4d4a5d3f53d86a5" prot="public" static="no">
+        <name>SilKit_ReturnCode_SUCCESS</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="46" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1ae9109cbe63d7f6ef0853f5d4dc70ff6d" prot="public" static="no">
+        <name>SilKit_ReturnCode_UNSPECIFIEDERROR</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="47" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a2803eddf2aca6bb9ca3e3d3d4b731b12" prot="public" static="no">
+        <name>SilKit_ReturnCode_NOTSUPPORTED</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="48" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1aea7451ba98a7e13dbe377c49ed439600" prot="public" static="no">
+        <name>SilKit_ReturnCode_NOTIMPLEMENTED</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="49" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1af9eeedc28fc8dd3fd36d6bea82ed8dc7" prot="public" static="no">
+        <name>SilKit_ReturnCode_BADPARAMETER</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="50" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a2fb35328c392cf1d1f8b18bec426756f" prot="public" static="no">
+        <name>SilKit_ReturnCode_BUFFERTOOSMALL</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="51" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a2ec17003d8a581668e55881084397d68" prot="public" static="no">
+        <name>SilKit_ReturnCode_TIMEOUT</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="52" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a6e78ed6510e9f662d9b3c177c73d5622" prot="public" static="no">
+        <name>SilKit_ReturnCode_UNSUPPORTEDSERVICE</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="53" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a4c975cc3d15519ca87f5a11c0b958ad2" prot="public" static="no">
+        <name>SilKit_ReturnCode_WRONGSTATE</name>
+        <initializer>((<ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>) 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="54" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1aeab1df1a0ba80fa34e004e5e72edbb11" prot="public" static="no">
+        <name>SilKit_LabelKind_Undefined</name>
+        <initializer>((uint32_t) 0)</initializer>
+        <briefdescription>
+<para>Undefined. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="75" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a4e661336d7367ea4e4f436441050018b" prot="public" static="no">
+        <name>SilKit_LabelKind_Optional</name>
+        <initializer>((uint32_t) 1)</initializer>
+        <briefdescription>
+<para>If this label is available, its value must match. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="76" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a3c851aea1570b4e133c869ab3714f404" prot="public" static="no">
+        <name>SilKit_LabelKind_Mandatory</name>
+        <initializer>((uint32_t) 2)</initializer>
+        <briefdescription>
+<para>This label must be available and its value must match. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="77" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a12c997607dd5580cb5bc51b6fe90c241" prot="public" static="no">
+        <name>SilKit_True</name>
+        <initializer>((<ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref>)1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="102" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a9b02e1dc7c9dbabc244462988cca9b4e" prot="public" static="no">
+        <name>SilKit_False</name>
+        <initializer>((<ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref>)0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="103" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a7b50a8c712a5a909b8f77fa53d032509" prot="public" static="no">
+        <name>SilKit_Direction_Undefined</name>
+        <initializer>((<ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref>) 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="108" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1af9c04a61d2ee73f156ba50e06f84c6d7" prot="public" static="no">
+        <name>SilKit_Direction_Send</name>
+        <initializer>((<ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref>) 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="109" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a993185f05d3b7adfee3cc7805bf90ad7" prot="public" static="no">
+        <name>SilKit_Direction_Receive</name>
+        <initializer>((<ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref>) 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="110" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_types_8h_1a90742afa7b55095a39fd51bf7a2e33df" prot="public" static="no">
+        <name>SilKit_Direction_SendReceive</name>
+        <initializer>((<ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref>) 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="111" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_types_8h_1a584be3d3db800ca0acec75c33a88193d" prot="public" static="no">
+        <type>struct <ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref></type>
+        <definition>typedef struct SilKit_ParticipantConfiguration SilKit_ParticipantConfiguration</definition>
+        <argsstring></argsstring>
+        <name>SilKit_ParticipantConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" prot="public" static="no">
+        <type>struct <ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref></type>
+        <definition>typedef struct SilKit_Participant SilKit_Participant</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Participant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1a7c596f267865524084afe109d41f986c" prot="public" static="no">
+        <type>struct <ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref></type>
+        <definition>typedef struct SilKit_Vendor_Vector_SilKitRegistry SilKit_Vendor_Vector_SilKitRegistry</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Vendor_Vector_SilKitRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1ad0c54a6ff4d48c97463fc2cf6d005d22" prot="public" static="no">
+        <type>struct <ref refid="_types_8h_1ad0c54a6ff4d48c97463fc2cf6d005d22" kindref="member">SilKit_Experimental_SystemController</ref></type>
+        <definition>typedef struct SilKit_Experimental_SystemController SilKit_Experimental_SystemController</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Experimental_SystemController</name>
+        <briefdescription>
+<para>Opaque type. Used in functions prefixed with SilKit_Experimental_SystemController_.... </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This type is not part of the stable API of the SIL Kit. It may be removed at any time without prior notice. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="88" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t SilKit_ReturnCode</definition>
+        <argsstring></argsstring>
+        <name>SilKit_ReturnCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1a4a5c030b6c22d0228bad174647d4b7fd" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t SilKit_NanosecondsTime</definition>
+        <argsstring></argsstring>
+        <name>SilKit_NanosecondsTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="56" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1a86219ad2b89dda0e3195944f48d93543" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref></type>
+        <definition>typedef struct SilKit_ByteVector SilKit_ByteVector</definition>
+        <argsstring></argsstring>
+        <name>SilKit_ByteVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="56" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1a2d13f50ff86676b6e44f66f631eec337" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_LabelKind</definition>
+        <argsstring></argsstring>
+        <name>SilKit_LabelKind</name>
+        <briefdescription>
+<para>Information level of log messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1aa7ac06e013882b9de41624f30b4a6fd9" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___label" kindref="compound">SilKit_Label</ref></type>
+        <definition>typedef struct SilKit_Label  SilKit_Label</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Label</name>
+        <briefdescription>
+<para>Struct that contains a label as used in PubSub and RPC for matching publisher, subscribers, servers, and clients. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1a0189ba2c432c10cba8c02d7de3c7da66" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___label_list" kindref="compound">SilKit_LabelList</ref></type>
+        <definition>typedef struct SilKit_LabelList  SilKit_LabelList</definition>
+        <argsstring></argsstring>
+        <name>SilKit_LabelList</name>
+        <briefdescription>
+<para>A list of data labels. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1aad21ba118424a030664a0e823e526536" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___string_list" kindref="compound">SilKit_StringList</ref></type>
+        <definition>typedef struct SilKit_StringList  SilKit_StringList</definition>
+        <argsstring></argsstring>
+        <name>SilKit_StringList</name>
+        <briefdescription>
+<para>String list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1acd67002df70237d213b7773b26891fcc" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t SilKit_Bool</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="101" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t SilKit_Direction</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Direction</name>
+        <briefdescription>
+<para>An enum type defining the transmit direction within the simulation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="107" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_types_8h_1af09d37734982b9f2d7331a22744d9895" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t SilKit_HandlerId</definition>
+        <argsstring></argsstring>
+        <name>SilKit_HandlerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" line="113" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref><sp/><ref refid="_types_8h_1a584be3d3db800ca0acec75c33a88193d" kindref="member">SilKit_ParticipantConfiguration</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_types_8h_1a7c596f267865524084afe109d41f986c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref><sp/><ref refid="_types_8h_1a7c596f267865524084afe109d41f986c" kindref="member">SilKit_Vendor_Vector_SilKitRegistry</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_types_8h_1ad0c54a6ff4d48c97463fc2cf6d005d22" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_types_8h_1ad0c54a6ff4d48c97463fc2cf6d005d22" kindref="member">SilKit_Experimental_SystemController</ref><sp/><ref refid="_types_8h_1ad0c54a6ff4d48c97463fc2cf6d005d22" kindref="member">SilKit_Experimental_SystemController</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_types_8h_1aa934cc2b0ee03670f4d4a5d3f53d86a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_types_8h_1ae9109cbe63d7f6ef0853f5d4dc70ff6d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_UNSPECIFIEDERROR<sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_types_8h_1a2803eddf2aca6bb9ca3e3d3d4b731b12" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_NOTSUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_types_8h_1aea7451ba98a7e13dbe377c49ed439600" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_NOTIMPLEMENTED<sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_types_8h_1af9eeedc28fc8dd3fd36d6bea82ed8dc7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_BADPARAMETER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_types_8h_1a2fb35328c392cf1d1f8b18bec426756f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_BUFFERTOOSMALL<sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_types_8h_1a2ec17003d8a581668e55881084397d68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_types_8h_1a6e78ed6510e9f662d9b3c177c73d5622" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_UNSUPPORTEDSERVICE<sp/>((SilKit_ReturnCode)<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_types_8h_1a4c975cc3d15519ca87f5a11c0b958ad2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_ReturnCode_WRONGSTATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_ReturnCode)<sp/>8)<sp/>//<sp/>Returned<sp/>on<sp/>exception<sp/>SilKit::StateError<sp/>(CapiImpl.h)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_types_8h_1a4a5c030b6c22d0228bad174647d4b7fd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="_types_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="struct_sil_kit___version" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="struct_sil_kit___version_1aee2e2c339186fb2e3cecf4657f865bbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sil_kit___version_1aee2e2c339186fb2e3cecf4657f865bbd" kindref="member">MajorVersion</ref>;</highlight></codeline>
+<codeline lineno="61" refid="struct_sil_kit___version_1a92f0a19163ef48c13a6236884853cbfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sil_kit___version_1a92f0a19163ef48c13a6236884853cbfa" kindref="member">MinorVersion</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___version" kindref="compound">SilKit_Version</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="struct_sil_kit___byte_vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66" refid="struct_sil_kit___byte_vector_1a89d6013b61d690c1345aab80b7afb4b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/><ref refid="struct_sil_kit___byte_vector_1a89d6013b61d690c1345aab80b7afb4b6" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="67" refid="struct_sil_kit___byte_vector_1a14b1719d680df7c623992de7dd7521e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___byte_vector_1a14b1719d680df7c623992de7dd7521e4" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69" refid="_types_8h_1a86219ad2b89dda0e3195944f48d93543" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_types_8h_1a2d13f50ff86676b6e44f66f631eec337" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_types_8h_1a2d13f50ff86676b6e44f66f631eec337" kindref="member">SilKit_LabelKind</ref>;</highlight></codeline>
+<codeline lineno="75" refid="_types_8h_1aeab1df1a0ba80fa34e004e5e72edbb11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_LabelKind_Undefined<sp/>((uint32_t)<sp/>0)<sp/></highlight></codeline>
+<codeline lineno="76" refid="_types_8h_1a4e661336d7367ea4e4f436441050018b" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LabelKind_Optional<sp/>((uint32_t)<sp/>1)<sp/></highlight></codeline>
+<codeline lineno="77" refid="_types_8h_1a3c851aea1570b4e133c869ab3714f404" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LabelKind_Mandatory<sp/>((uint32_t)<sp/>2)<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_sil_kit___label" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___label" kindref="compound">SilKit_Label</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82" refid="struct_sil_kit___label_1acba7adedbfc3dfcacb8fe351e545e643" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___label_1acba7adedbfc3dfcacb8fe351e545e643" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="83" refid="struct_sil_kit___label_1aba078209f97982a6532922b8d7bcf27f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___label_1aba078209f97982a6532922b8d7bcf27f" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="84" refid="struct_sil_kit___label_1a4ae3c42233f5881fef542054d433669f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a2d13f50ff86676b6e44f66f631eec337" kindref="member">SilKit_LabelKind</ref><sp/><ref refid="struct_sil_kit___label_1a4ae3c42233f5881fef542054d433669f" kindref="member">kind</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/><ref refid="_types_8h_1aa7ac06e013882b9de41624f30b4a6fd9" kindref="member">SilKit_Label</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_sil_kit___label_list" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___label_list" kindref="compound">SilKit_LabelList</ref></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90" refid="struct_sil_kit___label_list_1a0969b49e4c917391707fcfe3a429efc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___label_list_1a0969b49e4c917391707fcfe3a429efc8" kindref="member">numLabels</ref>;</highlight></codeline>
+<codeline lineno="91" refid="struct_sil_kit___label_list_1a65ead57610bcbbcddbe49091714e8643" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___label" kindref="compound">SilKit_Label</ref>*<sp/><ref refid="struct_sil_kit___label_list_1a65ead57610bcbbcddbe49091714e8643" kindref="member">labels</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/><ref refid="_types_8h_1a0189ba2c432c10cba8c02d7de3c7da66" kindref="member">SilKit_LabelList</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_sil_kit___string_list" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___string_list" kindref="compound">SilKit_StringList</ref></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97" refid="struct_sil_kit___string_list_1a0cf500cb0b51248689025e7ef7bf8663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit___string_list_1a0cf500cb0b51248689025e7ef7bf8663" kindref="member">numStrings</ref>;</highlight></codeline>
+<codeline lineno="98" refid="struct_sil_kit___string_list_1a0317e995abcc8684812bf7d17fba480c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/><ref refid="struct_sil_kit___string_list_1a0317e995abcc8684812bf7d17fba480c" kindref="member">strings</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/><ref refid="_types_8h_1aad21ba118424a030664a0e823e526536" kindref="member">SilKit_StringList</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_types_8h_1acd67002df70237d213b7773b26891fcc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref>;</highlight></codeline>
+<codeline lineno="102" refid="_types_8h_1a12c997607dd5580cb5bc51b6fe90c241" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_True<sp/><sp/>((SilKit_Bool)1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_types_8h_1a9b02e1dc7c9dbabc244462988cca9b4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_False<sp/>((SilKit_Bool)0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NB:<sp/>Should<sp/>map<sp/>to<sp/>SilKit::Services::TransmitDirection</highlight></codeline>
+<codeline lineno="107" refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref>;</highlight></codeline>
+<codeline lineno="108" refid="_types_8h_1a7b50a8c712a5a909b8f77fa53d032509" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_Direction_Undefined<sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_Direction)<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_types_8h_1af9c04a61d2ee73f156ba50e06f84c6d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_Direction_Send<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_Direction)<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_types_8h_1a993185f05d3b7adfee3cc7805bf90ad7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_Direction_Receive<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SilKit_Direction)<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="_types_8h_1a90742afa7b55095a39fd51bf7a2e33df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_Direction_SendReceive<sp/><sp/><sp/><sp/>((SilKit_Direction)<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Types.h"/>
+  </compounddef>
+</doxygen>

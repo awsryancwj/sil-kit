@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_logger_8h" kind="file" language="C++">
+    <compoundname>Logger.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includedby refid="_participant_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h</includedby>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <incdepgraph>
+      <node id="134">
+        <label>cstdint</label>
+      </node>
+      <node id="132">
+        <label>stdint.h</label>
+      </node>
+      <node id="136">
+        <label>stddef.h</label>
+      </node>
+      <node id="133">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="139">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="141">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/all.hpp</label>
+        <link refid="services_2orchestration_2all_8hpp"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Participant.h</label>
+        <link refid="_participant_8h"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="137">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</label>
+        <link refid="_i_lifecycle_service_8hpp"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_logger_8h_1a353c009b6bbf49ea9d44b59bdbda0612" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Trace</name>
+        <initializer>((uint32_t) 0)</initializer>
+        <briefdescription>
+<para>Detailed debug-level messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="36" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_logger_8h_1a0781a78959bb1526372c418bec22ab3f" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Debug</name>
+        <initializer>((uint32_t) 1)</initializer>
+        <briefdescription>
+<para>Normal debug-level messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="37" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_logger_8h_1a1744dc2ee3f545614227b23e78a2f55a" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Info</name>
+        <initializer>((uint32_t) 2)</initializer>
+        <briefdescription>
+<para>Informational content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="38" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_logger_8h_1a23ec4fa24d8255292689e6ef0a416332" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Warn</name>
+        <initializer>((uint32_t) 3)</initializer>
+        <briefdescription>
+<para>Warnings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="39" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_logger_8h_1acc8e303af26c252e5553d1f662eb57b4" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Error</name>
+        <initializer>((uint32_t) 4)</initializer>
+        <briefdescription>
+<para>Non-critical errors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="40" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_logger_8h_1a835240c97721f67adc97a2aaee019b71" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Critical</name>
+        <initializer>((uint32_t) 5)</initializer>
+        <briefdescription>
+<para>Critical errors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="41" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_logger_8h_1aca33af0a1a47b5f86cb1e9a9e681ccaf" prot="public" static="no">
+        <name>SilKit_LoggingLevel_Off</name>
+        <initializer>((uint32_t) 0xffffffff)</initializer>
+        <briefdescription>
+<para>Logging is disabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="42" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_LoggingLevel</definition>
+        <argsstring></argsstring>
+        <name>SilKit_LoggingLevel</name>
+        <briefdescription>
+<para>Information level of log messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" prot="public" static="no">
+        <type>struct <ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref></type>
+        <definition>typedef struct SilKit_Logger SilKit_Logger</definition>
+        <argsstring></argsstring>
+        <name>SilKit_Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_logger_8h_1a19a6e59957c8629bf91a82d1974416a8" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_Logger_Log_t) (SilKit_Logger *logger, SilKit_LoggingLevel level, const char *message)</definition>
+        <argsstring>)(SilKit_Logger *logger, SilKit_LoggingLevel level, const char *message)</argsstring>
+        <name>SilKit_Logger_Log_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_logger_8h_1a83fbf88479b59ac6425d23aa9ce09508" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode(*  SilKit_Logger_GetLogLevel_t) (SilKit_Logger *logger, SilKit_LoggingLevel *outLevel)</definition>
+        <argsstring>)(SilKit_Logger *logger, SilKit_LoggingLevel *outLevel)</argsstring>
+        <name>SilKit_Logger_GetLogLevel_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="65" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_logger_8h_1a368dfdf207ff252e3f55ae3e02edc56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Logger_Log</definition>
+        <argsstring>(SilKit_Logger *logger, SilKit_LoggingLevel level, const char *message)</argsstring>
+        <name>SilKit_Logger_Log</name>
+        <param>
+          <type><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with a specified level. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logger to use. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log level for the message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message which shall be logged. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_logger_8h_1af78c88f80d3837b0d9c7b30796f11b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_Logger_GetLogLevel</definition>
+        <argsstring>(SilKit_Logger *logger, SilKit_LoggingLevel *outLevel)</argsstring>
+        <name>SilKit_Logger_GetLogLevel</name>
+        <param>
+          <type><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref> *</type>
+          <declname>outLevel</declname>
+        </param>
+        <briefdescription>
+<para>Get the lowest configured log level of the log sinks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logger for which the log level should be obtained. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a logging level where the result will be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref>;</highlight></codeline>
+<codeline lineno="36" refid="_logger_8h_1a353c009b6bbf49ea9d44b59bdbda0612" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Trace<sp/>((uint32_t)<sp/>0)<sp/></highlight></codeline>
+<codeline lineno="37" refid="_logger_8h_1a0781a78959bb1526372c418bec22ab3f" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Debug<sp/>((uint32_t)<sp/>1)<sp/></highlight></codeline>
+<codeline lineno="38" refid="_logger_8h_1a1744dc2ee3f545614227b23e78a2f55a" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Info<sp/>((uint32_t)<sp/>2)<sp/></highlight></codeline>
+<codeline lineno="39" refid="_logger_8h_1a23ec4fa24d8255292689e6ef0a416332" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Warn<sp/>((uint32_t)<sp/>3)<sp/></highlight></codeline>
+<codeline lineno="40" refid="_logger_8h_1acc8e303af26c252e5553d1f662eb57b4" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Error<sp/>((uint32_t)<sp/>4)<sp/></highlight></codeline>
+<codeline lineno="41" refid="_logger_8h_1a835240c97721f67adc97a2aaee019b71" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Critical<sp/>((uint32_t)<sp/>5)<sp/></highlight></codeline>
+<codeline lineno="42" refid="_logger_8h_1aca33af0a1a47b5f86cb1e9a9e681ccaf" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_LoggingLevel_Off<sp/>((uint32_t)<sp/>0xffffffff)<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref><sp/><ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_logger_8h_1a368dfdf207ff252e3f55ae3e02edc56f" kindref="member">SilKit_Logger_Log</ref>(<ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>*<sp/>logger,<sp/><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref><sp/>level,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_logger_8h_1a19a6e59957c8629bf91a82d1974416a8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_logger_8h_1a19a6e59957c8629bf91a82d1974416a8" kindref="member">SilKit_Logger_Log_t</ref>)(<ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>*<sp/>logger,<sp/><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref><sp/>level,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_logger_8h_1af78c88f80d3837b0d9c7b30796f11b8b" kindref="member">SilKit_Logger_GetLogLevel</ref>(<ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>*<sp/>logger,<sp/><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref>*<sp/>outLevel);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_logger_8h_1a83fbf88479b59ac6425d23aa9ce09508" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref>*<sp/><ref refid="_logger_8h_1a83fbf88479b59ac6425d23aa9ce09508" kindref="member">SilKit_Logger_GetLogLevel_t</ref>)(<ref refid="_logger_8h_1a22270dd8b6cbf6bbe06c9e8ecced8536" kindref="member">SilKit_Logger</ref>*<sp/>logger,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8h_1a97ff35fa72b19cc16bb033344bcd2e18" kindref="member">SilKit_LoggingLevel</ref>*<sp/>outLevel);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Logger.h"/>
+  </compounddef>
+</doxygen>

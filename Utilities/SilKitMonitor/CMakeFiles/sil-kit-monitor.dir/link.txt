@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/sil-kit-monitor.dir/PassiveSystemMonitor.cpp.o" -o ../../Release/sil-kit-monitor  -Wl,-rpath,/home/ubuntu/sil-kit/Release: ../../Release/libSilKit.so -lpthread 

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::PubSub::IDataPublisher</compoundname>
+    <includes refid="_i_data_publisher_8hpp" local="no">IDataPublisher.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher_1a9dbf1ce793a212943140e91eca6d6bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::PubSub::IDataPublisher::~IDataPublisher</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IDataPublisher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/IDataPublisher.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher_1afe274d05378f406f7fc97acd4171cd5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::PubSub::IDataPublisher::Publish</definition>
+        <argsstring>(Util::Span&lt; const uint8_t &gt; data)=0</argsstring>
+        <name>Publish</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Publish a new value. </para>        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to publish data. Creates a new std::vector with content copied from <computeroutput>data</computeroutput>. For highest efficiency, use <ref refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher_1afe274d05378f406f7fc97acd4171cd5f" kindref="member">Publish(Util::Span&lt;const uint8_t&gt;)</ref> in combination with std::move.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A non-owning reference to an opaque block of raw data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/IDataPublisher.hpp" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/IDataPublisher.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/IDataPublisher.hpp" bodystart="32" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher_1afe274d05378f406f7fc97acd4171cd5f" prot="public" virt="pure-virtual"><scope>SilKit::Services::PubSub::IDataPublisher</scope><name>Publish</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_pub_sub_1_1_i_data_publisher_1a9dbf1ce793a212943140e91eca6d6bf8" prot="public" virt="virtual"><scope>SilKit::Services::PubSub::IDataPublisher</scope><name>~IDataPublisher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

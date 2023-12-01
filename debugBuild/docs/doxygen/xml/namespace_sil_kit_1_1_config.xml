@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_config" kind="namespace" language="C++">
+    <compoundname>SilKit::Config</compoundname>
+    <innerclass refid="class_sil_kit_1_1_config_1_1_i_participant_configuration" prot="public">SilKit::Config::IParticipantConfiguration</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_config_1afbd1399dc59eea55e53a3f9f5485a51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Config::ParticipantConfigurationFromString</definition>
+        <argsstring>(const std::string &amp;text) -&gt; std::shared_ptr&lt; SilKit::Config::IParticipantConfiguration &gt;</argsstring>
+        <name>ParticipantConfigurationFromString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Parse configuration from a YAML or JSON string. </para>        </briefdescription>
+        <detaileddescription>
+<para>Create a configuration data object from settings described by a YAML or JSON formatted string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string that adheres to our JSON schema. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The configuration data</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_configuration_error" kindref="compound">SilKit::ConfigurationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input string violates the JSON format, schema or an integrity rule. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_config_1aba6460df755722f0542bb3107528af42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Config::ParticipantConfigurationFromFile</definition>
+        <argsstring>(const std::string &amp;filename) -&gt; std::shared_ptr&lt; SilKit::Config::IParticipantConfiguration &gt;</argsstring>
+        <name>ParticipantConfigurationFromFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Parse configuration from a YAML or JSON file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Create a configuration data object from settings described by a YAML or JSON file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the YAML or JSON file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The configuration data</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_configuration_error" kindref="compound">SilKit::ConfigurationError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file could not be read, or the input string violates the YAML/JSON format, schema or an integrity rule. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" line="73" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_handler_id_8hpp" kind="file" language="C++">
+    <compoundname>HandlerId.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="datatypes_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp</includedby>
+    <includedby refid="_i_flexray_controller_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/IFlexrayController.hpp</includedby>
+    <incdepgraph>
+      <node id="1767">
+        <label>cstdint</label>
+      </node>
+      <node id="1766">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1767" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1776">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/all.hpp</label>
+        <link refid="services_2ethernet_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1802">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcSpec.hpp</label>
+        <link refid="_rpc_spec_8hpp"/>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+      </node>
+      <node id="1775">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp</label>
+        <link refid="_ethernet_datatypes_8hpp"/>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+      </node>
+      <node id="1797">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp</label>
+        <link refid="services_2orchestration_2string__utils_8hpp"/>
+      </node>
+      <node id="1771">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/CanDatatypes.hpp</label>
+        <link refid="_can_datatypes_8hpp"/>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp</label>
+        <link refid="_i_ethernet_controller_8hpp"/>
+        <childnode refid="1776" relation="include">
+        </childnode>
+      </node>
+      <node id="1783">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp</label>
+        <link refid="_lin_datatypes_8hpp"/>
+        <childnode refid="1784" relation="include">
+        </childnode>
+        <childnode refid="1788" relation="include">
+        </childnode>
+        <childnode refid="1789" relation="include">
+        </childnode>
+      </node>
+      <node id="1800">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</label>
+        <link refid="_sil_kit_8hpp"/>
+      </node>
+      <node id="1780">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/all.hpp</label>
+        <link refid="services_2flexray_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1769">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1790" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+      </node>
+      <node id="1786">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/string_utils.hpp</label>
+        <link refid="experimental_2services_2lin_2string__utils_8hpp"/>
+      </node>
+      <node id="1790">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp</label>
+        <link refid="_orchestration_datatypes_8hpp"/>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+      </node>
+      <node id="1794">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/all.hpp</label>
+        <link refid="services_2orchestration_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1799">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</label>
+        <link refid="_i_participant_8hpp"/>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+      </node>
+      <node id="1773">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp</label>
+        <link refid="_i_can_controller_8hpp"/>
+        <childnode refid="1772" relation="include">
+        </childnode>
+      </node>
+      <node id="1782">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/string_utils.hpp</label>
+        <link refid="services_2flexray_2string__utils_8hpp"/>
+      </node>
+      <node id="1798">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubSpec.hpp</label>
+        <link refid="_pub_sub_spec_8hpp"/>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+      </node>
+      <node id="1784">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp</label>
+        <link refid="_i_lin_controller_8hpp"/>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1787" relation="include">
+        </childnode>
+        <childnode refid="1788" relation="include">
+        </childnode>
+      </node>
+      <node id="1785">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinControllerExtensions.hpp</label>
+        <link refid="_lin_controller_extensions_8hpp"/>
+        <childnode refid="1786" relation="include">
+        </childnode>
+      </node>
+      <node id="1803">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</label>
+        <link refid="services_2rpc_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1801">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/all.hpp</label>
+        <link refid="services_2pubsub_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1779">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp</label>
+        <link refid="_flexray_datatypes_8hpp"/>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+      </node>
+      <node id="1788">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/all.hpp</label>
+        <link refid="services_2lin_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1768">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1769" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+      </node>
+      <node id="1770">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1791">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp</label>
+        <link refid="_i_system_controller_8hpp"/>
+        <childnode refid="1792" relation="include">
+        </childnode>
+      </node>
+      <node id="1789">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp</label>
+        <link refid="services_2lin_2string__utils_8hpp"/>
+      </node>
+      <node id="1778">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp</label>
+        <link refid="services_2ethernet_2string__utils_8hpp"/>
+      </node>
+      <node id="1796">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ITimeSyncService.hpp</label>
+        <link refid="_i_time_sync_service_8hpp"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+      </node>
+      <node id="1772">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/all.hpp</label>
+        <link refid="services_2can_2all_8hpp"/>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/IFlexrayController.hpp</label>
+        <link refid="_i_flexray_controller_8hpp"/>
+        <childnode refid="1780" relation="include">
+        </childnode>
+      </node>
+      <node id="1774">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/string_utils.hpp</label>
+        <link refid="services_2can_2string__utils_8hpp"/>
+      </node>
+      <node id="1787">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp</label>
+        <link refid="_lin_datatypes_extensions_8hpp"/>
+        <childnode refid="1785" relation="include">
+        </childnode>
+      </node>
+      <node id="1804">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/string_utils.hpp</label>
+        <link refid="services_2string__utils_8hpp"/>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+      </node>
+      <node id="1795">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ISystemMonitor.hpp</label>
+        <link refid="_i_system_monitor_8hpp"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp</label>
+        <link refid="_i_lifecycle_service_8hpp"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+      </node>
+      <node id="1792">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_util">SilKit::Util</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="namespace_sil_kit_1_1_util" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Util<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>struct</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>:<sp/>std::uint64_t</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Util</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/HandlerId.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_controller_dynamic_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Experimental::Services::Lin::LinControllerDynamicConfig</compoundname>
+    <includes refid="_lin_datatypes_extensions_8hpp" local="no">LinDatatypesExtensions.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_controller_dynamic_config_1a7d2bb9a1781ed3695a276e8c2a50eff3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" kindref="member">LinControllerMode</ref></type>
+        <definition>LinControllerMode SilKit::Experimental::Services::Lin::LinControllerDynamicConfig::controllerMode</definition>
+        <argsstring></argsstring>
+        <name>controllerMode</name>
+        <initializer>{LinControllerMode::Inactive}</initializer>
+        <briefdescription>
+<para>Configure as LIN master or LIN slave. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="65" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_controller_dynamic_config_1aef33eff75b47edcee7e9d50645df8520" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a73f97bd0b1218774c6ba19c81c21fac9" kindref="member">LinBaudRate</ref></type>
+        <definition>LinBaudRate SilKit::Experimental::Services::Lin::LinControllerDynamicConfig::baudRate</definition>
+        <argsstring></argsstring>
+        <name>baudRate</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The operational baud rate of the controller. Used in a detailed simulation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="68" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Configuration data to initialize the LIN Controller in the given LinSimulationMode Cf.: <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a6c76e854f83278d4fb74d893fbb141f6" kindref="member">InitDynamic(ILinController*,const LinControllerDynamicConfig&amp;)</ref>; </para>    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="62" bodyend="69"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_controller_dynamic_config_1aef33eff75b47edcee7e9d50645df8520" prot="public" virt="non-virtual"><scope>SilKit::Experimental::Services::Lin::LinControllerDynamicConfig</scope><name>baudRate</name></member>
+      <member refid="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_controller_dynamic_config_1a7d2bb9a1781ed3695a276e8c2a50eff3" prot="public" virt="non-virtual"><scope>SilKit::Experimental::Services::Lin::LinControllerDynamicConfig</scope><name>controllerMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

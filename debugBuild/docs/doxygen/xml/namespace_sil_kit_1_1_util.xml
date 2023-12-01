@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_util" kind="namespace" language="C++">
+    <compoundname>SilKit::Util</compoundname>
+    <innerclass refid="class_sil_kit_1_1_util_1_1_printable_hex_string" prot="public">SilKit::Util::PrintableHexString</innerclass>
+    <innerclass refid="class_sil_kit_1_1_util_1_1_span" prot="public">SilKit::Util::Span</innerclass>
+    <innernamespace refid="namespace_sil_kit_1_1_util_1_1_ser_des">SilKit::Util::SerDes</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" prot="public" static="no">
+        <name>HandlerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/HandlerId.hpp" line="30" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/HandlerId.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1a0fd44922c037ccc53a6b507432434a4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IterableT</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::AsHexString</definition>
+        <argsstring>(const IterableT &amp;iterable) -&gt; PrintableHexString&lt; IterableT &gt;</argsstring>
+        <name>AsHexString</name>
+        <param>
+          <type>const IterableT &amp;</type>
+          <declname>iterable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="98" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1a8bba321a3892bf6c6d1b03ca50b71dbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IterableT</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; SilKit::Util::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const PrintableHexString&lt; IterableT &gt; &amp;hexString)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_printable_hex_string" kindref="compound">PrintableHexString</ref>&lt; IterableT &gt; &amp;</type>
+          <declname>hexString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="104" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1ae0730c817c9399d43740001176a53640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::ToSpan</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;vector) -&gt; Span&lt; T &gt;</argsstring>
+        <name>ToSpan</name>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="164" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1aa6a45dca68b13f9f2fa5916b0f278a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::ToSpan</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;vector) -&gt; Span&lt; const T &gt;</argsstring>
+        <name>ToSpan</name>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="167" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1a10dccbed73a87ff807878e09003a7cb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::ToSpan</definition>
+        <argsstring>(const SilKit_ByteVector &amp;skByteVector) -&gt; Span&lt; const uint8_t &gt;</argsstring>
+        <name>ToSpan</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref> &amp;</type>
+          <declname>skByteVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="169" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="356" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1a1799dbf14f09f3cd6ec9e6d5f637a361" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::ToSilKitByteVector</definition>
+        <argsstring>(Span&lt; const uint8_t &gt; span) -&gt; SilKit_ByteVector</argsstring>
+        <name>ToSilKitByteVector</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref>&lt; const uint8_t &gt;</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="171" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1aed214484ba29d316bfdb26dab0e03cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::ToStdVector</definition>
+        <argsstring>(Span&lt; T &gt; span) -&gt; std::vector&lt; std::remove_cv_t&lt; T &gt;&gt;</argsstring>
+        <name>ToStdVector</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref>&lt; T &gt;</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="174" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="367" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1acef7e14b2ffea7b9111266e975682c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::MakeSpan</definition>
+        <argsstring>(std::array&lt; T, N &gt; &amp;array) -&gt; Span&lt; T &gt;</argsstring>
+        <name>MakeSpan</name>
+        <param>
+          <type>std::array&lt; T, N &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="333" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1a2a10cd9a45e3c2137117361447db4763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::MakeSpan</definition>
+        <argsstring>(const std::array&lt; T, N &gt; &amp;array) -&gt; Span&lt; const T &gt;</argsstring>
+        <name>MakeSpan</name>
+        <param>
+          <type>const std::array&lt; T, N &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="339" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_util_1a49fd58fb4eee496074eef0a2a56e7c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SilKit::Util::ItemsAreEqual</definition>
+        <argsstring>(const Span&lt; T &gt; &amp;lhs, const Span&lt; U &gt; &amp;rhs)</argsstring>
+        <name>ItemsAreEqual</name>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref>&lt; T &gt; &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Span</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" line="373" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/Span.hpp" bodystart="373" bodyend="376"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/HandlerId.hpp" line="27" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexraySymbolEvent</compoundname>
+    <derivedcompoundref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_transmit_event" prot="public" virt="non-virtual">SilKit::Services::Flexray::FlexraySymbolTransmitEvent</derivedcompoundref>
+    <derivedcompoundref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event" prot="public" virt="non-virtual">SilKit::Services::Flexray::FlexrayWakeupEvent</derivedcompoundref>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1a52a26679b051410ce8befeb5b22ebc68" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Flexray::FlexraySymbolEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>End time of symbol reception. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="386" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1adb23b11419a5a8306fefcd17211d5edd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13c" kindref="member">FlexrayChannel</ref></type>
+        <definition>FlexrayChannel SilKit::Services::Flexray::FlexraySymbolEvent::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>FlexRay channel A or B (values: <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13ca7fc56270e7a70fa81a5935b72eacbe29" kindref="member">FlexrayChannel::A</ref>, <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13ca9d5ed678fe57bcca610140957afab571" kindref="member">FlexrayChannel::B</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="387" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1aa9c2ac337ad04fbb802df5e6027eca5e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a0adde59b7a2e64533d4332980494e1af" kindref="member">FlexraySymbolPattern</ref></type>
+        <definition>FlexraySymbolPattern SilKit::Services::Flexray::FlexraySymbolEvent::pattern</definition>
+        <argsstring></argsstring>
+        <name>pattern</name>
+        <briefdescription>
+<para>The received symbol, e.g. wakeup pattern. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="388" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A FlexRay Symbol as received on the FlexRay bus. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_transmit_event"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>SilKit::Services::Flexray::FlexrayWakeupEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>SilKit::Services::Flexray::FlexraySymbolEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="385" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="384" bodyend="389"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1adb23b11419a5a8306fefcd17211d5edd" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexraySymbolEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1aa9c2ac337ad04fbb802df5e6027eca5e" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexraySymbolEvent</scope><name>pattern</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1a52a26679b051410ce8befeb5b22ebc68" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexraySymbolEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

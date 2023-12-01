@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___can_state_change_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_CanStateChangeEvent</compoundname>
+    <includes refid="_can_8h" local="no">Can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___can_state_change_event_1aa6ac905660e13d9f5e5ec0cab8b89d7a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_CanStateChangeEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="135" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_state_change_event_1ad30f068ed6330e5f3c36a393587f8b11" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_CanStateChangeEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Reception time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="136" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_state_change_event_1a4d1a8592a3e278a99857abf6b5dd29a4" prot="public" static="no" mutable="no">
+        <type><ref refid="_can_8h_1a3eb1e3f74640db8ab377d9b4a658e14a" kindref="member">SilKit_CanControllerState</ref></type>
+        <definition>SilKit_CanControllerState SilKit_CanStateChangeEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>CAN controller state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="137" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming state change of a CAN controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="219">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="218">
+        <label>SilKit_CanStateChangeEvent</label>
+        <link refid="struct_sil_kit___can_state_change_event"/>
+        <childnode refid="219" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="134" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="133" bodyend="138"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___can_state_change_event_1a4d1a8592a3e278a99857abf6b5dd29a4" prot="public" virt="non-virtual"><scope>SilKit_CanStateChangeEvent</scope><name>state</name></member>
+      <member refid="struct_sil_kit___can_state_change_event_1aa6ac905660e13d9f5e5ec0cab8b89d7a" prot="public" virt="non-virtual"><scope>SilKit_CanStateChangeEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___can_state_change_event_1ad30f068ed6330e5f3c36a393587f8b11" prot="public" virt="non-virtual"><scope>SilKit_CanStateChangeEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Rpc::RpcCallEvent</compoundname>
+    <includes refid="_rpc_datatypes_8hpp" local="no">RpcDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a9812b448d91058af59570ca95629ca09" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Rpc::RpcCallEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Send timestamp of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="59" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a6301e7a08ad82feac6dff648b093b779" prot="public" static="no" mutable="no">
+        <type>IRpcCallHandle *</type>
+        <definition>IRpcCallHandle* SilKit::Services::Rpc::RpcCallEvent::callHandle</definition>
+        <argsstring></argsstring>
+        <name>callHandle</name>
+        <briefdescription>
+<para>Handle of the rpc call by which the call can be identified and its result can be submitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="61" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a1b697e1443103ac4add9243c82761e1f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::Rpc::RpcCallEvent::argumentData</definition>
+        <argsstring></argsstring>
+        <name>argumentData</name>
+        <briefdescription>
+<para>Data of the rpc call as provided by the client on call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming rpc call from a RpcClient with call data and timestamp. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="192">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+      <node id="191">
+        <label>SilKit::Services::Rpc::RpcCallEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event"/>
+        <childnode refid="192" relation="usage">
+          <edgelabel>argumentData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" line="57" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp" bodystart="56" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a1b697e1443103ac4add9243c82761e1f" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallEvent</scope><name>argumentData</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a6301e7a08ad82feac6dff648b093b779" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallEvent</scope><name>callHandle</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a9812b448d91058af59570ca95629ca09" prot="public" virt="non-virtual"><scope>SilKit::Services::Rpc::RpcCallEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___can_frame_transmit_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_CanFrameTransmitEvent</compoundname>
+    <includes refid="_can_8h" local="no">Can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_transmit_event_1a627b8ce6ca9cb3350aea063e1362dabc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_CanFrameTransmitEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="100" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_transmit_event_1ac2986f6f68a464914c94fa1ce41a3d11" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SilKit_CanFrameTransmitEvent::userContext</definition>
+        <argsstring></argsstring>
+        <name>userContext</name>
+        <briefdescription>
+<para>Value that was provided by user in corresponding parameter on send of CAN frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="101" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_transmit_event_1a0734b5efa3f6109fa06251eef6350825" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_CanFrameTransmitEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Reception time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="102" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_transmit_event_1afca2fda3344d30f1e65057c090a3000f" prot="public" static="no" mutable="no">
+        <type><ref refid="_can_8h_1a4dc3752e5fa4daa30e09ac36925a890d" kindref="member">SilKit_CanTransmitStatus</ref></type>
+        <definition>SilKit_CanTransmitStatus SilKit_CanFrameTransmitEvent::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>Status of the CanTransmitRequest. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="103" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___can_frame_transmit_event_1a0dae669e2fafd1fba4c30f6a3c6ad953" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SilKit_CanFrameTransmitEvent::canId</definition>
+        <argsstring></argsstring>
+        <name>canId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Identifies the CAN id to which this CanFrameTransmitEvent refers to.</para><para><simplesect kind="version"><para>Check: <ref refid="_interface_identifiers_8h_1a21ad8e7f88b6a4b1bdad43b972907fcb" kindref="member">SK_ID_GET_VERSION(SilKit_Struct_GetId(event))</ref> &gt;= 2</para></simplesect>
+You must check that the structure version is sufficient before accessing this field. Added in SIL Kit version 4.0.11. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="111" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The acknowledgment of a CAN message, sent to the controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="216">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="215">
+        <label>SilKit_CanFrameTransmitEvent</label>
+        <link refid="struct_sil_kit___can_frame_transmit_event"/>
+        <childnode refid="216" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" line="99" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Can.h" bodystart="98" bodyend="112"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___can_frame_transmit_event_1a0dae669e2fafd1fba4c30f6a3c6ad953" prot="public" virt="non-virtual"><scope>SilKit_CanFrameTransmitEvent</scope><name>canId</name></member>
+      <member refid="struct_sil_kit___can_frame_transmit_event_1afca2fda3344d30f1e65057c090a3000f" prot="public" virt="non-virtual"><scope>SilKit_CanFrameTransmitEvent</scope><name>status</name></member>
+      <member refid="struct_sil_kit___can_frame_transmit_event_1a627b8ce6ca9cb3350aea063e1362dabc" prot="public" virt="non-virtual"><scope>SilKit_CanFrameTransmitEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___can_frame_transmit_event_1a0734b5efa3f6109fa06251eef6350825" prot="public" virt="non-virtual"><scope>SilKit_CanFrameTransmitEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit___can_frame_transmit_event_1ac2986f6f68a464914c94fa1ce41a3d11" prot="public" virt="non-virtual"><scope>SilKit_CanFrameTransmitEvent</scope><name>userContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_frame_header_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Experimental::Services::Lin::LinFrameHeaderEvent</compoundname>
+    <includes refid="_lin_datatypes_extensions_8hpp" local="no">LinDatatypesExtensions.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_frame_header_event_1a6084b36a3a5dddccd698a3f423d0a0ba" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Experimental::Services::Lin::LinFrameHeaderEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_frame_header_event_1a8be9ba01c7000f19a3442d5c870884bc" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" kindref="member">LinId</ref></type>
+        <definition>LinId SilKit::Experimental::Services::Lin::LinFrameHeaderEvent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="75" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A frame header event delivered in the <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a4539be8ad0104b40e33dfd1f1987be33" kindref="member">LinFrameHeaderHandler</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="73" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="72" bodyend="76"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_frame_header_event_1a8be9ba01c7000f19a3442d5c870884bc" prot="public" virt="non-virtual"><scope>SilKit::Experimental::Services::Lin::LinFrameHeaderEvent</scope><name>id</name></member>
+      <member refid="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_frame_header_event_1a6084b36a3a5dddccd698a3f423d0a0ba" prot="public" virt="non-virtual"><scope>SilKit::Experimental::Services::Lin::LinFrameHeaderEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_vendor_1_1_vector" kind="namespace" language="C++">
+    <compoundname>SilKit::Vendor::Vector</compoundname>
+    <innerclass refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry" prot="public">SilKit::Vendor::Vector::ISilKitRegistry</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_vendor_1_1_vector_1a8287d559221b35bd072758398e8bae3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Vendor::Vector::CreateSilKitRegistry</definition>
+        <argsstring>(std::shared_ptr&lt; SilKit::Config::IParticipantConfiguration &gt; config) -&gt; std::unique_ptr&lt; SilKit::Vendor::Vector::ISilKitRegistry &gt;</argsstring>
+        <name>CreateSilKitRegistry</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_sil_kit_1_1_config_1_1_i_participant_configuration" kindref="compound">SilKit::Config::IParticipantConfiguration</ref> &gt;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Create an instance of <ref refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry" kindref="compound">ISilKitRegistry</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This API is specific to the <ref refid="namespace_sil_kit_1_1_vendor_1_1_vector" kindref="compound">Vector</ref> Informatik implementation of the SIL Kit. It is required as a central service for other SIL Kit participants to register with.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_sil_kit_1_1_sil_kit_error" kindref="compound">SilKit::SilKitError</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on error. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/CreateSilKitRegistry.hpp" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/CreateSilKitRegistry.hpp" line="36" column="1"/>
+  </compounddef>
+</doxygen>

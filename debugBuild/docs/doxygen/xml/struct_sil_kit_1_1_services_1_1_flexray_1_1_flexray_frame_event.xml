@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayFrameEvent</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event_1a55d36a7a0a5b3eea69332405b1297e90" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Flexray::FlexrayFrameEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time at end of frame transmission. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="355" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event_1a10f43091fd25935040e74338f25379ed" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13c" kindref="member">FlexrayChannel</ref></type>
+        <definition>FlexrayChannel SilKit::Services::Flexray::FlexrayFrameEvent::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>FlexRay channel A or B. (Valid values: <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13ca7fc56270e7a70fa81a5935b72eacbe29" kindref="member">FlexrayChannel::A</ref>, <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a084b0a4ebb46865320b7d20af801a13ca9d5ed678fe57bcca610140957afab571" kindref="member">FlexrayChannel::B</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="356" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event_1a155655f02e1324c3b0be3c30137dcbf5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame" kindref="compound">FlexrayFrame</ref></type>
+        <definition>FlexrayFrame SilKit::Services::Flexray::FlexrayFrameEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+<para>Received FlexRay frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="357" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="62">
+        <label>SilKit::Services::Flexray::FlexrayFrameEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event"/>
+        <childnode refid="63" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+      <node id="63">
+        <label>SilKit::Services::Flexray::FlexrayFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame"/>
+        <childnode refid="64" relation="usage">
+          <edgelabel>payload</edgelabel>
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+      </node>
+      <node id="64">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+      <node id="65">
+        <label>SilKit::Services::Flexray::FlexrayHeader</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="354" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="353" bodyend="358"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event_1a10f43091fd25935040e74338f25379ed" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayFrameEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event_1a155655f02e1324c3b0be3c30137dcbf5" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayFrameEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_frame_event_1a55d36a7a0a5b3eea69332405b1297e90" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayFrameEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

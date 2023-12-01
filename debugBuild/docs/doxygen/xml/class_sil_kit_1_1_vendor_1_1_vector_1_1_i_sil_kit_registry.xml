@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Vendor::Vector::ISilKitRegistry</compoundname>
+    <includes refid="_i_sil_kit_registry_8hpp" local="no">ISilKitRegistry.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a9f61035c87fd67b214c22d3f9c6bf1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Vendor::Vector::ISilKitRegistry::~ISilKitRegistry</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ISilKitRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a900d132bfe7d8363c8d4196f4c41c149" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Vendor::Vector::ISilKitRegistry::SetAllConnectedHandler</definition>
+        <argsstring>(std::function&lt; void()&gt; handler)=0</argsstring>
+        <name>SetAllConnectedHandler</name>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register the handler that is called when all participants are connected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a2422edb26c3fbac2ca67bc6fba17c7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Vendor::Vector::ISilKitRegistry::SetAllDisconnectedHandler</definition>
+        <argsstring>(std::function&lt; void()&gt; handler)=0</argsstring>
+        <name>SetAllDisconnectedHandler</name>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register the handler that is called when all participants are disconnected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a09949d186e40e2bdf5cb0a2d64fcd59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Vendor::Vector::ISilKitRegistry::GetLogger</definition>
+        <argsstring>() -&gt; Services::Logging::ILogger *=0</argsstring>
+        <name>GetLogger</name>
+        <briefdescription>
+<para>Returns the logger that is used by the SIL Kit registry. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a44a9c9192eae1ec12d987c16046dc27e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Vendor::Vector::ISilKitRegistry::StartListening</definition>
+        <argsstring>(const std::string &amp;listenUri) -&gt; std::string=0</argsstring>
+        <name>StartListening</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>listenUri</declname>
+        </param>
+        <briefdescription>
+<para>Start to listen on the URI with scheme silkit://. e.g. silkit://localhost:8500. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Dedicated SIL Kit registry for the <ref refid="namespace_sil_kit_1_1_vendor_1_1_vector" kindref="compound">Vector</ref> SIL Kit middleware. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/ISilKitRegistry.hpp" bodystart="34" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a09949d186e40e2bdf5cb0a2d64fcd59b" prot="public" virt="pure-virtual"><scope>SilKit::Vendor::Vector::ISilKitRegistry</scope><name>GetLogger</name></member>
+      <member refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a900d132bfe7d8363c8d4196f4c41c149" prot="public" virt="pure-virtual"><scope>SilKit::Vendor::Vector::ISilKitRegistry</scope><name>SetAllConnectedHandler</name></member>
+      <member refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a2422edb26c3fbac2ca67bc6fba17c7f4" prot="public" virt="pure-virtual"><scope>SilKit::Vendor::Vector::ISilKitRegistry</scope><name>SetAllDisconnectedHandler</name></member>
+      <member refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a44a9c9192eae1ec12d987c16046dc27e" prot="public" virt="pure-virtual"><scope>SilKit::Vendor::Vector::ISilKitRegistry</scope><name>StartListening</name></member>
+      <member refid="class_sil_kit_1_1_vendor_1_1_vector_1_1_i_sil_kit_registry_1a9f61035c87fd67b214c22d3f9c6bf1c4" prot="public" virt="virtual"><scope>SilKit::Vendor::Vector::ISilKitRegistry</scope><name>~ISilKitRegistry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

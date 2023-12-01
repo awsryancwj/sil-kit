@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_i_flexray_controller_8hpp" kind="file" language="C++">
+    <compoundname>IFlexrayController.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">functional</includes>
+    <includes refid="_flexray_datatypes_8hpp" local="yes">FlexrayDatatypes.hpp</includes>
+    <includes refid="_handler_id_8hpp" local="yes">silkit/util/HandlerId.hpp</includes>
+    <includedby refid="services_2flexray_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/all.hpp</includedby>
+    <incdepgraph>
+      <node id="1344">
+        <label>functional</label>
+      </node>
+      <node id="1348">
+        <label>cstdint</label>
+      </node>
+      <node id="1357">
+        <label>stdint.h</label>
+      </node>
+      <node id="1347">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1350" relation="include">
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+      </node>
+      <node id="1354">
+        <label>stdexcept</label>
+      </node>
+      <node id="1349">
+        <label>string</label>
+      </node>
+      <node id="1361">
+        <label>silkit/capi/Flexray.h</label>
+        <link refid="_flexray_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>stddef.h</label>
+      </node>
+      <node id="1364">
+        <label>memory.h</label>
+      </node>
+      <node id="1363">
+        <label>limits.h</label>
+      </node>
+      <node id="1359">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1348" relation="include">
+        </childnode>
+      </node>
+      <node id="1345">
+        <label>FlexrayDatatypes.hpp</label>
+        <link refid="_flexray_datatypes_8hpp"/>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1351" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+      </node>
+      <node id="1346">
+        <label>vector</label>
+      </node>
+      <node id="1350">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1348" relation="include">
+        </childnode>
+      </node>
+      <node id="1353">
+        <label>array</label>
+      </node>
+      <node id="1351">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="1352" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1342">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/IFlexrayController.hpp</label>
+        <link refid="_i_flexray_controller_8hpp"/>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1344" relation="include">
+        </childnode>
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1350" relation="include">
+        </childnode>
+      </node>
+      <node id="1343">
+        <label>chrono</label>
+      </node>
+      <node id="1362">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+      </node>
+      <node id="1355">
+        <label>type_traits</label>
+      </node>
+      <node id="1352">
+        <label>algorithm</label>
+      </node>
+      <node id="1356">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1366">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/all.hpp</label>
+        <link refid="services_2flexray_2all_8hpp"/>
+        <childnode refid="1367" relation="include">
+        </childnode>
+      </node>
+      <node id="1367">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1365">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/IFlexrayController.hpp</label>
+        <link refid="_i_flexray_controller_8hpp"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller" prot="public">SilKit::Services::Flexray::IFlexrayController</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_flexray">SilKit::Services::Flexray</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_flexray_datatypes_8hpp" kindref="compound">FlexrayDatatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_handler_id_8hpp" kindref="compound">silkit/util/HandlerId.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Flexray<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller" kindref="compound">IFlexrayController</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>MsgT&gt;</highlight></codeline>
+<codeline lineno="42" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT</ref><sp/>=<sp/>std::function&lt;void(IFlexrayController*<sp/>controller,<sp/>const<sp/>MsgT&amp;<sp/>msg)&gt;;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a0c7136d464ae1181fc837261f49154be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a0c7136d464ae1181fc837261f49154be" kindref="member">FrameHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexrayFrameEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a8b28b12fc8aac63ac292034e0a273a8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a8b28b12fc8aac63ac292034e0a273a8d" kindref="member">FrameTransmitHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexrayFrameTransmitEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a4545e63e674cb8ba1bc1f725138d9b4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a4545e63e674cb8ba1bc1f725138d9b4b" kindref="member">WakeupHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexrayWakeupEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1adb574753ac8ac8c16b5309850aa356fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1adb574753ac8ac8c16b5309850aa356fc" kindref="member">PocStatusHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexrayPocStatusEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a76f14b6af889aabfb31b404dc2a2fce0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a76f14b6af889aabfb31b404dc2a2fce0" kindref="member">SymbolHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexraySymbolEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a81b0ec44c049d1dd98bda7dd9d09dd8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a81b0ec44c049d1dd98bda7dd9d09dd8f" kindref="member">SymbolTransmitHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexraySymbolTransmitEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1aa0827defec4f4fbb3889957b6af52fa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1aa0827defec4f4fbb3889957b6af52fa3" kindref="member">CycleStartHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a031911e78010a8c7567807acb3db2637" kindref="member">CallbackT&lt;FlexrayCycleStartEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a8bf881da74ce867aa4a5951be18510af" kindref="member">~IFlexrayController</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a92ec50f1c0e17f92f469c54d497f255d" kindref="member">Configure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_controller_config" kindref="compound">FlexrayControllerConfig</ref>&amp;<sp/>config)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1ad7270a559de94a5e8c86ed6275b0f590" kindref="member">ReconfigureTxBuffer</ref>(uint16_t<sp/>txBufferIdx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_config" kindref="compound">FlexrayTxBufferConfig</ref>&amp;<sp/>config)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a9d2e6512d3d377de6eb649cef838417c" kindref="member">UpdateTxBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_tx_buffer_update" kindref="compound">FlexrayTxBufferUpdate</ref>&amp;<sp/>update)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a1311d9bfd4d1262a325ed4f8a6179dab" kindref="member">Run</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a37fce44d4a444f303c680619e46b116d" kindref="member">DeferredHalt</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a6fc2c0aef3266b4c79fe6abd12ac362a" kindref="member">Freeze</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1ae0dbb51593878027179367bdb7c03ed9" kindref="member">AllowColdstart</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1ace8114a4eb4102d8ce0b30c8cb5106df" kindref="member">AllSlots</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1aa29a5cc8fa8cd1f324423e28f9f1c47e" kindref="member">Wakeup</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a21ef2ed2c3e8410da4c36fc57ff9a610" kindref="member">AddFrameHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a0c7136d464ae1181fc837261f49154be" kindref="member">FrameHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a74832b8ae7196e76060390b78de6481f" kindref="member">RemoveFrameHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1afa7e40f7b3768ecf9ceb6b2aea0f005a" kindref="member">AddFrameTransmitHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a8b28b12fc8aac63ac292034e0a273a8d" kindref="member">FrameTransmitHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1ab5dc3409f6c2f73fddf8e7cae59d4d13" kindref="member">RemoveFrameTransmitHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a70fa9a204d330619a35f751df4e849d3" kindref="member">AddWakeupHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a4545e63e674cb8ba1bc1f725138d9b4b" kindref="member">WakeupHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1ae91c973cffd48dc17d49d1671d0758d5" kindref="member">RemoveWakeupHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1af2e6e889787bc800a91f10a074256fd9" kindref="member">AddPocStatusHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1adb574753ac8ac8c16b5309850aa356fc" kindref="member">PocStatusHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a3382592436f68749ae1315371a30322a" kindref="member">RemovePocStatusHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1ac769ffd46cc5b9bc60d1963977980da1" kindref="member">AddSymbolHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a76f14b6af889aabfb31b404dc2a2fce0" kindref="member">SymbolHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a4c76071e2de092bc04feaad50c11d2fd" kindref="member">RemoveSymbolHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1abc2e58093e740b3b0cf15acd98801869" kindref="member">AddSymbolTransmitHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a81b0ec44c049d1dd98bda7dd9d09dd8f" kindref="member">SymbolTransmitHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1a851f7703ce58a4eb1c0003f695dc78da" kindref="member">RemoveSymbolTransmitHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1afca2083c211bcd45167dec1ac25f56be" kindref="member">AddCycleStartHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1aa0827defec4f4fbb3889957b6af52fa3" kindref="member">CycleStartHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_flexray_1_1_i_flexray_controller_1af30373588313a7eede5e722723e81a88" kindref="member">RemoveCycleStartHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Flexray</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/IFlexrayController.hpp"/>
+  </compounddef>
+</doxygen>

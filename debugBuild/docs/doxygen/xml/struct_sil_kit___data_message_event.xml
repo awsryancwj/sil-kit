@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___data_message_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_DataMessageEvent</compoundname>
+    <includes refid="_data_pub_sub_8h" local="no">DataPubSub.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___data_message_event_1a3a4fb1748a823e2cf38f120e3cb0147f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_DataMessageEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="46" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___data_message_event_1a6aebbe6dc4cc8826c8a14fcc39061cdb" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_DataMessageEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Send timestamp of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="48" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___data_message_event_1a8ffcd130f295e2bb08e01db326687653" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref></type>
+        <definition>SilKit_ByteVector SilKit_DataMessageEvent::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Data field containing the payload. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="50" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming DataMessage of a DataPublisher containing raw data and timestamp. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="223">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="221">
+        <label>SilKit_DataMessageEvent</label>
+        <link refid="struct_sil_kit___data_message_event"/>
+        <childnode refid="222" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="223" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="222">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="44" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___data_message_event_1a8ffcd130f295e2bb08e01db326687653" prot="public" virt="non-virtual"><scope>SilKit_DataMessageEvent</scope><name>data</name></member>
+      <member refid="struct_sil_kit___data_message_event_1a3a4fb1748a823e2cf38f120e3cb0147f" prot="public" virt="non-virtual"><scope>SilKit_DataMessageEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___data_message_event_1a6aebbe6dc4cc8826c8a14fcc39061cdb" prot="public" virt="non-virtual"><scope>SilKit_DataMessageEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

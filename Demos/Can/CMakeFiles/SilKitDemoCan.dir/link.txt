@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/SilKitDemoCan.dir/CanDemo.cpp.o -o ../../Release/SilKitDemoCan  -Wl,-rpath,/home/ubuntu/sil-kit/Release ../../Release/libSilKit.so -lpthread 

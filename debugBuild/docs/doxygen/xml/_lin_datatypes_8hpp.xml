@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_lin_datatypes_8hpp" kind="file" language="C++">
+    <compoundname>LinDatatypes.hpp</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">vector</includes>
+    <includes refid="datatypes_8hpp" local="yes">silkit/services/datatypes.hpp</includes>
+    <includes refid="_span_8hpp" local="yes">silkit/util/Span.hpp</includes>
+    <includes refid="_lin_8h" local="yes">silkit/capi/Lin.h</includes>
+    <includedby refid="_i_lin_controller_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp</includedby>
+    <includedby refid="services_2lin_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/all.hpp</includedby>
+    <includedby refid="services_2lin_2string__utils_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp</includedby>
+    <incdepgraph>
+      <node id="1402">
+        <label>cstdint</label>
+      </node>
+      <node id="1397">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp</label>
+        <link refid="_lin_datatypes_8hpp"/>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>stdint.h</label>
+      </node>
+      <node id="1401">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+      </node>
+      <node id="1413">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>stdexcept</label>
+      </node>
+      <node id="1403">
+        <label>string</label>
+      </node>
+      <node id="1411">
+        <label>stddef.h</label>
+      </node>
+      <node id="1417">
+        <label>memory.h</label>
+      </node>
+      <node id="1416">
+        <label>limits.h</label>
+      </node>
+      <node id="1412">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>vector</label>
+      </node>
+      <node id="1404">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+      </node>
+      <node id="1398">
+        <label>array</label>
+      </node>
+      <node id="1414">
+        <label>silkit/capi/Lin.h</label>
+        <link refid="_lin_8h"/>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+      </node>
+      <node id="1405">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1399">
+        <label>chrono</label>
+      </node>
+      <node id="1415">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1416" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>type_traits</label>
+      </node>
+      <node id="1406">
+        <label>algorithm</label>
+      </node>
+      <node id="1409">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1418">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp</label>
+        <link refid="_lin_datatypes_8hpp"/>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+      </node>
+      <node id="1421">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/string_utils.hpp</label>
+        <link refid="experimental_2services_2lin_2string__utils_8hpp"/>
+      </node>
+      <node id="1419">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/ILinController.hpp</label>
+        <link refid="_i_lin_controller_8hpp"/>
+        <childnode refid="1420" relation="include">
+        </childnode>
+        <childnode refid="1422" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+      </node>
+      <node id="1420">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinControllerExtensions.hpp</label>
+        <link refid="_lin_controller_extensions_8hpp"/>
+        <childnode refid="1421" relation="include">
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/all.hpp</label>
+        <link refid="services_2lin_2all_8hpp"/>
+        <childnode refid="1424" relation="include">
+        </childnode>
+      </node>
+      <node id="1424">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1425">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/string_utils.hpp</label>
+        <link refid="services_2lin_2string__utils_8hpp"/>
+      </node>
+      <node id="1422">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp</label>
+        <link refid="_lin_datatypes_extensions_8hpp"/>
+        <childnode refid="1420" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" prot="public">SilKit::Services::Lin::LinFrame</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" prot="public">SilKit::Services::Lin::LinFrameResponse</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" prot="public">SilKit::Services::Lin::LinControllerConfig</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event" prot="public">SilKit::Services::Lin::LinFrameStatusEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event" prot="public">SilKit::Services::Lin::LinWakeupEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event" prot="public">SilKit::Services::Lin::LinGoToSleepEvent</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_lin">SilKit::Services::Lin</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="datatypes_8hpp" kindref="compound">silkit/services/datatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_span_8hpp" kindref="compound">silkit/util/Span.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lin_8h" kindref="compound">silkit/capi/Lin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lin<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" kindref="member">LinId</ref><sp/>=<sp/><ref refid="_lin_8h_1a6af0cc9696323532582d1c980cc4fa58" kindref="member">SilKit_LinId</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751" kindref="member">LinChecksumModel</ref><sp/>:<sp/><ref refid="_lin_8h_1ab62b46b7945a6daace65b4284946ff91" kindref="member">SilKit_LinChecksumModel</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751a88183b946cc5f0e8c96b2e66e1c74a7e" kindref="member">Unknown</ref><sp/>=<sp/><ref refid="_lin_8h_1a8b3a5d8851d9d036a5a101b45eb57257" kindref="member">SilKit_LinChecksumModel_Unknown</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751a53123044b4b65d0ad1b7ed0cfa4c3480" kindref="member">Enhanced</ref><sp/>=<sp/><ref refid="_lin_8h_1ae4e9a064ff445535254a5856352cd50c" kindref="member">SilKit_LinChecksumModel_Enhanced</ref>,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751ad35b51b639528d580362ca7042de6a0e" kindref="member">Classic</ref><sp/>=<sp/><ref refid="_lin_8h_1a8ff3f79ef412fc016300de88be2bb233" kindref="member">SilKit_LinChecksumModel_Classic</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="namespace_sil_kit_1_1_services_1_1_lin_1a5a25e66c9079932b8b077745660fa759" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a5a25e66c9079932b8b077745660fa759" kindref="member">LinDataLength</ref><sp/>=<sp/><ref refid="_lin_8h_1a731260f9964b5882339addc6f44ce8a6" kindref="member">SilKit_LinDataLength</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="namespace_sil_kit_1_1_services_1_1_lin_1acbdd0e93d3360b9521e0153e788aeb0b" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a5a25e66c9079932b8b077745660fa759" kindref="member">LinDataLength</ref><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1acbdd0e93d3360b9521e0153e788aeb0b" kindref="member">LinDataLengthUnknown</ref><sp/>=<sp/><ref refid="_lin_8h_1a886644663de4c344d2d19cf7c770d74b" kindref="member">SilKit_LinDataLengthUnknown</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1aca46e5ecb4b2d561cd96dbdc8d1bef29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a80597d23b9f8db519cc0d9650fb736a7" kindref="member">LinId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">{0};<sp/></highlight></codeline>
+<codeline lineno="83" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a5e998f0d95bd0868ab0859ed1347a4fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751" kindref="member">LinChecksumModel</ref><sp/>checksumModel{<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751a88183b946cc5f0e8c96b2e66e1c74a7e" kindref="member">LinChecksumModel::Unknown</ref>};<sp/></highlight></codeline>
+<codeline lineno="84" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1ad2f51b8c47e45c6cc566e844f89f8e69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a5a25e66c9079932b8b077745660fa759" kindref="member">LinDataLength</ref><sp/>dataLength{0};<sp/></highlight></codeline>
+<codeline lineno="85" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a8e7145cf817f48d39f74515caa5416eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint8_t,<sp/>8&gt;<sp/>data{};<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ab44986cd090be7dcadd599997dbf5ea1" kindref="member">GoToSleepFrame</ref>()<sp/>-&gt;<sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4a" kindref="member">LinFrameResponseType</ref><sp/>:<sp/><ref refid="_lin_8h_1acf52690042a3ae9b5c5b2428cdc75c81" kindref="member">SilKit_LinFrameResponseType</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aad7d7c5b0ca15a04b90c2b50bd52faa86" kindref="member">MasterResponse</ref><sp/>=<sp/><ref refid="_lin_8h_1a5e7e4692850d5fce01f1b3d65f353a24" kindref="member">SilKit_LinFrameResponseType_MasterResponse</ref>,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aad252642285f2a0b4a335c139074aeb8f" kindref="member">SlaveResponse</ref><sp/>=<sp/><ref refid="_lin_8h_1a33c2d7443d8e32354ed397a772d9c33a" kindref="member">SilKit_LinFrameResponseType_SlaveResponse</ref>,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade83b9889926f50a734b410308a8ad4aa1faa6b1ca17c22e3a880464c5a4b46ae" kindref="member">SlaveToSlave</ref><sp/>=<sp/><ref refid="_lin_8h_1a6a06e45eb54d37fde63715be71aa2aa3" kindref="member">SilKit_LinFrameResponseType_SlaveToSlave</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" kindref="member">LinFrameResponseMode</ref><sp/>:<sp/><ref refid="_lin_8h_1a04b93526f53b7ae7d16a2688e63a76b2" kindref="member">SilKit_LinFrameResponseMode</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca92e592d90b9548016776a6fb68dccded" kindref="member">Unused</ref><sp/>=<sp/><ref refid="_lin_8h_1a48588e4bb8070bf9ef75c1debf5b46af" kindref="member">SilKit_LinFrameResponseMode_Unused</ref>,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ecac8600a0cc45fe853cb446a96bb8eae35" kindref="member">Rx</ref><sp/>=<sp/><ref refid="_lin_8h_1a2ddcf1b2f1320b120e78bacc734ed665" kindref="member">SilKit_LinFrameResponseMode_Rx</ref>,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca27aa3ae03156b0781515a5dde6c77a05" kindref="member">TxUnconditional</ref><sp/>=<sp/><ref refid="_lin_8h_1a9bd4b540e9361769031c5137e576f62e" kindref="member">SilKit_LinFrameResponseMode_TxUnconditional</ref>,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a7a09983eee566edb931e071538b0bb18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a7a09983eee566edb931e071538b0bb18" kindref="member">frame</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a58825169518cb5414ec692f0eefc6e35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1ec" kindref="member">LinFrameResponseMode</ref><sp/>responseMode{<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a89a2e567ad48c02fa548b6d11841e1eca92e592d90b9548016776a6fb68dccded" kindref="member">LinFrameResponseMode::Unused</ref>};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">LinFrameStatus</ref><sp/>:<sp/><ref refid="_lin_8h_1ad5976deba8b77971103d3e4cc1d8ee2c" kindref="member">SilKit_LinFrameStatus</ref></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a10c838b8da25cf719fc5a0183dc90779" kindref="member">NOT_OK</ref><sp/>=<sp/><ref refid="_lin_8h_1a421c3abf319572f71c8e8f5aa7870dc7" kindref="member">SilKit_LinFrameStatus_NOT_OK</ref>,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a6fe67640de40936ae12d8b13047f9d49" kindref="member">LIN_TX_OK</ref><sp/>=<sp/><ref refid="_lin_8h_1a5458ca9cc4f09f7e71d02ce7b6f6e751" kindref="member">SilKit_LinFrameStatus_LIN_TX_OK</ref>,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864aabd4d0bdecf761938399ce87a41dc683" kindref="member">LIN_TX_BUSY</ref><sp/>=<sp/><ref refid="_lin_8h_1aee4303875285ed9ceb667988d858e91d" kindref="member">SilKit_LinFrameStatus_LIN_TX_BUSY</ref>,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a158258aa7c843f1b75a654b188d38505" kindref="member">LIN_TX_HEADER_ERROR</ref><sp/>=<sp/><ref refid="_lin_8h_1a756edd4e06fa2f558b92b53315cf1308" kindref="member">SilKit_LinFrameStatus_LIN_TX_HEADER_ERROR</ref>,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a51ec306a2f8a2c4a65b2e43f0b3406ff" kindref="member">LIN_TX_ERROR</ref><sp/>=<sp/><ref refid="_lin_8h_1a62502ba5da46ccc6e48ecda2dd6d5426" kindref="member">SilKit_LinFrameStatus_LIN_TX_ERROR</ref>,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864ad0955b199181203493e4000e2fdf20a8" kindref="member">LIN_RX_OK</ref><sp/>=<sp/><ref refid="_lin_8h_1acdc5e8bc49b6bb3927dda95daee7100f" kindref="member">SilKit_LinFrameStatus_LIN_RX_OK</ref>,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864a7f37291eea45f93039edc1302ba44689" kindref="member">LIN_RX_BUSY</ref><sp/>=<sp/><ref refid="_lin_8h_1a2db355f9cf18bc45f0b446e30bdfd1ff" kindref="member">SilKit_LinFrameStatus_LIN_RX_BUSY</ref>,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864aa99e83ea08ff7832d341090e1ce6328c" kindref="member">LIN_RX_ERROR</ref><sp/>=<sp/><ref refid="_lin_8h_1ae68afd10a3df0feff95fcb2408d07e5f" kindref="member">SilKit_LinFrameStatus_LIN_RX_ERROR</ref>,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864aca20d3d21509e66c596f28f99ec05c6f" kindref="member">LIN_RX_NO_RESPONSE</ref><sp/>=<sp/><ref refid="_lin_8h_1ae482ee9a3d3f7743b5d5c9ab5f653e7c" kindref="member">SilKit_LinFrameStatus_LIN_RX_NO_RESPONSE</ref>,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" kindref="member">LinControllerMode</ref><sp/>:<sp/><ref refid="_lin_8h_1a1e3f7d7586e3c76c30383d672e9e5963" kindref="member">SilKit_LinControllerMode</ref></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5a3cab03c00dbd11bc3569afa0748013f0" kindref="member">Inactive</ref><sp/>=<sp/><ref refid="_lin_8h_1a37c5edc49e792f038517fb890d26f54b" kindref="member">SilKit_LinControllerMode_Inactive</ref>,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5af03bde11d261f185cbacfa32c1c6538c" kindref="member">Master</ref><sp/>=<sp/><ref refid="_lin_8h_1ae95b9f8d16e642f9d7cfd1a4cd89f194" kindref="member">SilKit_LinControllerMode_Master</ref>,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5afe25c0ad752c03ce2361025c235b63e1" kindref="member">Slave</ref><sp/>=<sp/><ref refid="_lin_8h_1ae9abc6e16d23d82e574b418778bb47fd" kindref="member">SilKit_LinControllerMode_Slave</ref>,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="namespace_sil_kit_1_1_services_1_1_lin_1a73f97bd0b1218774c6ba19c81c21fac9" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a73f97bd0b1218774c6ba19c81c21fac9" kindref="member">LinBaudRate</ref><sp/>=<sp/><ref refid="_lin_8h_1a87f84094445e3127075578c73f0083e9" kindref="member">SilKit_LinBaudRate</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1af56b0ad85a05fd54c662f7d2a3fdd00e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5" kindref="member">LinControllerMode</ref><sp/>controllerMode{<ref refid="namespace_sil_kit_1_1_services_1_1_lin_1adf4bafb1dcc0c630048f7014c4ca3ba5a3cab03c00dbd11bc3569afa0748013f0" kindref="member">LinControllerMode::Inactive</ref>};</highlight></codeline>
+<codeline lineno="259" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a4df34a311bd47be448110da841e48030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a73f97bd0b1218774c6ba19c81c21fac9" kindref="member">LinBaudRate</ref><sp/>baudRate{0};</highlight></codeline>
+<codeline lineno="266" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a383abaa67d6e54fcbc0f9c389897a0c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LinFrameResponse&gt;<sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a383abaa67d6e54fcbc0f9c389897a0c8" kindref="member">frameResponses</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380" kindref="member">LinControllerStatus</ref><sp/>:<sp/><ref refid="_lin_8h_1ae0010660601f6fbe2df6ed0683c740ee" kindref="member">SilKit_LinControllerStatus</ref></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751a88183b946cc5f0e8c96b2e66e1c74a7e" kindref="member">Unknown</ref><sp/>=<sp/><ref refid="_lin_8h_1aab007f1751ee688c640a2aa0523b26a7" kindref="member">SilKit_LinControllerStatus_Unknown</ref>,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a431accab7897f05b0424e002ca30391d" kindref="member">Operational</ref><sp/>=<sp/><ref refid="_lin_8h_1a54589e5817849f15be48ff8d232d53bb" kindref="member">SilKit_LinControllerStatus_Operational</ref>,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>is<sp/>enabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380a243924bfd56a682be235638b53961e09" kindref="member">Sleep</ref><sp/>=<sp/><ref refid="_lin_8h_1a53b2125ab719fa50c27579d54c1f4b99" kindref="member">SilKit_LinControllerStatus_Sleep</ref>,</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>This<sp/>allows<sp/>the<sp/>network<sp/>simulator<sp/>to<sp/>finish<sp/>pending<sp/>transmissions<sp/>(e.g.,<sp/>sleep<sp/>frames<sp/>to<sp/>slaves)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>before<sp/>entering<sp/>state<sp/>Sleep,<sp/>cf.<sp/>AUTOSAR<sp/>SWS<sp/>LINDriver<sp/>[SWS_LIN_00266]<sp/>and<sp/>section<sp/>7.3.3.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>This<sp/>is<sp/>only<sp/>used<sp/>when<sp/>using<sp/>detailed<sp/>simulations<sp/>with<sp/>a<sp/>network<sp/>simulator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1a7cc4c5200ecbf1c1ca1dc0baa8f0e380af51a4523a4dfe1d3463d16a693765cc2" kindref="member">SleepPending</ref><sp/>=<sp/><ref refid="_lin_8h_1aeefc35d08366db8bd385c3ffdb6c5577" kindref="member">SilKit_LinControllerStatus_SleepPending</ref>,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event" kindref="compound">LinFrameStatusEvent</ref></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a81a79d4142595faad1d7649cb4193f99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a81a79d4142595faad1d7649cb4193f99" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="296" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a0c549fa8b5e193ea5b50a90cdb09a6fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a0c549fa8b5e193ea5b50a90cdb09a6fe" kindref="member">frame</ref>;</highlight></codeline>
+<codeline lineno="297" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a47baae4be5067a5b9294ac0e8be0aa5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">LinFrameStatus</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a47baae4be5067a5b9294ac0e8be0aa5b" kindref="member">status</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event" kindref="compound">LinWakeupEvent</ref></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1a8029ce866f1adcdac47b106387be480c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1a8029ce866f1adcdac47b106387be480c" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="304" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1abd587cc9b7684f32da06377bb2ff3dfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1abd587cc9b7684f32da06377bb2ff3dfe" kindref="member">direction</ref>;<sp/></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event" kindref="compound">LinGoToSleepEvent</ref></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310" refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event_1a3d0a87a9346990f52da25205f61de2a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_go_to_sleep_event_1a3d0a87a9346990f52da25205f61de2a0" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="311"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Inline<sp/>Implementations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="namespace_sil_kit_1_1_services_1_1_lin_1ab44986cd090be7dcadd599997dbf5ea1" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ab44986cd090be7dcadd599997dbf5ea1" kindref="member">GoToSleepFrame</ref>()<sp/>-&gt;<sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref></highlight></codeline>
+<codeline lineno="319"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref><sp/>frame;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>frame.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1aca46e5ecb4b2d561cd96dbdc8d1bef29" kindref="member">id</ref><sp/>=<sp/>0x3c;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>frame.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a5e998f0d95bd0868ab0859ed1347a4fb" kindref="member">checksumModel</ref><sp/>=<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1abfb0b45b4e712325afe7712de2d7f751ad35b51b639528d580362ca7042de6a0e" kindref="member">LinChecksumModel::Classic</ref>;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>frame.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1ad2f51b8c47e45c6cc566e844f89f8e69" kindref="member">dataLength</ref><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>frame.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a8e7145cf817f48d39f74515caa5416eb" kindref="member">data</ref><sp/>=<sp/>{0x0,<sp/>0xff,<sp/>0xff,<sp/>0xff,<sp/>0xff,<sp/>0xff,<sp/>0xff,<sp/>0xff};</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frame;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="328" refid="namespace_sil_kit_1_1_services_1_1_lin_1ad827b1e3c62d64135e48f016c9b0a561" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ad827b1e3c62d64135e48f016c9b0a561" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1aca46e5ecb4b2d561cd96dbdc8d1bef29" kindref="member">id</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1aca46e5ecb4b2d561cd96dbdc8d1bef29" kindref="member">id</ref></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a5e998f0d95bd0868ab0859ed1347a4fb" kindref="member">checksumModel</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a5e998f0d95bd0868ab0859ed1347a4fb" kindref="member">checksumModel</ref></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1ad2f51b8c47e45c6cc566e844f89f8e69" kindref="member">dataLength</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1ad2f51b8c47e45c6cc566e844f89f8e69" kindref="member">dataLength</ref></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a8e7145cf817f48d39f74515caa5416eb" kindref="member">data</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_1a8e7145cf817f48d39f74515caa5416eb" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="336" refid="namespace_sil_kit_1_1_services_1_1_lin_1af6d0666c868d1437199a7c8041cc3736" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ad827b1e3c62d64135e48f016c9b0a561" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response" kindref="compound">LinFrameResponse</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a7a09983eee566edb931e071538b0bb18" kindref="member">frame</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a7a09983eee566edb931e071538b0bb18" kindref="member">frame</ref></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a58825169518cb5414ec692f0eefc6e35" kindref="member">responseMode</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_response_1a58825169518cb5414ec692f0eefc6e35" kindref="member">responseMode</ref>;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="342" refid="namespace_sil_kit_1_1_services_1_1_lin_1ac96075a0cb639a884f517ff03b2c04cc" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ad827b1e3c62d64135e48f016c9b0a561" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref>&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config" kindref="compound">LinControllerConfig</ref>&amp;<sp/>rhs)</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1af56b0ad85a05fd54c662f7d2a3fdd00e" kindref="member">controllerMode</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1af56b0ad85a05fd54c662f7d2a3fdd00e" kindref="member">controllerMode</ref></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a4df34a311bd47be448110da841e48030" kindref="member">baudRate</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a4df34a311bd47be448110da841e48030" kindref="member">baudRate</ref></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>lhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a383abaa67d6e54fcbc0f9c389897a0c8" kindref="member">frameResponses</ref><sp/>==<sp/>rhs.<ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_controller_config_1a383abaa67d6e54fcbc0f9c389897a0c8" kindref="member">frameResponses</ref>;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Lin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp"/>
+  </compounddef>
+</doxygen>

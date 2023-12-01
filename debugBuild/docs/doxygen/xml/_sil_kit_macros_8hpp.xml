@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_sil_kit_macros_8hpp" kind="file" language="C++">
+    <compoundname>SilKitMacros.hpp</compoundname>
+    <includes refid="_sil_kit_macros_8h" local="yes">capi/SilKitMacros.h</includes>
+    <includedby refid="_participant_extensions_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</includedby>
+    <includedby refid="_ethernet_datatypes_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp</includedby>
+    <includedby refid="_sil_kit_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</includedby>
+    <includedby refid="_create_sil_kit_registry_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/CreateSilKitRegistry.hpp</includedby>
+    <incdepgraph>
+      <node id="1751">
+        <label>cstdint</label>
+      </node>
+      <node id="1750">
+        <label>capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitMacros.hpp</label>
+        <link refid="_sil_kit_macros_8hpp"/>
+        <childnode refid="1750" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1755">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/all.hpp</label>
+        <link refid="services_2ethernet_2all_8hpp"/>
+        <childnode refid="1756" relation="include">
+        </childnode>
+      </node>
+      <node id="1754">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp</label>
+        <link refid="_ethernet_datatypes_8hpp"/>
+        <childnode refid="1755" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+      </node>
+      <node id="1760">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/CreateSilKitRegistry.hpp</label>
+        <link refid="_create_sil_kit_registry_8hpp"/>
+        <childnode refid="1761" relation="include">
+        </childnode>
+      </node>
+      <node id="1757">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp</label>
+        <link refid="_i_ethernet_controller_8hpp"/>
+        <childnode refid="1755" relation="include">
+        </childnode>
+      </node>
+      <node id="1759">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</label>
+        <link refid="_sil_kit_8hpp"/>
+      </node>
+      <node id="1756">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1758">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp</label>
+        <link refid="services_2ethernet_2string__utils_8hpp"/>
+      </node>
+      <node id="1752">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitMacros.hpp</label>
+        <link refid="_sil_kit_macros_8hpp"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+      </node>
+      <node id="1761">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/vendor/all.hpp</label>
+        <link refid="vendor_2all_8hpp"/>
+      </node>
+      <node id="1753">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/SilKitMacros.hpp"/>
+  </compounddef>
+</doxygen>

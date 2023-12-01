@@ -199,7 +199,9 @@ void AsioConnector<T>::Op::Initiate(std::chrono::milliseconds timeout)
         _timeoutTimer.async_wait(timeoutCompletionHandler);
     }
 
+    SILKIT_TRACE_METHOD_(_logger, "before async_connect()");
     _socket.async_connect(_remoteEndpoint, connectCompletionHandler);
+    SILKIT_TRACE_METHOD_(_logger, "after async_connect()");
 }
 
 

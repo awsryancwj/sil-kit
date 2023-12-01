@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_controller_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayControllerConfig</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_controller_config_1a7438fd260cbede4eff9a3907818c4d07" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayControllerConfig::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="304" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_controller_config_1ac7fcab7532a8bcddd1a1f08fcc9f716a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___flexray_cluster_parameters" kindref="compound">SilKit_FlexrayClusterParameters</ref> *</type>
+        <definition>SilKit_FlexrayClusterParameters* SilKit_FlexrayControllerConfig::clusterParams</definition>
+        <argsstring></argsstring>
+        <name>clusterParams</name>
+        <briefdescription>
+<para>FlexRay cluster parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="306" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_controller_config_1a767c04e49e446bb4fec264731c77661a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___flexray_node_parameters" kindref="compound">SilKit_FlexrayNodeParameters</ref> *</type>
+        <definition>SilKit_FlexrayNodeParameters* SilKit_FlexrayControllerConfig::nodeParams</definition>
+        <argsstring></argsstring>
+        <name>nodeParams</name>
+        <briefdescription>
+<para>FlexRay node parameters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="308" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_controller_config_1ac9e185aa13161796303c4bbc017b82b6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SilKit_FlexrayControllerConfig::numBufferConfigs</definition>
+        <argsstring></argsstring>
+        <name>numBufferConfigs</name>
+        <briefdescription>
+<para>FlexRay buffer configs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="311" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_controller_config_1aab794d4408790156b25c643336cdaaf3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___flexray_tx_buffer_config" kindref="compound">SilKit_FlexrayTxBufferConfig</ref> *</type>
+        <definition>SilKit_FlexrayTxBufferConfig* SilKit_FlexrayControllerConfig::bufferConfigs</definition>
+        <argsstring></argsstring>
+        <name>bufferConfigs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="312" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configure the communication parameters of the FlexRay controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="264">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="263">
+        <label>SilKit_FlexrayControllerConfig</label>
+        <link refid="struct_sil_kit___flexray_controller_config"/>
+        <childnode refid="264" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="265" relation="usage">
+          <edgelabel>bufferConfigs</edgelabel>
+        </childnode>
+        <childnode refid="266" relation="usage">
+          <edgelabel>clusterParams</edgelabel>
+        </childnode>
+        <childnode refid="267" relation="usage">
+          <edgelabel>nodeParams</edgelabel>
+        </childnode>
+      </node>
+      <node id="265">
+        <label>SilKit_FlexrayTxBufferConfig</label>
+        <link refid="struct_sil_kit___flexray_tx_buffer_config"/>
+        <childnode refid="264" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="267">
+        <label>SilKit_FlexrayNodeParameters</label>
+        <link refid="struct_sil_kit___flexray_node_parameters"/>
+        <childnode refid="264" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="266">
+        <label>SilKit_FlexrayClusterParameters</label>
+        <link refid="struct_sil_kit___flexray_cluster_parameters"/>
+        <childnode refid="264" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="302" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="301" bodyend="313"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_controller_config_1aab794d4408790156b25c643336cdaaf3" prot="public" virt="non-virtual"><scope>SilKit_FlexrayControllerConfig</scope><name>bufferConfigs</name></member>
+      <member refid="struct_sil_kit___flexray_controller_config_1ac7fcab7532a8bcddd1a1f08fcc9f716a" prot="public" virt="non-virtual"><scope>SilKit_FlexrayControllerConfig</scope><name>clusterParams</name></member>
+      <member refid="struct_sil_kit___flexray_controller_config_1a767c04e49e446bb4fec264731c77661a" prot="public" virt="non-virtual"><scope>SilKit_FlexrayControllerConfig</scope><name>nodeParams</name></member>
+      <member refid="struct_sil_kit___flexray_controller_config_1ac9e185aa13161796303c4bbc017b82b6" prot="public" virt="non-virtual"><scope>SilKit_FlexrayControllerConfig</scope><name>numBufferConfigs</name></member>
+      <member refid="struct_sil_kit___flexray_controller_config_1a7438fd260cbede4eff9a3907818c4d07" prot="public" virt="non-virtual"><scope>SilKit_FlexrayControllerConfig</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

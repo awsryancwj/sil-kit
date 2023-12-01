@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services_1_1_ethernet" kind="namespace" language="C++">
+    <compoundname>SilKit::Services::Ethernet</compoundname>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_bitrate_change_event" prot="public">SilKit::Services::Ethernet::EthernetBitrateChangeEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" prot="public">SilKit::Services::Ethernet::EthernetFrame</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event" prot="public">SilKit::Services::Ethernet::EthernetFrameEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_transmit_event" prot="public">SilKit::Services::Ethernet::EthernetFrameTransmitEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_state_change_event" prot="public">SilKit::Services::Ethernet::EthernetStateChangeEvent</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller" prot="public">SilKit::Services::Ethernet::IEthernetController</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124" prot="public" static="no">
+        <name>EthernetTransmitStatus</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124aa5b0d6c4be9dd1b8b05c4146fce1b2e1" prot="public">
+          <name>Transmitted</name>
+          <initializer>= SilKit_EthernetTransmitStatus_Transmitted</initializer>
+          <briefdescription>
+<para>The message was successfully transmitted on the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> link. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124a071681df2702c521bdf3f86d5dd067ad" prot="public">
+          <name>ControllerInactive</name>
+          <initializer>= SilKit_EthernetTransmitStatus_ControllerInactive</initializer>
+          <briefdescription>
+<para>The transmit request was rejected, because the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller is not active. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124aed24adca6bafecf505ccfec607baae60" prot="public">
+          <name>LinkDown</name>
+          <initializer>= SilKit_EthernetTransmitStatus_LinkDown</initializer>
+          <briefdescription>
+<para>The transmit request was rejected, because the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> link is down. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124a74339e8d9916761b9b69183a081076c6" prot="public">
+          <name>Dropped</name>
+          <initializer>= SilKit_EthernetTransmitStatus_Dropped</initializer>
+          <briefdescription>
+<para>The transmit request was dropped, because the transmit queue is full. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124a55e32de6901e8afadbea93439c764118" prot="public">
+          <name>InvalidFrameFormat</name>
+          <initializer>= SilKit_EthernetTransmitStatus_InvalidFrameFormat</initializer>
+          <briefdescription>
+<para>The given raw <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> frame is ill formated (e.g. frame length is too small or too large, wrong order of VLAN tags). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Acknowledgment status for an EthernetTransmitRequest. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="63" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="62" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147" prot="public" static="no">
+        <name>EthernetState</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147a3cab03c00dbd11bc3569afa0748013f0" prot="public">
+          <name>Inactive</name>
+          <initializer>= SilKit_EthernetState_Inactive</initializer>
+          <briefdescription>
+<para>The <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller is switched off (default after reset). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147aed24adca6bafecf505ccfec607baae60" prot="public">
+          <name>LinkDown</name>
+          <initializer>= SilKit_EthernetState_LinkDown</initializer>
+          <briefdescription>
+<para>The <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller is active, but a link to another <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller in not yet established. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147a8d95de9e9f0ffbdc9901ee31aa38b3a4" prot="public">
+          <name>LinkUp</name>
+          <initializer>= SilKit_EthernetState_LinkUp</initializer>
+          <briefdescription>
+<para>The <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller is active and the link to another <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller is established. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State of the <ref refid="namespace_sil_kit_1_1_services_1_1_ethernet" kindref="compound">Ethernet</ref> controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="90" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="89" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_ethernet_1a6f058f0bc3d58fb927569b568ff3178d" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>using SilKit::Services::Ethernet::EthernetBitrate = typedef uint32_t</definition>
+        <argsstring></argsstring>
+        <name>EthernetBitrate</name>
+        <briefdescription>
+<para>Bitrate in kBit/sec. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_ethernet_1abfd0dc9eb121d83e39e1f60258e90e31" prot="public" static="no">
+        <type><ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref></type>
+        <definition>using SilKit::Services::Ethernet::EthernetTransmitStatusMask = typedef SilKit_EthernetTransmitStatus</definition>
+        <argsstring></argsstring>
+        <name>EthernetTransmitStatusMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="59" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1a64edc19d1be204d1a7fa28511a51facc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Ethernet::to_string</definition>
+        <argsstring>(EthernetTransmitStatus value)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124" kindref="member">EthernetTransmitStatus</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="55" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1af0e5d5d4f15628be27c9ece58b897bac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Ethernet::to_string</definition>
+        <argsstring>(EthernetState value)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147" kindref="member">EthernetState</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="73" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1ab602595c467353ddf7a0b6135b6cf3ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Ethernet::to_string</definition>
+        <argsstring>(const EthernetFrame &amp;msg)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" kindref="compound">EthernetFrame</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1ab2c58b4360536632e5dd9e42bfb043c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Ethernet::to_string</definition>
+        <argsstring>(const EthernetFrameEvent &amp;msg)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event" kindref="compound">EthernetFrameEvent</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1aba8d64d6241bee5673ed9c704cc1dc0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Ethernet::to_string</definition>
+        <argsstring>(const EthernetFrameTransmitEvent &amp;msg)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_transmit_event" kindref="compound">EthernetFrameTransmitEvent</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1a9836331895ee494052ecc0d7efec4b8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Ethernet::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, EthernetTransmitStatus value)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1abc4119554b7926d385cfe9443c1c6124" kindref="member">EthernetTransmitStatus</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1a98eecd9166a58f373de20b8acd45368f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Ethernet::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, EthernetState value)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1a10a56ade778c751ce52749d8bcecb147" kindref="member">EthernetState</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1a9e5dd11dba8e8e417758d9b4ebc3e584" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Ethernet::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const EthernetFrame &amp;msg)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" kindref="compound">EthernetFrame</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="47" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="118" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1aba1ebc1bd47c74b25a3ced5b4c5457a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Ethernet::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const EthernetFrameEvent &amp;msg)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_event" kindref="compound">EthernetFrameEvent</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="48" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="150" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_ethernet_1ac8016dcccf5a28c03cf0e6d34b3644d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Ethernet::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const EthernetFrameTransmitEvent &amp;msg)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame_transmit_event" kindref="compound">EthernetFrameTransmitEvent</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" line="49" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp" bodystart="161" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp" line="39" column="1"/>
+  </compounddef>
+</doxygen>

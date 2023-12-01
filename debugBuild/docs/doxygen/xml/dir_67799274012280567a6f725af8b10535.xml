@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_67799274012280567a6f725af8b10535" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services</compoundname>
+    <innerdir refid="dir_3a6a33fc9ab2a24d5041f300ed8ab52d">/home/ubuntu/sil-kit/SilKit/include/silkit/services/can</innerdir>
+    <innerdir refid="dir_3a650c7b782b4f1ff07989307d34d38f">/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet</innerdir>
+    <innerdir refid="dir_8f73ebc5b179abbf01edec063fd1ece6">/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray</innerdir>
+    <innerdir refid="dir_fcf8cf2281e87bac860d977490599212">/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin</innerdir>
+    <innerdir refid="dir_6b76d92b24a1ac130410acaf1536d323">/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging</innerdir>
+    <innerdir refid="dir_e92ee56bb84cad45b84000cbc7489f87">/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration</innerdir>
+    <innerdir refid="dir_25325d9cc8df5d5593ad3b603b759b00">/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub</innerdir>
+    <innerdir refid="dir_8c2d6de3f3b272df76799accda8ca621">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc</innerdir>
+    <innerfile refid="services_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="datatypes_8hpp">datatypes.hpp</innerfile>
+    <innerfile refid="fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="services_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/"/>
+  </compounddef>
+</doxygen>

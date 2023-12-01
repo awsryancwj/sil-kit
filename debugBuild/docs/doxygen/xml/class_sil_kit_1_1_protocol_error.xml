@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_protocol_error" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::ProtocolError</compoundname>
+    <basecompoundref refid="class_sil_kit_1_1_sil_kit_error" prot="public" virt="non-virtual">SilKit::SilKitError</basecompoundref>
+    <includes refid="exception_8hpp" local="no">exception.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="182">
+        <label>SilKit::ProtocolError</label>
+        <link refid="class_sil_kit_1_1_protocol_error"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>SilKit::SilKitError</label>
+        <link refid="class_sil_kit_1_1_sil_kit_error"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="185">
+        <label>SilKit::ProtocolError</label>
+        <link refid="class_sil_kit_1_1_protocol_error"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>SilKit::SilKitError</label>
+        <link refid="class_sil_kit_1_1_sil_kit_error"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/exception.hpp" line="75" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/exception.hpp" bodystart="74" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1a0077208e83054bce618c67ac98278a67" prot="protected" virt="non-virtual"><scope>SilKit::ProtocolError</scope><name>_what</name></member>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1adefb4bdec3000f1145f4c1f85281bdc7" prot="public" virt="non-virtual"><scope>SilKit::ProtocolError</scope><name>SilKitError</name></member>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1aa6cf5efd32d6d31bb2e7930ae7c82e83" prot="public" virt="non-virtual"><scope>SilKit::ProtocolError</scope><name>SilKitError</name></member>
+      <member refid="class_sil_kit_1_1_sil_kit_error_1a15c8e944c8aafa377819ddbcdd34a2a3" prot="public" virt="non-virtual"><scope>SilKit::ProtocolError</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

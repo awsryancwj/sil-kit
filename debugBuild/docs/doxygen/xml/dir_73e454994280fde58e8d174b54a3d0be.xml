@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_73e454994280fde58e8d174b54a3d0be" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit</compoundname>
+    <innerdir refid="dir_efec8d0f79696accf1871eb23d4d39b4">/home/ubuntu/sil-kit/SilKit/include/silkit/capi</innerdir>
+    <innerdir refid="dir_da364d1ab5105f14d7b38ee11944d283">/home/ubuntu/sil-kit/SilKit/include/silkit/config</innerdir>
+    <innerdir refid="dir_fead9e0e90521df0f4a651f6fa411a15">/home/ubuntu/sil-kit/SilKit/include/silkit/experimental</innerdir>
+    <innerdir refid="dir_0cea32d0fd9fac804c5020078377a3d3">/home/ubuntu/sil-kit/SilKit/include/silkit/participant</innerdir>
+    <innerdir refid="dir_67799274012280567a6f725af8b10535">/home/ubuntu/sil-kit/SilKit/include/silkit/services</innerdir>
+    <innerdir refid="dir_b5d97a9a13706160b222e5cb1a6f7913">/home/ubuntu/sil-kit/SilKit/include/silkit/util</innerdir>
+    <innerdir refid="dir_606dbd254bbe5ae4c6f12cfae927af9b">/home/ubuntu/sil-kit/SilKit/include/silkit/vendor</innerdir>
+    <innerfile refid="_sil_kit_8hpp">SilKit.hpp</innerfile>
+    <innerfile refid="_sil_kit_macros_8hpp">SilKitMacros.hpp</innerfile>
+    <innerfile refid="_sil_kit_version_8hpp">SilKitVersion.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/"/>
+  </compounddef>
+</doxygen>

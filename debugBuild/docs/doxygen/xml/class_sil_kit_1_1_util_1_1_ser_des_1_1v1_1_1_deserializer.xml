@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::Util::SerDes::v1::Deserializer</compoundname>
+    <includes refid="_deserializer_8hpp" local="no">Deserializer.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ab07b35fef8744fa6ac0fa0baf801342e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; SilKit::Util::SerDes::v1::Deserializer::mBuffer</definition>
+        <argsstring></argsstring>
+        <name>mBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="275" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8307aae7f1fe1876aac288ad116a1ed5" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t SilKit::Util::SerDes::v1::Deserializer::mReadPos</definition>
+        <argsstring></argsstring>
+        <name>mReadPos</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="276" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ac4dfb9eed7bcffe090da7b74d1c74cb5" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SilKit::Util::SerDes::v1::Deserializer::mUnalignedData</definition>
+        <argsstring></argsstring>
+        <name>mUnalignedData</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="277" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1adf1e9014f31bea182fde2db7c8055167" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t SilKit::Util::SerDes::v1::Deserializer::mUnalignedBits</definition>
+        <argsstring></argsstring>
+        <name>mUnalignedBits</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="278" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8187138a3c74d2a8a3883fe898e7838c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::SerDes::v1::Deserializer::Deserializer</definition>
+        <argsstring>()=default</argsstring>
+        <name>Deserializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a9c5d1b95612d9cbb2009c7889cd08d97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::SerDes::v1::Deserializer::Deserializer</definition>
+        <argsstring>(std::vector&lt; uint8_t &gt; buffer)</argsstring>
+        <name>Deserializer</name>
+        <param>
+          <type>std::vector&lt; uint8_t &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8b1040cc02ad00111481c21d43858201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::SerDes::v1::Deserializer::Deserializer</definition>
+        <argsstring>(const Deserializer &amp;other)=default</argsstring>
+        <name>Deserializer</name>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a493247e98ff154bf1ebcdc6ca359ce01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::SerDes::v1::Deserializer::Deserializer</definition>
+        <argsstring>(Deserializer &amp;&amp;other)=default</argsstring>
+        <name>Deserializer</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer" kindref="compound">Deserializer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a867a7ec2bde17633ca6c81abdc198f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::SerDes::v1::Deserializer::~Deserializer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Deserializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1af77c693cf8b13dae0cdc6591af373445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::operator=</definition>
+        <argsstring>(const Deserializer &amp;other) -&gt; Deserializer &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ad127b400a30bf03e65e904f37b4f29b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::operator=</definition>
+        <argsstring>(Deserializer &amp;&amp;other) -&gt; Deserializer &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer" kindref="compound">Deserializer</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a22e3ce1a64e6d4288c9f6161442e522a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_integral&lt; T &gt;::value &amp;&amp;!std::is_same&lt; bool, typename std::decay_t&lt; T &gt;&gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::Deserialize</definition>
+        <argsstring>(std::size_t bitSize) -&gt; T</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>bitSize</declname>
+        </param>
+        <briefdescription>
+<para>Deserializes uint8_t through uint64_t, int8_t through int64_t. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits which shall be deserialized. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The deserialized value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="62" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_same&lt; bool, typename std::decay_t&lt; T &gt;&gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::Deserialize</definition>
+        <argsstring>() -&gt; T</argsstring>
+        <name>Deserialize</name>
+        <briefdescription>
+<para>Deserializes a boolean value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The deserialized value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="77" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_floating_point&lt; T &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::Deserialize</definition>
+        <argsstring>() -&gt; T</argsstring>
+        <name>Deserialize</name>
+        <briefdescription>
+<para>Deserializes a float or double value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The deserialized value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="86" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="86" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_same&lt; std::string, T &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::Deserialize</definition>
+        <argsstring>() -&gt; T</argsstring>
+        <name>Deserialize</name>
+        <briefdescription>
+<para>Deserializes a string value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The deserialized value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="105" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_same&lt; std::vector&lt; uint8_t &gt;, T &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::Deserialize</definition>
+        <argsstring>() -&gt; T</argsstring>
+        <name>Deserialize</name>
+        <briefdescription>
+<para>Deserializes a byte array. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The deserialized value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="118" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="118" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a6d7d6c10bfa55062819ec2eed0be652c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::BeginStruct</definition>
+        <argsstring>()</argsstring>
+        <name>BeginStruct</name>
+        <briefdescription>
+<para>Deserializes the start of a struct. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="128" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8760d93675eb553b938dcebbcb5e5b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::EndStruct</definition>
+        <argsstring>()</argsstring>
+        <name>EndStruct</name>
+        <briefdescription>
+<para>Deserializes the end of a struct. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="131" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1aa3f304c156325202a9b1bd0edf0a3487" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::BeginArray</definition>
+        <argsstring>() -&gt; std::size_t</argsstring>
+        <name>BeginArray</name>
+        <briefdescription>
+<para>Deserializes the start of an array or list. Note: Because the array size is serialized as well, dynamic arrays aka. lists are also supported. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the array (in elements). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="137" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a5c525792751129d1356070d6ce7bf79a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::EndArray</definition>
+        <argsstring>()</argsstring>
+        <name>EndArray</name>
+        <briefdescription>
+<para>Deserializes the end of an array or list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="141" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a21a4df6a01cd88326c16af02bd2f4e4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::BeginOptional</definition>
+        <argsstring>() -&gt; bool</argsstring>
+        <name>BeginOptional</name>
+        <briefdescription>
+<para>Deserializes the start of an optional value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the value is set, otherwise <computeroutput>false</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="146" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a25300a1e3fd8a4bb466b11b7ef0ecc12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::EndOptional</definition>
+        <argsstring>()</argsstring>
+        <name>EndOptional</name>
+        <briefdescription>
+<para>Deserializes the end of an optional value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="149" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a3c19df62a01fab8ef94fe5aed3f58342" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::BeginUnion</definition>
+        <argsstring>() -&gt; int</argsstring>
+        <name>BeginUnion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="151" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1affacf6b1b6b3829e10f15b78d062fe54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::EndUnion</definition>
+        <argsstring>()</argsstring>
+        <name>EndUnion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="152" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1accdb85759f2515eca00aa38dc3145201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::Reset</definition>
+        <argsstring>(std::vector&lt; uint8_t &gt; buffer)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>std::vector&lt; uint8_t &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Resets the buffer and replaces it with another one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new data buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="157" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="157" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1af08ca221b9dbba475d7915a05f074e56" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_integral&lt; T &gt;::value &amp;&amp;std::is_unsigned&lt; T &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::DeserializeUnaligned</definition>
+        <argsstring>(std::size_t bitSize) -&gt; T</argsstring>
+        <name>DeserializeUnaligned</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>bitSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="170" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="170" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1af08ca221b9dbba475d7915a05f074e56" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_integral&lt; T &gt;::value &amp;&amp;std::is_signed&lt; T &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::DeserializeUnaligned</definition>
+        <argsstring>(std::size_t bitSize) -&gt; T</argsstring>
+        <name>DeserializeUnaligned</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>bitSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="226" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="226" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a1d7a30b5fddf0ddbf460fcf379824323" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename std::enable_if_t&lt; std::is_integral&lt; T &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto SilKit::Util::SerDes::v1::Deserializer::DeserializeAligned</definition>
+        <argsstring>(std::size_t numBytes) -&gt; T</argsstring>
+        <name>DeserializeAligned</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="247" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="247" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ac9663f940e40ca08af2c855163bebe8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::Align</definition>
+        <argsstring>()</argsstring>
+        <name>Align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="260" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="260" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1aef47dc0f637b6f191084b365d94cfa0a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::SerDes::v1::Deserializer::AssertCapacity</definition>
+        <argsstring>(std::size_t requiredSize)</argsstring>
+        <name>AssertCapacity</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>requiredSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="266" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="266" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/serdes/Deserializer.hpp" bodystart="38" bodyend="279"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ac9663f940e40ca08af2c855163bebe8e" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Align</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1aef47dc0f637b6f191084b365d94cfa0a" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>AssertCapacity</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1aa3f304c156325202a9b1bd0edf0a3487" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>BeginArray</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a21a4df6a01cd88326c16af02bd2f4e4c" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>BeginOptional</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a6d7d6c10bfa55062819ec2eed0be652c" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>BeginStruct</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a3c19df62a01fab8ef94fe5aed3f58342" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>BeginUnion</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a22e3ce1a64e6d4288c9f6161442e522a" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserialize</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserialize</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserialize</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserialize</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a245deb6c3e6241c4710e748cb5ddae92" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserialize</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a1d7a30b5fddf0ddbf460fcf379824323" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>DeserializeAligned</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8187138a3c74d2a8a3883fe898e7838c" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserializer</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a9c5d1b95612d9cbb2009c7889cd08d97" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserializer</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8b1040cc02ad00111481c21d43858201" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserializer</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a493247e98ff154bf1ebcdc6ca359ce01" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Deserializer</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1af08ca221b9dbba475d7915a05f074e56" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>DeserializeUnaligned</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1af08ca221b9dbba475d7915a05f074e56" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>DeserializeUnaligned</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a5c525792751129d1356070d6ce7bf79a" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>EndArray</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a25300a1e3fd8a4bb466b11b7ef0ecc12" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>EndOptional</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8760d93675eb553b938dcebbcb5e5b4d" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>EndStruct</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1affacf6b1b6b3829e10f15b78d062fe54" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>EndUnion</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ab07b35fef8744fa6ac0fa0baf801342e" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>mBuffer</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a8307aae7f1fe1876aac288ad116a1ed5" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>mReadPos</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1adf1e9014f31bea182fde2db7c8055167" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>mUnalignedBits</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ac4dfb9eed7bcffe090da7b74d1c74cb5" prot="private" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>mUnalignedData</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1af77c693cf8b13dae0cdc6591af373445" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1ad127b400a30bf03e65e904f37b4f29b9" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>operator=</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1accdb85759f2515eca00aa38dc3145201" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>Reset</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_ser_des_1_1v1_1_1_deserializer_1a867a7ec2bde17633ca6c81abdc198f93" prot="public" virt="non-virtual"><scope>SilKit::Util::SerDes::v1::Deserializer</scope><name>~Deserializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

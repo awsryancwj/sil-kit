@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_sil_kit_1_1_services_1_1_orchestration" kind="namespace" language="C++">
+    <compoundname>SilKit::Services::Orchestration</compoundname>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service" prot="public">SilKit::Services::Orchestration::ILifecycleService</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_system_monitor" prot="public">SilKit::Services::Orchestration::ISystemMonitor</innerclass>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_time_sync_service" prot="public">SilKit::Services::Orchestration::ITimeSyncService</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_lifecycle_configuration" prot="public">SilKit::Services::Orchestration::LifecycleConfiguration</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_connection_information" prot="public">SilKit::Services::Orchestration::ParticipantConnectionInformation</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" prot="public">SilKit::Services::Orchestration::ParticipantStatus</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" prot="public">SilKit::Services::Orchestration::WorkflowConfiguration</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" prot="public" static="no">
+        <name>ParticipantState</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <initializer>= SilKit_ParticipantState_Invalid</initializer>
+          <briefdescription>
+<para>An invalid participant state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae8341c26e22e6a849ac831df3bcec259" prot="public">
+          <name>ServicesCreated</name>
+          <initializer>= SilKit_ParticipantState_ServicesCreated</initializer>
+          <briefdescription>
+<para>The controllers created state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ad0d2c4bd304c41d1e53f17769f371faa" prot="public">
+          <name>CommunicationInitializing</name>
+          <initializer>= SilKit_ParticipantState_CommunicationInitializing</initializer>
+          <briefdescription>
+<para>The communication initializing state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" prot="public">
+          <name>CommunicationInitialized</name>
+          <initializer>= SilKit_ParticipantState_CommunicationInitialized</initializer>
+          <briefdescription>
+<para>The communication initialized state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a506db5c85cf0fd10f93e5478013650b6" prot="public">
+          <name>ReadyToRun</name>
+          <initializer>= SilKit_ParticipantState_ReadyToRun</initializer>
+          <briefdescription>
+<para>The initialized state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" prot="public">
+          <name>Running</name>
+          <initializer>= SilKit_ParticipantState_Running</initializer>
+          <briefdescription>
+<para>The running state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae99180abf47a8b3a856e0bcb2656990a" prot="public">
+          <name>Paused</name>
+          <initializer>= SilKit_ParticipantState_Paused</initializer>
+          <briefdescription>
+<para>The paused state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a7b7ecb39b9e110c2a31409a1672bad23" prot="public">
+          <name>Stopping</name>
+          <initializer>= SilKit_ParticipantState_Stopping</initializer>
+          <briefdescription>
+<para>The stopping state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ac23e2b09ebe6bf4cb5e2a9abe85c0be2" prot="public">
+          <name>Stopped</name>
+          <initializer>= SilKit_ParticipantState_Stopped</initializer>
+          <briefdescription>
+<para>The stopped state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= SilKit_ParticipantState_Error</initializer>
+          <briefdescription>
+<para>The error state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a075d9c9ae8c8f1c79c1a1965cd8c5a42" prot="public">
+          <name>ShuttingDown</name>
+          <initializer>= SilKit_ParticipantState_ShuttingDown</initializer>
+          <briefdescription>
+<para>The shutting down state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a1a4ebb180ba59b067782515ffee6e975" prot="public">
+          <name>Shutdown</name>
+          <initializer>= SilKit_ParticipantState_Shutdown</initializer>
+          <briefdescription>
+<para>The shutdown state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a10f3b203b67107d670a31d9b39cc1983" prot="public">
+          <name>Aborting</name>
+          <initializer>= SilKit_ParticipantState_Aborting</initializer>
+          <briefdescription>
+<para>The aborting state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Available participant states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="38" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" prot="public" static="no">
+        <name>SystemState</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <initializer>= SilKit_SystemState_Invalid</initializer>
+          <briefdescription>
+<para>An invalid participant state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8eae8341c26e22e6a849ac831df3bcec259" prot="public">
+          <name>ServicesCreated</name>
+          <initializer>= SilKit_SystemState_ServicesCreated</initializer>
+          <briefdescription>
+<para>The controllers created state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ead0d2c4bd304c41d1e53f17769f371faa" prot="public">
+          <name>CommunicationInitializing</name>
+          <initializer>= SilKit_SystemState_CommunicationInitializing</initializer>
+          <briefdescription>
+<para>The communication initializing state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8eae0c6e2cbc44ad9effe99a95a9270accd" prot="public">
+          <name>CommunicationInitialized</name>
+          <initializer>= SilKit_SystemState_CommunicationInitialized</initializer>
+          <briefdescription>
+<para>The communication initialized state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea506db5c85cf0fd10f93e5478013650b6" prot="public">
+          <name>ReadyToRun</name>
+          <initializer>= SilKit_SystemState_ReadyToRun</initializer>
+          <briefdescription>
+<para>The initialized state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea5bda814c4aedb126839228f1a3d92f09" prot="public">
+          <name>Running</name>
+          <initializer>= SilKit_SystemState_Running</initializer>
+          <briefdescription>
+<para>The running state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8eae99180abf47a8b3a856e0bcb2656990a" prot="public">
+          <name>Paused</name>
+          <initializer>= SilKit_SystemState_Paused</initializer>
+          <briefdescription>
+<para>The paused state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea7b7ecb39b9e110c2a31409a1672bad23" prot="public">
+          <name>Stopping</name>
+          <initializer>= SilKit_SystemState_Stopping</initializer>
+          <briefdescription>
+<para>The stopping state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8eac23e2b09ebe6bf4cb5e2a9abe85c0be2" prot="public">
+          <name>Stopped</name>
+          <initializer>= SilKit_SystemState_Stopped</initializer>
+          <briefdescription>
+<para>The stopped state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= SilKit_SystemState_Error</initializer>
+          <briefdescription>
+<para>The error state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea075d9c9ae8c8f1c79c1a1965cd8c5a42" prot="public">
+          <name>ShuttingDown</name>
+          <initializer>= SilKit_SystemState_ShuttingDown</initializer>
+          <briefdescription>
+<para>The shutting down state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea1a4ebb180ba59b067782515ffee6e975" prot="public">
+          <name>Shutdown</name>
+          <initializer>= SilKit_SystemState_Shutdown</initializer>
+          <briefdescription>
+<para>The shutdown state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8ea10f3b203b67107d670a31d9b39cc1983" prot="public">
+          <name>Aborting</name>
+          <initializer>= SilKit_SystemState_Aborting</initializer>
+          <briefdescription>
+<para>The aborting state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Available system states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="81" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="80" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8" prot="public" static="no">
+        <name>OperationMode</name>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8a4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <initializer>= SilKit_OperationMode_Invalid</initializer>
+          <briefdescription>
+<para>An invalid operation mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8a7eed0f70a3cfbdc8742d565c89312c34" prot="public">
+          <name>Coordinated</name>
+          <initializer>= SilKit_OperationMode_Coordinated</initializer>
+          <briefdescription>
+<para>The coordinated operation mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_sil_kit_1_1_services_1_1_orchestration_1a557e5709564429037e6bc4a10d5bc7e8a6aec1991f208e2948db5e4eee6e1ccff" prot="public">
+          <name>Autonomous</name>
+          <initializer>= SilKit_OperationMode_Autonomous</initializer>
+          <briefdescription>
+<para>The autonomous operation mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Available operation modes of the lifecycle service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="119" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="118" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a7e6f7a74d5371d04f4978b1c28e13bc8" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using SilKit::Services::Orchestration::CommunicationReadyHandler = typedef std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>CommunicationReadyHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This handler is called after <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7ae0c6e2cbc44ad9effe99a95a9270accd" kindref="member">ParticipantState::CommunicationInitialized</ref> is reached Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ab2980e038719f627781c2ba041833cd1" kindref="member">ILifecycleService::SetCommunicationReadyHandler(CommunicationReadyHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_orchestration_1aa62b0fec81e62dc30927f48e160ce392" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using SilKit::Services::Orchestration::StartingHandler = typedef std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>StartingHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This handler is called before the participant enters <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a5bda814c4aedb126839228f1a3d92f09" kindref="member">ParticipantState::Running</ref>. Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a341065345fe943feca19b323481fec90" kindref="member">ILifecycleService::SetStartingHandler(StartingHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="47" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a08408b98fa8bd18e46c79152663875cd" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using SilKit::Services::Orchestration::StopHandler = typedef std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>StopHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This handler is called after <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a7b7ecb39b9e110c2a31409a1672bad23" kindref="member">ParticipantState::Stopping</ref> is reached Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a699df98cc477c4a4d3ec405600259d86" kindref="member">ILifecycleService::SetStopHandler(StopHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="52" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a3825ab397f2ebce077b0c5f5c8313374" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using SilKit::Services::Orchestration::ShutdownHandler = typedef std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>ShutdownHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This handler is called after <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a075d9c9ae8c8f1c79c1a1965cd8c5a42" kindref="member">ParticipantState::ShuttingDown</ref> is reached Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1ae4552a64ad66993b4e0b9c35b0cceb3e" kindref="member">ILifecycleService::SetShutdownHandler(ShutdownHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="57" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a4c6d6ea9327638310f04d9d169ef307b" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" kindref="member">ParticipantState</ref>)&gt;</type>
+        <definition>using SilKit::Services::Orchestration::AbortHandler = typedef std::function&lt;void(ParticipantState )&gt;</definition>
+        <argsstring></argsstring>
+        <name>AbortHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This handler is called after <ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a10f3b203b67107d670a31d9b39cc1983" kindref="member">ParticipantState::Aborting</ref> is reached Cf., <ref refid="class_sil_kit_1_1_services_1_1_orchestration_1_1_i_lifecycle_service_1a9cfdefa98b291e3aed1114a6f557dd40" kindref="member">ILifecycleService::SetAbortHandler(AbortHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" line="62" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/ILifecycleService.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a2058eded2fe4bb29d07f5c804c34292f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::to_string</definition>
+        <argsstring>(ParticipantState state)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" kindref="member">ParticipantState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="53" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a1eeb6b214cdd661eecff7490189ef0de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::to_string</definition>
+        <argsstring>(SystemState state)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SystemState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="87" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a85dffdf04604e5b528b804a2739fb017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::to_string</definition>
+        <argsstring>(const ParticipantStatus &amp;status)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">ParticipantStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1aa0051e9b9b58825241bd69c0d829bda3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::to_string</definition>
+        <argsstring>(const WorkflowConfiguration &amp;participantNames)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" kindref="compound">WorkflowConfiguration</ref> &amp;</type>
+          <declname>participantNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1ae6a27f286e08c1294d3f4f069360763f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Orchestration::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, ParticipantState state)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" kindref="member">ParticipantState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="44" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="128" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1af295f1fe1ed4f89a7044a92b3d73b1a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Orchestration::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, SystemState state)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a8f7ecee5fe126b34db1c00144099cd8e" kindref="member">SystemState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="140" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1af059c40f3e96b2d0086f4f4f55497471" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Orchestration::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const ParticipantStatus &amp;status)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kindref="compound">ParticipantStatus</ref> &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="47" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="152" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_sil_kit_1_1_services_1_1_orchestration_1a984d2c103881308aed383f446734c538" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; SilKit::Services::Orchestration::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const WorkflowConfiguration &amp;workflowConfiguration)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" kindref="compound">WorkflowConfiguration</ref> &amp;</type>
+          <declname>workflowConfiguration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" line="48" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/string_utils.hpp" bodystart="178" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/fwd_decl.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

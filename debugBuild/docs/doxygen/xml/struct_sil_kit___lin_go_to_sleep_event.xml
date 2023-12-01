@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___lin_go_to_sleep_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LinGoToSleepEvent</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___lin_go_to_sleep_event_1a6b6b7929e23b7944b262ef9b076040cd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_LinGoToSleepEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="203" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_go_to_sleep_event_1a32739d75bc36271835f92cfbfda7fcd7" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_LinGoToSleepEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="204" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN goToSleep event delivered in the <ref refid="_lin_8h_1af28cec69a7ff5b613c5f84e6d76009e0" kindref="member">SilKit_LinGoToSleepHandler_t</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="333">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="332">
+        <label>SilKit_LinGoToSleepEvent</label>
+        <link refid="struct_sil_kit___lin_go_to_sleep_event"/>
+        <childnode refid="333" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="202" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="201" bodyend="205"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___lin_go_to_sleep_event_1a6b6b7929e23b7944b262ef9b076040cd" prot="public" virt="non-virtual"><scope>SilKit_LinGoToSleepEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___lin_go_to_sleep_event_1a32739d75bc36271835f92cfbfda7fcd7" prot="public" virt="non-virtual"><scope>SilKit_LinGoToSleepEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

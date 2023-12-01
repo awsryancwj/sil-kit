@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/SilKitDemoFlexray.dir/FlexrayDemo.cpp.o -o ../../Release/SilKitDemoFlexray  -Wl,-rpath,/home/ubuntu/sil-kit/Release ../../Release/libSilKit.so -lpthread 

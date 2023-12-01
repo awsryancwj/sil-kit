@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___data_spec" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_DataSpec</compoundname>
+    <includes refid="_data_pub_sub_8h" local="no">DataPubSub.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___data_spec_1a064b68f024b8e5c3e0f180b06adf7188" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_DataSpec::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___data_spec_1a59f90405464fc54b190a4e2de6aaaca1" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_DataSpec::topic</definition>
+        <argsstring></argsstring>
+        <name>topic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___data_spec_1ae85451f38922b638910828e80b130116" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SilKit_DataSpec::mediaType</definition>
+        <argsstring></argsstring>
+        <name>mediaType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___data_spec_1a8827a48edef92c5e629a2447a6700ed9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___label_list" kindref="compound">SilKit_LabelList</ref></type>
+        <definition>SilKit_LabelList SilKit_DataSpec::labelList</definition>
+        <argsstring></argsstring>
+        <name>labelList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A pubsub/rpc node spec containing all matching relevant information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="226">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="228">
+        <label>SilKit_Label</label>
+        <link refid="struct_sil_kit___label"/>
+      </node>
+      <node id="225">
+        <label>SilKit_DataSpec</label>
+        <link refid="struct_sil_kit___data_spec"/>
+        <childnode refid="226" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="227" relation="usage">
+          <edgelabel>labelList</edgelabel>
+        </childnode>
+      </node>
+      <node id="227">
+        <label>SilKit_LabelList</label>
+        <link refid="struct_sil_kit___label_list"/>
+        <childnode refid="228" relation="usage">
+          <edgelabel>labels</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" line="36" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/DataPubSub.h" bodystart="35" bodyend="41"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___data_spec_1a8827a48edef92c5e629a2447a6700ed9" prot="public" virt="non-virtual"><scope>SilKit_DataSpec</scope><name>labelList</name></member>
+      <member refid="struct_sil_kit___data_spec_1ae85451f38922b638910828e80b130116" prot="public" virt="non-virtual"><scope>SilKit_DataSpec</scope><name>mediaType</name></member>
+      <member refid="struct_sil_kit___data_spec_1a064b68f024b8e5c3e0f180b06adf7188" prot="public" virt="non-virtual"><scope>SilKit_DataSpec</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___data_spec_1a59f90405464fc54b190a4e2de6aaaca1" prot="public" virt="non-virtual"><scope>SilKit_DataSpec</scope><name>topic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

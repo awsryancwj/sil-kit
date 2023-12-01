@@ -66,7 +66,7 @@ set_target_properties(SilKit::SilKitInterface PROPERTIES
 add_library(SilKit::SilKit SHARED IMPORTED)
 
 set_target_properties(SilKit::SilKit PROPERTIES
-  INTERFACE_LINK_LIBRARIES "-lsocket;-lsocket;SilKit::SilKitInterface;Threads::Threads"
+  INTERFACE_LINK_LIBRARIES "-lsocket;SilKit::SilKitInterface;Threads::Threads"
 )
 
 if(CMAKE_VERSION VERSION_LESS 3.0.0)

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Experimental::Services::Orchestration::ISystemController</compoundname>
+    <includes refid="_i_system_controller_8hpp" local="no">ISystemController.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller_1a3b1856b1b1913bb7ee146a38009f7699" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Experimental::Services::Orchestration::ISystemController::~ISystemController</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ISystemController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller_1a9fbdcd6a3455a3e7f07258cbc4adda30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Experimental::Services::Orchestration::ISystemController::AbortSimulation</definition>
+        <argsstring>() const =0</argsstring>
+        <name>AbortSimulation</name>
+        <briefdescription>
+<para>Sends a SilKit::Services::Orchestration::SystemCommand::Kind::AbortSimulation to all participants. </para>        </briefdescription>
+        <detaileddescription>
+<para>The abort simulation command signals all participants to terminate their lifecycle, regardless of their current state.</para><para>The command is allowed at any time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller_1a61740bea6c07e05b0054ca10941491d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Experimental::Services::Orchestration::ISystemController::SetWorkflowConfiguration</definition>
+        <argsstring>(const SilKit::Services::Orchestration::WorkflowConfiguration &amp;workflowConfiguration)=0</argsstring>
+        <name>SetWorkflowConfiguration</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" kindref="compound">SilKit::Services::Orchestration::WorkflowConfiguration</ref> &amp;</type>
+          <declname>workflowConfiguration</declname>
+        </param>
+        <briefdescription>
+<para>Configures details of the simulation workflow regarding lifecycle and participant coordination. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only the required participant defined in the <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" kindref="compound">SilKit::Services::Orchestration::WorkflowConfiguration</ref> are taken into account to define the system state. Further, the simulation time propagation also relies on the required participants. The <ref refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_workflow_configuration" kindref="compound">SilKit::Services::Orchestration::WorkflowConfiguration</ref> is distributed to other participants, so it must only be set once by a single member of the simulation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>workflowConfiguration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired configuration, currently containing a list of required participants </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SystemController interface for configuration of the simulation flow and system-wide commands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/orchestration/ISystemController.hpp" bodystart="32" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller_1a9fbdcd6a3455a3e7f07258cbc4adda30" prot="public" virt="pure-virtual"><scope>SilKit::Experimental::Services::Orchestration::ISystemController</scope><name>AbortSimulation</name></member>
+      <member refid="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller_1a61740bea6c07e05b0054ca10941491d1" prot="public" virt="pure-virtual"><scope>SilKit::Experimental::Services::Orchestration::ISystemController</scope><name>SetWorkflowConfiguration</name></member>
+      <member refid="class_sil_kit_1_1_experimental_1_1_services_1_1_orchestration_1_1_i_system_controller_1a3b1856b1b1913bb7ee146a38009f7699" prot="public" virt="virtual"><scope>SilKit::Experimental::Services::Orchestration::ISystemController</scope><name>~ISystemController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___lin_frame" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LinFrame</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_1a2af33135cd8c44e26f5a6a8055f50291" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_LinFrame::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="173" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_1a6c46e1000da798a536e5bb6e946fc3d7" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a6af0cc9696323532582d1c980cc4fa58" kindref="member">SilKit_LinId</ref></type>
+        <definition>SilKit_LinId SilKit_LinFrame::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>LIN Identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="174" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_1afa4130eafb97f9f99c1b1d50eb48ea2f" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1ab62b46b7945a6daace65b4284946ff91" kindref="member">SilKit_LinChecksumModel</ref></type>
+        <definition>SilKit_LinChecksumModel SilKit_LinFrame::checksumModel</definition>
+        <argsstring></argsstring>
+        <name>checksumModel</name>
+        <briefdescription>
+<para>Checksum Model. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="175" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_1afa6d967dbffd90d722aeaf160647a442" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a731260f9964b5882339addc6f44ce8a6" kindref="member">SilKit_LinDataLength</ref></type>
+        <definition>SilKit_LinDataLength SilKit_LinFrame::dataLength</definition>
+        <argsstring></argsstring>
+        <name>dataLength</name>
+        <briefdescription>
+<para>Data length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="176" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_1ab85a85269082b619f4ed4dc548a6c5b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_LinFrame::data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The actual payload. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="177" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN <ref refid="struct_sil_kit___lin_frame" kindref="compound">SilKit_LinFrame</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>This Type is used to provide LIN ID, checksum model, data length and data.</para><para><emphasis>AUTOSAR Name:</emphasis> Lin_PduType </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="322">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="321">
+        <label>SilKit_LinFrame</label>
+        <link refid="struct_sil_kit___lin_frame"/>
+        <childnode refid="322" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="172" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="171" bodyend="178"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___lin_frame_1afa4130eafb97f9f99c1b1d50eb48ea2f" prot="public" virt="non-virtual"><scope>SilKit_LinFrame</scope><name>checksumModel</name></member>
+      <member refid="struct_sil_kit___lin_frame_1ab85a85269082b619f4ed4dc548a6c5b4" prot="public" virt="non-virtual"><scope>SilKit_LinFrame</scope><name>data</name></member>
+      <member refid="struct_sil_kit___lin_frame_1afa6d967dbffd90d722aeaf160647a442" prot="public" virt="non-virtual"><scope>SilKit_LinFrame</scope><name>dataLength</name></member>
+      <member refid="struct_sil_kit___lin_frame_1a6c46e1000da798a536e5bb6e946fc3d7" prot="public" virt="non-virtual"><scope>SilKit_LinFrame</scope><name>id</name></member>
+      <member refid="struct_sil_kit___lin_frame_1a2af33135cd8c44e26f5a6a8055f50291" prot="public" virt="non-virtual"><scope>SilKit_LinFrame</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

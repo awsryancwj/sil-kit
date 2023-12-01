@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___lifecycle_configuration" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LifecycleConfiguration</compoundname>
+    <includes refid="_orchestration_8h" local="no">Orchestration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___lifecycle_configuration_1a205744587055e06a0378e41532c8245e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_LifecycleConfiguration::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="138" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lifecycle_configuration_1a0a249438bfff5b50060ab6e25c30dea3" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a37f260fc7a0744bb6b45dfa154ed50e6" kindref="member">SilKit_OperationMode</ref></type>
+        <definition>SilKit_OperationMode SilKit_LifecycleConfiguration::operationMode</definition>
+        <argsstring></argsstring>
+        <name>operationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="139" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The LifecycleLifecycle options </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="314">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="313">
+        <label>SilKit_LifecycleConfiguration</label>
+        <link refid="struct_sil_kit___lifecycle_configuration"/>
+        <childnode refid="314" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" line="137" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Orchestration.h" bodystart="136" bodyend="140"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___lifecycle_configuration_1a0a249438bfff5b50060ab6e25c30dea3" prot="public" virt="non-virtual"><scope>SilKit_LifecycleConfiguration</scope><name>operationMode</name></member>
+      <member refid="struct_sil_kit___lifecycle_configuration_1a205744587055e06a0378e41532c8245e" prot="public" virt="non-virtual"><scope>SilKit_LifecycleConfiguration</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

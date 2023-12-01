@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___ethernet_bitrate_change_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_EthernetBitrateChangeEvent</compoundname>
+    <includes refid="_ethernet_8h" local="no">Ethernet.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___ethernet_bitrate_change_event_1a3d1320c750a47b58ea6488419c808607" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_EthernetBitrateChangeEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id that specifies which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="82" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___ethernet_bitrate_change_event_1ae5edb93b15560aa6fb4675d72358ffd6" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_EthernetBitrateChangeEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Timestamp of the bitrate change event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="83" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___ethernet_bitrate_change_event_1a644d859b0aa19362b6641fcabfbf6354" prot="public" static="no" mutable="no">
+        <type><ref refid="_ethernet_8h_1ac407cf86d233a4665cca9fc07cf12167" kindref="member">SilKit_EthernetBitrate</ref></type>
+        <definition>SilKit_EthernetBitrate SilKit_EthernetBitrateChangeEvent::bitrate</definition>
+        <argsstring></argsstring>
+        <name>bitrate</name>
+        <briefdescription>
+<para>New bitrate in kBit/sec. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="84" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="230">
+        <label>SilKit_EthernetBitrateChangeEvent</label>
+        <link refid="struct_sil_kit___ethernet_bitrate_change_event"/>
+        <childnode refid="231" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="231">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="81" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="80" bodyend="85"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___ethernet_bitrate_change_event_1a644d859b0aa19362b6641fcabfbf6354" prot="public" virt="non-virtual"><scope>SilKit_EthernetBitrateChangeEvent</scope><name>bitrate</name></member>
+      <member refid="struct_sil_kit___ethernet_bitrate_change_event_1a3d1320c750a47b58ea6488419c808607" prot="public" virt="non-virtual"><scope>SilKit_EthernetBitrateChangeEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___ethernet_bitrate_change_event_1ae5edb93b15560aa6fb4675d72358ffd6" prot="public" virt="non-virtual"><scope>SilKit_EthernetBitrateChangeEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

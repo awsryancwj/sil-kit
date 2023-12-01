@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_i_ethernet_controller_8hpp" kind="file" language="C++">
+    <compoundname>IEthernetController.hpp</compoundname>
+    <includes local="no">functional</includes>
+    <includes refid="_ethernet_datatypes_8hpp" local="yes">EthernetDatatypes.hpp</includes>
+    <includedby refid="services_2ethernet_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/all.hpp</includedby>
+    <incdepgraph>
+      <node id="1290">
+        <label>functional</label>
+      </node>
+      <node id="1291">
+        <label>EthernetDatatypes.hpp</label>
+        <link refid="_ethernet_datatypes_8hpp"/>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1309" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>cstdint</label>
+      </node>
+      <node id="1289">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp</label>
+        <link refid="_i_ethernet_controller_8hpp"/>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>stdint.h</label>
+      </node>
+      <node id="1297">
+        <label>silkit/services/datatypes.hpp</label>
+        <link refid="datatypes_8hpp"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1299" relation="include">
+        </childnode>
+      </node>
+      <node id="1308">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+      </node>
+      <node id="1303">
+        <label>stdexcept</label>
+      </node>
+      <node id="1298">
+        <label>string</label>
+      </node>
+      <node id="1309">
+        <label>silkit/capi/Ethernet.h</label>
+        <link refid="_ethernet_8h"/>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1307">
+        <label>stddef.h</label>
+      </node>
+      <node id="1312">
+        <label>memory.h</label>
+      </node>
+      <node id="1311">
+        <label>limits.h</label>
+      </node>
+      <node id="1295">
+        <label>capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+      </node>
+      <node id="1302">
+        <label>vector</label>
+      </node>
+      <node id="1299">
+        <label>silkit/util/HandlerId.hpp</label>
+        <link refid="_handler_id_8hpp"/>
+        <childnode refid="1296" relation="include">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>array</label>
+      </node>
+      <node id="1294">
+        <label>silkit/SilKitMacros.hpp</label>
+        <link refid="_sil_kit_macros_8hpp"/>
+        <childnode refid="1295" relation="include">
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+      </node>
+      <node id="1293">
+        <label>chrono</label>
+      </node>
+      <node id="1310">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>type_traits</label>
+      </node>
+      <node id="1301">
+        <label>algorithm</label>
+      </node>
+      <node id="1305">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1314">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/all.hpp</label>
+        <link refid="services_2ethernet_2all_8hpp"/>
+        <childnode refid="1315" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp</label>
+        <link refid="_i_ethernet_controller_8hpp"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller" prot="public">SilKit::Services::Ethernet::IEthernetController</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_ethernet">SilKit::Services::Ethernet</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ethernet_datatypes_8hpp" kindref="compound">EthernetDatatypes.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ethernet<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller" kindref="compound">IEthernetController</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>MsgT&gt;</highlight></codeline>
+<codeline lineno="40" refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT</ref><sp/>=<sp/>std::function&lt;void(IEthernetController*<sp/>controller,<sp/>const<sp/>MsgT&amp;<sp/>msg)&gt;;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1abdad4115ec106fbd08bc2d5628473481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1abdad4115ec106fbd08bc2d5628473481" kindref="member">FrameHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT&lt;EthernetFrameEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" kindref="member">FrameTransmitHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT&lt;EthernetFrameTransmitEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a87a5498a99795aba8280c2ca9544de86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a87a5498a99795aba8280c2ca9544de86" kindref="member">StateChangeHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT&lt;EthernetStateChangeEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ae7737603862a26e072b3f1c083d14733" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ae7737603862a26e072b3f1c083d14733" kindref="member">BitrateChangeHandler</ref><sp/>=<sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a27b294021ec58cec6f4f335987bd71fa" kindref="member">CallbackT&lt;EthernetBitrateChangeEvent&gt;</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a4c36768678f173a8a3e22d2fa9d61e16" kindref="member">~IEthernetController</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aa42c293611f6d790fe9bedf0e749ada9" kindref="member">Activate</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a93f7edc2bb3c7320e2641b9250862548" kindref="member">Deactivate</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a5d72118b010673d8eb1cf546058c4809" kindref="member">AddFrameHandler</ref>(</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1abdad4115ec106fbd08bc2d5628473481" kindref="member">FrameHandler</ref><sp/>handler,<sp/><ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref><sp/>directionMask<sp/>=<sp/>static_cast&lt;DirectionMask&gt;(<ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531af9c24782c24c237d16e79f18e2fa9046" kindref="member">TransmitDirection::RX</ref>))<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aeca25f16da4c224e6f19e32dd0f88232" kindref="member">RemoveFrameHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aceffd587552fa9cebaa3270ba0ca949e" kindref="member">AddFrameTransmitHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a2eef79ab2d3168a773ffc10b6ebf251b" kindref="member">FrameTransmitHandler</ref><sp/>handler,<sp/><ref refid="namespace_sil_kit_1_1_services_1_1_ethernet_1abfd0dc9eb121d83e39e1f60258e90e31" kindref="member">EthernetTransmitStatusMask</ref><sp/>transmitStatusMask<sp/>=</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1a1defebf389771c25ec8915711100c248" kindref="member">SilKit_EthernetTransmitStatus_DefaultMask</ref>)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a25ead92bff4b167598bf14a56890db03" kindref="member">RemoveFrameTransmitHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ac32eeffe3cc7805af10a40ab255aeb62" kindref="member">AddStateChangeHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a87a5498a99795aba8280c2ca9544de86" kindref="member">StateChangeHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ab7e692eafc6c683c0b8dbe96d083b9c3" kindref="member">RemoveStateChangeHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1aba6fabf286f52bd2ba5d79ccb120b353" kindref="member">AddBitrateChangeHandler</ref>(<ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1ae7737603862a26e072b3f1c083d14733" kindref="member">BitrateChangeHandler</ref><sp/>handler)<sp/>-&gt;<sp/><ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a581c77372432f6445273249b5b6f4180" kindref="member">RemoveBitrateChangeHandler</ref>(<ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">HandlerId</ref><sp/>handlerId)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sil_kit_1_1_services_1_1_ethernet_1_1_i_ethernet_controller_1a8447b75162f83c068c6667dd723d4bf7" kindref="member">SendFrame</ref>(<ref refid="struct_sil_kit_1_1_services_1_1_ethernet_1_1_ethernet_frame" kindref="compound">EthernetFrame</ref><sp/>msg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Ethernet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp"/>
+  </compounddef>
+</doxygen>

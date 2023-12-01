@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Can::ICanController</compoundname>
+    <includes refid="_i_can_controller_8hpp" local="no">ICanController.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller" kindref="compound">ICanController</ref> *controller, const MsgT &amp;msg)&gt;</type>
+        <definition>using SilKit::Services::Can::ICanController::CallbackT =  std::function&lt;void(ICanController* controller, const MsgT&amp; msg)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CallbackT</name>
+        <briefdescription>
+<para>Generic CAN callback method. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a7c588e84753fd51eb8b1914418b8ec36" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" kindref="compound">CanFrameEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Can::ICanController::FrameHandler =  CallbackT&lt;CanFrameEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>FrameHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_event" kindref="compound">CanFrameEvent</ref> has been received. Cf., <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1acced771a5299df15efb88837086c78de" kindref="member">ICanController::AddFrameHandler(FrameHandler,DirectionMask)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a38f85c68c3c5b7ac3d3c6013db827572" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_state_change_event" kindref="compound">CanStateChangeEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Can::ICanController::StateChangeHandler =  CallbackT&lt;CanStateChangeEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>StateChangeHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the <ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">CanControllerState</ref> has changed. Cf., <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a640016bde4d2d97efd4d12a682edb137" kindref="member">ICanController::AddStateChangeHandler(StateChangeHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="50" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a899a114d90ee3691d7defbd1d63330f3" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_error_state_change_event" kindref="compound">CanErrorStateChangeEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Can::ICanController::ErrorStateChangeHandler =  CallbackT&lt;CanErrorStateChangeEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>ErrorStateChangeHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the controller <ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">CanErrorState</ref> has changed. Cf., <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a02af759304027a071b2b6a40bf8b13ce" kindref="member">ICanController::AddErrorStateChangeHandler(ErrorStateChangeHandler)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="55" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" prot="public" static="no">
+        <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" kindref="member">CallbackT</ref>&lt; <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" kindref="compound">CanFrameTransmitEvent</ref> &gt;</type>
+        <definition>using SilKit::Services::Can::ICanController::FrameTransmitHandler =  CallbackT&lt;CanFrameTransmitEvent&gt;</definition>
+        <argsstring></argsstring>
+        <name>FrameTransmitHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame_transmit_event" kindref="compound">CanFrameTransmitEvent</ref> has been received. Cf., <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1af0450cdb1778556d40b6b83c72f439ee" kindref="member">ICanController::AddFrameTransmitHandler(FrameTransmitHandler,CanTransmitStatusMask)</ref>; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="60" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a07c790a737b3225d03c081173c3507e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Can::ICanController::~ICanController</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ICanController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aa18f5af4b1c0cb35c3e7762cf045250a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::SetBaudRate</definition>
+        <argsstring>(uint32_t rate, uint32_t fdRate, uint32_t xlRate)=0</argsstring>
+        <name>SetBaudRate</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>fdRate</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>xlRate</declname>
+        </param>
+        <briefdescription>
+<para>Configure the baud rate of the controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for regular (non FD) CAN messages given in bps; valid range: 0 to 2&apos;000&apos;000</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fdRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for CAN FD messages given in bps; valid range: 0 to 16&apos;000&apos;000</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xlRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for CAN XL messages given in bps; valid range: 0 to 16&apos;000&apos;000</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+NB: The baud rate of a CAN controller must be set before using it.</para><para>NB: In a detailed simulation, the baud rate is used to calculate transmission delays of CAN messages and to determine proper configuration and interoperation of the connected controllers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a0d22a13b0b166d9048701c341ed6dfad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::Reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Reset the CAN controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>Resets the controller&apos;s Transmit Error Count (TEC) and the Receive Error Count (REC). Furthermore, sets the CAN controller state to <ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7aa9176fac65b988c524c84dee7aa2935a" kindref="member">CanControllerState::Uninit</ref> and the controller&apos;s error state to <ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a534ceac854da4ba59c4dc41b7ab732dc" kindref="member">CanErrorState::NotAvailable</ref>.</para><para><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a54f6d6d50b0865a11240cc7497c60e6b" kindref="member">Start()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1adebcfa618d7d7dee9b3be0934dde46a8" kindref="member">Stop()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a70038185075a4074dbcdafc3e6cbd2b0" kindref="member">Sleep()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a54f6d6d50b0865a11240cc7497c60e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::Start</definition>
+        <argsstring>()=0</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Start the CAN controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a0d22a13b0b166d9048701c341ed6dfad" kindref="member">Reset()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1adebcfa618d7d7dee9b3be0934dde46a8" kindref="member">Stop()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a70038185075a4074dbcdafc3e6cbd2b0" kindref="member">Sleep()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1adebcfa618d7d7dee9b3be0934dde46a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::Stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Stop the CAN controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a0d22a13b0b166d9048701c341ed6dfad" kindref="member">Reset()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a54f6d6d50b0865a11240cc7497c60e6b" kindref="member">Start()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a70038185075a4074dbcdafc3e6cbd2b0" kindref="member">Sleep()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a70038185075a4074dbcdafc3e6cbd2b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::Sleep</definition>
+        <argsstring>()=0</argsstring>
+        <name>Sleep</name>
+        <briefdescription>
+<para>Put the CAN controller in sleep mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a0d22a13b0b166d9048701c341ed6dfad" kindref="member">Reset()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a54f6d6d50b0865a11240cc7497c60e6b" kindref="member">Start()</ref>, <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1adebcfa618d7d7dee9b3be0934dde46a8" kindref="member">Stop()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aeb0d58b5ad76d942c84f35943ad4b24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::SendFrame</definition>
+        <argsstring>(const CanFrame &amp;msg, void *userContext=nullptr)=0</argsstring>
+        <name>SendFrame</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Request the transmission of a <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>NB: The <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref> must provide a valid CAN ID and valid flags. The controller must be in the Started state to transmit and receive messages.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame to transmit. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional user provided pointer that is reobtained in the <ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" kindref="member">FrameTransmitHandler</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1acced771a5299df15efb88837086c78de" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Can::ICanController::AddFrameHandler</definition>
+        <argsstring>(FrameHandler handler, DirectionMask directionMask=(DirectionMask) TransmitDirection::RX) -&gt; HandlerId=0</argsstring>
+        <name>AddFrameHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a7c588e84753fd51eb8b1914418b8ec36" kindref="member">FrameHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref></type>
+          <declname>directionMask</declname>
+          <defval>(<ref refid="namespace_sil_kit_1_1_services_1a05e96781c237d999c51044d8fb041a3b" kindref="member">DirectionMask</ref>) <ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531af9c24782c24c237d16e79f18e2fa9046" kindref="member">TransmitDirection::RX</ref></defval>
+        </param>
+        <briefdescription>
+<para>Register a callback for CAN message reception. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when the controller receives a new <ref refid="struct_sil_kit_1_1_services_1_1_can_1_1_can_frame" kindref="compound">CanFrame</ref>.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1ac87bd9c9a3a2d0edb2a49bcd3c28889e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::RemoveFrameHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveFrameHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a FrameHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a640016bde4d2d97efd4d12a682edb137" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Can::ICanController::AddStateChangeHandler</definition>
+        <argsstring>(StateChangeHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddStateChangeHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a38f85c68c3c5b7ac3d3c6013db827572" kindref="member">StateChangeHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for controller state changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when the <ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7" kindref="member">SilKit::Services::Can::CanControllerState</ref> of the controller changes. E.g., after starting the controller, the state changes from <ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7aa9176fac65b988c524c84dee7aa2935a" kindref="member">SilKit::Services::Can::CanControllerState::Uninit</ref> to <ref refid="namespace_sil_kit_1_1_services_1_1_can_1a21e629b81cad63b6c793ee9819bd73d7a8428552d86c0d262a542a528af490afa" kindref="member">SilKit::Services::Can::CanControllerState::Started</ref>.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aa62449608065cfaa05f75b4dec29211a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::RemoveStateChangeHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveStateChangeHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a StateChangeHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a02af759304027a071b2b6a40bf8b13ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Can::ICanController::AddErrorStateChangeHandler</definition>
+        <argsstring>(ErrorStateChangeHandler handler) -&gt; HandlerId=0</argsstring>
+        <name>AddErrorStateChangeHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a899a114d90ee3691d7defbd1d63330f3" kindref="member">ErrorStateChangeHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for changes of the controller&apos;s error state. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when the <ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9" kindref="member">SilKit::Services::Can::CanErrorState</ref> of the controller changes. During normal operation, the controller should be in state <ref refid="namespace_sil_kit_1_1_services_1_1_can_1ad9d1311bcfce1b8adb40c0393fa170b9a5e9d039add1e7f63119eb7f36b83fb1f" kindref="member">SilKit::Services::Can::CanErrorState::ErrorActive</ref>. The states correspond to the error state handling protocol of the CAN specification.</para><para>NB: Only supported in a detailed simulation. In simple simulation, the handler is never called.</para><para><simplesect kind="return"><para>Returns a <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> that can be used to remove the callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a108adacfb7f61e2b10ec6853dba8eef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::RemoveErrorStateChangeHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveErrorStateChangeHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove an ErrorStateChangeHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1af0450cdb1778556d40b6b83c72f439ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto SilKit::Services::Can::ICanController::AddFrameTransmitHandler</definition>
+        <argsstring>(FrameTransmitHandler handler, CanTransmitStatusMask statusMask=SilKit_CanTransmitStatus_DefaultMask) -&gt; HandlerId=0</argsstring>
+        <name>AddFrameTransmitHandler</name>
+        <param>
+          <type><ref refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" kindref="member">FrameTransmitHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_can_1a51c6f952dd7d7bd8b7dcfc9a7c6b23ec" kindref="member">CanTransmitStatusMask</ref></type>
+          <declname>statusMask</declname>
+          <defval><ref refid="_can_8h_1a45259909419629431269e7aeaf5679d2" kindref="member">SilKit_CanTransmitStatus_DefaultMask</ref></defval>
+        </param>
+        <briefdescription>
+<para>Register a callback for the TX status of sent CAN messages. </para>        </briefdescription>
+        <detaileddescription>
+<para>The registered handler is called when a CAN message was successfully transmitted on the bus or when an error occurred.</para><para>NB: Full support in a detailed simulation. In a simple simulation, all messages are automatically positively acknowledged. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aae1c39a6e1c37ac8c68dfea465b7edae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Can::ICanController::RemoveFrameTransmitHandler</definition>
+        <argsstring>(HandlerId handlerId)=0</argsstring>
+        <name>RemoveFrameTransmitHandler</name>
+        <param>
+          <type>HandlerId</type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a FrameTransmitHandler by <ref refid="namespace_sil_kit_1_1_util_1a4a82dc5d09ddcbfdeca641d82eb510c1" kindref="member">SilKit::Util::HandlerId</ref> on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="195" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract CAN Controller API to be used by vECUs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" line="35" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/can/ICanController.hpp" bodystart="34" bodyend="196"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a02af759304027a071b2b6a40bf8b13ce" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>AddErrorStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1acced771a5299df15efb88837086c78de" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>AddFrameHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1af0450cdb1778556d40b6b83c72f439ee" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>AddFrameTransmitHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a640016bde4d2d97efd4d12a682edb137" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>AddStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a3bc3bfabeb2dbdac684e6b5fb21a9825" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>CallbackT</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a899a114d90ee3691d7defbd1d63330f3" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>ErrorStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a7c588e84753fd51eb8b1914418b8ec36" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>FrameHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a8217fe2fc9e8f870c08fb83ca67e6bc0" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>FrameTransmitHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a108adacfb7f61e2b10ec6853dba8eef5" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>RemoveErrorStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1ac87bd9c9a3a2d0edb2a49bcd3c28889e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>RemoveFrameHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aae1c39a6e1c37ac8c68dfea465b7edae" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>RemoveFrameTransmitHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aa62449608065cfaa05f75b4dec29211a" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>RemoveStateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a0d22a13b0b166d9048701c341ed6dfad" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>Reset</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aeb0d58b5ad76d942c84f35943ad4b24a" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>SendFrame</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1aa18f5af4b1c0cb35c3e7762cf045250a" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>SetBaudRate</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a70038185075a4074dbcdafc3e6cbd2b0" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>Sleep</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a54f6d6d50b0865a11240cc7497c60e6b" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>Start</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a38f85c68c3c5b7ac3d3c6013db827572" prot="public" virt="non-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>StateChangeHandler</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1adebcfa618d7d7dee9b3be0934dde46a8" prot="public" virt="pure-virtual"><scope>SilKit::Services::Can::ICanController</scope><name>Stop</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_can_1_1_i_can_controller_1a07c790a737b3225d03c081173c3507e4" prot="public" virt="virtual"><scope>SilKit::Services::Can::ICanController</scope><name>~ICanController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

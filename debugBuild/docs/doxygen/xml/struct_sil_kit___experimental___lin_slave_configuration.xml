@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___experimental___lin_slave_configuration" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_Experimental_LinSlaveConfiguration</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_slave_configuration_1ad2ed0feca291a3481df42247de254103" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_Experimental_LinSlaveConfiguration::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; The interface id specifying which version of this struct was obtained </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="272" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_slave_configuration_1a404b4dd52a6956285d838d3d8c511ee3" prot="public" static="no" mutable="no">
+        <type><ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref></type>
+        <definition>SilKit_Bool SilKit_Experimental_LinSlaveConfiguration::isLinIdResponding[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>isLinIdResponding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="273" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The aggregated configuration of all LIN slaves in the network. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numRespondingLinIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of entries in respondingLinIds. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>respondingLinIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of SilKit_LinId on which any LIN Slave has configured SilKit_LinFrameResponseMode_TxUnconditional </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="254">
+        <label>SilKit_Experimental_LinSlaveConfiguration</label>
+        <link refid="struct_sil_kit___experimental___lin_slave_configuration"/>
+        <childnode refid="255" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="255">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="270" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="269" bodyend="274"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___experimental___lin_slave_configuration_1a404b4dd52a6956285d838d3d8c511ee3" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinSlaveConfiguration</scope><name>isLinIdResponding</name></member>
+      <member refid="struct_sil_kit___experimental___lin_slave_configuration_1ad2ed0feca291a3481df42247de254103" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinSlaveConfiguration</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

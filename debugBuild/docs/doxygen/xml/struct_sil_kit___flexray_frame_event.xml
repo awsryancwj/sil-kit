@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_frame_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayFrameEvent</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_event_1a44d8579c304609ec9ea3ba306c364dd2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayFrameEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="378" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_event_1ac0f2debb4583e6610568cf4e79c096ef" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_FlexrayFrameEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time at end of frame transmission. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="379" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_event_1a78def78372403f4c333c77e0bb80739c" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a7f5c9f146f6a2edd0ba9b06e65f544b7" kindref="member">SilKit_FlexrayChannel</ref></type>
+        <definition>SilKit_FlexrayChannel SilKit_FlexrayFrameEvent::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>FlexRay channel A or B. (Valid values: FlexrayChannel::A, FlexrayChannel::B). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="380" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_frame_event_1aacb43388a5c92fd55077ab5a00b014f4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___flexray_frame" kindref="compound">SilKit_FlexrayFrame</ref> *</type>
+        <definition>SilKit_FlexrayFrame* SilKit_FlexrayFrameEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+<para>Received FlexRay frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="381" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="281">
+        <label>SilKit_ByteVector</label>
+        <link refid="struct_sil_kit___byte_vector"/>
+      </node>
+      <node id="280">
+        <label>SilKit_FlexrayHeader</label>
+        <link refid="struct_sil_kit___flexray_header"/>
+        <childnode refid="279" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="279">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="277">
+        <label>SilKit_FlexrayFrameEvent</label>
+        <link refid="struct_sil_kit___flexray_frame_event"/>
+        <childnode refid="278" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+        <childnode refid="279" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="278">
+        <label>SilKit_FlexrayFrame</label>
+        <link refid="struct_sil_kit___flexray_frame"/>
+        <childnode refid="279" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="280" relation="usage">
+          <edgelabel>header</edgelabel>
+        </childnode>
+        <childnode refid="281" relation="usage">
+          <edgelabel>payload</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="377" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="376" bodyend="382"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_frame_event_1a78def78372403f4c333c77e0bb80739c" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit___flexray_frame_event_1aacb43388a5c92fd55077ab5a00b014f4" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit___flexray_frame_event_1a44d8579c304609ec9ea3ba306c364dd2" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___flexray_frame_event_1ac0f2debb4583e6610568cf4e79c096ef" prot="public" virt="non-virtual"><scope>SilKit_FlexrayFrameEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

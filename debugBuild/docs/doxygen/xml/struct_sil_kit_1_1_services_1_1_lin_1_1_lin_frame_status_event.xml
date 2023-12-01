@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Lin::LinFrameStatusEvent</compoundname>
+    <includes refid="_lin_datatypes_8hpp" local="no">LinDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a81a79d4142595faad1d7649cb4193f99" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Lin::LinFrameStatusEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="295" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a0c549fa8b5e193ea5b50a90cdb09a6fe" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame" kindref="compound">LinFrame</ref></type>
+        <definition>LinFrame SilKit::Services::Lin::LinFrameStatusEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="296" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a47baae4be5067a5b9294ac0e8be0aa5b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_lin_1ade49010ad726d37233dfdd2d0f562864" kindref="member">LinFrameStatus</ref></type>
+        <definition>LinFrameStatus SilKit::Services::Lin::LinFrameStatusEvent::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="297" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN frame status event delivered in the <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a10f5709d6d519999b7c0e647a2187913" kindref="member">ILinController::FrameStatusHandler</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="148">
+        <label>SilKit::Services::Lin::LinFrameStatusEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+      <node id="149">
+        <label>SilKit::Services::Lin::LinFrame</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="294" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="293" bodyend="298"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a0c549fa8b5e193ea5b50a90cdb09a6fe" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinFrameStatusEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a47baae4be5067a5b9294ac0e8be0aa5b" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinFrameStatusEvent</scope><name>status</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_frame_status_event_1a81a79d4142595faad1d7649cb4193f99" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinFrameStatusEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

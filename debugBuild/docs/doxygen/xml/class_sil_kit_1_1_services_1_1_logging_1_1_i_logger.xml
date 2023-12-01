@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SilKit::Services::Logging::ILogger</compoundname>
+    <includes refid="_i_logger_8hpp" local="no">ILogger.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a44dbb3635555a67c75c426b112004fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Services::Logging::ILogger::~ILogger</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ILogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a47e43984c7c67d22904e6322f8e7f216" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Log</definition>
+        <argsstring>(Level level, const std::string &amp;msg)=0</argsstring>
+        <name>Log</name>
+        <param>
+          <type><ref refid="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721" kindref="member">Level</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with a specified level. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log level for the message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message which shall be logged. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a5647f504d3c32ac38ff9819e722bb66e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Trace</definition>
+        <argsstring>(const std::string &amp;msg)=0</argsstring>
+        <name>Trace</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with log level trace. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a055c08ae04aba920e19d18600ef252cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Debug</definition>
+        <argsstring>(const std::string &amp;msg)=0</argsstring>
+        <name>Debug</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with log level debug. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a101e6c5d84a49e3011b9da1f9ee52ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Info</definition>
+        <argsstring>(const std::string &amp;msg)=0</argsstring>
+        <name>Info</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with log level info. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a5e94cda9d30de6f22b338fff6f0dc8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Warn</definition>
+        <argsstring>(const std::string &amp;msg)=0</argsstring>
+        <name>Warn</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with log level warn. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a5a21d0dc88827f87993fb05204c4032a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Error</definition>
+        <argsstring>(const std::string &amp;msg)=0</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with log level error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1ad3bc3e961fac7d76f5b5b9c774f7a97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SilKit::Services::Logging::ILogger::Critical</definition>
+        <argsstring>(const std::string &amp;msg)=0</argsstring>
+        <name>Critical</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Log a message with log level critical. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1abdfeb7e5189c27a9ddef7c4367b87eac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_logging_1a7383fa674a75b88789f6f18e95bd8721" kindref="member">Level</ref></type>
+        <definition>virtual Level SilKit::Services::Logging::ILogger::GetLogLevel</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetLogLevel</name>
+        <briefdescription>
+<para>Get the lowest configured log level of all sinks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/logging/ILogger.hpp" bodystart="32" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1ad3bc3e961fac7d76f5b5b9c774f7a97d" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Critical</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a055c08ae04aba920e19d18600ef252cc" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Debug</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a5a21d0dc88827f87993fb05204c4032a" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Error</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1abdfeb7e5189c27a9ddef7c4367b87eac" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>GetLogLevel</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a101e6c5d84a49e3011b9da1f9ee52ce1" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Info</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a47e43984c7c67d22904e6322f8e7f216" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Log</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a5647f504d3c32ac38ff9819e722bb66e" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Trace</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a5e94cda9d30de6f22b338fff6f0dc8a3" prot="public" virt="pure-virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>Warn</name></member>
+      <member refid="class_sil_kit_1_1_services_1_1_logging_1_1_i_logger_1a44dbb3635555a67c75c426b112004fb8" prot="public" virt="virtual"><scope>SilKit::Services::Logging::ILogger</scope><name>~ILogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

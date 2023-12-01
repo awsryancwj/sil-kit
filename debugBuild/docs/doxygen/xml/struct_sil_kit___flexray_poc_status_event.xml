@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_poc_status_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayPocStatusEvent</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a5ef76b7e09367c59a7e0bde229518749" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayPocStatusEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="515" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a3602eb9d3a6adc3b21c804940ec848d4" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_FlexrayPocStatusEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>SIL Kit timestamp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="516" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a08e8553530a23ad19a3082ef680ad46f" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1abb26a80ffcd11513c43a41b52ea9fa5f" kindref="member">SilKit_FlexrayPocState</ref></type>
+        <definition>SilKit_FlexrayPocState SilKit_FlexrayPocStatusEvent::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="517" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a601a957d48352315a5aa7f048e70e9b8" prot="public" static="no" mutable="no">
+        <type><ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref></type>
+        <definition>SilKit_Bool SilKit_FlexrayPocStatusEvent::chiHaltRequest</definition>
+        <argsstring></argsstring>
+        <name>chiHaltRequest</name>
+        <briefdescription>
+<para>&lt; Status of the Protocol Operation Control (POC). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="518" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a878957546d3336a796a961b4103feb9b" prot="public" static="no" mutable="no">
+        <type><ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref></type>
+        <definition>SilKit_Bool SilKit_FlexrayPocStatusEvent::coldstartNoise</definition>
+        <argsstring></argsstring>
+        <name>coldstartNoise</name>
+        <briefdescription>
+<para>&lt; indicates whether a halt request was received from the CHI </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="519" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1ab87f4044b1689979014ab96763c944cc" prot="public" static="no" mutable="no">
+        <type><ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref></type>
+        <definition>SilKit_Bool SilKit_FlexrayPocStatusEvent::freeze</definition>
+        <argsstring></argsstring>
+        <name>freeze</name>
+        <briefdescription>
+<para>&lt; indicates noisy channel conditions during coldstart </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="520" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1adeb8fe8b9118fd7189f02c5ba288cc19" prot="public" static="no" mutable="no">
+        <type><ref refid="_types_8h_1acd67002df70237d213b7773b26891fcc" kindref="member">SilKit_Bool</ref></type>
+        <definition>SilKit_Bool SilKit_FlexrayPocStatusEvent::chiReadyRequest</definition>
+        <argsstring></argsstring>
+        <name>chiReadyRequest</name>
+        <briefdescription>
+<para>&lt; indicates that the POC entered a halt state due to an error condition requiring immediate halt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="521" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a3ba4551943b30caa6b4e8987cdf902bd" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a6cdc8fcf6f2c624256dd3572001dcfec" kindref="member">SilKit_FlexrayErrorModeType</ref></type>
+        <definition>SilKit_FlexrayErrorModeType SilKit_FlexrayPocStatusEvent::errorMode</definition>
+        <argsstring></argsstring>
+        <name>errorMode</name>
+        <briefdescription>
+<para>&lt; indicates that the CHI requested to enter ready state at the end of the communication cycle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="522" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1adc77a9b9d95fc32c59459ebe26d2fef9" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a515ebbcc19b1336dce05d4b53284a4bf" kindref="member">SilKit_FlexraySlotModeType</ref></type>
+        <definition>SilKit_FlexraySlotModeType SilKit_FlexrayPocStatusEvent::slotMode</definition>
+        <argsstring></argsstring>
+        <name>slotMode</name>
+        <briefdescription>
+<para>&lt; indicates the error mode of the POC </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="523" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1adf7cd274782838a540f85891e53a5266" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1ac86794dad89cd36f7646ac29d4d4fd29" kindref="member">SilKit_FlexrayStartupStateType</ref></type>
+        <definition>SilKit_FlexrayStartupStateType SilKit_FlexrayPocStatusEvent::startupState</definition>
+        <argsstring></argsstring>
+        <name>startupState</name>
+        <briefdescription>
+<para>&lt; indicates the slot mode of the POC </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="524" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_poc_status_event_1a2ee08464a880e8130e9b7d2d5c98c3f2" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1ae839a3b09d6f0ca2e72b22cd34da2c9e" kindref="member">SilKit_FlexrayWakeupStatusType</ref></type>
+        <definition>SilKit_FlexrayWakeupStatusType SilKit_FlexrayPocStatusEvent::wakeupStatus</definition>
+        <argsstring></argsstring>
+        <name>wakeupStatus</name>
+        <briefdescription>
+<para>&lt; indicates states within the STARTUP mechanism </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="525" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Protocol Operation Control status as available in the AUTOSAR FlexRay driver model. </para>    </briefdescription>
+    <detaileddescription>
+<para>This enhances the deprecated struct ControllerStatus by adding members that are available through the Controller Host Interface. <emphasis>AUTOSAR Name:</emphasis> Fr_POCStatusType </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="296">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="295">
+        <label>SilKit_FlexrayPocStatusEvent</label>
+        <link refid="struct_sil_kit___flexray_poc_status_event"/>
+        <childnode refid="296" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="514" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="513" bodyend="526"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a601a957d48352315a5aa7f048e70e9b8" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>chiHaltRequest</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1adeb8fe8b9118fd7189f02c5ba288cc19" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>chiReadyRequest</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a878957546d3336a796a961b4103feb9b" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>coldstartNoise</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a3ba4551943b30caa6b4e8987cdf902bd" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>errorMode</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1ab87f4044b1689979014ab96763c944cc" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>freeze</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1adc77a9b9d95fc32c59459ebe26d2fef9" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>slotMode</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1adf7cd274782838a540f85891e53a5266" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>startupState</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a08e8553530a23ad19a3082ef680ad46f" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>state</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a5ef76b7e09367c59a7e0bde229518749" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a3602eb9d3a6adc3b21c804940ec848d4" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>timestamp</name></member>
+      <member refid="struct_sil_kit___flexray_poc_status_event_1a2ee08464a880e8130e9b7d2d5c98c3f2" prot="public" virt="non-virtual"><scope>SilKit_FlexrayPocStatusEvent</scope><name>wakeupStatus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

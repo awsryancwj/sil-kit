@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_symbol_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexraySymbolEvent</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_symbol_event_1a0b02ffc789f0ecf47367ea6188b2eb65" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexraySymbolEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="414" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_symbol_event_1a54f5329091c0977ec8d161c4225ffcef" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_FlexraySymbolEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>End time of symbol reception. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="415" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_symbol_event_1a9db20ca9965da9f25c894d233cc51143" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a7f5c9f146f6a2edd0ba9b06e65f544b7" kindref="member">SilKit_FlexrayChannel</ref></type>
+        <definition>SilKit_FlexrayChannel SilKit_FlexraySymbolEvent::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>FlexRay channel A or B (values: FlexrayChannel::A, FlexrayChannel::B). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="416" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_symbol_event_1a7b4994144ccd71abece9c9917489bbb8" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa09783dbc288ffdd566ba0b094c0d40f" kindref="member">SilKit_FlexraySymbolPattern</ref></type>
+        <definition>SilKit_FlexraySymbolPattern SilKit_FlexraySymbolEvent::pattern</definition>
+        <argsstring></argsstring>
+        <name>pattern</name>
+        <briefdescription>
+<para>The received symbol, e.g. wakeup pattern. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="417" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A FlexRay Symbol as received on the FlexRay bus. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="298">
+        <label>SilKit_FlexraySymbolEvent</label>
+        <link refid="struct_sil_kit___flexray_symbol_event"/>
+        <childnode refid="299" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="299">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="413" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="412" bodyend="418"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_symbol_event_1a9db20ca9965da9f25c894d233cc51143" prot="public" virt="non-virtual"><scope>SilKit_FlexraySymbolEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit___flexray_symbol_event_1a7b4994144ccd71abece9c9917489bbb8" prot="public" virt="non-virtual"><scope>SilKit_FlexraySymbolEvent</scope><name>pattern</name></member>
+      <member refid="struct_sil_kit___flexray_symbol_event_1a0b02ffc789f0ecf47367ea6188b2eb65" prot="public" virt="non-virtual"><scope>SilKit_FlexraySymbolEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___flexray_symbol_event_1a54f5329091c0977ec8d161c4225ffcef" prot="public" virt="non-virtual"><scope>SilKit_FlexraySymbolEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -107,7 +107,9 @@ template <>
 void SetPlatformOptions(asio::ip::tcp::acceptor& acceptor)
 {
     // We enable the SO_REUSEADDR flag on POSIX, this allows reusing a socket's address more quickly.
+#ifndef __QNX__
     acceptor.set_option(asio::ip::tcp::acceptor::reuse_address{true});
+#endif
 }
 
 template <>

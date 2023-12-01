@@ -1,0 +1,1370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_ethernet_8h" kind="file" language="C++">
+    <compoundname>Ethernet.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_sil_kit_macros_8h" local="yes">silkit/capi/SilKitMacros.h</includes>
+    <includes refid="_types_8h" local="yes">silkit/capi/Types.h</includes>
+    <includes refid="_interface_identifiers_8h" local="yes">silkit/capi/InterfaceIdentifiers.h</includes>
+    <includedby refid="_sil_kit_8h" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</includedby>
+    <includedby refid="_ethernet_datatypes_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp</includedby>
+    <incdepgraph>
+      <node id="30">
+        <label>cstdint</label>
+      </node>
+      <node id="28">
+        <label>stdint.h</label>
+      </node>
+      <node id="27">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h</label>
+        <link refid="_ethernet_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>stddef.h</label>
+      </node>
+      <node id="35">
+        <label>memory.h</label>
+      </node>
+      <node id="34">
+        <label>limits.h</label>
+      </node>
+      <node id="29">
+        <label>silkit/capi/SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="39">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/all.hpp</label>
+        <link refid="services_2ethernet_2all_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/EthernetDatatypes.hpp</label>
+        <link refid="_ethernet_datatypes_8hpp"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/SilKit.h</label>
+        <link refid="_sil_kit_8h"/>
+      </node>
+      <node id="41">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/IEthernetController.hpp</label>
+        <link refid="_i_ethernet_controller_8hpp"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h</label>
+        <link refid="_ethernet_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="42">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/ethernet/string_utils.hpp</label>
+        <link refid="services_2ethernet_2string__utils_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit___ethernet_state_change_event" prot="public">SilKit_EthernetStateChangeEvent</innerclass>
+    <innerclass refid="struct_sil_kit___ethernet_bitrate_change_event" prot="public">SilKit_EthernetBitrateChangeEvent</innerclass>
+    <innerclass refid="struct_sil_kit___ethernet_frame" prot="public">SilKit_EthernetFrame</innerclass>
+    <innerclass refid="struct_sil_kit___ethernet_frame_event" prot="public">SilKit_EthernetFrameEvent</innerclass>
+    <innerclass refid="struct_sil_kit___ethernet_frame_transmit_event" prot="public">SilKit_EthernetFrameTransmitEvent</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_ethernet_8h_1aa977a43b58fdef250234618e5597131c" prot="public" static="no">
+        <name>SilKit_EthernetTransmitStatus_Transmitted</name>
+        <initializer>((<ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(0))</initializer>
+        <briefdescription>
+<para>The message was successfully transmitted on the CAN bus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="36" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1ad4a070e0a993c598b1b21d4ce435f96e" prot="public" static="no">
+        <name>SilKit_EthernetTransmitStatus_ControllerInactive</name>
+        <initializer>((<ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(1))</initializer>
+        <briefdescription>
+<para>The transmit request was rejected, because the Ethernet controller is not active. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="39" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1a2d87233ee5b75fbdebd0b1ad3917c746" prot="public" static="no">
+        <name>SilKit_EthernetTransmitStatus_LinkDown</name>
+        <initializer>((<ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(2))</initializer>
+        <briefdescription>
+<para>The transmit request was rejected, because the Ethernet link is down. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="42" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1a72d71b32cecbcf50d2968bda52ff73aa" prot="public" static="no">
+        <name>SilKit_EthernetTransmitStatus_Dropped</name>
+        <initializer>((<ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(3))</initializer>
+        <briefdescription>
+<para>The transmit request was dropped, because the transmit queue is full. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="45" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1af39aae60679c5fb0d07e0679bbaf69f4" prot="public" static="no">
+        <name>SilKit_EthernetTransmitStatus_InvalidFrameFormat</name>
+        <initializer>((<ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref>) <ref refid="_sil_kit_macros_8h_1aa9374d9bd55e09857c4bf40e2f294435" kindref="member">BIT</ref>(5))</initializer>
+        <briefdescription>
+<para>The given raw Ethernet frame is ill formated (e.g. frame length is too small or too large, etc.). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="50" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1a1defebf389771c25ec8915711100c248" prot="public" static="no">
+        <name>SilKit_EthernetTransmitStatus_DefaultMask</name>
+        <initializer>(<ref refid="_ethernet_8h_1aa977a43b58fdef250234618e5597131c" kindref="member">SilKit_EthernetTransmitStatus_Transmitted</ref> | <ref refid="_ethernet_8h_1ad4a070e0a993c598b1b21d4ce435f96e" kindref="member">SilKit_EthernetTransmitStatus_ControllerInactive</ref> \
+     | <ref refid="_ethernet_8h_1a2d87233ee5b75fbdebd0b1ad3917c746" kindref="member">SilKit_EthernetTransmitStatus_LinkDown</ref> | <ref refid="_ethernet_8h_1a72d71b32cecbcf50d2968bda52ff73aa" kindref="member">SilKit_EthernetTransmitStatus_Dropped</ref> \
+     | <ref refid="_ethernet_8h_1af39aae60679c5fb0d07e0679bbaf69f4" kindref="member">SilKit_EthernetTransmitStatus_InvalidFrameFormat</ref>)</initializer>
+        <briefdescription>
+<para>Combines all available transmit statuses. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="53" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1a616ae0d32aeabd3414d52bfc52eedb04" prot="public" static="no">
+        <name>SilKit_EthernetState_Inactive</name>
+        <initializer>((<ref refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" kindref="member">SilKit_EthernetState</ref>) 0)</initializer>
+        <briefdescription>
+<para>The Ethernet controller is switched off (default after reset). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="62" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1aa8bc65a47bacd73b35a0866e47662b8d" prot="public" static="no">
+        <name>SilKit_EthernetState_LinkDown</name>
+        <initializer>((<ref refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" kindref="member">SilKit_EthernetState</ref>) 1)</initializer>
+        <briefdescription>
+<para>The Ethernet controller is active, but a link to another Ethernet controller in not yet established. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="65" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ethernet_8h_1a7c813e503139bd0e2c8bcdaac849cb8f" prot="public" static="no">
+        <name>SilKit_EthernetState_LinkUp</name>
+        <initializer>((<ref refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" kindref="member">SilKit_EthernetState</ref>) 2)</initializer>
+        <briefdescription>
+<para>The Ethernet controller is active and the link to another Ethernet controller is established. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="68" column="9" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_EthernetTransmitStatus</definition>
+        <argsstring></argsstring>
+        <name>SilKit_EthernetTransmitStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="33" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_EthernetState</definition>
+        <argsstring></argsstring>
+        <name>SilKit_EthernetState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="59" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1ac407cf86d233a4665cca9fc07cf12167" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t SilKit_EthernetBitrate</definition>
+        <argsstring></argsstring>
+        <name>SilKit_EthernetBitrate</name>
+        <briefdescription>
+<para>Bitrate in kBit/sec. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="78" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a48910b755f68a6914ef6214926f6be84" prot="public" static="no">
+        <type>struct <ref refid="struct_sil_kit___ethernet_frame_transmit_event" kindref="compound">SilKit_EthernetFrameTransmitEvent</ref></type>
+        <definition>typedef struct SilKit_EthernetFrameTransmitEvent SilKit_EthernetFrameTransmitEvent</definition>
+        <argsstring></argsstring>
+        <name>SilKit_EthernetFrameTransmitEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="78" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" prot="public" static="no">
+        <type>struct <ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref></type>
+        <definition>typedef struct SilKit_EthernetController SilKit_EthernetController</definition>
+        <argsstring></argsstring>
+        <name>SilKit_EthernetController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="78" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_EthernetFrameHandler_t) (void *context, SilKit_EthernetController *controller, SilKit_EthernetFrameEvent *frameEvent)</definition>
+        <argsstring>)(void *context, SilKit_EthernetController *controller, SilKit_EthernetFrameEvent *frameEvent)</argsstring>
+        <name>SilKit_EthernetFrameHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a EthernetMessage has been received. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context provided by the user upon registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller that received the message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the raw frame and the timestamp of the event. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="120" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_EthernetFrameTransmitHandler_t) (void *context, SilKit_EthernetController *controller, SilKit_EthernetFrameTransmitEvent *frameTransmitEvent)</definition>
+        <argsstring>)(void *context, SilKit_EthernetController *controller, SilKit_EthernetFrameTransmitEvent *frameTransmitEvent)</argsstring>
+        <name>SilKit_EthernetFrameTransmitHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that a EthernetFrame has been sent. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The by the user provided context on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller that received the acknowledge. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frameTransmitEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the transmit status and the timestamp of the event. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="128" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_EthernetStateChangeHandler_t) (void *context, SilKit_EthernetController *controller, SilKit_EthernetStateChangeEvent *stateChangeEvent)</definition>
+        <argsstring>)(void *context, SilKit_EthernetController *controller, SilKit_EthernetStateChangeEvent *stateChangeEvent)</argsstring>
+        <name>SilKit_EthernetStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the Ethernet controller state has changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The by the user provided context on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller whose state did change. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the new state and the timestamp of the event. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="136" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void( * SilKit_EthernetBitrateChangeHandler_t) (void *context, SilKit_EthernetController *controller, SilKit_EthernetBitrateChangeEvent *bitrateChangeEvent)</definition>
+        <argsstring>)(void *context, SilKit_EthernetController *controller, SilKit_EthernetBitrateChangeEvent *bitrateChangeEvent)</argsstring>
+        <name>SilKit_EthernetBitrateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback type to indicate that the link bit rate has changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context pointer provided by the user on registration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller that is affected. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitrateChangeEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the new bitrate and the timestamp of the event. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="144" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a6be30d69fccf0b74c3fbc3063ac178ea" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_Create_t) (SilKit_EthernetController **outController, SilKit_Participant *participant, const char *name, const char *network)</definition>
+        <argsstring>)(SilKit_EthernetController **outController, SilKit_Participant *participant, const char *name, const char *network)</argsstring>
+        <name>SilKit_EthernetController_Create_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="161" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a786d54e868ce6679111aee06891ba99d" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_Activate_t) (SilKit_EthernetController *controller)</definition>
+        <argsstring>)(SilKit_EthernetController *controller)</argsstring>
+        <name>SilKit_EthernetController_Activate_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="179" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a29dca01e97bacae6bf725cd37622d7fb" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_Deactivate_t) (SilKit_EthernetController *controller)</definition>
+        <argsstring>)(SilKit_EthernetController *controller)</argsstring>
+        <name>SilKit_EthernetController_Deactivate_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="193" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1ab76bb12231380a20256dc4f6cceee796" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_AddFrameHandler_t) (SilKit_EthernetController *controller, void *context, SilKit_EthernetFrameHandler_t handler, SilKit_Direction directionMask, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, void *context, SilKit_EthernetFrameHandler_t handler, SilKit_Direction directionMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddFrameHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="214" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1abbf85b73d655ad96c747141d32a5384c" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_RemoveFrameHandler_t) (SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveFrameHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="228" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a54e8791b8faff84c00d18ad011870975" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_AddFrameTransmitHandler_t) (SilKit_EthernetController *controller, void *context, SilKit_EthernetFrameTransmitHandler_t handler, SilKit_EthernetTransmitStatus transmitStatusMask, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, void *context, SilKit_EthernetFrameTransmitHandler_t handler, SilKit_EthernetTransmitStatus transmitStatusMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddFrameTransmitHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="256" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1aad33644acf8374cfa2fe5b3d622f4e95" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_RemoveFrameTransmitHandler_t) (SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveFrameTransmitHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="268" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1a0c749d29afaa78d01d736eed137ae748" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_AddStateChangeHandler_t) (SilKit_EthernetController *controller, void *context, SilKit_EthernetStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, void *context, SilKit_EthernetStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="292" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1ada8a983715ee8f28f53feef971d9e95c" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_RemoveStateChangeHandler_t) (SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveStateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="305" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1ab31402046f37842c34fec5b57f7cbe55" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_AddBitrateChangeHandler_t) (SilKit_EthernetController *controller, void *context, SilKit_EthernetBitrateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, void *context, SilKit_EthernetBitrateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddBitrateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="326" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1ae7a67bbec1b579c31c88f556dc29cdd2" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_RemoveBitrateChangeHandler_t) (SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveBitrateChangeHandler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="338" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_ethernet_8h_1aec3520b42413b7d54f1907f8fc52ac85" prot="public" static="no">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(*</type>
+        <definition>typedef SilKit_ReturnCode( * SilKit_EthernetController_SendFrame_t) (SilKit_EthernetController *controller, SilKit_EthernetFrame *frame, void *userContext)</definition>
+        <argsstring>)(SilKit_EthernetController *controller, SilKit_EthernetFrame *frame, void *userContext)</argsstring>
+        <name>SilKit_EthernetController_SendFrame_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="366" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_ethernet_8h_1abb65560a24876e752f032602d87c311c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_Create</definition>
+        <argsstring>(SilKit_EthernetController **outController, SilKit_Participant *participant, const char *name, const char *network)</argsstring>
+        <name>SilKit_EthernetController_Create</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> **</type>
+          <declname>outController</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref> *</type>
+          <declname>participant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>network</declname>
+        </param>
+        <briefdescription>
+<para>Create an Ethernet controller at this SIL Kit simulation participant. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outController</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a pointer in which the Ethernet controller will be stored (out parameter). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>participant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The simulation participant for which the Ethernet controller should be created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The utf8 encoded name of the new Ethernet controller. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>network</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The network of the Ethernet controller to operate in. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. ! </para></simplesect>
+<simplesect kind="note"><para>The object returned must not be deallocated using free()! </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1a7afa9ba2b7d262c422f7bfe07ed441ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_Activate</definition>
+        <argsstring>(SilKit_EthernetController *controller)</argsstring>
+        <name>SilKit_EthernetController_Activate</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Activates the Ethernet controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>Upon activation of the controller, the controller attempts to establish a link. Messages can only be sent once the link has been successfully established,</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller to be activated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1aa00b2c7c0b58636d8c6f3e9d4ace032b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_Deactivate</definition>
+        <argsstring>(SilKit_EthernetController *controller)</argsstring>
+        <name>SilKit_EthernetController_Deactivate</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <briefdescription>
+<para>Deactivate the Ethernet controller. </para>        </briefdescription>
+        <detaileddescription>
+<para>Deactivate the controller and shut down the link. The controller will no longer receive messages, and it cannot send messages anymore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller to be deactivated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1ab90a54e7a8d5634eea32fa2922841666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_AddFrameHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, void *context, SilKit_EthernetFrameHandler_t handler, SilKit_Direction directionMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddFrameHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" kindref="member">SilKit_EthernetFrameHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref></type>
+          <declname>directionMask</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for Ethernet message reception. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the controller receives a new Ethernet message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the message callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on reception. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>directionMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bit mask defining the transmit direction of the messages (rx/tx) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1aa603a491bd29a5730ac47ba23bb766c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_RemoveFrameHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveFrameHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" kindref="member">SilKit_EthernetFrameHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1a7b8f8392e3d3915c9355782c22a6201d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_AddFrameTransmitHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, void *context, SilKit_EthernetFrameTransmitHandler_t handler, SilKit_EthernetTransmitStatus transmitStatusMask, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddFrameTransmitHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" kindref="member">SilKit_EthernetFrameTransmitHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref></type>
+          <declname>transmitStatusMask</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for Ethernet transmit acknowledgments. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when a previously sent message was successfully transmitted or when the transmission has failed. The original message is identified by the userContext.</para><para>NB: Full support in a detailed simulation. In a simple simulation, all messages are immediately positively acknowledged by a receiving controller.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the message acknowledge callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on reception. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transmitStatusMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bit mask defining the transmit status of the message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1a96d327c9d26d3762c820244ec1423da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_RemoveFrameTransmitHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveFrameTransmitHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" kindref="member">SilKit_EthernetFrameTransmitHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1aa8638b5b6c3d8d96dbc76aefb2945cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_AddStateChangeHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, void *context, SilKit_EthernetStateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddStateChangeHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" kindref="member">SilKit_EthernetStateChangeHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for changes of the controller state. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the state of the controller changes. E.g., a call to <ref refid="_ethernet_8h_1a7afa9ba2b7d262c422f7bfe07ed441ca" kindref="member">SilKit_EthernetController_Activate()</ref> causes the controller to change from state SilKit_EthernetState_Inactive to SilKit_EthernetState_LinkDown. Later, when the link has been established, the state changes again from SilKit_EthernetState_LinkDown to SilKit_EthernetState_LinkUp. Similarly, the status changes back to SilKit_EthernetState_Inactive upon a call to <ref refid="_ethernet_8h_1aa00b2c7c0b58636d8c6f3e9d4ace032b" kindref="member">SilKit_EthernetController_Deactivate()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the message acknowledge callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on reception. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1ad9c441b647789dbdafafda862eb3c663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_RemoveStateChangeHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveStateChangeHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" kindref="member">SilKit_EthernetStateChangeHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1ab485725ae01d3bf7e246d75beecdf0fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_AddBitrateChangeHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, void *context, SilKit_EthernetBitrateChangeHandler_t handler, SilKit_HandlerId *outHandlerId)</argsstring>
+        <name>SilKit_EthernetController_AddBitrateChangeHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" kindref="member">SilKit_EthernetBitrateChangeHandler_t</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref> *</type>
+          <declname>outHandlerId</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback for changes of the link bit rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>The handler is called when the bit rate of the connected link changes. This is typically the case when a link was successfully established, or the controller was deactivated.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the bitrate change callback should be registered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the callback. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler to be called on change. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outHandlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handler identifier that can be used to remove the callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1a37d97a3065d163d25058d67aba41aeaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_RemoveBitrateChangeHandler</definition>
+        <argsstring>(SilKit_EthernetController *controller, SilKit_HandlerId handlerId)</argsstring>
+        <name>SilKit_EthernetController_RemoveBitrateChangeHandler</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref></type>
+          <declname>handlerId</declname>
+        </param>
+        <briefdescription>
+<para>Remove a <ref refid="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" kindref="member">SilKit_EthernetBitrateChangeHandler_t</ref> by SilKit_HandlerId on this controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller for which the callback should be removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlerId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier of the callback to be removed. Obtained upon adding to respective handler. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_ethernet_8h_1a6a9844903d6bda1cd07d4625359e1b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></type>
+        <definition>SilKit_ReturnCode SilKit_EthernetController_SendFrame</definition>
+        <argsstring>(SilKit_EthernetController *controller, SilKit_EthernetFrame *frame, void *userContext)</argsstring>
+        <name>SilKit_EthernetController_SendFrame</name>
+        <param>
+          <type><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref> *</type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_sil_kit___ethernet_frame" kindref="compound">SilKit_EthernetFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userContext</declname>
+        </param>
+        <briefdescription>
+<para>Send an Ethernet frame. </para>        </briefdescription>
+        <detaileddescription>
+<para>Requires previous activation of the controller and a successfully established link. Also, the entire EthernetFrame must be valid, e.g., destination and source MAC addresses must be valid, ether type and vlan tags must be correct.</para><para>These requirements are not enforced in simple simulation. In this case, the message is simply passed on to all connected controllers without performing any check. The user must ensure that a valid frame is provided.</para><para>If the frame size is smaller than the minimum of 60 bytes, the frame will be padded with zeros.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet controller that should send the frame. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Ethernet frame to be sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user provided context pointer, that is reobtained in the frame ack handler </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A return code identifying the success/failure of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h" line="361" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sil_kit_macros_8h" kindref="compound">silkit/capi/SilKitMacros.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">silkit/capi/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interface_identifiers_8h" kindref="compound">silkit/capi/InterfaceIdentifiers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a4029ba13647be387d1d38057b99c7612" kindref="member">SILKIT_BEGIN_DECLS</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_ethernet_8h_1aa977a43b58fdef250234618e5597131c" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetTransmitStatus_Transmitted<sp/>((SilKit_EthernetTransmitStatus)<sp/>BIT(0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_ethernet_8h_1ad4a070e0a993c598b1b21d4ce435f96e" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetTransmitStatus_ControllerInactive<sp/>((SilKit_EthernetTransmitStatus)<sp/>BIT(1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_ethernet_8h_1a2d87233ee5b75fbdebd0b1ad3917c746" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetTransmitStatus_LinkDown<sp/>((SilKit_EthernetTransmitStatus)<sp/>BIT(2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_ethernet_8h_1a72d71b32cecbcf50d2968bda52ff73aa" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetTransmitStatus_Dropped<sp/>((SilKit_EthernetTransmitStatus)<sp/>BIT(3))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(SilKit_EthernetTransmitStatus)<sp/>BIT(4)<sp/>is<sp/>RESERVED<sp/>(used<sp/>to<sp/>be<sp/>SilKit_EthernetTransmitStatus_DuplicatedTransmitId)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_ethernet_8h_1af39aae60679c5fb0d07e0679bbaf69f4" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetTransmitStatus_InvalidFrameFormat<sp/>((SilKit_EthernetTransmitStatus)<sp/>BIT(5))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_ethernet_8h_1a1defebf389771c25ec8915711100c248" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetTransmitStatus_DefaultMask<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(SilKit_EthernetTransmitStatus_Transmitted<sp/>|<sp/>SilKit_EthernetTransmitStatus_ControllerInactive<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>|<sp/>SilKit_EthernetTransmitStatus_LinkDown<sp/>|<sp/>SilKit_EthernetTransmitStatus_Dropped<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>|<sp/>SilKit_EthernetTransmitStatus_InvalidFrameFormat)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" kindref="member">SilKit_EthernetState</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_ethernet_8h_1a616ae0d32aeabd3414d52bfc52eedb04" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetState_Inactive<sp/>((SilKit_EthernetState)<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_ethernet_8h_1aa8bc65a47bacd73b35a0866e47662b8d" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetState_LinkDown<sp/>((SilKit_EthernetState)<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_ethernet_8h_1a7c813e503139bd0e2c8bcdaac849cb8f" refkind="member"><highlight class="preprocessor">#define<sp/>SilKit_EthernetState_LinkUp<sp/>((SilKit_EthernetState)<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="struct_sil_kit___ethernet_state_change_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73" refid="struct_sil_kit___ethernet_state_change_event_1a25ca90d5a3691d62327c3ea17c74542c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___ethernet_state_change_event_1a25ca90d5a3691d62327c3ea17c74542c" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="struct_sil_kit___ethernet_state_change_event_1a4a86f97530ce7d65d88773fe508008ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___ethernet_state_change_event_1a4a86f97530ce7d65d88773fe508008ac" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="struct_sil_kit___ethernet_state_change_event_1a6ff53422fb3084c769065088d8e5ef8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1a410841cd46540ba5a8e3b7e6548ec41a" kindref="member">SilKit_EthernetState</ref><sp/><ref refid="struct_sil_kit___ethernet_state_change_event_1a6ff53422fb3084c769065088d8e5ef8d" kindref="member">state</ref>;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___ethernet_state_change_event" kindref="compound">SilKit_EthernetStateChangeEvent</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_ethernet_8h_1ac407cf86d233a4665cca9fc07cf12167" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="_ethernet_8h_1ac407cf86d233a4665cca9fc07cf12167" kindref="member">SilKit_EthernetBitrate</ref>;<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_sil_kit___ethernet_bitrate_change_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82" refid="struct_sil_kit___ethernet_bitrate_change_event_1a3d1320c750a47b58ea6488419c808607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___ethernet_bitrate_change_event_1a3d1320c750a47b58ea6488419c808607" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="83" refid="struct_sil_kit___ethernet_bitrate_change_event_1ae5edb93b15560aa6fb4675d72358ffd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___ethernet_bitrate_change_event_1ae5edb93b15560aa6fb4675d72358ffd6" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="84" refid="struct_sil_kit___ethernet_bitrate_change_event_1a644d859b0aa19362b6641fcabfbf6354" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1ac407cf86d233a4665cca9fc07cf12167" kindref="member">SilKit_EthernetBitrate</ref><sp/><ref refid="struct_sil_kit___ethernet_bitrate_change_event_1a644d859b0aa19362b6641fcabfbf6354" kindref="member">bitrate</ref>;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___ethernet_bitrate_change_event" kindref="compound">SilKit_EthernetBitrateChangeEvent</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_sil_kit___ethernet_frame" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90" refid="struct_sil_kit___ethernet_frame_1aae2b10853c298482fe58a3c3c437059f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_1aae2b10853c298482fe58a3c3c437059f" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="91" refid="struct_sil_kit___ethernet_frame_1aa28917fcb9af3fc7862bc06743dd5aa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___byte_vector" kindref="compound">SilKit_ByteVector</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_1aa28917fcb9af3fc7862bc06743dd5aa7" kindref="member">raw</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___ethernet_frame" kindref="compound">SilKit_EthernetFrame</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_sil_kit___ethernet_frame_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97" refid="struct_sil_kit___ethernet_frame_event_1a2fa2748f222069f6d5af9ab61e36704b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_event_1a2fa2748f222069f6d5af9ab61e36704b" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="98" refid="struct_sil_kit___ethernet_frame_event_1a2a99c2ce3da02776a04f651d70df5ec8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_event_1a2a99c2ce3da02776a04f651d70df5ec8" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="99" refid="struct_sil_kit___ethernet_frame_event_1a28aab61d46e664a9b09376c4098a046b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___ethernet_frame" kindref="compound">SilKit_EthernetFrame</ref>*<sp/><ref refid="struct_sil_kit___ethernet_frame_event_1a28aab61d46e664a9b09376c4098a046b" kindref="member">ethernetFrame</ref>;<sp/></highlight></codeline>
+<codeline lineno="100" refid="struct_sil_kit___ethernet_frame_event_1a14c6a6d1cdc3e4e0d3814e3e37e9a890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_event_1a14c6a6d1cdc3e4e0d3814e3e37e9a890" kindref="member">direction</ref>;<sp/></highlight></codeline>
+<codeline lineno="101" refid="struct_sil_kit___ethernet_frame_event_1a54bfe8d8955c3a96fea5931562a99caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___ethernet_frame_event_1a54bfe8d8955c3a96fea5931562a99caa" kindref="member">userContext</ref>;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="struct_sil_kit___ethernet_frame_event" kindref="compound">SilKit_EthernetFrameEvent</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="struct_sil_kit___ethernet_frame_transmit_event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___ethernet_frame_transmit_event" kindref="compound">SilKit_EthernetFrameTransmitEvent</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106" refid="struct_sil_kit___ethernet_frame_transmit_event_1aff36edca9fbdb29f0e9884f2b6320f7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_transmit_event_1aff36edca9fbdb29f0e9884f2b6320f7e" kindref="member">structHeader</ref>;<sp/></highlight></codeline>
+<codeline lineno="107" refid="struct_sil_kit___ethernet_frame_transmit_event_1a23b8e417b87907a1f93bf24d91519b5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit___ethernet_frame_transmit_event_1a23b8e417b87907a1f93bf24d91519b5b" kindref="member">userContext</ref>;<sp/></highlight></codeline>
+<codeline lineno="108" refid="struct_sil_kit___ethernet_frame_transmit_event_1a1ce8e1c81a4ddfcbc49c59ac6f414cbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_transmit_event_1a1ce8e1c81a4ddfcbc49c59ac6f414cbc" kindref="member">timestamp</ref>;<sp/></highlight></codeline>
+<codeline lineno="109" refid="struct_sil_kit___ethernet_frame_transmit_event_1a25951c71f78e1706b1e7e245cd939077" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_transmit_event_1a25951c71f78e1706b1e7e245cd939077" kindref="member">status</ref>;<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111" refid="_ethernet_8h_1a48910b755f68a6914ef6214926f6be84" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit___ethernet_frame_transmit_event" kindref="compound">SilKit_EthernetFrameTransmitEvent</ref><sp/><ref refid="struct_sil_kit___ethernet_frame_transmit_event" kindref="compound">SilKit_EthernetFrameTransmitEvent</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref><sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" kindref="member">SilKit_EthernetFrameHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="struct_sil_kit___ethernet_frame_event" kindref="compound">SilKit_EthernetFrameEvent</ref>*<sp/>frameEvent);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" kindref="member">SilKit_EthernetFrameTransmitHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="struct_sil_kit___ethernet_frame_transmit_event" kindref="compound">SilKit_EthernetFrameTransmitEvent</ref>*<sp/>frameTransmitEvent);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" kindref="member">SilKit_EthernetStateChangeHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="struct_sil_kit___ethernet_state_change_event" kindref="compound">SilKit_EthernetStateChangeEvent</ref>*<sp/>stateChangeEvent);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" kindref="member">SilKit_EthernetBitrateChangeHandler_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><ref refid="struct_sil_kit___ethernet_bitrate_change_event" kindref="compound">SilKit_EthernetBitrateChangeEvent</ref>*<sp/>bitrateChangeEvent);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1abb65560a24876e752f032602d87c311c" kindref="member">SilKit_EthernetController_Create</ref>(</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>**<sp/>outController,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>network);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="_ethernet_8h_1a6be30d69fccf0b74c3fbc3063ac178ea" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a6be30d69fccf0b74c3fbc3063ac178ea" kindref="member">SilKit_EthernetController_Create_t</ref>)(</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>**<sp/>outController,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><ref refid="_types_8h_1ad68cbbe03eb41e3b5683b5422e3cb9ae" kindref="member">SilKit_Participant</ref>*<sp/>participant,<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>network);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1a7afa9ba2b7d262c422f7bfe07ed441ca" kindref="member">SilKit_EthernetController_Activate</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="_ethernet_8h_1a786d54e868ce6679111aee06891ba99d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a786d54e868ce6679111aee06891ba99d" kindref="member">SilKit_EthernetController_Activate_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1aa00b2c7c0b58636d8c6f3e9d4ace032b" kindref="member">SilKit_EthernetController_Deactivate</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="_ethernet_8h_1a29dca01e97bacae6bf725cd37622d7fb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a29dca01e97bacae6bf725cd37622d7fb" kindref="member">SilKit_EthernetController_Deactivate_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1ab90a54e7a8d5634eea32fa2922841666" kindref="member">SilKit_EthernetController_AddFrameHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" kindref="member">SilKit_EthernetFrameHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref><sp/>directionMask,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="_ethernet_8h_1ab76bb12231380a20256dc4f6cceee796" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1ab76bb12231380a20256dc4f6cceee796" kindref="member">SilKit_EthernetController_AddFrameHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1af68dc942298dbc2c2150a059a566ddf0" kindref="member">SilKit_EthernetFrameHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1a3402fea0e77df42605c18bc2c4cfdd8c" kindref="member">SilKit_Direction</ref><sp/>directionMask,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1aa603a491bd29a5730ac47ba23bb766c3" kindref="member">SilKit_EthernetController_RemoveFrameHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="_ethernet_8h_1abbf85b73d655ad96c747141d32a5384c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1abbf85b73d655ad96c747141d32a5384c" kindref="member">SilKit_EthernetController_RemoveFrameHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1a7b8f8392e3d3915c9355782c22a6201d" kindref="member">SilKit_EthernetController_AddFrameTransmitHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" kindref="member">SilKit_EthernetFrameTransmitHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref><sp/>transmitStatusMask,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="_ethernet_8h_1a54e8791b8faff84c00d18ad011870975" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a54e8791b8faff84c00d18ad011870975" kindref="member">SilKit_EthernetController_AddFrameTransmitHandler_t</ref>)(</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,<sp/><ref refid="_ethernet_8h_1a0d1d86f51991a872af851bb6da3c76df" kindref="member">SilKit_EthernetFrameTransmitHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1ac01f1737e7c6a07fec8d8e0c0a5f1d0f" kindref="member">SilKit_EthernetTransmitStatus</ref><sp/>transmitStatusMask,<sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1a96d327c9d26d3762c820244ec1423da8" kindref="member">SilKit_EthernetController_RemoveFrameTransmitHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="_ethernet_8h_1aad33644acf8374cfa2fe5b3d622f4e95" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1aad33644acf8374cfa2fe5b3d622f4e95" kindref="member">SilKit_EthernetController_RemoveFrameTransmitHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1aa8638b5b6c3d8d96dbc76aefb2945cbc" kindref="member">SilKit_EthernetController_AddStateChangeHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" kindref="member">SilKit_EthernetStateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="_ethernet_8h_1a0c749d29afaa78d01d736eed137ae748" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1a0c749d29afaa78d01d736eed137ae748" kindref="member">SilKit_EthernetController_AddStateChangeHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1a83b42fea1cadf48ba4b3b7542d799a18" kindref="member">SilKit_EthernetStateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1ad9c441b647789dbdafafda862eb3c663" kindref="member">SilKit_EthernetController_RemoveStateChangeHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="_ethernet_8h_1ada8a983715ee8f28f53feef971d9e95c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1ada8a983715ee8f28f53feef971d9e95c" kindref="member">SilKit_EthernetController_RemoveStateChangeHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1ab485725ae01d3bf7e246d75beecdf0fa" kindref="member">SilKit_EthernetController_AddBitrateChangeHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" kindref="member">SilKit_EthernetBitrateChangeHandler_t</ref><sp/>handler,<sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="_ethernet_8h_1ab31402046f37842c34fec5b57f7cbe55" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1ab31402046f37842c34fec5b57f7cbe55" kindref="member">SilKit_EthernetController_AddBitrateChangeHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>context,</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_ethernet_8h_1af32bf64ee0b3c0c4e93d53f769a5fb57" kindref="member">SilKit_EthernetBitrateChangeHandler_t</ref><sp/>handler,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref>*<sp/>outHandlerId);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1a37d97a3065d163d25058d67aba41aeaf" kindref="member">SilKit_EthernetController_RemoveBitrateChangeHandler</ref>(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="_ethernet_8h_1ae7a67bbec1b579c31c88f556dc29cdd2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1ae7a67bbec1b579c31c88f556dc29cdd2" kindref="member">SilKit_EthernetController_RemoveBitrateChangeHandler_t</ref>)(<ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_types_8h_1af09d37734982b9f2d7331a22744d9895" kindref="member">SilKit_HandlerId</ref><sp/>handlerId);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a6c783a5df2fdc1a6777798aa74bc18db" kindref="member">SilKitAPI</ref><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref><sp/><ref refid="_sil_kit_macros_8h_1a8e740e5d771d74a1b81bc77dc5f91bf7" kindref="member">SilKitCALL</ref><sp/><ref refid="_ethernet_8h_1a6a9844903d6bda1cd07d4625359e1b14" kindref="member">SilKit_EthernetController_SendFrame</ref>(</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><ref refid="struct_sil_kit___ethernet_frame" kindref="compound">SilKit_EthernetFrame</ref>*<sp/>frame,</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="_ethernet_8h_1aec3520b42413b7d54f1907f8fc52ac85" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="_types_8h_1ae1af4b9fe1bfb867bcd4c2fa51d0d095" kindref="member">SilKit_ReturnCode</ref>(<ref refid="_sil_kit_macros_8h_1a92a6b92be098c8cd9b45677658c8174f" kindref="member">SilKitFPTR</ref><sp/>*<ref refid="_ethernet_8h_1aec3520b42413b7d54f1907f8fc52ac85" kindref="member">SilKit_EthernetController_SendFrame_t</ref>)(</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><ref refid="_ethernet_8h_1a7951c8f9768ef57acbfae8805c212516" kindref="member">SilKit_EthernetController</ref>*<sp/>controller,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><ref refid="struct_sil_kit___ethernet_frame" kindref="compound">SilKit_EthernetFrame</ref>*<sp/>frame,</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userContext);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><ref refid="_sil_kit_macros_8h_1a04b5ec616ea8e67360a3930e4cf5d2fb" kindref="member">SILKIT_END_DECLS</ref></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Ethernet.h"/>
+  </compounddef>
+</doxygen>

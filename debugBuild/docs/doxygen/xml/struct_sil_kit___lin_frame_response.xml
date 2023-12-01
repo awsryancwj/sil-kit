@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___lin_frame_response" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LinFrameResponse</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_response_1aff7eafda739db0216b915a294913cfe3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_LinFrameResponse::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="219" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_response_1aa0c386d6751569a54868e211dcfec8d9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___lin_frame" kindref="compound">SilKit_LinFrame</ref> *</type>
+        <definition>SilKit_LinFrame* SilKit_LinFrameResponse::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>frame must provide the LIN <ref refid="_lin_8h_1a6af0cc9696323532582d1c980cc4fa58" kindref="member">SilKit_LinId</ref> for which the response is configured.</para><para>If responseMode is SilKit_LinFrameResponseMode_TxUnconditional, the frame data is used for the transaction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="226" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_response_1a54746d0a6efd177b47594ee4b36030d6" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a04b93526f53b7ae7d16a2688e63a76b2" kindref="member">SilKit_LinFrameResponseMode</ref></type>
+        <definition>SilKit_LinFrameResponseMode SilKit_LinFrameResponse::responseMode</definition>
+        <argsstring></argsstring>
+        <name>responseMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determines if the LinFrameResponse is used for transmission (TxUnconditional), reception (Rx) or ignored (Unused). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="229" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration data for a LIN Slave task for a particular LIN ID. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="325">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="326">
+        <label>SilKit_LinFrame</label>
+        <link refid="struct_sil_kit___lin_frame"/>
+        <childnode refid="325" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="324">
+        <label>SilKit_LinFrameResponse</label>
+        <link refid="struct_sil_kit___lin_frame_response"/>
+        <childnode refid="325" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="326" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="218" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="217" bodyend="230"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___lin_frame_response_1aa0c386d6751569a54868e211dcfec8d9" prot="public" virt="non-virtual"><scope>SilKit_LinFrameResponse</scope><name>frame</name></member>
+      <member refid="struct_sil_kit___lin_frame_response_1a54746d0a6efd177b47594ee4b36030d6" prot="public" virt="non-virtual"><scope>SilKit_LinFrameResponse</scope><name>responseMode</name></member>
+      <member refid="struct_sil_kit___lin_frame_response_1aff7eafda739db0216b915a294913cfe3" prot="public" virt="non-virtual"><scope>SilKit_LinFrameResponse</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

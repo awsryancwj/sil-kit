@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___experimental___lin_controller_dynamic_config" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_Experimental_LinControllerDynamicConfig</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_controller_dynamic_config_1a5732e04565b447eb3d74ccbc3464d9ce" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_Experimental_LinControllerDynamicConfig::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The interface id specifying which version of this struct was obtained </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="257" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_controller_dynamic_config_1a768e5c5cf6e961161c5bb7b66e638f0e" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a1e3f7d7586e3c76c30383d672e9e5963" kindref="member">SilKit_LinControllerMode</ref></type>
+        <definition>SilKit_LinControllerMode SilKit_Experimental_LinControllerDynamicConfig::controllerMode</definition>
+        <argsstring></argsstring>
+        <name>controllerMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure as LIN master or LIN slave </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="259" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_controller_dynamic_config_1adb489866a23e2aad155f1fa51fb71a87" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a87f84094445e3127075578c73f0083e9" kindref="member">SilKit_LinBaudRate</ref></type>
+        <definition>SilKit_LinBaudRate SilKit_Experimental_LinControllerDynamicConfig::baudRate</definition>
+        <argsstring></argsstring>
+        <name>baudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The operational baud rate of the controller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="261" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration data to initialize the LIN controller in dynamic response mode. Cf.: <ref refid="_lin_8h_1a1a7ae10916efb08b02458660d80ea9e0" kindref="member">SilKit_Experimental_LinController_InitDynamic()</ref> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="249">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="248">
+        <label>SilKit_Experimental_LinControllerDynamicConfig</label>
+        <link refid="struct_sil_kit___experimental___lin_controller_dynamic_config"/>
+        <childnode refid="249" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="255" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="254" bodyend="262"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___experimental___lin_controller_dynamic_config_1adb489866a23e2aad155f1fa51fb71a87" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinControllerDynamicConfig</scope><name>baudRate</name></member>
+      <member refid="struct_sil_kit___experimental___lin_controller_dynamic_config_1a768e5c5cf6e961161c5bb7b66e638f0e" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinControllerDynamicConfig</scope><name>controllerMode</name></member>
+      <member refid="struct_sil_kit___experimental___lin_controller_dynamic_config_1a5732e04565b447eb3d74ccbc3464d9ce" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinControllerDynamicConfig</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

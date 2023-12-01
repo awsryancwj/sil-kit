@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::PubSub::DataMessageEvent</compoundname>
+    <includes refid="_pub_sub_datatypes_8hpp" local="no">PubSubDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event_1a9badb5e235d79a4d227077c05086c78d" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::PubSub::DataMessageEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Send timestamp of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" line="40" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event_1a474e72a8192006945135ce28154ee5ef" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span</ref>&lt; const uint8_t &gt;</type>
+        <definition>Util::Span&lt;const uint8_t&gt; SilKit::Services::PubSub::DataMessageEvent::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Data field containing the payload. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An incoming DataMessage of a DataPublisher containing raw data and timestamp. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="26">
+        <label>SilKit::Services::PubSub::DataMessageEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>SilKit::Util::Span&lt; const uint8_t &gt;</label>
+        <link refid="class_sil_kit_1_1_util_1_1_span"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" line="38" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/pubsub/PubSubDatatypes.hpp" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event_1a474e72a8192006945135ce28154ee5ef" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::DataMessageEvent</scope><name>data</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_pub_sub_1_1_data_message_event_1a9badb5e235d79a4d227077c05086c78d" prot="public" virt="non-virtual"><scope>SilKit::Services::PubSub::DataMessageEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

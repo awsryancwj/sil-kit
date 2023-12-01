@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_transmit_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</compoundname>
+    <basecompoundref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event" prot="public" virt="non-virtual">SilKit::Services::Flexray::FlexraySymbolEvent</basecompoundref>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+    <briefdescription>
+<para>Acknowledges the transmission of a <ref refid="namespace_sil_kit_1_1_services_1_1_flexray_1a0adde59b7a2e64533d4332980494e1af" kindref="member">FlexraySymbolPattern</ref> on a particular channel. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="81">
+        <label>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_transmit_event"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>SilKit::Services::Flexray::FlexraySymbolEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="83">
+        <label>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_transmit_event"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>SilKit::Services::Flexray::FlexraySymbolEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="395" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="394" bodyend="396"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1adb23b11419a5a8306fefcd17211d5edd" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1aa9c2ac337ad04fbb802df5e6027eca5e" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</scope><name>pattern</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1a52a26679b051410ce8befeb5b22ebc68" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexraySymbolTransmitEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

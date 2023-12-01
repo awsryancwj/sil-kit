@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayHeader</compoundname>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1a48381542711a41debd83beac0133d683" prot="public" static="no">
+        <name>Flag</name>
+        <enumvalue id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1a48381542711a41debd83beac0133d683acf223ce6cc05672c32a96784996e0f83" prot="public">
+          <name>SuFIndicator</name>
+          <initializer>= SilKit_FlexrayHeader_SuFIndicator</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1a48381542711a41debd83beac0133d683a1aabb5fd0a5b5c5514c8e913dc8e70dc" prot="public">
+          <name>SyFIndicator</name>
+          <initializer>= SilKit_FlexrayHeader_SyFIndicator</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1a48381542711a41debd83beac0133d683a09477fc6e9dfc275e6047541335370e9" prot="public">
+          <name>NFIndicator</name>
+          <initializer>= SilKit_FlexrayHeader_NFIndicator</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1a48381542711a41debd83beac0133d683a9d01cdf134c1d000f434ce72eae8fcf8" prot="public">
+          <name>PPIndicator</name>
+          <initializer>= SilKit_FlexrayHeader_PPIndicator</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Flag BitMask definition for helper methods. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="323" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="322" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ade4e2697169f56df5a11046d990fade6" prot="public" static="no">
+        <type><ref refid="_flexray_8h_1af07541bbc6465d3fbe10f85fe014ae74" kindref="member">SilKit_FlexrayHeader_Flag</ref></type>
+        <definition>using SilKit::Services::Flexray::FlexrayHeader::FlagMask =  SilKit_FlexrayHeader_Flag</definition>
+        <argsstring></argsstring>
+        <name>FlagMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="319" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1adb9cd3ad3ad5b7e08fc8eeb69c7b83c6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ade4e2697169f56df5a11046d990fade6" kindref="member">FlagMask</ref></type>
+        <definition>FlagMask SilKit::Services::Flexray::FlexrayHeader::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Flags bit map according to FlagMask. Description: </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>[7-5]: unused</para></listitem><listitem><para>[4]: Reserved bit</para></listitem><listitem><para>[3]: PPIndicator: 0, regular payload; 1, NM vector or message ID</para></listitem><listitem><para>[2]: NFIndicator: 0, no valid payload data and PPIndicator = 0; 1, valid payload data</para></listitem><listitem><para>[1]: SyFIndicator: 0, frame not used for synchronization; 1, frame shall be used for sync</para></listitem><listitem><para>[0]: SuFIndicator: 0, not a startup frame; 1, a startup frame </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="339" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ad0171aca270eb508b13302d8fcb1e88b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit::Services::Flexray::FlexrayHeader::frameId</definition>
+        <argsstring></argsstring>
+        <name>frameId</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Slot ID in which the frame was sent: 1 - 2047. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="340" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ab2a2c224372ee7c1121d3bd65e94ccb9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit::Services::Flexray::FlexrayHeader::payloadLength</definition>
+        <argsstring></argsstring>
+        <name>payloadLength</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Payload length, 7 bits. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="341" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1aeaa7fd0577b2f36ee0d00a678a65ab30" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit::Services::Flexray::FlexrayHeader::headerCrc</definition>
+        <argsstring></argsstring>
+        <name>headerCrc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Header CRC, 11 bits. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="342" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1aee7ab6624ad41e9ca1f49aea8899c618" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit::Services::Flexray::FlexrayHeader::cycleCount</definition>
+        <argsstring></argsstring>
+        <name>cycleCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Cycle in which the frame was sent: 0 - 63. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="343" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="318" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="317" bodyend="344"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1aee7ab6624ad41e9ca1f49aea8899c618" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>cycleCount</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1a48381542711a41debd83beac0133d683" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>Flag</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ade4e2697169f56df5a11046d990fade6" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>FlagMask</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1adb9cd3ad3ad5b7e08fc8eeb69c7b83c6" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>flags</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ad0171aca270eb508b13302d8fcb1e88b" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>frameId</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1aeaa7fd0577b2f36ee0d00a678a65ab30" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>headerCrc</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_header_1ab2a2c224372ee7c1121d3bd65e94ccb9" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayHeader</scope><name>payloadLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

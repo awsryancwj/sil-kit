@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_rpc_datatypes_8hpp" kind="file" language="C++">
+    <compoundname>RpcDatatypes.hpp</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">cstdint</includes>
+    <includes refid="rpc_2fwd__decl_8hpp" local="yes">fwd_decl.hpp</includes>
+    <includes refid="_span_8hpp" local="yes">silkit/util/Span.hpp</includes>
+    <includes refid="_rpc_8h" local="yes">silkit/capi/Rpc.h</includes>
+    <includedby refid="_i_participant_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</includedby>
+    <includedby refid="_i_rpc_client_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp</includedby>
+    <includedby refid="_i_rpc_server_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp</includedby>
+    <includedby refid="services_2rpc_2all_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</includedby>
+    <includedby refid="services_2rpc_2string__utils_8hpp" local="yes">/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/string_utils.hpp</includedby>
+    <incdepgraph>
+      <node id="1664">
+        <label>functional</label>
+      </node>
+      <node id="1666">
+        <label>cstdint</label>
+      </node>
+      <node id="1680">
+        <label>silkit/capi/Rpc.h</label>
+        <link refid="_rpc_8h"/>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1676">
+        <label>stdint.h</label>
+      </node>
+      <node id="1679">
+        <label>silkit/participant/exception.hpp</label>
+        <link refid="exception_8hpp"/>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1672" relation="include">
+        </childnode>
+      </node>
+      <node id="1673">
+        <label>stdexcept</label>
+      </node>
+      <node id="1672">
+        <label>string</label>
+      </node>
+      <node id="1667">
+        <label>fwd_decl.hpp</label>
+        <link refid="rpc_2fwd__decl_8hpp"/>
+      </node>
+      <node id="1677">
+        <label>stddef.h</label>
+      </node>
+      <node id="1683">
+        <label>memory.h</label>
+      </node>
+      <node id="1682">
+        <label>limits.h</label>
+      </node>
+      <node id="1678">
+        <label>SilKitMacros.h</label>
+        <link refid="_sil_kit_macros_8h"/>
+        <childnode refid="1666" relation="include">
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp</label>
+        <link refid="_rpc_datatypes_8hpp"/>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+      </node>
+      <node id="1670">
+        <label>vector</label>
+      </node>
+      <node id="1671">
+        <label>array</label>
+      </node>
+      <node id="1668">
+        <label>silkit/util/Span.hpp</label>
+        <link refid="_span_8hpp"/>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1679" relation="include">
+        </childnode>
+      </node>
+      <node id="1665">
+        <label>chrono</label>
+      </node>
+      <node id="1681">
+        <label>silkit/capi/InterfaceIdentifiers.h</label>
+        <link refid="_interface_identifiers_8h"/>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>type_traits</label>
+      </node>
+      <node id="1669">
+        <label>algorithm</label>
+      </node>
+      <node id="1675">
+        <label>silkit/capi/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1688">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcClient.hpp</label>
+        <link refid="_i_rpc_client_8hpp"/>
+        <childnode refid="1689" relation="include">
+        </childnode>
+      </node>
+      <node id="1687">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/SilKit.hpp</label>
+        <link refid="_sil_kit_8hpp"/>
+      </node>
+      <node id="1691">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/IRpcServer.hpp</label>
+        <link refid="_i_rpc_server_8hpp"/>
+        <childnode refid="1689" relation="include">
+        </childnode>
+      </node>
+      <node id="1692">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/string_utils.hpp</label>
+        <link refid="services_2rpc_2string__utils_8hpp"/>
+      </node>
+      <node id="1685">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/participant/IParticipant.hpp</label>
+        <link refid="_i_participant_8hpp"/>
+        <childnode refid="1686" relation="include">
+        </childnode>
+        <childnode refid="1687" relation="include">
+        </childnode>
+      </node>
+      <node id="1684">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp</label>
+        <link refid="_rpc_datatypes_8hpp"/>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+      </node>
+      <node id="1689">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/all.hpp</label>
+        <link refid="services_2rpc_2all_8hpp"/>
+        <childnode refid="1690" relation="include">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/services/all.hpp</label>
+        <link refid="services_2all_8hpp"/>
+      </node>
+      <node id="1686">
+        <label>/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/participant/ParticipantExtensions.hpp</label>
+        <link refid="_participant_extensions_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event" prot="public">SilKit::Services::Rpc::RpcCallEvent</innerclass>
+    <innerclass refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" prot="public">SilKit::Services::Rpc::RpcCallResultEvent</innerclass>
+    <innernamespace refid="namespace_sil_kit">SilKit</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services">SilKit::Services</innernamespace>
+    <innernamespace refid="namespace_sil_kit_1_1_services_1_1_rpc">SilKit::Services::Rpc</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>Vector<sp/>Informatik<sp/>GmbH</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rpc_2fwd__decl_8hpp" kindref="compound">fwd_decl.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_span_8hpp" kindref="compound">silkit/util/Span.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rpc_8h" kindref="compound">silkit/capi/Rpc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_sil_kit" kindref="compound">SilKit</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Services<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Rpc<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45d" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45d" kindref="member">RpcCallStatus</ref><sp/>:<sp/><ref refid="_rpc_8h_1a48967c2c2cdda90e6591d6df85708fe8" kindref="member">SilKit_RpcCallStatus</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45da505a83f220c02df2f85c3810cd9ceb38" kindref="member">Success</ref><sp/>=<sp/><ref refid="_rpc_8h_1af78d18f4b3ce0708a52586c194776016" kindref="member">SilKit_RpcCallStatus_Success</ref>,<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45dac14c3d09016f5187fcd7607bb993030f" kindref="member">ServerNotReachable</ref><sp/>=<sp/><ref refid="_rpc_8h_1ae544ddab274cf227aff8e803c74dc24e" kindref="member">SilKit_RpcCallStatus_ServerNotReachable</ref>,<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45da98570a3d51c80b5961c408f204e48cd1" kindref="member">UndefinedError</ref><sp/>=<sp/><ref refid="_rpc_8h_1a00a92956a53ab8932f67f6ea1af8c085" kindref="member">SilKit_RpcCallStatus_UndefinedError</ref>,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45daecbf01325f1c744e9d7bb586ac2eb5ed" kindref="member">InternalServerError</ref><sp/>=<sp/><ref refid="_rpc_8h_1aa29cfc164e688befd8819575778ff828" kindref="member">SilKit_RpcCallStatus_InternalServerError</ref>,<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45dac85a251cc457840f1e032f1b733e9398" kindref="member">Timeout</ref><sp/>=<sp/><ref refid="_rpc_8h_1af696c32f68945370f987b7282256bce1" kindref="member">SilKit_RpcCallStatus_Timeout</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event" kindref="compound">RpcCallEvent</ref></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a9812b448d91058af59570ca95629ca09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a9812b448d91058af59570ca95629ca09" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="61" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a6301e7a08ad82feac6dff648b093b779" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IRpcCallHandle*<sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a6301e7a08ad82feac6dff648b093b779" kindref="member">callHandle</ref>;</highlight></codeline>
+<codeline lineno="63" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a1b697e1443103ac4add9243c82761e1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span&lt;const uint8_t&gt;</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_event_1a1b697e1443103ac4add9243c82761e1f" kindref="member">argumentData</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="namespace_sil_kit_1_1_services_1_1_rpc_1a78d20cab9fa8ca53c21d2a0e9f0f4e74" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a78d20cab9fa8ca53c21d2a0e9f0f4e74" kindref="member">RpcCallHandler</ref><sp/>=<sp/>std::function&lt;void(IRpcServer*<sp/>server,<sp/>const<sp/>RpcCallEvent&amp;<sp/>event)&gt;;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event" kindref="compound">RpcCallResultEvent</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a6073e2dc1a9891072624de9994d756d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a6073e2dc1a9891072624de9994d756d7" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="74" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a1bc439b3401a6fb009967d2ca90e13a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a1bc439b3401a6fb009967d2ca90e13a1" kindref="member">userContext</ref>;</highlight></codeline>
+<codeline lineno="76" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a63e57b711c00be98450ad0f17d5c633f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a3b48d16da133323a38bba98c33e6c45d" kindref="member">RpcCallStatus</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a63e57b711c00be98450ad0f17d5c633f" kindref="member">callStatus</ref>;</highlight></codeline>
+<codeline lineno="78" refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a380dde0099f3445018cad37f12f84a83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sil_kit_1_1_util_1_1_span" kindref="compound">Util::Span&lt;const uint8_t&gt;</ref><sp/><ref refid="struct_sil_kit_1_1_services_1_1_rpc_1_1_rpc_call_result_event_1a380dde0099f3445018cad37f12f84a83" kindref="member">resultData</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespace_sil_kit_1_1_services_1_1_rpc_1a1f1dd3242932f41d00a5c001923a087e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_sil_kit_1_1_services_1_1_rpc_1a1f1dd3242932f41d00a5c001923a087e" kindref="member">RpcCallResultHandler</ref><sp/>=<sp/>std::function&lt;void(IRpcClient*<sp/>client,<sp/>const<sp/>RpcCallResultEvent&amp;<sp/>event)&gt;;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Rpc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SilKit</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/rpc/RpcDatatypes.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_slave_configuration_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Experimental::Services::Lin::LinSlaveConfigurationEvent</compoundname>
+    <includes refid="_lin_datatypes_extensions_8hpp" local="no">LinDatatypesExtensions.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_slave_configuration_event_1a825081c1b8b76a31aa3a14b067d0f0c0" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Experimental::Services::Lin::LinSlaveConfigurationEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="42" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN frame response update event delivered in the <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a1176a3839c62930b8a9bd0ab9432df27" kindref="member">LinSlaveConfigurationHandler</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The event is received on a LIN Master when a LIN Slave is configured via LinController::Init(). This event is mainly for diagnostic purposes and can be used to keep track of LIN Ids, where a response of a LIN Slave is to be expected by using <ref refid="namespace_sil_kit_1_1_experimental_1_1_services_1_1_lin_1a0bd7bfb472393ba06073d09f8977dcdd" kindref="member">GetSlaveConfiguration()</ref> in the handler. </para>    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" line="41" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/experimental/services/lin/LinDatatypesExtensions.hpp" bodystart="40" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_experimental_1_1_services_1_1_lin_1_1_lin_slave_configuration_event_1a825081c1b8b76a31aa3a14b067d0f0c0" prot="public" virt="non-virtual"><scope>SilKit::Experimental::Services::Lin::LinSlaveConfigurationEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

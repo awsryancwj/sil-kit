@@ -1,5 +1,5 @@
 Description: Sample configuration for CAN
 Logging:
   Sinks:
-    - Level: Info
+    - Level: Debug #Info
       Type: Stdout

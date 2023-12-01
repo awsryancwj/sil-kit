@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Flexray::FlexrayWakeupEvent</compoundname>
+    <basecompoundref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event" prot="public" virt="non-virtual">SilKit::Services::Flexray::FlexraySymbolEvent</basecompoundref>
+    <includes refid="_flexray_datatypes_8hpp" local="no">FlexrayDatatypes.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event_1a91054a492c3eb5c564322145feef2b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Services::Flexray::FlexrayWakeupEvent::FlexrayWakeupEvent</definition>
+        <argsstring>()=default</argsstring>
+        <name>FlexrayWakeupEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="403" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event_1ac033de4815f673569b03f3d0cac1fc8e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Services::Flexray::FlexrayWakeupEvent::FlexrayWakeupEvent</definition>
+        <argsstring>(const FlexraySymbolEvent &amp;flexraySymbolEvent)</argsstring>
+        <name>FlexrayWakeupEvent</name>
+        <param>
+          <type>const <ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event" kindref="compound">FlexraySymbolEvent</ref> &amp;</type>
+          <declname>flexraySymbolEvent</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event" kindref="compound">FlexrayWakeupEvent</ref> from the <ref refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event" kindref="compound">FlexraySymbolEvent</ref> that triggered the wakeup. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="406" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="581" bodyend="584"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A FlexRay WUS or WUDOP symbol was received on the FlexRay bus. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="90">
+        <label>SilKit::Services::Flexray::FlexrayWakeupEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>SilKit::Services::Flexray::FlexraySymbolEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="92">
+        <label>SilKit::Services::Flexray::FlexrayWakeupEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>SilKit::Services::Flexray::FlexraySymbolEvent</label>
+        <link refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" line="402" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/flexray/FlexrayDatatypes.hpp" bodystart="401" bodyend="407"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1adb23b11419a5a8306fefcd17211d5edd" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayWakeupEvent</scope><name>channel</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event_1a91054a492c3eb5c564322145feef2b3c" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayWakeupEvent</scope><name>FlexrayWakeupEvent</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_wakeup_event_1ac033de4815f673569b03f3d0cac1fc8e" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayWakeupEvent</scope><name>FlexrayWakeupEvent</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1aa9c2ac337ad04fbb802df5e6027eca5e" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayWakeupEvent</scope><name>pattern</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_flexray_1_1_flexray_symbol_event_1a52a26679b051410ce8befeb5b22ebc68" prot="public" virt="non-virtual"><scope>SilKit::Services::Flexray::FlexrayWakeupEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

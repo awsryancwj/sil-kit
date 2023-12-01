@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___experimental___lin_frame_header_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_Experimental_LinFrameHeaderEvent</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_frame_header_event_1ad1109d3f3e3810c225d7c7d8dfa44bd8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_Experimental_LinFrameHeaderEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="280" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_frame_header_event_1a40e3377d83ff1b4f37010d643ec0bb73" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_Experimental_LinFrameHeaderEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="281" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___experimental___lin_frame_header_event_1a3fbdcc16d7dd30f3e85a17419e402fc0" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1a6af0cc9696323532582d1c980cc4fa58" kindref="member">SilKit_LinId</ref></type>
+        <definition>SilKit_LinId SilKit_Experimental_LinFrameHeaderEvent::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>LIN Identifier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="282" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN frame header event delivered in the <ref refid="_lin_8h_1a46d98930f99291b2ea712f458f2cb889" kindref="member">SilKit_Experimental_LinFrameHeaderHandler_t</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="252">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="251">
+        <label>SilKit_Experimental_LinFrameHeaderEvent</label>
+        <link refid="struct_sil_kit___experimental___lin_frame_header_event"/>
+        <childnode refid="252" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="279" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="278" bodyend="283"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___experimental___lin_frame_header_event_1a3fbdcc16d7dd30f3e85a17419e402fc0" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinFrameHeaderEvent</scope><name>id</name></member>
+      <member refid="struct_sil_kit___experimental___lin_frame_header_event_1ad1109d3f3e3810c225d7c7d8dfa44bd8" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinFrameHeaderEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___experimental___lin_frame_header_event_1a40e3377d83ff1b4f37010d643ec0bb73" prot="public" virt="non-virtual"><scope>SilKit_Experimental_LinFrameHeaderEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___flexray_node_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_FlexrayNodeParameters</compoundname>
+    <includes refid="_flexray_8h" local="no">Flexray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a7b4eb1646bdbb5b8d478d19049f0deb1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_FlexrayNodeParameters::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="154" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1aa17d570a91f35f0ba81b736c66d64ca7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pAllowHaltDueToClock</definition>
+        <argsstring></argsstring>
+        <name>pAllowHaltDueToClock</name>
+        <briefdescription>
+<para>Controls the transition to halt state due to clock synchronization errors. (0,1). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="160" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a45deda10bc98531aa969e96c92cbfab7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pAllowPassiveToActive</definition>
+        <argsstring></argsstring>
+        <name>pAllowPassiveToActive</name>
+        <briefdescription>
+<para>Required number of consecutive even / odd cycle pairs for normal passive to normal active (range 0-31). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="163" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a957da3b91437adb1b8e3d8cd3b85a663" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a7f5c9f146f6a2edd0ba9b06e65f544b7" kindref="member">SilKit_FlexrayChannel</ref></type>
+        <definition>SilKit_FlexrayChannel SilKit_FlexrayNodeParameters::pChannels</definition>
+        <argsstring></argsstring>
+        <name>pChannels</name>
+        <briefdescription>
+<para>Channel(s) to which the controller is connected (values FlexrayChannel::A, FlexrayChannel::B, FlexrayChannel::AB). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="166" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a4775e81ff63d7dfda5854657cb881634" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pClusterDriftDamping</definition>
+        <argsstring></argsstring>
+        <name>pClusterDriftDamping</name>
+        <briefdescription>
+<para>Cluster drift damping factor for rate correction in MicroTicks (range 0-10). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="169" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1aeee94c24befbcfe21bf942e142a897db" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pdAcceptedStartupRange</definition>
+        <argsstring></argsstring>
+        <name>pdAcceptedStartupRange</name>
+        <briefdescription>
+<para>Allowed deviation for startup frames during integration in MicroTicks (range 29-2743). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="172" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a975c4e2046d1f43ad68ea54714f8188a" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pdListenTimeout</definition>
+        <argsstring></argsstring>
+        <name>pdListenTimeout</name>
+        <briefdescription>
+<para>Duration of listen phase in MicroTicks (range 1926-2567692). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="184" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1ad506f147d0650f4e50f788b0d9aafeaf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayNodeParameters::pKeySlotId</definition>
+        <argsstring></argsstring>
+        <name>pKeySlotId</name>
+        <briefdescription>
+<para>Slot ID of the key slot (range 0-1023, value 0 means that there is no key slot). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="199" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1aca561fa5dd7cb39b026eda18562482c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pKeySlotOnlyEnabled</definition>
+        <argsstring></argsstring>
+        <name>pKeySlotOnlyEnabled</name>
+        <briefdescription>
+<para>Shall the node enter key slot only mode after startup. (values 0, 1) (AUTOSAR pSingleSlotEnabled). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="202" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a118eb6e1a19831bb8deb4d65d9ca583b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pKeySlotUsedForStartup</definition>
+        <argsstring></argsstring>
+        <name>pKeySlotUsedForStartup</name>
+        <briefdescription>
+<para>Key slot is used for startup (range 0, 1). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="205" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a9877adb3d981cfa528b1f27001bd93ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pKeySlotUsedForSync</definition>
+        <argsstring></argsstring>
+        <name>pKeySlotUsedForSync</name>
+        <briefdescription>
+<para>Key slot is used for sync (range 0, 1). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="208" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a84710f14f7e976cdef2c12a763e8dd6b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayNodeParameters::pLatestTx</definition>
+        <argsstring></argsstring>
+        <name>pLatestTx</name>
+        <briefdescription>
+<para>Last mini slot which can be transmitted (range 0-7988). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="211" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1af02e554d2c76135887b1ca8b1a6aaaf9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pMacroInitialOffsetA</definition>
+        <argsstring></argsstring>
+        <name>pMacroInitialOffsetA</name>
+        <briefdescription>
+<para>Initial startup offset for frame reference point on channel A (rang 2-68 MacroTicks (MT)). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="214" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a8c8990dd31280ed442db16b89b8a6f16" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pMacroInitialOffsetB</definition>
+        <argsstring></argsstring>
+        <name>pMacroInitialOffsetB</name>
+        <briefdescription>
+<para>Initial startup offset for frame reference point on channel B (rang 2-68 MacroTicks (MT)). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="217" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a0e908cc1e57011fba44ba8e7f8c2b5f4" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pMicroInitialOffsetA</definition>
+        <argsstring></argsstring>
+        <name>pMicroInitialOffsetA</name>
+        <briefdescription>
+<para>Offset between secondary time reference and MT boundary (range 0-239 MicroTicks). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="220" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a73614a2711d0d9518c4ffe0869b750ff" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pMicroInitialOffsetB</definition>
+        <argsstring></argsstring>
+        <name>pMicroInitialOffsetB</name>
+        <briefdescription>
+<para>Offset between secondary time reference and MT boundary (range 0-239 MicroTicks). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="223" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a6a154bbe8a3ffed39597bf1469d619ce" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pMicroPerCycle</definition>
+        <argsstring></argsstring>
+        <name>pMicroPerCycle</name>
+        <briefdescription>
+<para>Nominal number of MicroTicks in the communication cycle (range 960-1280000). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="226" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a7dd5878f392346a80a054a5abc721d97" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pOffsetCorrectionOut</definition>
+        <argsstring></argsstring>
+        <name>pOffsetCorrectionOut</name>
+        <briefdescription>
+<para>Maximum permissible offset correction value (range 15-16082 MicroTicks). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="229" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a60d4895d1fd51fb4e41d9e94f2e54d7e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SilKit_FlexrayNodeParameters::pOffsetCorrectionStart</definition>
+        <argsstring></argsstring>
+        <name>pOffsetCorrectionStart</name>
+        <briefdescription>
+<para>Start of the offset correction phase within the NIT, (7-15999 MT). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="232" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a359045ef752013da9f9000912d4437e3" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1aa2f0693e875b3c8a204d648693616612" kindref="member">SilKit_FlexrayMicroTick</ref></type>
+        <definition>SilKit_FlexrayMicroTick SilKit_FlexrayNodeParameters::pRateCorrectionOut</definition>
+        <argsstring></argsstring>
+        <name>pRateCorrectionOut</name>
+        <briefdescription>
+<para>Maximum permissible rate correction value (range 3-3846 MicroTicks). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="235" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1aa757c05b8978aabafbdefccec2486785" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a7f5c9f146f6a2edd0ba9b06e65f544b7" kindref="member">SilKit_FlexrayChannel</ref></type>
+        <definition>SilKit_FlexrayChannel SilKit_FlexrayNodeParameters::pWakeupChannel</definition>
+        <argsstring></argsstring>
+        <name>pWakeupChannel</name>
+        <briefdescription>
+<para>Channel used by the node to send a wakeup pattern (values FlexrayChannel::A, FlexrayChannel::B). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="244" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1abaa0e70ecc84e6d7f29dd91addfe20c4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pWakeupPattern</definition>
+        <argsstring></argsstring>
+        <name>pWakeupPattern</name>
+        <briefdescription>
+<para>Number of repetitions of the wakeup symbol (range 0-63, value 0 or 1 prevents sending of WUP). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="247" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1a203f4c93a9f107680275612980ba11e3" prot="public" static="no" mutable="no">
+        <type><ref refid="_flexray_8h_1a7f7a0bfb08236938fe1fd46089770976" kindref="member">SilKit_FlexrayClockPeriod</ref></type>
+        <definition>SilKit_FlexrayClockPeriod SilKit_FlexrayNodeParameters::pdMicrotick</definition>
+        <argsstring></argsstring>
+        <name>pdMicrotick</name>
+        <briefdescription>
+<para>Duration of a FlexRay MicroTick (12.5ns, 25ns or 50ns). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="253" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___flexray_node_parameters_1af87b307507cb738051a9e65e3e68142c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SilKit_FlexrayNodeParameters::pSamplesPerMicrotick</definition>
+        <argsstring></argsstring>
+        <name>pSamplesPerMicrotick</name>
+        <briefdescription>
+<para>Number of samples per MicroTick (values 1 or 2). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="262" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Protocol relevant global node parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>Cf. &apos;FlexRay Protocol Specification Version 3.0.1&apos; Appendix B.3.2 Parameters. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="293">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="292">
+        <label>SilKit_FlexrayNodeParameters</label>
+        <link refid="struct_sil_kit___flexray_node_parameters"/>
+        <childnode refid="293" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" line="152" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Flexray.h" bodystart="151" bodyend="263"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___flexray_node_parameters_1aa17d570a91f35f0ba81b736c66d64ca7" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pAllowHaltDueToClock</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a45deda10bc98531aa969e96c92cbfab7" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pAllowPassiveToActive</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a957da3b91437adb1b8e3d8cd3b85a663" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pChannels</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a4775e81ff63d7dfda5854657cb881634" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pClusterDriftDamping</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1aeee94c24befbcfe21bf942e142a897db" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pdAcceptedStartupRange</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a975c4e2046d1f43ad68ea54714f8188a" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pdListenTimeout</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a203f4c93a9f107680275612980ba11e3" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pdMicrotick</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1ad506f147d0650f4e50f788b0d9aafeaf" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pKeySlotId</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1aca561fa5dd7cb39b026eda18562482c5" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pKeySlotOnlyEnabled</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a118eb6e1a19831bb8deb4d65d9ca583b" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pKeySlotUsedForStartup</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a9877adb3d981cfa528b1f27001bd93ee" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pKeySlotUsedForSync</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a84710f14f7e976cdef2c12a763e8dd6b" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pLatestTx</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1af02e554d2c76135887b1ca8b1a6aaaf9" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pMacroInitialOffsetA</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a8c8990dd31280ed442db16b89b8a6f16" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pMacroInitialOffsetB</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a0e908cc1e57011fba44ba8e7f8c2b5f4" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pMicroInitialOffsetA</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a73614a2711d0d9518c4ffe0869b750ff" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pMicroInitialOffsetB</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a6a154bbe8a3ffed39597bf1469d619ce" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pMicroPerCycle</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a7dd5878f392346a80a054a5abc721d97" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pOffsetCorrectionOut</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a60d4895d1fd51fb4e41d9e94f2e54d7e" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pOffsetCorrectionStart</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a359045ef752013da9f9000912d4437e3" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pRateCorrectionOut</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1af87b307507cb738051a9e65e3e68142c" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pSamplesPerMicrotick</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1aa757c05b8978aabafbdefccec2486785" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pWakeupChannel</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1abaa0e70ecc84e6d7f29dd91addfe20c4" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>pWakeupPattern</name></member>
+      <member refid="struct_sil_kit___flexray_node_parameters_1a7b4eb1646bdbb5b8d478d19049f0deb1" prot="public" virt="non-virtual"><scope>SilKit_FlexrayNodeParameters</scope><name>structHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

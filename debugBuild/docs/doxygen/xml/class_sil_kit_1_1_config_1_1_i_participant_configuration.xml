@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_config_1_1_i_participant_configuration" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::Config::IParticipantConfiguration</compoundname>
+    <includes refid="_i_participant_configuration_8hpp" local="no">IParticipantConfiguration.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_config_1_1_i_participant_configuration_1af1b5b284831e9fcd395e8fad371deb4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SilKit::Config::IParticipantConfiguration::~IParticipantConfiguration</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IParticipantConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" line="34" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/config/IParticipantConfiguration.hpp" bodystart="33" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_config_1_1_i_participant_configuration_1af1b5b284831e9fcd395e8fad371deb4a" prot="public" virt="virtual"><scope>SilKit::Config::IParticipantConfiguration</scope><name>~IParticipantConfiguration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

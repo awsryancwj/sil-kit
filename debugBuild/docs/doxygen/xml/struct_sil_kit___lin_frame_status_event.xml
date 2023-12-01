@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit___lin_frame_status_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit_LinFrameStatusEvent</compoundname>
+    <includes refid="_lin_8h" local="no">Lin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_status_event_1adf43e4890b29d57b8e5159cd8cfda63e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___struct_header" kindref="compound">SilKit_StructHeader</ref></type>
+        <definition>SilKit_StructHeader SilKit_LinFrameStatusEvent::structHeader</definition>
+        <argsstring></argsstring>
+        <name>structHeader</name>
+        <briefdescription>
+<para>The interface id specifying which version of this struct was obtained. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="184" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_status_event_1a0a6cc08328e88d2649da93b5941a49e7" prot="public" static="no" mutable="no">
+        <type><ref refid="_orchestration_8h_1a4a5c030b6c22d0228bad174647d4b7fd" kindref="member">SilKit_NanosecondsTime</ref></type>
+        <definition>SilKit_NanosecondsTime SilKit_LinFrameStatusEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="185" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_status_event_1a777106d2b06468df897d3263ca3e2522" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_sil_kit___lin_frame" kindref="compound">SilKit_LinFrame</ref> *</type>
+        <definition>SilKit_LinFrame* SilKit_LinFrameStatusEvent::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="186" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit___lin_frame_status_event_1aabf63d08b853963bc02c1256723fb147" prot="public" static="no" mutable="no">
+        <type><ref refid="_lin_8h_1ad5976deba8b77971103d3e4cc1d8ee2c" kindref="member">SilKit_LinFrameStatus</ref></type>
+        <definition>SilKit_LinFrameStatus SilKit_LinFrameStatusEvent::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="187" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN frame status event delivered in the <ref refid="_lin_8h_1a4504ff1b91644ba2d13910338395dd37" kindref="member">SilKit_LinFrameStatusHandler_t</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="329">
+        <label>SilKit_StructHeader</label>
+        <link refid="struct_sil_kit___struct_header"/>
+      </node>
+      <node id="330">
+        <label>SilKit_LinFrame</label>
+        <link refid="struct_sil_kit___lin_frame"/>
+        <childnode refid="329" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="328">
+        <label>SilKit_LinFrameStatusEvent</label>
+        <link refid="struct_sil_kit___lin_frame_status_event"/>
+        <childnode refid="329" relation="usage">
+          <edgelabel>structHeader</edgelabel>
+        </childnode>
+        <childnode refid="330" relation="usage">
+          <edgelabel>frame</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" line="183" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/capi/Lin.h" bodystart="182" bodyend="188"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit___lin_frame_status_event_1a777106d2b06468df897d3263ca3e2522" prot="public" virt="non-virtual"><scope>SilKit_LinFrameStatusEvent</scope><name>frame</name></member>
+      <member refid="struct_sil_kit___lin_frame_status_event_1aabf63d08b853963bc02c1256723fb147" prot="public" virt="non-virtual"><scope>SilKit_LinFrameStatusEvent</scope><name>status</name></member>
+      <member refid="struct_sil_kit___lin_frame_status_event_1adf43e4890b29d57b8e5159cd8cfda63e" prot="public" virt="non-virtual"><scope>SilKit_LinFrameStatusEvent</scope><name>structHeader</name></member>
+      <member refid="struct_sil_kit___lin_frame_status_event_1a0a6cc08328e88d2649da93b5941a49e7" prot="public" virt="non-virtual"><scope>SilKit_LinFrameStatusEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

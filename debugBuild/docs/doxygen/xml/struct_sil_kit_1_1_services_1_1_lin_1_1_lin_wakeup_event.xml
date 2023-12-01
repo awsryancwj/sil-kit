@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Lin::LinWakeupEvent</compoundname>
+    <includes refid="_lin_datatypes_8hpp" local="no">LinDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1a8029ce866f1adcdac47b106387be480c" prot="public" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds SilKit::Services::Lin::LinWakeupEvent::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>Time of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="303" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1abd587cc9b7684f32da06377bb2ff3dfe" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1aa5a31d6e49bc06fab1273a5235445531" kindref="member">TransmitDirection</ref></type>
+        <definition>TransmitDirection SilKit::Services::Lin::LinWakeupEvent::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+<para>The direction of the wakeup pulse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="304" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A LIN wakeup event delivered in the <ref refid="class_sil_kit_1_1_services_1_1_lin_1_1_i_lin_controller_1a986ef222780cb32af18204cf37bd82d1" kindref="member">ILinController::WakeupHandler</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" line="302" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/lin/LinDatatypes.hpp" bodystart="301" bodyend="305"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1abd587cc9b7684f32da06377bb2ff3dfe" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinWakeupEvent</scope><name>direction</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_lin_1_1_lin_wakeup_event_1a8029ce866f1adcdac47b106387be480c" prot="public" virt="non-virtual"><scope>SilKit::Services::Lin::LinWakeupEvent</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

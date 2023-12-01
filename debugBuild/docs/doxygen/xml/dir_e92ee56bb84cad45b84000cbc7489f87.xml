@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_e92ee56bb84cad45b84000cbc7489f87" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration</compoundname>
+    <innerfile refid="services_2orchestration_2all_8hpp">all.hpp</innerfile>
+    <innerfile refid="orchestration_2fwd__decl_8hpp">fwd_decl.hpp</innerfile>
+    <innerfile refid="_i_lifecycle_service_8hpp">ILifecycleService.hpp</innerfile>
+    <innerfile refid="_i_system_monitor_8hpp">ISystemMonitor.hpp</innerfile>
+    <innerfile refid="_i_time_sync_service_8hpp">ITimeSyncService.hpp</innerfile>
+    <innerfile refid="_orchestration_datatypes_8hpp">OrchestrationDatatypes.hpp</innerfile>
+    <innerfile refid="services_2orchestration_2string__utils_8hpp">string_utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/"/>
+  </compounddef>
+</doxygen>

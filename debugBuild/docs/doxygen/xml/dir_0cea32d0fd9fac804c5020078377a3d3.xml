@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_0cea32d0fd9fac804c5020078377a3d3" kind="dir">
+    <compoundname>/home/ubuntu/sil-kit/SilKit/include/silkit/participant</compoundname>
+    <innerfile refid="exception_8hpp">exception.hpp</innerfile>
+    <innerfile refid="_i_participant_8hpp">IParticipant.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/participant/"/>
+  </compounddef>
+</doxygen>

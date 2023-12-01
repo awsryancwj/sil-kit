@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_sil_kit_1_1_util_1_1_printable_hex_string" kind="class" language="C++" prot="public">
+    <compoundname>SilKit::Util::PrintableHexString</compoundname>
+    <includes refid="_printable_hex_string_8hpp" local="no">PrintableHexString.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename IterableT</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1a2d5583574c62f534fd21c86de3bd43db" prot="private" static="no">
+        <type>decltype(std::declval&lt; IterableT &gt;().end() - std::declval&lt; IterableT &gt;().begin())</type>
+        <definition>using SilKit::Util::PrintableHexString&lt; IterableT &gt;::difference_type =  decltype(std::declval&lt;IterableT&gt;().end() - std::declval&lt;IterableT&gt;().begin())</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="89" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1a4d592639b330b845d6fc2b63340028a7" prot="private" static="no" mutable="no">
+        <type>const IterableT &amp;</type>
+        <definition>const IterableT&amp; SilKit::Util::PrintableHexString&lt; IterableT &gt;::_iterable</definition>
+        <argsstring></argsstring>
+        <name>_iterable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="92" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1a52466b66fb860bc4ca1584a4dd8f1fa3" prot="private" static="no" mutable="no">
+        <type>difference_type</type>
+        <definition>difference_type SilKit::Util::PrintableHexString&lt; IterableT &gt;::_maxLength</definition>
+        <argsstring></argsstring>
+        <name>_maxLength</name>
+        <initializer>= (std::numeric_limits&lt;difference_type&gt;::max)()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="93" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1a2b10343f11b371a5cd2e3e63df86f529" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Util::PrintableHexString&lt; IterableT &gt;::_separator</definition>
+        <argsstring></argsstring>
+        <name>_separator</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="94" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1a4f23dc72ebf42a60f4ed7f51f467be18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SilKit::Util::PrintableHexString&lt; IterableT &gt;::PrintableHexString</definition>
+        <argsstring>(const IterableT &amp;iterable)</argsstring>
+        <name>PrintableHexString</name>
+        <param>
+          <type>const IterableT &amp;</type>
+          <declname>iterable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="39" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1adc6e3970f94faa7070daec3a209e8ec2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::PrintableHexString&lt; IterableT &gt;::WithMaxLength</definition>
+        <argsstring>(int64_t length) -&gt; PrintableHexString&lt; IterableT &gt; &amp;</argsstring>
+        <name>WithMaxLength</name>
+        <param>
+          <type>int64_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="45" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1a898349ae5ad0f66252922926f4d82269" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto SilKit::Util::PrintableHexString&lt; IterableT &gt;::WithSeparator</definition>
+        <argsstring>(std::string separator) -&gt; PrintableHexString&lt; IterableT &gt; &amp;</argsstring>
+        <name>WithSeparator</name>
+        <param>
+          <type>std::string</type>
+          <declname>separator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="51" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sil_kit_1_1_util_1_1_printable_hex_string_1ab2eacf0a6470003b58ee75936ac46b1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SilKit::Util::PrintableHexString&lt; IterableT &gt;::to_ostream</definition>
+        <argsstring>(std::ostream &amp;out) const</argsstring>
+        <name>to_ostream</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="57" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="57" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" line="37" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/util/PrintableHexString.hpp" bodystart="36" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1a4d592639b330b845d6fc2b63340028a7" prot="private" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>_iterable</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1a52466b66fb860bc4ca1584a4dd8f1fa3" prot="private" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>_maxLength</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1a2b10343f11b371a5cd2e3e63df86f529" prot="private" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>_separator</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1a2d5583574c62f534fd21c86de3bd43db" prot="private" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>difference_type</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1a4f23dc72ebf42a60f4ed7f51f467be18" prot="public" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>PrintableHexString</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1ab2eacf0a6470003b58ee75936ac46b1e" prot="public" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>to_ostream</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1adc6e3970f94faa7070daec3a209e8ec2" prot="public" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>WithMaxLength</name></member>
+      <member refid="class_sil_kit_1_1_util_1_1_printable_hex_string_1a898349ae5ad0f66252922926f4d82269" prot="public" virt="non-virtual"><scope>SilKit::Util::PrintableHexString</scope><name>WithSeparator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

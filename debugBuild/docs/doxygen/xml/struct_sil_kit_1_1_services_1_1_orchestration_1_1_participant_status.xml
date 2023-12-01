@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status" kind="struct" language="C++" prot="public">
+    <compoundname>SilKit::Services::Orchestration::ParticipantStatus</compoundname>
+    <includes refid="_orchestration_datatypes_8hpp" local="no">OrchestrationDatatypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ae5193e8d76104d2ba72de9fd94852501" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::ParticipantStatus::participantName</definition>
+        <argsstring></argsstring>
+        <name>participantName</name>
+        <briefdescription>
+<para>Name of the participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="71" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1aed0e2f99f63f43d795218bfe8fac2712" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7" kindref="member">ParticipantState</ref></type>
+        <definition>ParticipantState SilKit::Services::Orchestration::ParticipantStatus::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>{<ref refid="namespace_sil_kit_1_1_services_1_1_orchestration_1a65bc5be11c4f390b95f6305916e780f7a4bbb8f967da6d1a610596d7257179c2b" kindref="member">ParticipantState::Invalid</ref>}</initializer>
+        <briefdescription>
+<para>The new state of the participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="72" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a913627b7eb380d7611fd3fcd9424c3ca" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SilKit::Services::Orchestration::ParticipantStatus::enterReason</definition>
+        <argsstring></argsstring>
+        <name>enterReason</name>
+        <briefdescription>
+<para>The reason for the participant to enter the new state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="73" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a7934974f88999320278a96232c6b6766" prot="public" static="no" mutable="no">
+        <type>std::chrono::system_clock::time_point</type>
+        <definition>std::chrono::system_clock::time_point SilKit::Services::Orchestration::ParticipantStatus::enterTime</definition>
+        <argsstring></argsstring>
+        <name>enterTime</name>
+        <briefdescription>
+<para>The enter time of the participant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="74" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ab623b070d90ae9bf44ff5350c5ee2cdb" prot="public" static="no" mutable="no">
+        <type>std::chrono::system_clock::time_point</type>
+        <definition>std::chrono::system_clock::time_point SilKit::Services::Orchestration::ParticipantStatus::refreshTime</definition>
+        <argsstring></argsstring>
+        <name>refreshTime</name>
+        <briefdescription>
+<para>The refresh time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="75" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Details about a participant state change. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" line="70" column="1" bodyfile="/home/ubuntu/sil-kit/SilKit/include/silkit/services/orchestration/OrchestrationDatatypes.hpp" bodystart="69" bodyend="76"/>
+    <listofallmembers>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a913627b7eb380d7611fd3fcd9424c3ca" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ParticipantStatus</scope><name>enterReason</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1a7934974f88999320278a96232c6b6766" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ParticipantStatus</scope><name>enterTime</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ae5193e8d76104d2ba72de9fd94852501" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ParticipantStatus</scope><name>participantName</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1ab623b070d90ae9bf44ff5350c5ee2cdb" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ParticipantStatus</scope><name>refreshTime</name></member>
+      <member refid="struct_sil_kit_1_1_services_1_1_orchestration_1_1_participant_status_1aed0e2f99f63f43d795218bfe8fac2712" prot="public" virt="non-virtual"><scope>SilKit::Services::Orchestration::ParticipantStatus</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
